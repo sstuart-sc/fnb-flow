@@ -1,0 +1,56 @@
+{
+  "9bc5fcf1-532d-40f8-86d1-2ba97b0b8950": {
+    "id": "9bc5fcf1-532d-40f8-86d1-2ba97b0b8950",
+    "name": "Temperature Probe / Sensor",
+    "type": "equipment",
+    "notes": "Manual handheld or wireless IoT-connected; used at receiving, thawing, CCP monitoring, and transport."
+  },
+  "8c17f733-178e-42a8-9a66-08c7e489d36b": {
+    "id": "8c17f733-178e-42a8-9a66-08c7e489d36b",
+    "name": "pH Meter",
+    "type": "equipment",
+    "notes": "Used at CCPs involving acidification/pH control (e.g., fermented or acidified products)."
+  },
+  "bcf4ede9-5dde-4874-b14b-5de1a598bdb4": {
+    "id": "bcf4ede9-5dde-4874-b14b-5de1a598bdb4",
+    "name": "Scale",
+    "type": "equipment",
+    "notes": "Used in batching/weighing and catch-weight verification; may be integrated with MES for automatic weight capture."
+  },
+  "72e2305e-e782-4fef-a0f0-684b001b4bf4": {
+    "id": "72e2305e-e782-4fef-a0f0-684b001b4bf4",
+    "name": "ELISA Allergen Swab Test",
+    "type": "test kit",
+    "notes": "Immunoassay-based test detecting specific allergen proteins (peanut, gluten, milk, etc.); used to verify allergen changeover cleaning."
+  },
+  "9a076e51-1e86-42a5-84d9-8c39da37e1d0": {
+    "id": "9a076e51-1e86-42a5-84d9-8c39da37e1d0",
+    "name": "ATP Swab Test",
+    "type": "test kit",
+    "notes": "Bioluminescence-based general cleanliness check; rapid pass/fail result used to verify cleaning before sanitizing or before production."
+  },
+  "076d8f82-c969-464d-a40b-1e5413058708": {
+    "id": "076d8f82-c969-464d-a40b-1e5413058708",
+    "name": "Sanitizer Chemical",
+    "type": "material",
+    "notes": "Common types: chlorine (bleach), quaternary ammonium compounds (quats), peroxyacetic acid (PAA); applied after cleaning, not a substitute for it."
+  },
+  "22005d31-323d-4252-8610-41c71d08a023": {
+    "id": "22005d31-323d-4252-8610-41c71d08a023",
+    "name": "Metal Detector",
+    "type": "equipment",
+    "notes": "Inline foreign-material detection for physical hazards; a common CCP."
+  },
+  "402676d7-c0d4-45d1-9798-134b8b542939": {
+    "id": "402676d7-c0d4-45d1-9798-134b8b542939",
+    "name": "X-Ray Inspection System",
+    "type": "equipment",
+    "notes": "Inline foreign-material and fill-check detection, more sensitive than metal detection for some materials (glass, dense plastics, bone)."
+  },
+  "26fc29f0-5637-42ef-87bd-820d14c68eb6": {
+    "id": "26fc29f0-5637-42ef-87bd-820d14c68eb6",
+    "name": "Vision Inspection System",
+    "type": "equipment",
+    "notes": "Camera-based computer vision checking label presence, alignment, and lot code legibility at line speed."
+  }
+}

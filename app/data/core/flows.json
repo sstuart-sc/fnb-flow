@@ -1,0 +1,198 @@
+{
+  "4997a26b-e15e-4e11-a1db-c91a31401d18": {
+    "id": "4997a26b-e15e-4e11-a1db-c91a31401d18",
+    "name": "Food & Beverage Manufacturing — Primary Flow",
+    "summary": "The 7-step upstream-to-downstream journey of food from primary production through consumer.",
+    "stepIds": [
+      "d12acc63-aca4-45eb-8e73-2f38b0788d08",
+      "47719c67-7075-4fd1-94a1-0c456428d0b7",
+      "c4f4e35a-a8a0-432c-b7d9-36a416b70a56",
+      "dc388e98-2c28-4e90-95b2-cfcdab76fe8d",
+      "29f6789d-0abb-4306-bb15-a9bfd3d1d279",
+      "d74be816-2ce9-4275-bab1-064b6e28d187",
+      "6f24e94d-2d62-4c5c-aa1a-bea63415d895"
+    ],
+    "path": "primary-flow"
+  },
+  "38c95c10-e723-4e66-8812-cd046b01a4c4": {
+    "id": "38c95c10-e723-4e66-8812-cd046b01a4c4",
+    "name": "Supplier Sourcing & Qualification — Nested Flow",
+    "summary": "How a supplier or co-packer goes from candidate to approved, and stays approved.",
+    "stepIds": [
+      "30866752-f7e4-4c98-a5e4-39e2cba6beb1",
+      "a97eb99a-b765-4743-a8e9-b522717fcdcc",
+      "f44a19ca-d12c-4566-858e-bcd15867ff74",
+      "704ab72d-6c58-4cf4-b4f4-b7eedea828af",
+      "27cb1649-3e29-4c72-a163-72c3b8c30028",
+      "c14b6c21-87d1-4c98-b874-b89d86f990f5"
+    ],
+    "path": "supplier-sourcing-qualification-nested"
+  },
+  "5169d6c3-cbc2-40d0-9260-95c3f6f03398": {
+    "id": "5169d6c3-cbc2-40d0-9260-95c3f6f03398",
+    "name": "Inbound Logistics & Receiving — Nested Flow",
+    "summary": "From truck arrival at the dock to a material being released or quarantined.",
+    "stepIds": [
+      "8b56f152-c4f6-4607-9270-eefa91e81140",
+      "790dfcba-2db1-41c2-a9a6-f8fbfc1267d7",
+      "454a05bd-7e29-4750-8738-b0add331db8b",
+      "6532e290-5ee1-4d59-b364-33f4308347cb",
+      "b9382349-bf15-4564-b822-de458d7e1e02"
+    ],
+    "path": "inbound-logistics-receiving-nested"
+  },
+  "f27048aa-a702-4ccc-9045-959bb39d8afd": {
+    "id": "f27048aa-a702-4ccc-9045-959bb39d8afd",
+    "name": "Raw Material Storage — Nested Flow",
+    "summary": "How received, released materials are held, tracked, and rotated until pulled for production.",
+    "stepIds": [
+      "c77fe376-334a-4009-ab47-bdae557cb26c",
+      "17687176-061a-4bcd-a503-bca8d8f62fa1",
+      "f04cba8c-96ab-471b-acc1-bf9304194a95",
+      "e43ad2c4-a64f-4e54-9f3c-93cb221ef0df"
+    ],
+    "path": "raw-material-storage-nested"
+  },
+  "90cad837-185d-4f10-b99e-20bda9af4877": {
+    "id": "90cad837-185d-4f10-b99e-20bda9af4877",
+    "name": "Formulation & Production Planning — Nested Flow",
+    "summary": "From demand forecast to a released, allergen-sequenced production schedule.",
+    "stepIds": [
+      "2fb84bc7-c1cb-447f-8a14-84418b7615a3",
+      "66457337-68b1-4f15-9207-36d3601e6d76",
+      "fe32d3ac-44c1-4fb8-805e-785a9825ed67",
+      "b2f6e872-dcca-4767-9206-055cd8f5c052",
+      "12b7b8be-c7d4-4b6a-b6a2-585f2f64776b",
+      "d2bd63b9-9b1c-47b2-8627-c590c5c69be5"
+    ],
+    "path": "formulation-production-planning-nested"
+  },
+  "c4221788-41dd-4111-a69a-2d4b8afac3a9": {
+    "id": "c4221788-41dd-4111-a69a-2d4b8afac3a9",
+    "name": "Pre-Production Preparation — Nested Flow",
+    "summary": "Staging materials at the line immediately before a run starts.",
+    "stepIds": [
+      "ad144aa0-ac9a-4052-9ae0-fda1670a59c1",
+      "662579e0-38ef-4570-a388-c7bcef2a32f3",
+      "ea870c3a-7428-4e75-ad57-8b96b9ea3139",
+      "00923788-92f4-40d0-868f-21eb57d5380b"
+    ],
+    "path": "pre-production-preparation-nested"
+  },
+  "015da854-c2e2-4e69-8ead-a43b4a3a69dc": {
+    "id": "015da854-c2e2-4e69-8ead-a43b4a3a69dc",
+    "name": "Processing & Production — Nested Flow",
+    "summary": "The transformation step itself, plus the CCP monitoring and changeover control that ride alongside it.",
+    "stepIds": [
+      "3a08d5f0-1981-465e-a538-e1a7b674c81a",
+      "6105447b-2425-420c-acbe-3fd436d078c2",
+      "04a4e8bc-8ed5-4fae-8ca8-0d9081e7ecae",
+      "12ed6f1d-97b8-4053-9e44-4bad182fddb3",
+      "675a0808-4ab3-417e-9505-70fdf07a77d2"
+    ],
+    "path": "processing-production-nested"
+  },
+  "a799c4aa-7b95-41b8-9c06-9558f162c9f6": {
+    "id": "a799c4aa-7b95-41b8-9c06-9558f162c9f6",
+    "name": "In-Process Quality Control — Nested Flow",
+    "summary": "Spec-driven sampling and SPC running alongside production, plus nonconformance handling.",
+    "stepIds": [
+      "885b5c81-29e7-42a9-be5e-72c6f48a9cde",
+      "a72fb5b8-011c-4547-924d-dd4814c8a897",
+      "006beb57-354a-4871-bdc7-32064cd309ba",
+      "d83408b4-06a9-462c-9c76-2f365071799d"
+    ],
+    "path": "in-process-quality-control-nested"
+  },
+  "99c5a4f4-1b92-4202-8736-d2d44e9ec4fb": {
+    "id": "99c5a4f4-1b92-4202-8736-d2d44e9ec4fb",
+    "name": "Packaging — Nested Flow",
+    "summary": "Fill, seal, catch weight, and primary/secondary packaging verification.",
+    "stepIds": [
+      "33a15d20-1aec-469d-b1da-b77fe7082daf",
+      "ff183065-f2ee-41fd-b20a-8cfc8ec36079",
+      "e5fcc92a-5d13-46a8-8805-b1d2d868377e",
+      "a971aa07-e6bf-4eb2-b4b3-44873ab4484e"
+    ],
+    "path": "packaging-nested"
+  },
+  "ead7c098-c397-416f-a9a0-d86344b3804b": {
+    "id": "ead7c098-c397-416f-a9a0-d86344b3804b",
+    "name": "Labeling — Nested Flow",
+    "summary": "From label copy draft to a verified, applied label.",
+    "stepIds": [
+      "1528d30a-75f1-4819-a2b3-acc03c4f0f41",
+      "e6cd4f4e-49b0-45fb-8714-c20075af0438",
+      "26d65cd2-dfa3-4d1c-a2c3-a07b19df32c7",
+      "4224adc1-d9bf-44b9-805f-1d15261eb870",
+      "8a91ee5a-aeed-440e-8a2d-7579a0e91d2a"
+    ],
+    "path": "labeling-nested"
+  },
+  "0c2b1002-986d-4b83-b2cf-c884adcc302d": {
+    "id": "0c2b1002-986d-4b83-b2cf-c884adcc302d",
+    "name": "Finished Goods Storage & Warehousing — Nested Flow",
+    "summary": "Shelf-life tracking and FEFO management from production output to shipment.",
+    "stepIds": [
+      "fd5b2239-f5a6-4228-80fc-f7142d34e33b",
+      "590dacbb-6224-4d91-a903-1e2f444674b6",
+      "bd71a1dd-ab62-470d-9e12-96775aa2d6c5",
+      "a73d62df-066b-404f-90c5-c0c72535170e"
+    ],
+    "path": "finished-goods-storage-nested"
+  },
+  "32075fac-92e3-4d58-8966-9eb423536b14": {
+    "id": "32075fac-92e3-4d58-8966-9eb423536b14",
+    "name": "Outbound Distribution & Logistics — Nested Flow (traceability events only)",
+    "summary": "Partial nested flow: only the trace-record-relevant events at the plant boundary, not full logistics management.",
+    "stepIds": [
+      "59fcfd66-adbb-4ec7-bc35-c15cb11d00d0",
+      "8f8fbd1c-e04c-41ce-a6f3-0f45dea98e31",
+      "23b48d9d-c8fd-495c-a4e1-bb8dcf84f8c3"
+    ],
+    "path": "outbound-distribution-logistics-nested"
+  },
+  "fa3dfd0e-f0b2-4d39-8caf-60db1a253cc1": {
+    "id": "fa3dfd0e-f0b2-4d39-8caf-60db1a253cc1",
+    "name": "Ingredient Sourcing & Procurement — Nested Flow",
+    "summary": "From selecting and qualifying a supplier through receiving and storing the material it ships.",
+    "stepIds": [
+      "9f14dc8e-3874-4a73-8f30-aca5b61feb7f",
+      "772ddd54-cf9a-4959-8bfd-ef9951aa4180",
+      "927aa4de-d050-4430-a674-60c42bbfdc28"
+    ],
+    "path": "ingredient-sourcing-procurement-nested"
+  },
+  "88001913-b6d1-4685-862a-f9ef01ba42a9": {
+    "id": "88001913-b6d1-4685-862a-f9ef01ba42a9",
+    "name": "Processing & Manufacturing — Nested Flow",
+    "summary": "From formulation/production planning through in-process quality control during the actual transformation run.",
+    "stepIds": [
+      "99b5625d-0e93-40b0-867e-6ac8add14b46",
+      "4937d2be-bd1b-49ae-9ea4-6ecafaf6cb1d",
+      "50c3d0e3-a82a-420b-9870-66a51c7c4d43",
+      "c40392f3-562d-4b24-a5d9-a4acf26e27f1"
+    ],
+    "path": "processing-manufacturing-nested"
+  },
+  "ff5086d9-b478-4a7e-b868-4ed8a0a2d7ec": {
+    "id": "ff5086d9-b478-4a7e-b868-4ed8a0a2d7ec",
+    "name": "Packaging — Nested Flow",
+    "summary": "Fill/seal/pack and labeling as the two steps inside the broader Packaging stage.",
+    "stepIds": [
+      "623c072a-ae9f-4a59-be16-976e0d8a73f6",
+      "3e709089-908f-4655-b4ef-a0477c3dda52"
+    ],
+    "path": "packaging-grouping-nested"
+  },
+  "87caa949-6840-4213-8110-16df363e1743": {
+    "id": "87caa949-6840-4213-8110-16df363e1743",
+    "name": "Distribution — Nested Flow",
+    "summary": "Finished goods storage and outbound distribution/logistics as the two steps inside the broader Distribution stage.",
+    "stepIds": [
+      "19458b96-3769-4644-ae1b-47cafc47db17",
+      "a32ac29d-5ba0-414b-b459-014cf2d33b3c"
+    ],
+    "path": "distribution-nested"
+  }
+}

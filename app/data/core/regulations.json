@@ -1,0 +1,157 @@
+{
+  "a00be301-0e39-42d5-b4ec-c1f0f2877821": {
+    "id": "a00be301-0e39-42d5-b4ec-c1f0f2877821",
+    "name": "Federal Food, Drug, and Cosmetic Act (FD&C Act)",
+    "year": 1938,
+    "agencyId": "2cf6d02e-5c41-40c6-8dea-2c5d9756b9c1",
+    "summary": "Cornerstone of FDA's food authority. Prohibits adulterated or misbranded food in interstate commerce; nearly all FDA food regulations issued under it."
+  },
+  "2f72c0de-4634-4798-9aca-4d01ec2c0084": {
+    "id": "2f72c0de-4634-4798-9aca-4d01ec2c0084",
+    "name": "Food Safety Modernization Act (FSMA)",
+    "year": 2011,
+    "agencyId": "2cf6d02e-5c41-40c6-8dea-2c5d9756b9c1",
+    "summary": "The most significant overhaul of US food safety law since 1938. Shifts food safety from a reactive (respond-to-outbreaks) model to a preventive model. Directed FDA to write seven major implementing rules (see fsma-pchf, fsma-pcaf, fsma-produce-safety-rule, fsma-fsvp, fsma-strf, fsma-ia-rule, fsma-204)."
+  },
+  "4db45158-1d5c-4b87-86ad-c022454a603e": {
+    "id": "4db45158-1d5c-4b87-86ad-c022454a603e",
+    "name": "Preventive Controls for Human Food (PCHF)",
+    "citation": "21 CFR Part 117",
+    "year": 2015,
+    "agencyId": "2cf6d02e-5c41-40c6-8dea-2c5d9756b9c1",
+    "summary": "Central FSMA rule for most manufacturers. Requires a written Food Safety Plan (hazard analysis, preventive controls, monitoring, corrective actions, verification, recall plan) overseen by a Preventive Controls Qualified Individual (PCQI), plus updated Current Good Manufacturing Practices (CGMPs). Exempts very small businesses, farms, and retail/restaurants (or gives modified requirements)."
+  },
+  "2daacfdd-b270-4df6-ad79-bd7a0af491f6": {
+    "id": "2daacfdd-b270-4df6-ad79-bd7a0af491f6",
+    "name": "Preventive Controls for Animal Food (PCAF)",
+    "citation": "21 CFR Part 507",
+    "year": 2015,
+    "agencyId": "2cf6d02e-5c41-40c6-8dea-2c5d9756b9c1",
+    "summary": "PCHF-equivalent rule for manufacturers of pet food and livestock feed; requires hazard analysis and preventive controls."
+  },
+  "bbacc25c-33bb-407e-bb70-c6e7a67f8784": {
+    "id": "bbacc25c-33bb-407e-bb70-c6e7a67f8784",
+    "name": "Produce Safety Rule (PSR)",
+    "citation": "21 CFR Part 112",
+    "year": 2015,
+    "agencyId": "2cf6d02e-5c41-40c6-8dea-2c5d9756b9c1",
+    "summary": "Applies to farms growing, harvesting, packing, or holding fresh produce consumed raw. Sets standards for agricultural water, biological soil amendments, worker hygiene, equipment/buildings, and animal intrusion. Does not apply to produce destined for commercial processing (e.g., canning)."
+  },
+  "ed70a1f5-bbb6-4ae3-96e3-0bea4d58dc9a": {
+    "id": "ed70a1f5-bbb6-4ae3-96e3-0bea4d58dc9a",
+    "name": "Foreign Supplier Verification Program (FSVP)",
+    "citation": "21 CFR Part 1, Subpart L",
+    "year": 2015,
+    "agencyId": "2cf6d02e-5c41-40c6-8dea-2c5d9756b9c1",
+    "summary": "Applies to US importers. Requires hazard analysis of each imported food, supplier verification activities, written records, and an FSVP Qualified Individual. Drives supplier management and documentation software for importers."
+  },
+  "41dc8af7-974a-4eaf-b4de-eacb5109dfb7": {
+    "id": "41dc8af7-974a-4eaf-b4de-eacb5109dfb7",
+    "name": "Sanitary Transportation Rule",
+    "citation": "21 CFR Part 1, Subpart O",
+    "year": 2016,
+    "agencyId": "2cf6d02e-5c41-40c6-8dea-2c5d9756b9c1",
+    "summary": "Applies to shippers, loaders, motor/rail carriers, and receivers. Requires written agreements defining responsibilities, vehicle/equipment cleanliness, temperature control during transport, and recordkeeping."
+  },
+  "3eecd978-8139-4ab1-948f-828c00c79f63": {
+    "id": "3eecd978-8139-4ab1-948f-828c00c79f63",
+    "name": "Intentional Adulteration Rule (Food Defense)",
+    "citation": "21 CFR Part 121",
+    "year": 2016,
+    "agencyId": "2cf6d02e-5c41-40c6-8dea-2c5d9756b9c1",
+    "summary": "Requires large food facilities to maintain a Food Defense Plan addressing deliberate contamination risk at four Actionable Process Attacks (bulk liquid receiving/loading, liquid storage/handling, secondary ingredient handling, mixing)."
+  },
+  "93b63909-560d-4414-8cb4-0920241e45a4": {
+    "id": "93b63909-560d-4414-8cb4-0920241e45a4",
+    "name": "Food Traceability Rule (FSMA Section 204)",
+    "citation": "21 CFR Part 1, Subpart S",
+    "year": 2022,
+    "complianceDeadline": "2026-01-20",
+    "agencyId": "2cf6d02e-5c41-40c6-8dea-2c5d9756b9c1",
+    "summary": "Requires companies that manufacture, process, pack, or hold foods on the Food Traceability List (FTL) to capture Key Data Elements (KDEs) at Critical Tracking Events (CTEs) and produce records to FDA within 24 hours of request. Electronic recordkeeping strongly encouraged given the retrieval window."
+  },
+  "52a1eeda-eb18-49b4-bc9f-d51a5ae9c39e": {
+    "id": "52a1eeda-eb18-49b4-bc9f-d51a5ae9c39e",
+    "name": "Federal Meat Inspection Act (FMIA)",
+    "year": 1906,
+    "agencyId": "aac69997-d9a2-4428-860f-1d8813e9ba5a",
+    "summary": "Gives FSIS authority over beef, pork, and lamb; requires ante-mortem and post-mortem inspection of animals."
+  },
+  "ac08bae1-7153-4c36-9af1-3969ebe48a4e": {
+    "id": "ac08bae1-7153-4c36-9af1-3969ebe48a4e",
+    "name": "Poultry Products Inspection Act (PPIA)",
+    "year": 1957,
+    "agencyId": "aac69997-d9a2-4428-860f-1d8813e9ba5a",
+    "summary": "FMIA-equivalent for chicken, turkey, and duck."
+  },
+  "b69b1236-0674-4d3a-9a57-f37584b74134": {
+    "id": "b69b1236-0674-4d3a-9a57-f37584b74134",
+    "name": "Egg Products Inspection Act (EPIA)",
+    "year": 1970,
+    "agencyId": "aac69997-d9a2-4428-860f-1d8813e9ba5a",
+    "summary": "Covers processed (liquid, frozen, dried) egg products; shell eggs remain under FDA."
+  },
+  "18c16d22-6037-4b00-a54b-d91b55a2e001": {
+    "id": "18c16d22-6037-4b00-a54b-d91b55a2e001",
+    "name": "Fair Packaging and Labeling Act (FPLA)",
+    "year": 1966,
+    "agencyId": "2cf6d02e-5c41-40c6-8dea-2c5d9756b9c1",
+    "summary": "Requires honest, informative labels on consumer products including food; jointly enforced by FDA and FTC."
+  },
+  "5fedae94-25ee-4237-9dca-d14b6b92b2d5": {
+    "id": "5fedae94-25ee-4237-9dca-d14b6b92b2d5",
+    "name": "Nutrition Labeling and Education Act (NLEA)",
+    "year": 1990,
+    "agencyId": "2cf6d02e-5c41-40c6-8dea-2c5d9756b9c1",
+    "summary": "Mandated the standardized Nutrition Facts panel on most packaged food and authorized specific nutrient content and health claims."
+  },
+  "b92fd46c-08fa-4a05-95d7-d030b0203096": {
+    "id": "b92fd46c-08fa-4a05-95d7-d030b0203096",
+    "name": "Food Allergen Labeling and Consumer Protection Act (FALCPA)",
+    "year": 2004,
+    "agencyId": "2cf6d02e-5c41-40c6-8dea-2c5d9756b9c1",
+    "summary": "Requires the 8 original major food allergens to be declared on labels either parenthetically in the ingredient list or via a 'Contains' statement. Amended by the FASTER Act (2021) to add sesame as the 9th major allergen, effective January 1, 2023."
+  },
+  "21122a4e-a901-444d-b6d5-8e7a03d67054": {
+    "id": "21122a4e-a901-444d-b6d5-8e7a03d67054",
+    "name": "Bioterrorism Act",
+    "fullName": "Public Health Security and Bioterrorism Preparedness and Response Act",
+    "year": 2002,
+    "agencyId": "2cf6d02e-5c41-40c6-8dea-2c5d9756b9c1",
+    "summary": "Required domestic and foreign food facilities to register with FDA (renewed every two years) and give prior notice of imported shipments. Established the baseline one-up/one-down traceability requirement: identify your immediate supplier and immediate customer."
+  },
+  "daa53a8a-1ab0-4a41-823b-0bd2779f0ee4": {
+    "id": "daa53a8a-1ab0-4a41-823b-0bd2779f0ee4",
+    "name": "HACCP regulation for meat and poultry",
+    "citation": "9 CFR Part 417",
+    "agencyId": "aac69997-d9a2-4428-860f-1d8813e9ba5a",
+    "summary": "Makes HACCP mandatory in USDA-regulated meat and poultry plants."
+  },
+  "0f215096-8098-4709-b7d5-8c2ecebf3422": {
+    "id": "0f215096-8098-4709-b7d5-8c2ecebf3422",
+    "name": "HACCP regulation for seafood",
+    "citation": "21 CFR Part 123",
+    "agencyId": "2cf6d02e-5c41-40c6-8dea-2c5d9756b9c1",
+    "summary": "Makes HACCP mandatory for seafood processors."
+  },
+  "a0ba0e0a-4847-4276-853c-1cc3b93e1c2e": {
+    "id": "a0ba0e0a-4847-4276-853c-1cc3b93e1c2e",
+    "name": "HACCP regulation for juice",
+    "citation": "21 CFR Part 120",
+    "agencyId": "2cf6d02e-5c41-40c6-8dea-2c5d9756b9c1",
+    "summary": "Makes HACCP mandatory for juice manufacturers."
+  },
+  "2adc08a2-5082-4f11-9890-73c5c1bb546e": {
+    "id": "2adc08a2-5082-4f11-9890-73c5c1bb546e",
+    "name": "National Bioengineered Food Disclosure Standard (NBFDS)",
+    "year": 2022,
+    "agencyId": "c8b293a1-17bc-42b2-b023-7d0c6dba905d",
+    "summary": "Requires disclosure of bioengineered (GMO) food ingredients via text, USDA BE symbol, QR code, or phone number/URL. Mandatory for most packaged foods since January 2022; highly refined ingredients with no detectable modified genetic material are generally exempt."
+  },
+  "719f7e9a-1a25-4253-93f4-b03c648b5265": {
+    "id": "719f7e9a-1a25-4253-93f4-b03c648b5265",
+    "name": "National Organic Program (NOP)",
+    "agencyId": "c8b293a1-17bc-42b2-b023-7d0c6dba905d",
+    "summary": "Certifies organic farms and handlers and defines labeling tiers: 100% Organic, Organic (≥95%), Made with Organic [ingredient] (≥70%)."
+  }
+}

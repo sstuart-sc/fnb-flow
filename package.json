@@ -1,0 +1,11 @@
+{
+  "name": "fb-stream-map",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Navigable data model and static viewer for the food & beverage manufacturing stream.",
+  "scripts": {
+    "start": "npx --yes serve app -l 8000",
+    "serve": "npx --yes serve app -l 8000"
+  },
+  "license": "UNLICENSED"
+}

@@ -1,0 +1,314 @@
+{
+  "f7dd7ca7-fd92-4272-a2f3-0d71fbd967fa": {
+    "id": "f7dd7ca7-fd92-4272-a2f3-0d71fbd967fa",
+    "name": "Supplier Questionnaire",
+    "format": "form/document",
+    "lifecycle": "Completed by prospective supplier; retained as part of qualification file."
+  },
+  "3dad5836-8dd0-4732-a84a-5efa09c84ba1": {
+    "id": "3dad5836-8dd0-4732-a84a-5efa09c84ba1",
+    "name": "Structured COA Data Schema",
+    "format": "data schema (per-lot record with a repeating parameter list)",
+    "lifecycle": "Defines how a Certificate of Analysis's contents are captured as structured data instead of read manually off a PDF. Header fields (once per COA): supplier id, material/product id, lot number, COA issue date, received-lot reference. Repeating parameter list (one row per tested parameter, mirroring what the Material / Product Specification defines for that material): parameter name (e.g. moisture, aflatoxin, aerobic plate count), reported value, unit, spec limit type (min / max / range / target), spec limit value(s), and a derived pass/fail flag. The pass/fail flag is computed automatically by comparing reported value against the matching parameter on the Material / Product Specification — this comparison, done today by a person reading a PDF against a paper spec sheet, is the specific manual step Module 4 flags as the automation target. A COA with any parameter flagged fail routes to disposition (reject lot / use-as-is deviation / return to supplier) rather than being released to inventory automatically."
+  },
+  "03dcbbf1-8518-4030-bb66-c10e4c777a5f": {
+    "id": "03dcbbf1-8518-4030-bb66-c10e4c777a5f",
+    "name": "Supplier Risk Assessment Record",
+    "format": "document",
+    "lifecycle": "Created during qualification; reviewed periodically to adjust verification intensity. The tier assigned here is looked up from the Supplier Risk Scoring Matrix (see that artifact)."
+  },
+  "d3ffd93c-4dc3-4497-a82e-158181ac79e3": {
+    "id": "d3ffd93c-4dc3-4497-a82e-158181ac79e3",
+    "name": "Supplier Risk Scoring Matrix",
+    "format": "reference table, versioned",
+    "lifecycle": "Maintained by food safety/quality leadership; revisited on major recall events or annual program review. Combines two inputs into a Risk Tier that sets required verification intensity: Ingredient Criticality (High — e.g. RTE, major allergen, prior recall history; Medium; Low — e.g. shelf-stable, no recall history) crossed with Supplier Performance History (Good/Fair/Poor, per the Supplier Performance Scorecard). The resulting tier drives audit frequency and testing/COA frequency: High tier → audit every 6–12 months, COA plus testing every lot; Medium tier → audit every 12–24 months, COA every lot, periodic testing; Low tier → audit every 24–36 months, COA every lot, testing via receipt sampling plan. A supplier's tier can only improve or worsen at the next scheduled review — a single new data point (e.g. one failed audit) escalates it immediately, per standard risk-based verification practice under FSMA Preventive Controls / GFSI schemes."
+  },
+  "4e16ee4f-d132-44e5-ac05-b88b4767e5ff": {
+    "id": "4e16ee4f-d132-44e5-ac05-b88b4767e5ff",
+    "name": "GFSI-Recognized Audit Report",
+    "format": "document (PDF)",
+    "lifecycle": "Issued by third-party auditor (SQF/BRC/FSSC); collected at qualification and each re-audit cycle (typically annual)."
+  },
+  "5ecdd375-c8ce-4b2f-a069-1d1948c844e2": {
+    "id": "5ecdd375-c8ce-4b2f-a069-1d1948c844e2",
+    "name": "Supplier Certification Record",
+    "format": "document",
+    "lifecycle": "Collected at qualification for organic/kosher/halal/gluten-free/etc. certifications; renewed on certificate expiry."
+  },
+  "56526379-12e6-4c0f-a1fc-bd1c83d9f1a0": {
+    "id": "56526379-12e6-4c0f-a1fc-bd1c83d9f1a0",
+    "name": "Material / Product Specification",
+    "format": "document, versioned",
+    "lifecycle": "Authored at supplier or product qualification; revised under change control; referenced by receiving, in-process QC, and label copy. Each specified parameter (name, unit, limit type, limit value) is what a Structured COA Data Schema record is checked against (see that artifact)."
+  },
+  "4c7a9c60-4652-4ccd-8a99-de688943fdf3": {
+    "id": "4c7a9c60-4652-4ccd-8a99-de688943fdf3",
+    "name": "Lab Test Result",
+    "format": "data record",
+    "lifecycle": "Generated per test event by internal or external lab; compared against specification limits."
+  },
+  "e633d7e7-fd2f-458b-b7e0-837e92dbb64a": {
+    "id": "e633d7e7-fd2f-458b-b7e0-837e92dbb64a",
+    "name": "Approved Supplier List (ASL)",
+    "format": "register/data record",
+    "lifecycle": "Updated on supplier approval, suspension, or removal; referenced by procurement before any PO is placed."
+  },
+  "69f4ab73-992a-4852-b94e-0440b2304521": {
+    "id": "69f4ab73-992a-4852-b94e-0440b2304521",
+    "name": "Certificate of Analysis (COA)",
+    "format": "document per lot",
+    "lifecycle": "Issued by supplier per shipped lot; reviewed at receiving and retained for the lot's traceability record. Structurally, its contents follow the Structured COA Data Schema (see that artifact) — as-received it's still typically a PDF, but the fields it contains map 1:1 onto that schema for automated comparison."
+  },
+  "234121ca-a7cb-4c99-8a09-7e947e62d724": {
+    "id": "234121ca-a7cb-4c99-8a09-7e947e62d724",
+    "name": "Supplier Performance Scorecard",
+    "format": "recurring report, one per supplier, typically quarterly",
+    "lifecycle": "Generated on a recurring cadence (typically quarterly) by rolling up three tracked metrics since the prior scorecard: on-time delivery rate (% of shipments received within the agreed window), COA exception rate (% of received lots whose COA required follow-up — out-of-spec result, missing required field, late submission), and audit/re-audit trend (pass/minor-findings/major-findings across the supplier's audit history). Each metric is rated Good/Fair/Poor against a documented threshold (e.g. on-time ≥95% = Good, 85–95% = Fair, <85% = Poor); the three ratings combine into the overall Supplier Performance History rating referenced by the Supplier Risk Scoring Matrix, which is what actually determines required audit and testing frequency going forward. A Poor rating on any single metric triggers an off-cycle review rather than waiting for the next scheduled scorecard."
+  },
+  "fc2cc2d7-c0e6-4a2c-b0e8-d110914627d2": {
+    "id": "fc2cc2d7-c0e6-4a2c-b0e8-d110914627d2",
+    "name": "Advance Ship Notice (ASN / EDI 856)",
+    "format": "EDI transaction",
+    "lifecycle": "Sent by shipper before truck arrival; consumed by receiver's WMS to pre-stage the receipt."
+  },
+  "3877cc5e-51b7-411c-8dd0-f3cbfd93306d": {
+    "id": "3877cc5e-51b7-411c-8dd0-f3cbfd93306d",
+    "name": "Receiving Log",
+    "format": "data record",
+    "lifecycle": "Created at dock receipt; one entry per inbound shipment."
+  },
+  "620aaecb-0b8f-4336-8f3e-86716178923b": {
+    "id": "620aaecb-0b8f-4336-8f3e-86716178923b",
+    "name": "Temperature Record",
+    "format": "data record (often IoT-generated)",
+    "lifecycle": "Captured continuously or at checkpoints (receiving, thawing, transport); retained for cold-chain and regulatory evidence."
+  },
+  "49339f48-e8be-4bdb-a9d9-58a6193d1ac9": {
+    "id": "49339f48-e8be-4bdb-a9d9-58a6193d1ac9",
+    "name": "Receiving Inspection Record",
+    "format": "data record",
+    "lifecycle": "Created per lot at incoming inspection; references the material specification and drives disposition."
+  },
+  "9019fee0-1775-4638-a520-fece292e426e": {
+    "id": "9019fee0-1775-4638-a520-fece292e426e",
+    "name": "Hold / Quarantine Tag",
+    "format": "physical tag and/or system status flag",
+    "lifecycle": "Applied when material fails inspection or awaits testing; removed only on formal release."
+  },
+  "733c42da-63cb-4309-b90f-eada2c4a97f7": {
+    "id": "733c42da-63cb-4309-b90f-eada2c4a97f7",
+    "name": "Inventory Location Record",
+    "format": "data record",
+    "lifecycle": "Updated on every putaway, pick, and move; core input to FEFO logic and mock recall inventory tracing."
+  },
+  "e22bc4a2-d974-46c6-ac7b-9c3c1b5b3e04": {
+    "id": "e22bc4a2-d974-46c6-ac7b-9c3c1b5b3e04",
+    "name": "Allergen Matrix",
+    "format": "document/table",
+    "lifecycle": "Maintained by quality/formulation; updated whenever a product formulation or production line assignment changes; consumed by scheduling and label review. Each product's row is the input set the Allergen Sequencing Algorithm reads to determine run order."
+  },
+  "29c66c1b-1d4b-4c1a-92b4-2c951493253d": {
+    "id": "29c66c1b-1d4b-4c1a-92b4-2c951493253d",
+    "name": "Allergen Sequencing Algorithm",
+    "format": "scheduling logic specification",
+    "lifecycle": "Consumed by the production scheduling system whenever the day/week's run list is ordered for a line. Formalizes the conceptual \"fewer to more allergens\" principle into an ordering rule: represent each candidate run as its allergen set from the Allergen Matrix; a run A may be sequenced immediately before run B without a full allergen changeover only if A's allergen set is a subset of B's (nothing in A is absent from B, so no allergen is being removed from the line). Within that constraint, order runs so allergen-free products go first, then order the rest by increasing set size (fewest allergens to most), breaking ties by shelf-life/due-date priority. Any pair of adjacent runs where B's set does NOT contain all of A's allergens requires a full changeover — the algorithm's output includes an explicit changeover flag on the transition into each run so the schedule captures required cleaning time (see Allergen Changeover Cleaning Record) rather than treating it as free capacity. When no valid subset ordering can clear the full run list without changeovers (unavoidable with certain allergen-set combinations), the algorithm minimizes the total count of changeovers rather than eliminating them, since full elimination isn't always possible."
+  },
+  "88e93798-54de-421a-9d7c-cc54f65d4a47": {
+    "id": "88e93798-54de-421a-9d7c-cc54f65d4a47",
+    "name": "Demand Forecast",
+    "format": "data record",
+    "lifecycle": "Regenerated on a rolling basis (weekly/monthly) over a 4-13 week horizon; feeds the MPS."
+  },
+  "429b1edf-4726-4530-b8db-680ec0761622": {
+    "id": "429b1edf-4726-4530-b8db-680ec0761622",
+    "name": "Bill of Materials (BOM) / Recipe",
+    "format": "document, versioned",
+    "lifecycle": "Created at formulation, revised under change control whenever the recipe changes; must match the label ingredient statement at all times."
+  },
+  "b6417e04-03ad-400f-bbe3-ba9a111eaeb9": {
+    "id": "b6417e04-03ad-400f-bbe3-ba9a111eaeb9",
+    "name": "Master Production Schedule (MPS)",
+    "format": "schedule/data record",
+    "lifecycle": "Rebuilt on a rolling cadence from demand forecast and capacity constraints; drives MRP and line scheduling."
+  },
+  "3250a117-60b4-4053-b8cf-bf13f59faa1b": {
+    "id": "3250a117-60b4-4053-b8cf-bf13f59faa1b",
+    "name": "Purchase Order (EDI 850)",
+    "format": "EDI transaction / document",
+    "lifecycle": "Generated by MRP or procurement; acknowledged by supplier (EDI 855); closed on receipt."
+  },
+  "6eabd20b-f5d1-4efa-9f14-e80efb204c97": {
+    "id": "6eabd20b-f5d1-4efa-9f14-e80efb204c97",
+    "name": "Production / Work Order",
+    "format": "data record",
+    "lifecycle": "Released from the MPS to the floor; drives material staging and batch record creation."
+  },
+  "29b066a1-910f-45b5-bd65-205d53da0ba4": {
+    "id": "29b066a1-910f-45b5-bd65-205d53da0ba4",
+    "name": "Batch / Production Record",
+    "format": "data record, electronic or paper",
+    "lifecycle": "Opened at batching, populated through the run (ingredients, parameters, CCP results), closed and retained at run completion — the core traceability record for a lot."
+  },
+  "83d48320-9598-4069-b091-c032b4e36fd7": {
+    "id": "83d48320-9598-4069-b091-c032b4e36fd7",
+    "name": "Line Clearance Record",
+    "format": "data record",
+    "lifecycle": "Completed before each run start, especially after an allergen changeover; verifies the line is clear before production resumes."
+  },
+  "7a252b54-ea94-4cd4-ac17-c4e00c174340": {
+    "id": "7a252b54-ea94-4cd4-ac17-c4e00c174340",
+    "name": "HACCP Plan",
+    "format": "document, versioned",
+    "lifecycle": "Authored by the HACCP team; reviewed/revalidated at least annually or on process/hazard change; governs CCP monitoring. Contains one CCP Definition (see that artifact) per CCP in scope."
+  },
+  "e8d03bfb-7a45-46f4-80ee-be037dd5e218": {
+    "id": "e8d03bfb-7a45-46f4-80ee-be037dd5e218",
+    "name": "CCP Definition",
+    "format": "structured record, one per CCP, held within the HACCP Plan",
+    "lifecycle": "Authored/revised whenever the HACCP Plan is authored or revalidated. Captures, per CCP: its critical limit(s) (e.g. cook temp ≥ 165°F), required monitoring frequency, and a reference to its corrective-action procedure. Every CCP Monitoring Log entry references exactly one CCP Definition and is checked against that definition's critical limit; every Corrective Action Record traces back to the CCP Definition that was exceeded via the monitoring event that failed."
+  },
+  "1bdfade9-acc5-4535-891f-87d4cf762f5c": {
+    "id": "1bdfade9-acc5-4535-891f-87d4cf762f5c",
+    "name": "CCP Monitoring Log",
+    "format": "data record, often IoT-fed",
+    "lifecycle": "Generated per monitoring event at the required frequency; the primary evidence a CCP was under control. Each entry references the CCP Definition it monitors and carries the observed value plus pass/fail against that definition's critical limit; a failing entry is what triggers a Corrective Action Record."
+  },
+  "1123026c-158f-41ad-acb2-9f67b6fb4e09": {
+    "id": "1123026c-158f-41ad-acb2-9f67b6fb4e09",
+    "name": "Corrective Action Record",
+    "format": "data record",
+    "lifecycle": "Opened on a CCP deviation or nonconformance; tracked to closure with root cause and verification of effectiveness. When opened for a CCP deviation, references the specific failing CCP Monitoring Log entry and, through it, the CCP Definition whose critical limit was exceeded."
+  },
+  "238f08d4-2e35-498a-817d-683f36822b65": {
+    "id": "238f08d4-2e35-498a-817d-683f36822b65",
+    "name": "Allergen Changeover Cleaning Record",
+    "format": "data record",
+    "lifecycle": "Created at each allergen changeover; includes cleaning verification (visual/ELISA/ATP) results before the line can resume."
+  },
+  "97409332-015e-4473-a32b-26b71bc67d07": {
+    "id": "97409332-015e-4473-a32b-26b71bc67d07",
+    "name": "Master Sanitation Schedule (MSS)",
+    "format": "document",
+    "lifecycle": "Maintained as a standing prerequisite-program document; each entry executed and verified per its defined frequency."
+  },
+  "4f930f5c-736e-451e-bd14-7a2b0e9538b1": {
+    "id": "4f930f5c-736e-451e-bd14-7a2b0e9538b1",
+    "name": "Environmental Monitoring Record",
+    "format": "data record",
+    "lifecycle": "Created per swab event; trended over time to detect pathogen harborage patterns, especially Listeria in RTE facilities. Each record is tagged with its site's EMP zone (see EMP Zone & Trending Standard) — trending is done per site, grouped by zone, not as one undifferentiated pool of results."
+  },
+  "28e2958f-d4ed-42e4-8c0f-0de1c418f5e1": {
+    "id": "28e2958f-d4ed-42e4-8c0f-0de1c418f5e1",
+    "name": "EMP Zone & Trending Standard",
+    "format": "reference standard, versioned",
+    "lifecycle": "Maintained by food safety leadership; revised when the site map changes (new equipment, layout change) or after a positive finding prompts adding sites. Every swab site is assigned one of 4 zones by proximity to exposed product: Zone 1 (food-contact surfaces), Zone 2 (non-food-contact surfaces near product, e.g. equipment housings), Zone 3 (surfaces further from product but within the room, e.g. floors/drains/walls), Zone 4 (outside the immediate production area, e.g. hallways, break rooms). Required swab frequency and acceptable-positive-rate tighten by zone (Zone 1 has the lowest tolerance and highest frequency). Each site is trended individually over its rolling swab history; two consecutive positives at the same Zone 2/3 site, or any Zone 1 positive, is a harborage indicator that triggers the standard's escalation path: intensified swabbing of that site plus adjacent sites (\"search and destroy\"), root-cause investigation, and hold on the escalation until 3 consecutive clean results confirm the harborage is eliminated."
+  },
+  "19a94ed7-40fa-43b5-9868-a2ce2e2b1cef": {
+    "id": "19a94ed7-40fa-43b5-9868-a2ce2e2b1cef",
+    "name": "SPC Control Chart",
+    "format": "data record/chart",
+    "lifecycle": "Updated continuously as in-process samples are measured; reviewed to detect out-of-control (not necessarily out-of-spec) trends."
+  },
+  "209c4879-7b77-46e8-91e2-153eac453a77": {
+    "id": "209c4879-7b77-46e8-91e2-153eac453a77",
+    "name": "Nonconformance Record",
+    "format": "data record",
+    "lifecycle": "Opened whenever a result fails specification; feeds OOS disposition and potentially CAPA."
+  },
+  "76dd2e5a-20a8-4f19-8fc1-3b78be49fee3": {
+    "id": "76dd2e5a-20a8-4f19-8fc1-3b78be49fee3",
+    "name": "CAPA (Corrective and Preventive Action) Record",
+    "format": "data record",
+    "lifecycle": "Opened from a nonconformance or trend; includes root cause (5 Whys/fishbone), action plan, owner, due date, and effectiveness verification; tracked to closure."
+  },
+  "9e388600-1312-452b-8d07-3a0efd5202f9": {
+    "id": "9e388600-1312-452b-8d07-3a0efd5202f9",
+    "name": "Catch Weight Record",
+    "format": "data record",
+    "lifecycle": "Captured per unit/case at packaging for variable-weight products; used for both inventory count and weight-based pricing. Structurally follows the Catch-Weight Data Model (see that artifact) rather than the single fixed-quantity field most ERP/WMS systems assume."
+  },
+  "2e49adf0-dbf5-4625-bfda-b538e7085483": {
+    "id": "2e49adf0-dbf5-4625-bfda-b538e7085483",
+    "name": "Catch-Weight Data Model",
+    "format": "data model specification",
+    "lifecycle": "Defines how a variable-weight unit is represented so a single fixed quantity field (what most standard ERP/WMS modules assume) doesn't lose information. Every catch-weight unit carries two independent quantities that must both be tracked and both flow through to invoicing: count (1 case, 1 each) and actual weight (e.g. 42.3 lb), plus the unit of measure the weight is captured in. Nominal/catalog weight (the average or list weight used for planning and initial pricing estimates) is stored separately from actual weight (the real, measured value for that specific unit) — the two are expected to diverge and inventory/financial calculations must use actual, not nominal. GS1's variable-measure GTIN and price-embedded barcode conventions (e.g. GS1-128 Application Identifiers for net weight) are the standard mechanism for carrying actual weight from the scale through label, shipping, and invoicing without re-keying. A pure count-based ERP/WMS integration built against this data model needs a parallel weight field wherever quantity is used — receiving, inventory, pricing, and shipping — not just at the point of sale."
+  },
+  "a7ea6ca7-6b6e-4101-beff-e581956d8a36": {
+    "id": "a7ea6ca7-6b6e-4101-beff-e581956d8a36",
+    "name": "Package Integrity / Foreign Material Inspection Record",
+    "format": "data record",
+    "lifecycle": "Generated per inspection event (metal detector, X-ray) at packaging; rejections logged and disposed per procedure."
+  },
+  "6425e8df-c318-495b-ae4e-a3a81af541f1": {
+    "id": "6425e8df-c318-495b-ae4e-a3a81af541f1",
+    "name": "Label Copy Draft",
+    "format": "document, versioned",
+    "lifecycle": "Drafted from the BOM and marketing input; revised through QA/regulatory review before artwork."
+  },
+  "3afd5ba3-988d-462f-836b-b99ec6c661c2": {
+    "id": "3afd5ba3-988d-462f-836b-b99ec6c661c2",
+    "name": "Label Compliance Checklist",
+    "format": "document/checklist",
+    "lifecycle": "Completed during allergen/claims verification. Each line item on the checklist corresponds to one rule in the Label Compliance Check Catalog (see that artifact), which is what makes the checklist a candidate for automated tooling rather than manual review."
+  },
+  "d1139caf-37bd-4f97-9220-08feba95bdce": {
+    "id": "d1139caf-37bd-4f97-9220-08feba95bdce",
+    "name": "Label Compliance Check Catalog",
+    "format": "rule catalog, versioned",
+    "lifecycle": "Maintained by regulatory/QA; extended when a new claim type or allergen regulation is adopted. Enumerates the specific, automatable checks behind allergen/claims verification, each expressed as a comparison between two existing data sources rather than a free-text review: (1) Allergen cross-check — every major allergen present in the Material/Product Specification's ingredient list for the formulation must appear in the label's \"Contains\" statement, and nothing in the Contains statement may be absent from the ingredients (catches both under- and over-declaration); (2) Claim threshold checks — nutrient-content claims (\"low fat\", \"reduced sodium\", \"good source of fiber\", etc.) are checked against the FDA-defined numeric threshold for that claim wording, using the calculated Nutrition Facts values for the formulation; (3) Structure/format checks — allergen statement placement, type size minimums, and required statements (e.g. gluten-free labeling's <20ppm attestation) are present per the applicable regulation for the claim(s) made. A failing check blocks label approval and routes back to formulation or label copy rather than to print; a passing run against all applicable rules is what allows the checklist to close without manual re-review of ingredients the system already had structured data for."
+  },
+  "68a4cc0a-b5c0-4ba4-91de-332c4c74c684": {
+    "id": "68a4cc0a-b5c0-4ba4-91de-332c4c74c684",
+    "name": "Label Artwork File",
+    "format": "design file, versioned",
+    "lifecycle": "Produced by design agency from approved label copy; goes through final approval before print; version-controlled to prevent obsolete artwork use."
+  },
+  "f6d69f97-18d8-4a0f-b4fb-77c9320edb1d": {
+    "id": "f6d69f97-18d8-4a0f-b4fb-77c9320edb1d",
+    "name": "FSIS Label Submission",
+    "format": "document/regulatory filing",
+    "lifecycle": "Submitted to FSIS for meat/poultry products; must receive pre-approval before the label can be used — a common operational bottleneck."
+  },
+  "ffb44422-779f-4bc8-86be-ff6fa6d73d68": {
+    "id": "ffb44422-779f-4bc8-86be-ff6fa6d73d68",
+    "name": "Lot / Date Code Record",
+    "format": "data record",
+    "lifecycle": "Generated at lot coding, encoding production date/shift/line; becomes the join key for all downstream traceability records for that lot."
+  },
+  "f2777655-3ff5-43b8-9e51-494f0704b2a6": {
+    "id": "f2777655-3ff5-43b8-9e51-494f0704b2a6",
+    "name": "Label Application Verification Record",
+    "format": "data record",
+    "lifecycle": "Generated per in-line vision-system check confirming correct label/lot code applied to the correct product."
+  },
+  "70dd593f-d5f5-4ef5-8e57-decefe3ba0a5": {
+    "id": "70dd593f-d5f5-4ef5-8e57-decefe3ba0a5",
+    "name": "Shelf-Life / Remaining Shelf-Life Record",
+    "format": "data record",
+    "lifecycle": "Calculated from production/expiration dates; checked against customer minimum-remaining-shelf-life requirements at shipment."
+  },
+  "551a4e09-160c-4f45-ac51-2000370afcab": {
+    "id": "551a4e09-160c-4f45-ac51-2000370afcab",
+    "name": "Shipping Record",
+    "format": "data record",
+    "lifecycle": "Created at outbound shipment; records lot(s), quantity, and destination — the FSMA 204 Shipping CTE record. Its required fields are defined by the Carrier Handoff KDE Set (see that artifact), which is what the plant must actually capture at trailer loading to keep the trace record continuous once custody passes to the carrier."
+  },
+  "b5e32a3a-afdb-4264-a583-9bfcf21d6999": {
+    "id": "b5e32a3a-afdb-4264-a583-9bfcf21d6999",
+    "name": "Carrier Handoff KDE Set",
+    "format": "field-level data standard",
+    "lifecycle": "Defines the specific Key Data Elements FSMA 204 requires the shipper to record for the Shipping Critical Tracking Event, since this is the plant's last touchpoint before the trace record depends on a party outside its direct control: traceability lot code(s) and product identifier (GTIN or equivalent) for what's being shipped, quantity and unit of measure, ship-from location identifier (GLN), ship-to location identifier, date shipped, and the transporter's identity. For cold-chain product, trailer temperature at load (see Temperature Record) is captured alongside as the plant's evidence of condition at handoff, though it is a plant food-safety record rather than an FSMA 204 KDE itself. Once these fields are captured and the Shipping Record is created, continuity of the trace record downstream depends on the receiving party's own Receiving CTE — the plant's obligation is fully discharged by capturing its own KDE set correctly, not by tracking what happens after handoff."
+  },
+  "9cc2d1ff-a495-474c-bc2d-5615fe7e94bb": {
+    "id": "9cc2d1ff-a495-474c-bc2d-5615fe7e94bb",
+    "name": "Traceability Lot Code (TLC) Record",
+    "format": "data record (FSMA 204)",
+    "lifecycle": "Assigned at the point of transformation (or initial packing, for unprocessed FTL foods); must be maintained and passed forward through every subsequent shipment."
+  },
+  "1188e42e-3097-4203-b657-0f88020f34f0": {
+    "id": "1188e42e-3097-4203-b657-0f88020f34f0",
+    "name": "EPCIS Event",
+    "format": "GS1 EPCIS data record",
+    "lifecycle": "Emitted at supply-chain touchpoints (what/where/when/why); the emerging de facto format for sharing FSMA 204 traceability data across company boundaries."
+  }
+}

@@ -1,0 +1,146 @@
+{
+  "vendor": "SafetyChain",
+  "summary": "Cloud-based FSQA platform. Maps onto the plant-scope slice of the primary flow (steps 2 through the traceability-record portion of 12). This overlay references into the core data; the core never references back, per the plan's vendor-neutral design.",
+  "note": "This mapping is a first-pass read of SafetyChain's product surface against the stream, flagged in the plan for correction against internal docs — not yet confirmed.",
+  "modules": [
+    {
+      "id": "safetychain-supplier-management",
+      "name": "Supplier Management",
+      "mapsToStepIds": [
+        "30866752-f7e4-4c98-a5e4-39e2cba6beb1",
+        "a97eb99a-b765-4743-a8e9-b522717fcdcc",
+        "f44a19ca-d12c-4566-858e-bcd15867ff74",
+        "27cb1649-3e29-4c72-a163-72c3b8c30028",
+        "c14b6c21-87d1-4c98-b874-b89d86f990f5"
+      ],
+      "mapsToSystemIds": [
+        "73835e3c-9d70-49bf-b855-e25139be8426"
+      ],
+      "mapsToArtifactIds": [
+        "f7dd7ca7-fd92-4272-a2f3-0d71fbd967fa",
+        "4e16ee4f-d132-44e5-ac05-b88b4767e5ff",
+        "5ecdd375-c8ce-4b2f-a069-1d1948c844e2",
+        "e633d7e7-fd2f-458b-b7e0-837e92dbb64a",
+        "69f4ab73-992a-4852-b94e-0440b2304521"
+      ]
+    },
+    {
+      "id": "safetychain-food-safety-programs",
+      "name": "Food Safety Programs (HACCP / Preventive Controls)",
+      "mapsToStepIds": [
+        "454a05bd-7e29-4750-8738-b0add331db8b",
+        "6532e290-5ee1-4d59-b364-33f4308347cb",
+        "b9382349-bf15-4564-b822-de458d7e1e02",
+        "3a08d5f0-1981-465e-a538-e1a7b674c81a",
+        "6105447b-2425-420c-acbe-3fd436d078c2",
+        "04a4e8bc-8ed5-4fae-8ca8-0d9081e7ecae",
+        "12ed6f1d-97b8-4053-9e44-4bad182fddb3",
+        "675a0808-4ab3-417e-9505-70fdf07a77d2"
+      ],
+      "mapsToSystemIds": [
+        "06ff688b-147f-4fde-846c-35ad49d333bc"
+      ],
+      "mapsToArtifactIds": [
+        "7a252b54-ea94-4cd4-ac17-c4e00c174340",
+        "1bdfade9-acc5-4535-891f-87d4cf762f5c",
+        "1123026c-158f-41ad-acb2-9f67b6fb4e09",
+        "238f08d4-2e35-498a-817d-683f36822b65",
+        "97409332-015e-4473-a32b-26b71bc67d07",
+        "4f930f5c-736e-451e-bd14-7a2b0e9538b1",
+        "49339f48-e8be-4bdb-a9d9-58a6193d1ac9"
+      ]
+    },
+    {
+      "id": "safetychain-quality-management",
+      "name": "Quality Management (specs, CAPA, audits)",
+      "mapsToStepIds": [
+        "885b5c81-29e7-42a9-be5e-72c6f48a9cde",
+        "a72fb5b8-011c-4547-924d-dd4814c8a897",
+        "006beb57-354a-4871-bdc7-32064cd309ba",
+        "d83408b4-06a9-462c-9c76-2f365071799d",
+        "e6cd4f4e-49b0-45fb-8714-c20075af0438",
+        "26d65cd2-dfa3-4d1c-a2c3-a07b19df32c7"
+      ],
+      "mapsToSystemIds": [
+        "06ff688b-147f-4fde-846c-35ad49d333bc"
+      ],
+      "mapsToArtifactIds": [
+        "76dd2e5a-20a8-4f19-8fc1-3b78be49fee3",
+        "209c4879-7b77-46e8-91e2-153eac453a77",
+        "19a94ed7-40fa-43b5-9868-a2ce2e2b1cef",
+        "56526379-12e6-4c0f-a1fc-bd1c83d9f1a0",
+        "3afd5ba3-988d-462f-836b-b99ec6c661c2"
+      ]
+    },
+    {
+      "id": "safetychain-production-monitoring",
+      "name": "Production Monitoring",
+      "mapsToStepIds": [
+        "17687176-061a-4bcd-a503-bca8d8f62fa1",
+        "f04cba8c-96ab-471b-acc1-bf9304194a95",
+        "e43ad2c4-a64f-4e54-9f3c-93cb221ef0df",
+        "2fb84bc7-c1cb-447f-8a14-84418b7615a3",
+        "66457337-68b1-4f15-9207-36d3601e6d76",
+        "fe32d3ac-44c1-4fb8-805e-785a9825ed67",
+        "b2f6e872-dcca-4767-9206-055cd8f5c052",
+        "12b7b8be-c7d4-4b6a-b6a2-585f2f64776b",
+        "d2bd63b9-9b1c-47b2-8627-c590c5c69be5",
+        "ad144aa0-ac9a-4052-9ae0-fda1670a59c1",
+        "662579e0-38ef-4570-a388-c7bcef2a32f3",
+        "ea870c3a-7428-4e75-ad57-8b96b9ea3139",
+        "00923788-92f4-40d0-868f-21eb57d5380b",
+        "33a15d20-1aec-469d-b1da-b77fe7082daf",
+        "ff183065-f2ee-41fd-b20a-8cfc8ec36079",
+        "e5fcc92a-5d13-46a8-8805-b1d2d868377e",
+        "a971aa07-e6bf-4eb2-b4b3-44873ab4484e",
+        "fd5b2239-f5a6-4228-80fc-f7142d34e33b",
+        "590dacbb-6224-4d91-a903-1e2f444674b6",
+        "bd71a1dd-ab62-470d-9e12-96775aa2d6c5",
+        "a73d62df-066b-404f-90c5-c0c72535170e"
+      ],
+      "mapsToSystemIds": [
+        "3628303b-f98e-4dc6-8627-9ad94b5af3dd",
+        "39da6cf5-44d6-44d3-b613-d86a3530a7b1",
+        "798d71ae-178b-4f6b-bd3d-c3b58bd2013b",
+        "7e49ad00-a211-4140-a869-d669d929d49e"
+      ],
+      "mapsToArtifactIds": [
+        "29b066a1-910f-45b5-bd65-205d53da0ba4",
+        "6eabd20b-f5d1-4efa-9f14-e80efb204c97",
+        "b6417e04-03ad-400f-bbe3-ba9a111eaeb9",
+        "429b1edf-4726-4530-b8db-680ec0761622",
+        "9e388600-1312-452b-8d07-3a0efd5202f9",
+        "a7ea6ca7-6b6e-4101-beff-e581956d8a36",
+        "70dd593f-d5f5-4ef5-8e57-decefe3ba0a5"
+      ]
+    },
+    {
+      "id": "safetychain-traceability",
+      "name": "Traceability & Lot Genealogy",
+      "mapsToStepIds": [
+        "4224adc1-d9bf-44b9-805f-1d15261eb870",
+        "a73d62df-066b-404f-90c5-c0c72535170e",
+        "59fcfd66-adbb-4ec7-bc35-c15cb11d00d0",
+        "8f8fbd1c-e04c-41ce-a6f3-0f45dea98e31",
+        "23b48d9d-c8fd-495c-a4e1-bb8dcf84f8c3"
+      ],
+      "mapsToSystemIds": [
+        "22e46c8f-cf7e-4d53-b5f2-56c939ee76ff"
+      ],
+      "mapsToArtifactIds": [
+        "ffb44422-779f-4bc8-86be-ff6fa6d73d68",
+        "9cc2d1ff-a495-474c-bc2d-5615fe7e94bb",
+        "551a4e09-160c-4f45-ac51-2000370afcab",
+        "1188e42e-3097-4203-b657-0f88020f34f0"
+      ]
+    }
+  ],
+  "outOfScopeToday": {
+    "note": "Per the plan's gating table, steps outside the plant boundary (primary production, retail/foodservice, consumer) and the non-traceability portion of outbound distribution are not mapped to any SafetyChain module today.",
+    "stepIds": [
+      "d12acc63-aca4-45eb-8e73-2f38b0788d08",
+      "d74be816-2ce9-4275-bab1-064b6e28d187",
+      "6f24e94d-2d62-4c5c-aa1a-bea63415d895"
+    ]
+  }
+}

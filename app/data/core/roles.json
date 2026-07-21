@@ -1,0 +1,132 @@
+{
+  "1563754a-9453-42d6-8b93-62c32e21cddb": {
+    "id": "1563754a-9453-42d6-8b93-62c32e21cddb",
+    "name": "Grower / Farm Operator",
+    "summary": "Grows or raises the raw agricultural input; increasingly required to keep records for food safety (Produce Safety Rule) and sustainability programs."
+  },
+  "245e5a0a-9256-4674-9a00-c8dee481e441": {
+    "id": "245e5a0a-9256-4674-9a00-c8dee481e441",
+    "name": "Farm Worker",
+    "summary": "Performs harvesting, handling, and initial packing under grower supervision; subject to worker health/hygiene requirements under the Produce Safety Rule."
+  },
+  "7b508ca3-d41f-46be-a4c1-d622437576a2": {
+    "id": "7b508ca3-d41f-46be-a4c1-d622437576a2",
+    "name": "Supplier Quality Manager",
+    "summary": "Owns the approved supplier program: qualification, ongoing COA review, re-audits, and risk assessment of ingredient and packaging suppliers."
+  },
+  "9c565276-585b-4a14-b9a3-2bd47ffa9306": {
+    "id": "9c565276-585b-4a14-b9a3-2bd47ffa9306",
+    "name": "Procurement / Buyer",
+    "summary": "Places purchase orders, manages supplier commercial relationships, and coordinates lead times feeding MRP."
+  },
+  "7f9e6386-c3eb-4ecc-a0e6-a39378e6fc8b": {
+    "id": "7f9e6386-c3eb-4ecc-a0e6-a39378e6fc8b",
+    "name": "Receiving Clerk / Dock Associate",
+    "summary": "Executes physical receipt at the dock: unloading, counting, initial visual inspection, temperature checks on inbound trucks."
+  },
+  "fdafae64-3659-4c78-9715-e64c6531078a": {
+    "id": "fdafae64-3659-4c78-9715-e64c6531078a",
+    "name": "QA Technician",
+    "summary": "Performs incoming inspection against spec, COA review, in-process sampling and testing, and routine verification activities (ATP swabs, allergen swabs)."
+  },
+  "b03ed7b2-3c47-488d-a987-bbea51c118a4": {
+    "id": "b03ed7b2-3c47-488d-a987-bbea51c118a4",
+    "name": "Warehouse Associate",
+    "summary": "Executes putaway, picking, and replenishment in raw material or finished goods storage, typically directed by WMS FEFO logic."
+  },
+  "cbf4a032-afb3-4874-808c-d4db7121ef29": {
+    "id": "cbf4a032-afb3-4874-808c-d4db7121ef29",
+    "name": "Inventory / Materials Planner",
+    "summary": "Monitors raw material and packaging inventory levels against MRP requirements; manages hold/release and quarantine status."
+  },
+  "6dfbb1aa-62f9-4783-8024-7097442d4931": {
+    "id": "6dfbb1aa-62f9-4783-8024-7097442d4931",
+    "name": "Demand Planner",
+    "summary": "Builds the demand forecast feeding the Master Production Schedule using historical sales, promotions, and customer orders."
+  },
+  "859b09e9-8ca9-407a-add8-cf8286ae4c47": {
+    "id": "859b09e9-8ca9-407a-add8-cf8286ae4c47",
+    "name": "Production Scheduler",
+    "summary": "Builds and sequences the production schedule, balancing capacity, changeover time, allergen sequencing, and shelf life."
+  },
+  "19d254bc-e885-4b41-86cb-5bc0fe0c623b": {
+    "id": "19d254bc-e885-4b41-86cb-5bc0fe0c623b",
+    "name": "Formulation / R&D Specialist",
+    "summary": "Owns recipe/BOM accuracy, including ingredient data that feeds Nutrition Facts calculation and allergen declarations."
+  },
+  "6aae9040-366c-4cfe-903f-da172231f4f0": {
+    "id": "6aae9040-366c-4cfe-903f-da172231f4f0",
+    "name": "Line Operator",
+    "summary": "Runs production equipment, executes batching/staging, and performs first-line CCP monitoring and in-process checks."
+  },
+  "87d1f952-ed5a-4dc5-9a93-f788b179755b": {
+    "id": "87d1f952-ed5a-4dc5-9a93-f788b179755b",
+    "name": "Preventive Controls Qualified Individual (PCQI)",
+    "summary": "Named, trained individual who prepares or oversees the Food Safety Plan required under FSMA Preventive Controls (21 CFR 117)."
+  },
+  "1ff0e866-1829-4ebf-bc75-55adef9f19dd": {
+    "id": "1ff0e866-1829-4ebf-bc75-55adef9f19dd",
+    "name": "HACCP Team",
+    "summary": "Cross-functional team that conducts hazard analysis, identifies CCPs, and maintains the HACCP plan."
+  },
+  "2c80f2c0-5690-4666-8bb3-872397ad1bf4": {
+    "id": "2c80f2c0-5690-4666-8bb3-872397ad1bf4",
+    "name": "QA Verifier",
+    "summary": "Verifies that CCP monitoring, corrective actions, and preventive controls are functioning as intended (distinct from the operator who monitors)."
+  },
+  "b968abdd-8354-4eb8-91da-198e8cbb3caa": {
+    "id": "b968abdd-8354-4eb8-91da-198e8cbb3caa",
+    "name": "Sanitation Crew",
+    "summary": "Executes cleaning and sanitizing tasks per the Master Sanitation Schedule, including allergen changeover cleaning."
+  },
+  "7ebd1afb-69de-4795-842d-9893e61046eb": {
+    "id": "7ebd1afb-69de-4795-842d-9893e61046eb",
+    "name": "Packaging Line Operator",
+    "summary": "Runs fill/seal/case-pack equipment; monitors catch weight and package integrity."
+  },
+  "bf3074df-b754-4b6e-9ca0-4bc175a487fb": {
+    "id": "bf3074df-b754-4b6e-9ca0-4bc175a487fb",
+    "name": "Label / Regulatory Reviewer",
+    "summary": "Reviews label copy for allergen accuracy, Nutrition Facts correctness, and claims compliance before artwork release."
+  },
+  "9e3e7bec-9c72-4e45-bff2-97761eb57ae5": {
+    "id": "9e3e7bec-9c72-4e45-bff2-97761eb57ae5",
+    "name": "Regulatory Affairs Specialist",
+    "summary": "Ensures label claims, nutrition data, and disclosures (BE, organic) meet FDA/USDA requirements; manages FSIS label submissions."
+  },
+  "6855f374-f3ec-41b1-a96b-3f3f8284522b": {
+    "id": "6855f374-f3ec-41b1-a96b-3f3f8284522b",
+    "name": "Shipping Clerk",
+    "summary": "Prepares outbound shipments, generates ASNs and shipping documents, and records lot/SSCC data at the point product leaves the facility."
+  },
+  "7fb4b883-9d15-4a05-9762-f982fbe8c7c2": {
+    "id": "7fb4b883-9d15-4a05-9762-f982fbe8c7c2",
+    "name": "Quality Manager",
+    "summary": "Oversees the plant quality management system: CAPA, specifications, internal audits, and management review."
+  },
+  "3cfcbb7d-59c4-4e4c-a205-db57bcd17575": {
+    "id": "3cfcbb7d-59c4-4e4c-a205-db57bcd17575",
+    "name": "Plant Manager",
+    "summary": "Accountable for overall plant operations and performance, including OEE, yield, and coordination across production and quality."
+  },
+  "9d45f06e-8c0f-41d3-ba64-5f8fae92ba40": {
+    "id": "9d45f06e-8c0f-41d3-ba64-5f8fae92ba40",
+    "name": "Recall Coordinator",
+    "summary": "Executes the recall plan: lot identification, quarantine, customer notification, and effectiveness checks, including mock recall exercises."
+  },
+  "a24945f1-6c80-4a7f-9f67-15d6cf04d44a": {
+    "id": "a24945f1-6c80-4a7f-9f67-15d6cf04d44a",
+    "name": "Distribution / Logistics Manager",
+    "summary": "Manages outbound transportation, 3PL relationships, and cold-chain compliance in transit."
+  },
+  "837147a2-f02e-449a-8386-854e70860fc8": {
+    "id": "837147a2-f02e-449a-8386-854e70860fc8",
+    "name": "Retail / Foodservice Operator",
+    "summary": "Receives, stores, merchandises, and (for foodservice) prepares product downstream of the plant; regulated locally under the FDA Food Code model."
+  },
+  "47f067ee-2480-4007-ac92-c30b8b109d9d": {
+    "id": "47f067ee-2480-4007-ac92-c30b8b109d9d",
+    "name": "Consumer",
+    "summary": "End recipient of the product; source of complaint data that is often the first signal of an emerging quality or safety issue."
+  }
+}

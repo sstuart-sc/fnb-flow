@@ -1,0 +1,118 @@
+{
+  "798d71ae-178b-4f6b-bd3d-c3b58bd2013b": {
+    "id": "798d71ae-178b-4f6b-bd3d-c3b58bd2013b",
+    "name": "ERP (Enterprise Resource Planning)",
+    "category": "ERP",
+    "summary": "Operational backbone: orders, procurement, inventory, MPS/MRP, and finance. Food-specific capabilities include recipe/formula management, catch weight support, FEFO, lot traceability, and by-product handling.",
+    "examplePlatforms": [
+      "SAP S/4HANA",
+      "Oracle JD Edwards EnterpriseOne",
+      "Microsoft Dynamics 365",
+      "Infor M3 / CloudSuite Food & Beverage",
+      "Aptean Ross ERP",
+      "Deacom"
+    ]
+  },
+  "3628303b-f98e-4dc6-8627-9ad94b5af3dd": {
+    "id": "3628303b-f98e-4dc6-8627-9ad94b5af3dd",
+    "name": "MES (Manufacturing Execution System)",
+    "category": "MES",
+    "summary": "Sits between ERP planning and the plant floor: electronic batch records, work order management, equipment status/downtime, quality data capture (CCP monitoring), OEE tracking, and PLC integration.",
+    "examplePlatforms": [
+      "Rockwell Automation FactoryTalk",
+      "Aveva (Wonderware)",
+      "Plex Systems",
+      "Tulip"
+    ]
+  },
+  "39da6cf5-44d6-44d3-b613-d86a3530a7b1": {
+    "id": "39da6cf5-44d6-44d3-b613-d86a3530a7b1",
+    "name": "WMS (Warehouse Management System)",
+    "category": "WMS",
+    "summary": "Manages receiving/putaway, FEFO-based picking and replenishment, inventory counts, in-warehouse lot tracking, and shipping.",
+    "examplePlatforms": [
+      "Manhattan Associates",
+      "Blue Yonder WMS",
+      "Körber (HighJump)",
+      "Fishbowl",
+      "SAP Extended Warehouse Management"
+    ]
+  },
+  "06ff688b-147f-4fde-846c-35ad49d333bc": {
+    "id": "06ff688b-147f-4fde-846c-35ad49d333bc",
+    "name": "QMS / Food Safety Software",
+    "category": "Quality Management",
+    "summary": "HACCP plan management, CCP monitoring, CAPA, document/records control, internal audit, and supplier management.",
+    "examplePlatforms": [
+      "SafetyChain",
+      "Alchemy (Intertek Alchemy)",
+      "Intelex (CORITY)",
+      "Ideagen",
+      "ComplianceMate",
+      "Corvium"
+    ]
+  },
+  "0aa50349-ec76-4ea4-b24d-bd61159fff84": {
+    "id": "0aa50349-ec76-4ea4-b24d-bd61159fff84",
+    "name": "LIMS (Laboratory Information Management System)",
+    "category": "Laboratory",
+    "summary": "Manages sample intake, test result capture, and comparison against specification limits for micro, chemical, and physical testing.",
+    "examplePlatforms": []
+  },
+  "73835e3c-9d70-49bf-b855-e25139be8426": {
+    "id": "73835e3c-9d70-49bf-b855-e25139be8426",
+    "name": "Supplier Management / Portal",
+    "category": "Supplier Compliance",
+    "summary": "Supplier qualification, document collection (audits, certifications, specs), COA intake, and ongoing monitoring workflows.",
+    "examplePlatforms": [
+      "Trustwell (FoodLogiQ)",
+      "ReposiTrak"
+    ]
+  },
+  "22e46c8f-cf7e-4d53-b5f2-56c939ee76ff": {
+    "id": "22e46c8f-cf7e-4d53-b5f2-56c939ee76ff",
+    "name": "Traceability Platform",
+    "category": "Traceability",
+    "summary": "Dedicated lot-genealogy and CTE/KDE capture, particularly for FSMA 204 compliance; often EPCIS-based.",
+    "examplePlatforms": [
+      "Trustwell (FoodLogiQ)",
+      "Wholechain",
+      "rfxcel",
+      "Sourcemap",
+      "IBM Food Trust"
+    ]
+  },
+  "e7cf071d-ca71-42ea-81de-4924de27f07c": {
+    "id": "e7cf071d-ca71-42ea-81de-4924de27f07c",
+    "name": "Label Management Software",
+    "category": "Labeling",
+    "summary": "Label creation, compliance review, artwork version control, and approval workflow, ideally linked to the formulation/recipe database.",
+    "examplePlatforms": [
+      "Loftware",
+      "Centric PLM",
+      "Label Traxx",
+      "Nulogy"
+    ]
+  },
+  "7e49ad00-a211-4140-a869-d669d929d49e": {
+    "id": "7e49ad00-a211-4140-a869-d669d929d49e",
+    "name": "Production Scheduling System",
+    "category": "Production Planning",
+    "summary": "Optimizes the production schedule across equipment capacity, changeover time (including allergen changeovers), raw material availability, shelf life, and delivery deadlines. Often integrated with ERP.",
+    "examplePlatforms": []
+  },
+  "d08beab6-1d89-42e5-8f51-c12ddc9dcc93": {
+    "id": "d08beab6-1d89-42e5-8f51-c12ddc9dcc93",
+    "name": "Formulation / Recipe Management System",
+    "category": "Formulation",
+    "summary": "Maintains version-controlled BOMs/recipes as the source of truth for nutrition calculation, allergen content, and MRP.",
+    "examplePlatforms": []
+  },
+  "0895906c-34f8-43a0-a4d8-112d3a9eb395": {
+    "id": "0895906c-34f8-43a0-a4d8-112d3a9eb395",
+    "name": "EDI (via VAN or AS2)",
+    "category": "Data Exchange",
+    "summary": "Computer-to-computer exchange of standard business documents (850 PO, 855 PO Ack, 856 ASN, 810 Invoice, 940/945 warehouse orders) between trading partners, via a Value Added Network or direct AS2 connection.",
+    "examplePlatforms": []
+  }
+}

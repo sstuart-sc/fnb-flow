@@ -1,0 +1,88 @@
+{
+  "32d87d43-f171-4bfb-9a88-309f2f6bbdb4": {
+    "id": "32d87d43-f171-4bfb-9a88-309f2f6bbdb4",
+    "name": "Sanitation & Cleaning",
+    "summary": "Cleaning and sanitizing programs — the Master Sanitation Schedule, changeover cleaning, and environmental monitoring — that recur across receiving, pre-production prep, processing (changeovers), packaging, and finished goods storage.",
+    "stepIds": [
+      "772ddd54-cf9a-4959-8bfd-ef9951aa4180",
+      "4937d2be-bd1b-49ae-9ea4-6ecafaf6cb1d",
+      "50c3d0e3-a82a-420b-9870-66a51c7c4d43",
+      "12ed6f1d-97b8-4053-9e44-4bad182fddb3",
+      "675a0808-4ab3-417e-9505-70fdf07a77d2",
+      "623c072a-ae9f-4a59-be16-976e0d8a73f6",
+      "19458b96-3769-4644-ae1b-47cafc47db17",
+      "47719c67-7075-4fd1-94a1-0c456428d0b7",
+      "c4f4e35a-a8a0-432c-b7d9-36a416b70a56",
+      "dc388e98-2c28-4e90-95b2-cfcdab76fe8d",
+      "29f6789d-0abb-4306-bb15-a9bfd3d1d279"
+    ],
+    "key": "sanitation"
+  },
+  "3512a7c6-f64a-4bb7-8171-4e2dd24e791a": {
+    "id": "3512a7c6-f64a-4bb7-8171-4e2dd24e791a",
+    "name": "Traceability & Lot Genealogy",
+    "summary": "Every primary step from receiving through consumer produces a traceability event at whatever depth that step is populated to. Anchored on GS1 identifiers (GTIN, GLN, SSCC, lot code) and, for FTL foods, FSMA 204 Critical Tracking Events and Key Data Elements.",
+    "stepIds": [
+      "d12acc63-aca4-45eb-8e73-2f38b0788d08",
+      "9f14dc8e-3874-4a73-8f30-aca5b61feb7f",
+      "772ddd54-cf9a-4959-8bfd-ef9951aa4180",
+      "927aa4de-d050-4430-a674-60c42bbfdc28",
+      "99b5625d-0e93-40b0-867e-6ac8add14b46",
+      "4937d2be-bd1b-49ae-9ea4-6ecafaf6cb1d",
+      "50c3d0e3-a82a-420b-9870-66a51c7c4d43",
+      "c40392f3-562d-4b24-a5d9-a4acf26e27f1",
+      "623c072a-ae9f-4a59-be16-976e0d8a73f6",
+      "3e709089-908f-4655-b4ef-a0477c3dda52",
+      "19458b96-3769-4644-ae1b-47cafc47db17",
+      "a32ac29d-5ba0-414b-b459-014cf2d33b3c",
+      "d74be816-2ce9-4275-bab1-064b6e28d187",
+      "6f24e94d-2d62-4c5c-aa1a-bea63415d895",
+      "47719c67-7075-4fd1-94a1-0c456428d0b7",
+      "c4f4e35a-a8a0-432c-b7d9-36a416b70a56",
+      "dc388e98-2c28-4e90-95b2-cfcdab76fe8d",
+      "29f6789d-0abb-4306-bb15-a9bfd3d1d279"
+    ],
+    "key": "traceability"
+  },
+  "46744a4d-e3cb-46a7-a3fe-445ca941391a": {
+    "id": "46744a4d-e3cb-46a7-a3fe-445ca941391a",
+    "name": "Recall & Withdrawal",
+    "summary": "An exception flow, triggerable from any step (often originating at consumer), that must move backward and forward through the whole primary flow fast — regardless of nested-flow depth at the steps it touches. Tested via mock recall exercises against a 4-hour industry benchmark.",
+    "stepIds": [
+      "d12acc63-aca4-45eb-8e73-2f38b0788d08",
+      "9f14dc8e-3874-4a73-8f30-aca5b61feb7f",
+      "772ddd54-cf9a-4959-8bfd-ef9951aa4180",
+      "927aa4de-d050-4430-a674-60c42bbfdc28",
+      "50c3d0e3-a82a-420b-9870-66a51c7c4d43",
+      "623c072a-ae9f-4a59-be16-976e0d8a73f6",
+      "3e709089-908f-4655-b4ef-a0477c3dda52",
+      "19458b96-3769-4644-ae1b-47cafc47db17",
+      "a32ac29d-5ba0-414b-b459-014cf2d33b3c",
+      "d74be816-2ce9-4275-bab1-064b6e28d187",
+      "6f24e94d-2d62-4c5c-aa1a-bea63415d895",
+      "47719c67-7075-4fd1-94a1-0c456428d0b7",
+      "c4f4e35a-a8a0-432c-b7d9-36a416b70a56",
+      "dc388e98-2c28-4e90-95b2-cfcdab76fe8d",
+      "29f6789d-0abb-4306-bb15-a9bfd3d1d279"
+    ],
+    "key": "recall"
+  },
+  "ab2d3c7a-9779-4af0-9227-d8ea16e6b524": {
+    "id": "ab2d3c7a-9779-4af0-9227-d8ea16e6b524",
+    "name": "Allergen Control",
+    "summary": "Prevention of unintended allergen presence and correct declaration of intended allergens, spanning receiving, storage, formulation, prep, production sequencing/changeovers, packaging, and labeling.",
+    "stepIds": [
+      "772ddd54-cf9a-4959-8bfd-ef9951aa4180",
+      "927aa4de-d050-4430-a674-60c42bbfdc28",
+      "99b5625d-0e93-40b0-867e-6ac8add14b46",
+      "4937d2be-bd1b-49ae-9ea4-6ecafaf6cb1d",
+      "50c3d0e3-a82a-420b-9870-66a51c7c4d43",
+      "623c072a-ae9f-4a59-be16-976e0d8a73f6",
+      "3e709089-908f-4655-b4ef-a0477c3dda52",
+      "47719c67-7075-4fd1-94a1-0c456428d0b7",
+      "c4f4e35a-a8a0-432c-b7d9-36a416b70a56",
+      "dc388e98-2c28-4e90-95b2-cfcdab76fe8d"
+    ],
+    "key": "allergen-control"
+  }
+}

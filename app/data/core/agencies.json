@@ -1,0 +1,85 @@
+{
+  "2cf6d02e-5c41-40c6-8dea-2c5d9756b9c1": {
+    "id": "2cf6d02e-5c41-40c6-8dea-2c5d9756b9c1",
+    "name": "FDA",
+    "fullName": "Food and Drug Administration",
+    "parent": "US Department of Health and Human Services (HHS)",
+    "summary": "Regulates roughly 80% of the US food supply: packaged/processed foods, produce, seafood, dairy and shell eggs, bottled water, dietary supplements, infant formula, and low-alcohol wine. Conducts periodic (not continuous) inspections and generally negotiates voluntary recalls rather than ordering them, with exceptions (infant formula, foods posing serious health risk).",
+    "keyOffices": [
+      "Center for Food Safety and Applied Nutrition (CFSAN)",
+      "Center for Veterinary Medicine (CVM)"
+    ]
+  },
+  "aac69997-d9a2-4428-860f-1d8813e9ba5a": {
+    "id": "aac69997-d9a2-4428-860f-1d8813e9ba5a",
+    "name": "USDA FSIS",
+    "fullName": "USDA Food Safety and Inspection Service",
+    "parent": "US Department of Agriculture",
+    "summary": "Regulates meat, poultry, and processed egg products (not shell eggs). Maintains continuous, shift-by-shift inspector presence in regulated plants (unlike FDA's periodic model), pre-approves meat/poultry labels, and holds mandatory recall authority for its regulated products.",
+    "keyOffices": []
+  },
+  "c8b293a1-17bc-42b2-b023-7d0c6dba905d": {
+    "id": "c8b293a1-17bc-42b2-b023-7d0c6dba905d",
+    "name": "USDA AMS",
+    "fullName": "USDA Agricultural Marketing Service",
+    "parent": "US Department of Agriculture",
+    "summary": "Administers voluntary, fee-based grading and marketing standards (e.g., USDA Grade A, USDA Choice) and the National Organic Program (NOP), which certifies organic farms and handlers. Also administers the National Bioengineered Food Disclosure Standard (NBFDS).",
+    "keyOffices": []
+  },
+  "49089417-12e3-4123-8005-9e169c1ed9ce": {
+    "id": "49089417-12e3-4123-8005-9e169c1ed9ce",
+    "name": "EPA",
+    "fullName": "Environmental Protection Agency",
+    "parent": null,
+    "summary": "Sets maximum pesticide residue tolerances on food and feed, regulates food-processing sanitizers (some dual-regulated with FDA), and sets drinking water standards that affect food manufacturing water quality.",
+    "keyOffices": []
+  },
+  "fa6a738b-947e-4ff9-a3cf-9b076e39a7a7": {
+    "id": "fa6a738b-947e-4ff9-a3cf-9b076e39a7a7",
+    "name": "TTB",
+    "fullName": "Alcohol and Tobacco Tax and Trade Bureau",
+    "parent": "US Department of the Treasury",
+    "summary": "Regulates labeling and production of beer, wine above 7% ABV, and spirits.",
+    "keyOffices": []
+  },
+  "3c72b77c-84b1-4fc5-88bc-7a97193e2ffe": {
+    "id": "3c72b77c-84b1-4fc5-88bc-7a97193e2ffe",
+    "name": "FTC",
+    "fullName": "Federal Trade Commission",
+    "parent": null,
+    "summary": "Regulates food advertising and marketing claims (as distinct from FDA, which regulates label content itself). Coordinates with FDA on misleading claims.",
+    "keyOffices": []
+  },
+  "57ebd4ad-028d-49a4-9840-805e858231d7": {
+    "id": "57ebd4ad-028d-49a4-9840-805e858231d7",
+    "name": "State & Local Agencies",
+    "fullName": "State departments of agriculture/health and local health departments",
+    "parent": null,
+    "summary": "Can be stricter than federal standards but not laxer. Responsible for retail/restaurant licensing and inspection (using the FDA Food Code as a model), some intrastate manufacturing licensing, weights-and-measures verification, and cottage food laws.",
+    "keyOffices": []
+  },
+  "2ba049e2-d8dd-4172-b13b-5830326ab4ad": {
+    "id": "2ba049e2-d8dd-4172-b13b-5830326ab4ad",
+    "name": "CDC",
+    "fullName": "Centers for Disease Control and Prevention",
+    "parent": "US Department of Health and Human Services (HHS)",
+    "summary": "Tracks and investigates foodborne illness outbreaks; estimates the annual US burden of foodborne disease (~48M illnesses, ~128,000 hospitalizations, ~3,000 deaths).",
+    "keyOffices": []
+  },
+  "2ba804d3-9dc2-4848-94d1-f48c41ad9703": {
+    "id": "2ba804d3-9dc2-4848-94d1-f48c41ad9703",
+    "name": "GS1",
+    "fullName": "GS1 (global standards nonprofit)",
+    "parent": null,
+    "summary": "Maintains the global identification standards (GTIN, GLN, SSCC, EPCIS) underlying barcodes, EDI, and traceability systems across industries, including food. Not a government regulator.",
+    "keyOffices": []
+  },
+  "3b121647-ec9f-444c-9084-8a6637d357da": {
+    "id": "3b121647-ec9f-444c-9084-8a6637d357da",
+    "name": "GFSI",
+    "fullName": "Global Food Safety Initiative",
+    "parent": null,
+    "summary": "Benchmarking body (not itself an auditing scheme) that recognizes third-party food safety certification schemes (SQF, BRC, FSSC 22000, IFS) as meeting an internationally agreed standard. Major retailers require GFSI-recognized certification as a commercial condition of doing business.",
+    "keyOffices": []
+  }
+}

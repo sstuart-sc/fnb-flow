@@ -1,0 +1,1862 @@
+{
+  "d12acc63-aca4-45eb-8e73-2f38b0788d08": {
+    "id": "d12acc63-aca4-45eb-8e73-2f38b0788d08",
+    "flowId": "4997a26b-e15e-4e11-a1db-c91a31401d18",
+    "sequence": 1,
+    "name": "Primary production",
+    "summary": "Farms, ranches, fisheries, and aquaculture operations growing or raising the raw agricultural input before it enters the commercial supply chain.",
+    "regulationIds": [
+      "bbacc25c-33bb-407e-bb70-c6e7a67f8784"
+    ],
+    "agencyIds": [
+      "2cf6d02e-5c41-40c6-8dea-2c5d9756b9c1",
+      "c8b293a1-17bc-42b2-b023-7d0c6dba905d",
+      "49089417-12e3-4123-8005-9e169c1ed9ce"
+    ],
+    "roleIds": [
+      "1563754a-9453-42d6-8b93-62c32e21cddb",
+      "245e5a0a-9256-4674-9a00-c8dee481e441"
+    ],
+    "threadIds": [
+      "3512a7c6-f64a-4bb7-8171-4e2dd24e791a",
+      "46744a4d-e3cb-46a7-a3fe-445ca941391a"
+    ],
+    "nestedFlowId": null,
+    "artifactIds": [],
+    "materialIds": [],
+    "systemIds": [],
+    "gapIds": [],
+    "path": "primary-production"
+  },
+  "9f14dc8e-3874-4a73-8f30-aca5b61feb7f": {
+    "id": "9f14dc8e-3874-4a73-8f30-aca5b61feb7f",
+    "flowId": "fa3dfd0e-f0b2-4d39-8caf-60db1a253cc1",
+    "sequence": 1,
+    "name": "Supplier sourcing & qualification",
+    "summary": "Selecting and approving ingredient/packaging suppliers and co-packers; approved supplier programs, specifications, and Certificates of Analysis (COAs) as a condition of doing business.",
+    "regulationIds": [
+      "ed70a1f5-bbb6-4ae3-96e3-0bea4d58dc9a",
+      "4db45158-1d5c-4b87-86ad-c022454a603e"
+    ],
+    "agencyIds": [
+      "2cf6d02e-5c41-40c6-8dea-2c5d9756b9c1",
+      "3b121647-ec9f-444c-9084-8a6637d357da"
+    ],
+    "roleIds": [
+      "7b508ca3-d41f-46be-a4c1-d622437576a2",
+      "9c565276-585b-4a14-b9a3-2bd47ffa9306"
+    ],
+    "threadIds": [
+      "3512a7c6-f64a-4bb7-8171-4e2dd24e791a"
+    ],
+    "nestedFlowId": "38c95c10-e723-4e66-8812-cd046b01a4c4",
+    "artifactIds": [],
+    "materialIds": [],
+    "systemIds": [],
+    "gapIds": [],
+    "path": "supplier-sourcing-qualification"
+  },
+  "772ddd54-cf9a-4959-8bfd-ef9951aa4180": {
+    "id": "772ddd54-cf9a-4959-8bfd-ef9951aa4180",
+    "flowId": "fa3dfd0e-f0b2-4d39-8caf-60db1a253cc1",
+    "sequence": 2,
+    "name": "Inbound logistics & receiving",
+    "summary": "Transport to the plant, dock receiving, and incoming inspection of raw materials and packaging against specification.",
+    "regulationIds": [
+      "41dc8af7-974a-4eaf-b4de-eacb5109dfb7",
+      "4db45158-1d5c-4b87-86ad-c022454a603e"
+    ],
+    "agencyIds": [
+      "2cf6d02e-5c41-40c6-8dea-2c5d9756b9c1"
+    ],
+    "roleIds": [
+      "7f9e6386-c3eb-4ecc-a0e6-a39378e6fc8b",
+      "fdafae64-3659-4c78-9715-e64c6531078a"
+    ],
+    "threadIds": [
+      "32d87d43-f171-4bfb-9a88-309f2f6bbdb4",
+      "3512a7c6-f64a-4bb7-8171-4e2dd24e791a",
+      "ab2d3c7a-9779-4af0-9227-d8ea16e6b524"
+    ],
+    "nestedFlowId": "5169d6c3-cbc2-40d0-9260-95c3f6f03398",
+    "artifactIds": [],
+    "materialIds": [],
+    "systemIds": [],
+    "gapIds": [],
+    "path": "inbound-logistics-receiving"
+  },
+  "927aa4de-d050-4430-a674-60c42bbfdc28": {
+    "id": "927aa4de-d050-4430-a674-60c42bbfdc28",
+    "flowId": "fa3dfd0e-f0b2-4d39-8caf-60db1a253cc1",
+    "sequence": 3,
+    "name": "Raw material storage",
+    "summary": "Cold chain, dry storage, FIFO/FEFO rotation, and allergen segregation while materials wait to be used in production.",
+    "regulationIds": [
+      "4db45158-1d5c-4b87-86ad-c022454a603e"
+    ],
+    "agencyIds": [
+      "2cf6d02e-5c41-40c6-8dea-2c5d9756b9c1"
+    ],
+    "roleIds": [
+      "b03ed7b2-3c47-488d-a987-bbea51c118a4",
+      "cbf4a032-afb3-4874-808c-d4db7121ef29"
+    ],
+    "threadIds": [
+      "3512a7c6-f64a-4bb7-8171-4e2dd24e791a",
+      "ab2d3c7a-9779-4af0-9227-d8ea16e6b524"
+    ],
+    "nestedFlowId": "f27048aa-a702-4ccc-9045-959bb39d8afd",
+    "artifactIds": [],
+    "materialIds": [],
+    "systemIds": [],
+    "gapIds": [],
+    "path": "raw-material-storage"
+  },
+  "99b5625d-0e93-40b0-867e-6ac8add14b46": {
+    "id": "99b5625d-0e93-40b0-867e-6ac8add14b46",
+    "flowId": "88001913-b6d1-4685-862a-f9ef01ba42a9",
+    "sequence": 1,
+    "name": "Formulation & production planning",
+    "summary": "Recipe/BOM management, demand planning, the Master Production Schedule, and capacity/changeover planning.",
+    "regulationIds": [
+      "4db45158-1d5c-4b87-86ad-c022454a603e"
+    ],
+    "agencyIds": [
+      "2cf6d02e-5c41-40c6-8dea-2c5d9756b9c1"
+    ],
+    "roleIds": [
+      "6dfbb1aa-62f9-4783-8024-7097442d4931",
+      "859b09e9-8ca9-407a-add8-cf8286ae4c47",
+      "19d254bc-e885-4b41-86cb-5bc0fe0c623b"
+    ],
+    "threadIds": [
+      "3512a7c6-f64a-4bb7-8171-4e2dd24e791a",
+      "ab2d3c7a-9779-4af0-9227-d8ea16e6b524"
+    ],
+    "nestedFlowId": "90cad837-185d-4f10-b99e-20bda9af4877",
+    "artifactIds": [],
+    "materialIds": [],
+    "systemIds": [],
+    "gapIds": [],
+    "path": "formulation-production-planning"
+  },
+  "4937d2be-bd1b-49ae-9ea4-6ecafaf6cb1d": {
+    "id": "4937d2be-bd1b-49ae-9ea4-6ecafaf6cb1d",
+    "flowId": "88001913-b6d1-4685-862a-f9ef01ba42a9",
+    "sequence": 2,
+    "name": "Pre-production preparation",
+    "summary": "Thawing, batching, weighing, and staging materials at the line immediately before a production run begins.",
+    "regulationIds": [
+      "4db45158-1d5c-4b87-86ad-c022454a603e"
+    ],
+    "agencyIds": [
+      "2cf6d02e-5c41-40c6-8dea-2c5d9756b9c1"
+    ],
+    "roleIds": [
+      "6aae9040-366c-4cfe-903f-da172231f4f0",
+      "b03ed7b2-3c47-488d-a987-bbea51c118a4"
+    ],
+    "threadIds": [
+      "32d87d43-f171-4bfb-9a88-309f2f6bbdb4",
+      "3512a7c6-f64a-4bb7-8171-4e2dd24e791a",
+      "ab2d3c7a-9779-4af0-9227-d8ea16e6b524"
+    ],
+    "nestedFlowId": "c4221788-41dd-4111-a69a-2d4b8afac3a9",
+    "artifactIds": [],
+    "materialIds": [],
+    "systemIds": [],
+    "gapIds": [],
+    "path": "pre-production-preparation"
+  },
+  "50c3d0e3-a82a-420b-9870-66a51c7c4d43": {
+    "id": "50c3d0e3-a82a-420b-9870-66a51c7c4d43",
+    "flowId": "88001913-b6d1-4685-862a-f9ef01ba42a9",
+    "sequence": 3,
+    "name": "Processing & production",
+    "summary": "The actual transformation of prepared inputs into product — batch, continuous, aseptic, retort, or fermentation processing — with in-process monitoring and Critical Control Points (CCPs) living here.",
+    "regulationIds": [
+      "4db45158-1d5c-4b87-86ad-c022454a603e",
+      "daa53a8a-1ab0-4a41-823b-0bd2779f0ee4",
+      "0f215096-8098-4709-b7d5-8c2ecebf3422",
+      "a0ba0e0a-4847-4276-853c-1cc3b93e1c2e"
+    ],
+    "agencyIds": [
+      "2cf6d02e-5c41-40c6-8dea-2c5d9756b9c1",
+      "aac69997-d9a2-4428-860f-1d8813e9ba5a"
+    ],
+    "roleIds": [
+      "6aae9040-366c-4cfe-903f-da172231f4f0",
+      "1ff0e866-1829-4ebf-bc75-55adef9f19dd",
+      "2c80f2c0-5690-4666-8bb3-872397ad1bf4"
+    ],
+    "threadIds": [
+      "32d87d43-f171-4bfb-9a88-309f2f6bbdb4",
+      "3512a7c6-f64a-4bb7-8171-4e2dd24e791a",
+      "ab2d3c7a-9779-4af0-9227-d8ea16e6b524"
+    ],
+    "nestedFlowId": "015da854-c2e2-4e69-8ead-a43b4a3a69dc",
+    "artifactIds": [],
+    "materialIds": [],
+    "systemIds": [],
+    "gapIds": [],
+    "path": "processing-production"
+  },
+  "c40392f3-562d-4b24-a5d9-a4acf26e27f1": {
+    "id": "c40392f3-562d-4b24-a5d9-a4acf26e27f1",
+    "flowId": "88001913-b6d1-4685-862a-f9ef01ba42a9",
+    "sequence": 4,
+    "name": "In-process quality control",
+    "summary": "Specifications, statistical process control, sampling, and nonconformance capture running alongside production rather than strictly after it.",
+    "regulationIds": [
+      "4db45158-1d5c-4b87-86ad-c022454a603e"
+    ],
+    "agencyIds": [
+      "2cf6d02e-5c41-40c6-8dea-2c5d9756b9c1"
+    ],
+    "roleIds": [
+      "fdafae64-3659-4c78-9715-e64c6531078a",
+      "7fb4b883-9d15-4a05-9762-f982fbe8c7c2"
+    ],
+    "threadIds": [
+      "3512a7c6-f64a-4bb7-8171-4e2dd24e791a"
+    ],
+    "nestedFlowId": "a799c4aa-7b95-41b8-9c06-9558f162c9f6",
+    "artifactIds": [],
+    "materialIds": [],
+    "systemIds": [],
+    "gapIds": [],
+    "path": "in-process-quality-control"
+  },
+  "623c072a-ae9f-4a59-be16-976e0d8a73f6": {
+    "id": "623c072a-ae9f-4a59-be16-976e0d8a73f6",
+    "flowId": "ff5086d9-b478-4a7e-b868-4ed8a0a2d7ec",
+    "sequence": 1,
+    "name": "Packaging (fill, seal & pack)",
+    "summary": "Fill, seal, catch weight verification, and primary and secondary packaging.",
+    "regulationIds": [
+      "4db45158-1d5c-4b87-86ad-c022454a603e",
+      "18c16d22-6037-4b00-a54b-d91b55a2e001"
+    ],
+    "agencyIds": [
+      "2cf6d02e-5c41-40c6-8dea-2c5d9756b9c1"
+    ],
+    "roleIds": [
+      "7ebd1afb-69de-4795-842d-9893e61046eb"
+    ],
+    "threadIds": [
+      "32d87d43-f171-4bfb-9a88-309f2f6bbdb4",
+      "3512a7c6-f64a-4bb7-8171-4e2dd24e791a",
+      "ab2d3c7a-9779-4af0-9227-d8ea16e6b524"
+    ],
+    "nestedFlowId": "99c5a4f4-1b92-4202-8736-d2d44e9ec4fb",
+    "artifactIds": [],
+    "materialIds": [],
+    "systemIds": [],
+    "gapIds": [],
+    "path": "packaging-fill-seal"
+  },
+  "3e709089-908f-4655-b4ef-a0477c3dda52": {
+    "id": "3e709089-908f-4655-b4ef-a0477c3dda52",
+    "flowId": "ff5086d9-b478-4a7e-b868-4ed8a0a2d7ec",
+    "sequence": 2,
+    "name": "Labeling",
+    "summary": "Label application, allergen/claims verification, and lot and date coding.",
+    "regulationIds": [
+      "18c16d22-6037-4b00-a54b-d91b55a2e001",
+      "5fedae94-25ee-4237-9dca-d14b6b92b2d5",
+      "b92fd46c-08fa-4a05-95d7-d030b0203096",
+      "2adc08a2-5082-4f11-9890-73c5c1bb546e"
+    ],
+    "agencyIds": [
+      "2cf6d02e-5c41-40c6-8dea-2c5d9756b9c1",
+      "aac69997-d9a2-4428-860f-1d8813e9ba5a",
+      "c8b293a1-17bc-42b2-b023-7d0c6dba905d",
+      "3c72b77c-84b1-4fc5-88bc-7a97193e2ffe"
+    ],
+    "roleIds": [
+      "bf3074df-b754-4b6e-9ca0-4bc175a487fb",
+      "9e3e7bec-9c72-4e45-bff2-97761eb57ae5"
+    ],
+    "threadIds": [
+      "3512a7c6-f64a-4bb7-8171-4e2dd24e791a",
+      "ab2d3c7a-9779-4af0-9227-d8ea16e6b524"
+    ],
+    "nestedFlowId": "ead7c098-c397-416f-a9a0-d86344b3804b",
+    "artifactIds": [],
+    "materialIds": [],
+    "systemIds": [],
+    "gapIds": [],
+    "path": "labeling"
+  },
+  "19458b96-3769-4644-ae1b-47cafc47db17": {
+    "id": "19458b96-3769-4644-ae1b-47cafc47db17",
+    "flowId": "87caa949-6840-4213-8110-16df363e1743",
+    "sequence": 1,
+    "name": "Finished goods storage & warehousing",
+    "summary": "Shelf-life tracking, FEFO, and warehouse management of finished product before it leaves the dock.",
+    "regulationIds": [
+      "4db45158-1d5c-4b87-86ad-c022454a603e"
+    ],
+    "agencyIds": [
+      "2cf6d02e-5c41-40c6-8dea-2c5d9756b9c1"
+    ],
+    "roleIds": [
+      "b03ed7b2-3c47-488d-a987-bbea51c118a4",
+      "cbf4a032-afb3-4874-808c-d4db7121ef29"
+    ],
+    "threadIds": [
+      "32d87d43-f171-4bfb-9a88-309f2f6bbdb4",
+      "3512a7c6-f64a-4bb7-8171-4e2dd24e791a"
+    ],
+    "nestedFlowId": "0c2b1002-986d-4b83-b2cf-c884adcc302d",
+    "artifactIds": [],
+    "materialIds": [],
+    "systemIds": [],
+    "gapIds": [],
+    "path": "finished-goods-storage"
+  },
+  "a32ac29d-5ba0-414b-b459-014cf2d33b3c": {
+    "id": "a32ac29d-5ba0-414b-b459-014cf2d33b3c",
+    "flowId": "87caa949-6840-4213-8110-16df363e1743",
+    "sequence": 2,
+    "name": "Outbound distribution & logistics",
+    "summary": "Shipping, cold chain in transit, and third-party logistics handoff. Only partially in scope for a nested flow — SafetyChain's reach here is the trace record, not full logistics management.",
+    "regulationIds": [
+      "41dc8af7-974a-4eaf-b4de-eacb5109dfb7"
+    ],
+    "agencyIds": [
+      "2cf6d02e-5c41-40c6-8dea-2c5d9756b9c1"
+    ],
+    "roleIds": [
+      "6855f374-f3ec-41b1-a96b-3f3f8284522b",
+      "a24945f1-6c80-4a7f-9f67-15d6cf04d44a"
+    ],
+    "threadIds": [
+      "3512a7c6-f64a-4bb7-8171-4e2dd24e791a",
+      "46744a4d-e3cb-46a7-a3fe-445ca941391a"
+    ],
+    "nestedFlowId": "32075fac-92e3-4d58-8966-9eb423536b14",
+    "artifactIds": [],
+    "materialIds": [],
+    "systemIds": [],
+    "gapIds": [],
+    "path": "outbound-distribution-logistics"
+  },
+  "d74be816-2ce9-4275-bab1-064b6e28d187": {
+    "id": "d74be816-2ce9-4275-bab1-064b6e28d187",
+    "flowId": "4997a26b-e15e-4e11-a1db-c91a31401d18",
+    "sequence": 6,
+    "name": "Retail / foodservice",
+    "summary": "Downstream receipt, shelf placement, and preparation by a foodservice operator. Outside the plant boundary; conceptual context only today.",
+    "regulationIds": [],
+    "agencyIds": [
+      "57ebd4ad-028d-49a4-9840-805e858231d7"
+    ],
+    "roleIds": [
+      "837147a2-f02e-449a-8386-854e70860fc8"
+    ],
+    "threadIds": [
+      "3512a7c6-f64a-4bb7-8171-4e2dd24e791a",
+      "46744a4d-e3cb-46a7-a3fe-445ca941391a"
+    ],
+    "nestedFlowId": null,
+    "artifactIds": [],
+    "materialIds": [],
+    "systemIds": [],
+    "gapIds": [],
+    "path": "retail-foodservice"
+  },
+  "6f24e94d-2d62-4c5c-aa1a-bea63415d895": {
+    "id": "6f24e94d-2d62-4c5c-aa1a-bea63415d895",
+    "flowId": "4997a26b-e15e-4e11-a1db-c91a31401d18",
+    "sequence": 7,
+    "name": "Consumer",
+    "summary": "Consumption, complaints, and feedback; also where a recall trigger typically originates and has to travel back upstream.",
+    "regulationIds": [],
+    "agencyIds": [
+      "2ba049e2-d8dd-4172-b13b-5830326ab4ad"
+    ],
+    "roleIds": [
+      "47f067ee-2480-4007-ac92-c30b8b109d9d"
+    ],
+    "threadIds": [
+      "3512a7c6-f64a-4bb7-8171-4e2dd24e791a",
+      "46744a4d-e3cb-46a7-a3fe-445ca941391a"
+    ],
+    "nestedFlowId": null,
+    "artifactIds": [],
+    "materialIds": [],
+    "systemIds": [],
+    "gapIds": [],
+    "path": "consumer"
+  },
+  "30866752-f7e4-4c98-a5e4-39e2cba6beb1": {
+    "id": "30866752-f7e4-4c98-a5e4-39e2cba6beb1",
+    "flowId": "38c95c10-e723-4e66-8812-cd046b01a4c4",
+    "sequence": 1,
+    "name": "Supplier questionnaire & documentation review",
+    "summary": "Prospective supplier completes a qualification questionnaire; team reviews basic documentation before deeper qualification steps.",
+    "regulationIds": [
+      "ed70a1f5-bbb6-4ae3-96e3-0bea4d58dc9a"
+    ],
+    "roleIds": [
+      "7b508ca3-d41f-46be-a4c1-d622437576a2"
+    ],
+    "threadIds": [
+      "3512a7c6-f64a-4bb7-8171-4e2dd24e791a"
+    ],
+    "nestedFlowId": null,
+    "artifactIds": [
+      "f7dd7ca7-fd92-4272-a2f3-0d71fbd967fa"
+    ],
+    "materialIds": [],
+    "systemIds": [
+      "73835e3c-9d70-49bf-b855-e25139be8426"
+    ],
+    "gapIds": [],
+    "path": "supplier-questionnaire-review"
+  },
+  "a97eb99a-b765-4743-a8e9-b522717fcdcc": {
+    "id": "a97eb99a-b765-4743-a8e9-b522717fcdcc",
+    "flowId": "38c95c10-e723-4e66-8812-cd046b01a4c4",
+    "sequence": 2,
+    "name": "Supplier risk assessment",
+    "summary": "Assessment of ingredient criticality and supplier history to determine required verification intensity (audit frequency, testing frequency).",
+    "regulationIds": [
+      "ed70a1f5-bbb6-4ae3-96e3-0bea4d58dc9a",
+      "4db45158-1d5c-4b87-86ad-c022454a603e"
+    ],
+    "roleIds": [
+      "7b508ca3-d41f-46be-a4c1-d622437576a2"
+    ],
+    "threadIds": [],
+    "nestedFlowId": null,
+    "artifactIds": [
+      "03dcbbf1-8518-4030-bb66-c10e4c777a5f",
+      "d3ffd93c-4dc3-4497-a82e-158181ac79e3"
+    ],
+    "materialIds": [],
+    "systemIds": [
+      "73835e3c-9d70-49bf-b855-e25139be8426"
+    ],
+    "gapIds": [],
+    "path": "supplier-risk-assessment"
+  },
+  "f44a19ca-d12c-4566-858e-bcd15867ff74": {
+    "id": "f44a19ca-d12c-4566-858e-bcd15867ff74",
+    "flowId": "38c95c10-e723-4e66-8812-cd046b01a4c4",
+    "sequence": 3,
+    "name": "Audit & certification review",
+    "summary": "Review of the supplier's GFSI-recognized audit report (SQF, BRC, FSSC 22000) and any other applicable certifications (organic, kosher, halal, gluten-free) as part of qualification.",
+    "regulationIds": [],
+    "roleIds": [
+      "7b508ca3-d41f-46be-a4c1-d622437576a2"
+    ],
+    "threadIds": [],
+    "nestedFlowId": null,
+    "artifactIds": [
+      "4e16ee4f-d132-44e5-ac05-b88b4767e5ff",
+      "5ecdd375-c8ce-4b2f-a069-1d1948c844e2"
+    ],
+    "materialIds": [],
+    "systemIds": [
+      "73835e3c-9d70-49bf-b855-e25139be8426"
+    ],
+    "gapIds": [],
+    "path": "supplier-audit-certification-review"
+  },
+  "704ab72d-6c58-4cf4-b4f4-b7eedea828af": {
+    "id": "704ab72d-6c58-4cf4-b4f4-b7eedea828af",
+    "flowId": "38c95c10-e723-4e66-8812-cd046b01a4c4",
+    "sequence": 4,
+    "name": "Initial material testing",
+    "summary": "First lots from a new supplier undergo incoming testing (microbiological, chemical, allergen) beyond standard receiving checks to validate the supplier can meet spec.",
+    "regulationIds": [
+      "ed70a1f5-bbb6-4ae3-96e3-0bea4d58dc9a"
+    ],
+    "roleIds": [
+      "fdafae64-3659-4c78-9715-e64c6531078a"
+    ],
+    "threadIds": [
+      "ab2d3c7a-9779-4af0-9227-d8ea16e6b524"
+    ],
+    "nestedFlowId": null,
+    "artifactIds": [
+      "56526379-12e6-4c0f-a1fc-bd1c83d9f1a0",
+      "4c7a9c60-4652-4ccd-8a99-de688943fdf3"
+    ],
+    "materialIds": [],
+    "systemIds": [
+      "0aa50349-ec76-4ea4-b24d-bd61159fff84"
+    ],
+    "gapIds": [],
+    "path": "initial-material-testing"
+  },
+  "27cb1649-3e29-4c72-a163-72c3b8c30028": {
+    "id": "27cb1649-3e29-4c72-a163-72c3b8c30028",
+    "flowId": "38c95c10-e723-4e66-8812-cd046b01a4c4",
+    "sequence": 5,
+    "name": "Supplier approval & onboarding",
+    "summary": "Supplier is formally added to the Approved Supplier List; specifications and COA requirements are established per ingredient.",
+    "regulationIds": [
+      "4db45158-1d5c-4b87-86ad-c022454a603e"
+    ],
+    "roleIds": [
+      "7b508ca3-d41f-46be-a4c1-d622437576a2",
+      "9c565276-585b-4a14-b9a3-2bd47ffa9306"
+    ],
+    "threadIds": [],
+    "nestedFlowId": null,
+    "artifactIds": [
+      "e633d7e7-fd2f-458b-b7e0-837e92dbb64a",
+      "56526379-12e6-4c0f-a1fc-bd1c83d9f1a0"
+    ],
+    "materialIds": [],
+    "systemIds": [
+      "73835e3c-9d70-49bf-b855-e25139be8426",
+      "798d71ae-178b-4f6b-bd3d-c3b58bd2013b"
+    ],
+    "gapIds": [],
+    "path": "supplier-approval-onboarding"
+  },
+  "c14b6c21-87d1-4c98-b874-b89d86f990f5": {
+    "id": "c14b6c21-87d1-4c98-b874-b89d86f990f5",
+    "flowId": "38c95c10-e723-4e66-8812-cd046b01a4c4",
+    "sequence": 6,
+    "name": "Ongoing supplier monitoring",
+    "summary": "Periodic COA review, re-audit tracking, and performance monitoring of already-approved suppliers to maintain approved status.",
+    "regulationIds": [
+      "ed70a1f5-bbb6-4ae3-96e3-0bea4d58dc9a"
+    ],
+    "roleIds": [
+      "7b508ca3-d41f-46be-a4c1-d622437576a2"
+    ],
+    "threadIds": [],
+    "nestedFlowId": null,
+    "artifactIds": [
+      "69f4ab73-992a-4852-b94e-0440b2304521",
+      "4e16ee4f-d132-44e5-ac05-b88b4767e5ff",
+      "234121ca-a7cb-4c99-8a09-7e947e62d724"
+    ],
+    "materialIds": [],
+    "systemIds": [
+      "73835e3c-9d70-49bf-b855-e25139be8426"
+    ],
+    "gapIds": [],
+    "path": "ongoing-supplier-monitoring"
+  },
+  "8b56f152-c4f6-4607-9270-eefa91e81140": {
+    "id": "8b56f152-c4f6-4607-9270-eefa91e81140",
+    "flowId": "5169d6c3-cbc2-40d0-9260-95c3f6f03398",
+    "sequence": 1,
+    "name": "ASN / pre-receipt notification",
+    "summary": "Advance Ship Notice (EDI 856) or equivalent is received from the supplier before the truck arrives, letting the receiving warehouse prepare (dock scheduling, expected lot/quantity).",
+    "regulationIds": [],
+    "roleIds": [
+      "7f9e6386-c3eb-4ecc-a0e6-a39378e6fc8b"
+    ],
+    "threadIds": [
+      "3512a7c6-f64a-4bb7-8171-4e2dd24e791a"
+    ],
+    "nestedFlowId": null,
+    "artifactIds": [
+      "fc2cc2d7-c0e6-4a2c-b0e8-d110914627d2"
+    ],
+    "materialIds": [],
+    "systemIds": [
+      "0895906c-34f8-43a0-a4d8-112d3a9eb395",
+      "39da6cf5-44d6-44d3-b613-d86a3530a7b1"
+    ],
+    "gapIds": [],
+    "path": "asn-pre-receipt"
+  },
+  "790dfcba-2db1-41c2-a9a6-f8fbfc1267d7": {
+    "id": "790dfcba-2db1-41c2-a9a6-f8fbfc1267d7",
+    "flowId": "5169d6c3-cbc2-40d0-9260-95c3f6f03398",
+    "sequence": 2,
+    "name": "Dock receipt & unloading",
+    "summary": "Physical unloading of the truck; count verification, trailer temperature check, and visual condition check against the ASN.",
+    "regulationIds": [
+      "41dc8af7-974a-4eaf-b4de-eacb5109dfb7"
+    ],
+    "roleIds": [
+      "7f9e6386-c3eb-4ecc-a0e6-a39378e6fc8b"
+    ],
+    "threadIds": [
+      "32d87d43-f171-4bfb-9a88-309f2f6bbdb4",
+      "3512a7c6-f64a-4bb7-8171-4e2dd24e791a"
+    ],
+    "nestedFlowId": null,
+    "artifactIds": [
+      "3877cc5e-51b7-411c-8dd0-f3cbfd93306d",
+      "620aaecb-0b8f-4336-8f3e-86716178923b"
+    ],
+    "materialIds": [
+      "9bc5fcf1-532d-40f8-86d1-2ba97b0b8950"
+    ],
+    "systemIds": [
+      "39da6cf5-44d6-44d3-b613-d86a3530a7b1"
+    ],
+    "gapIds": [],
+    "path": "dock-receipt-unloading"
+  },
+  "454a05bd-7e29-4750-8738-b0add331db8b": {
+    "id": "454a05bd-7e29-4750-8738-b0add331db8b",
+    "flowId": "5169d6c3-cbc2-40d0-9260-95c3f6f03398",
+    "sequence": 3,
+    "name": "Incoming inspection against spec",
+    "summary": "QA checks the received material against its raw material specification (moisture, allergen status, visual/sensory) before it can be released.",
+    "regulationIds": [
+      "4db45158-1d5c-4b87-86ad-c022454a603e"
+    ],
+    "roleIds": [
+      "fdafae64-3659-4c78-9715-e64c6531078a"
+    ],
+    "threadIds": [
+      "ab2d3c7a-9779-4af0-9227-d8ea16e6b524"
+    ],
+    "nestedFlowId": null,
+    "artifactIds": [
+      "56526379-12e6-4c0f-a1fc-bd1c83d9f1a0",
+      "49339f48-e8be-4bdb-a9d9-58a6193d1ac9"
+    ],
+    "materialIds": [],
+    "systemIds": [
+      "06ff688b-147f-4fde-846c-35ad49d333bc"
+    ],
+    "gapIds": [],
+    "path": "incoming-inspection"
+  },
+  "6532e290-5ee1-4d59-b364-33f4308347cb": {
+    "id": "6532e290-5ee1-4d59-b364-33f4308347cb",
+    "flowId": "5169d6c3-cbc2-40d0-9260-95c3f6f03398",
+    "sequence": 4,
+    "name": "COA review",
+    "summary": "Certificate of Analysis supplied by the vendor for the specific lot is reviewed and compared against specification limits before the lot can be used.",
+    "regulationIds": [
+      "ed70a1f5-bbb6-4ae3-96e3-0bea4d58dc9a"
+    ],
+    "roleIds": [
+      "fdafae64-3659-4c78-9715-e64c6531078a"
+    ],
+    "threadIds": [
+      "3512a7c6-f64a-4bb7-8171-4e2dd24e791a"
+    ],
+    "nestedFlowId": null,
+    "artifactIds": [
+      "69f4ab73-992a-4852-b94e-0440b2304521",
+      "56526379-12e6-4c0f-a1fc-bd1c83d9f1a0",
+      "3dad5836-8dd0-4732-a84a-5efa09c84ba1"
+    ],
+    "materialIds": [],
+    "systemIds": [
+      "06ff688b-147f-4fde-846c-35ad49d333bc"
+    ],
+    "gapIds": [],
+    "path": "coa-review"
+  },
+  "b9382349-bf15-4564-b822-de458d7e1e02": {
+    "id": "b9382349-bf15-4564-b822-de458d7e1e02",
+    "flowId": "5169d6c3-cbc2-40d0-9260-95c3f6f03398",
+    "sequence": 5,
+    "name": "Receiving disposition (release / quarantine / reject)",
+    "summary": "Based on inspection and COA review, the lot is released for use, placed on quarantine hold pending further testing, or rejected back to the supplier.",
+    "regulationIds": [
+      "4db45158-1d5c-4b87-86ad-c022454a603e"
+    ],
+    "roleIds": [
+      "fdafae64-3659-4c78-9715-e64c6531078a",
+      "b03ed7b2-3c47-488d-a987-bbea51c118a4"
+    ],
+    "threadIds": [
+      "3512a7c6-f64a-4bb7-8171-4e2dd24e791a",
+      "ab2d3c7a-9779-4af0-9227-d8ea16e6b524"
+    ],
+    "nestedFlowId": null,
+    "artifactIds": [
+      "9019fee0-1775-4638-a520-fece292e426e",
+      "49339f48-e8be-4bdb-a9d9-58a6193d1ac9"
+    ],
+    "materialIds": [],
+    "systemIds": [
+      "39da6cf5-44d6-44d3-b613-d86a3530a7b1",
+      "06ff688b-147f-4fde-846c-35ad49d333bc"
+    ],
+    "gapIds": [],
+    "path": "receiving-disposition"
+  },
+  "c77fe376-334a-4009-ab47-bdae557cb26c": {
+    "id": "c77fe376-334a-4009-ab47-bdae557cb26c",
+    "flowId": "f27048aa-a702-4ccc-9045-959bb39d8afd",
+    "sequence": 1,
+    "name": "Putaway",
+    "summary": "Released material is moved to its storage location (cold, dry, or allergen-segregated) and the location is recorded against the lot.",
+    "regulationIds": [],
+    "roleIds": [
+      "b03ed7b2-3c47-488d-a987-bbea51c118a4"
+    ],
+    "threadIds": [
+      "3512a7c6-f64a-4bb7-8171-4e2dd24e791a",
+      "ab2d3c7a-9779-4af0-9227-d8ea16e6b524"
+    ],
+    "nestedFlowId": null,
+    "artifactIds": [
+      "733c42da-63cb-4309-b90f-eada2c4a97f7"
+    ],
+    "materialIds": [],
+    "systemIds": [
+      "39da6cf5-44d6-44d3-b613-d86a3530a7b1"
+    ],
+    "gapIds": [],
+    "path": "putaway"
+  },
+  "17687176-061a-4bcd-a503-bca8d8f62fa1": {
+    "id": "17687176-061a-4bcd-a503-bca8d8f62fa1",
+    "flowId": "f27048aa-a702-4ccc-9045-959bb39d8afd",
+    "sequence": 2,
+    "name": "Inventory tracking & holds",
+    "summary": "Ongoing lot-level inventory tracking, including electronic or physical hold tags that prevent movement of unapproved or quarantined material.",
+    "regulationIds": [
+      "4db45158-1d5c-4b87-86ad-c022454a603e"
+    ],
+    "roleIds": [
+      "cbf4a032-afb3-4874-808c-d4db7121ef29"
+    ],
+    "threadIds": [
+      "3512a7c6-f64a-4bb7-8171-4e2dd24e791a"
+    ],
+    "nestedFlowId": null,
+    "artifactIds": [
+      "9019fee0-1775-4638-a520-fece292e426e",
+      "733c42da-63cb-4309-b90f-eada2c4a97f7"
+    ],
+    "materialIds": [],
+    "systemIds": [
+      "39da6cf5-44d6-44d3-b613-d86a3530a7b1",
+      "798d71ae-178b-4f6b-bd3d-c3b58bd2013b"
+    ],
+    "gapIds": [],
+    "path": "inventory-tracking-holds"
+  },
+  "f04cba8c-96ab-471b-acc1-bf9304194a95": {
+    "id": "f04cba8c-96ab-471b-acc1-bf9304194a95",
+    "flowId": "f27048aa-a702-4ccc-9045-959bb39d8afd",
+    "sequence": 3,
+    "name": "FEFO rotation monitoring",
+    "summary": "WMS enforces First Expired, First Out picking logic for raw materials based on lot-level expiration dates rather than simple receipt order (FIFO).",
+    "regulationIds": [],
+    "roleIds": [
+      "b03ed7b2-3c47-488d-a987-bbea51c118a4",
+      "cbf4a032-afb3-4874-808c-d4db7121ef29"
+    ],
+    "threadIds": [
+      "3512a7c6-f64a-4bb7-8171-4e2dd24e791a"
+    ],
+    "nestedFlowId": null,
+    "artifactIds": [],
+    "materialIds": [],
+    "systemIds": [
+      "39da6cf5-44d6-44d3-b613-d86a3530a7b1"
+    ],
+    "gapIds": [],
+    "path": "fefo-rotation-monitoring"
+  },
+  "e43ad2c4-a64f-4e54-9f3c-93cb221ef0df": {
+    "id": "e43ad2c4-a64f-4e54-9f3c-93cb221ef0df",
+    "flowId": "f27048aa-a702-4ccc-9045-959bb39d8afd",
+    "sequence": 4,
+    "name": "Allergen segregation in storage",
+    "summary": "Physical or zoned separation of allergen-containing materials from allergen-free materials to prevent cross-contact while in storage.",
+    "regulationIds": [
+      "4db45158-1d5c-4b87-86ad-c022454a603e"
+    ],
+    "roleIds": [
+      "b03ed7b2-3c47-488d-a987-bbea51c118a4"
+    ],
+    "threadIds": [
+      "ab2d3c7a-9779-4af0-9227-d8ea16e6b524"
+    ],
+    "nestedFlowId": null,
+    "artifactIds": [
+      "e22bc4a2-d974-46c6-ac7b-9c3c1b5b3e04"
+    ],
+    "materialIds": [],
+    "systemIds": [
+      "39da6cf5-44d6-44d3-b613-d86a3530a7b1"
+    ],
+    "gapIds": [],
+    "path": "allergen-segregation-storage"
+  },
+  "2fb84bc7-c1cb-447f-8a14-84418b7615a3": {
+    "id": "2fb84bc7-c1cb-447f-8a14-84418b7615a3",
+    "flowId": "90cad837-185d-4f10-b99e-20bda9af4877",
+    "sequence": 1,
+    "name": "Demand forecasting",
+    "summary": "Predicting how much of each product will be needed over a 4-13 week horizon from historical sales, promotions, seasonality, and customer orders.",
+    "regulationIds": [],
+    "roleIds": [
+      "6dfbb1aa-62f9-4783-8024-7097442d4931"
+    ],
+    "threadIds": [],
+    "nestedFlowId": null,
+    "artifactIds": [
+      "88e93798-54de-421a-9d7c-cc54f65d4a47"
+    ],
+    "materialIds": [],
+    "systemIds": [
+      "798d71ae-178b-4f6b-bd3d-c3b58bd2013b"
+    ],
+    "gapIds": [],
+    "path": "demand-forecasting"
+  },
+  "66457337-68b1-4f15-9207-36d3601e6d76": {
+    "id": "66457337-68b1-4f15-9207-36d3601e6d76",
+    "flowId": "90cad837-185d-4f10-b99e-20bda9af4877",
+    "sequence": 2,
+    "name": "BOM / recipe management",
+    "summary": "Maintaining the version-controlled Bill of Materials/recipe — the basis for MRP, Nutrition Facts calculation, and allergen content, and a document that must match the label's ingredient statement.",
+    "regulationIds": [],
+    "roleIds": [
+      "19d254bc-e885-4b41-86cb-5bc0fe0c623b"
+    ],
+    "threadIds": [
+      "ab2d3c7a-9779-4af0-9227-d8ea16e6b524",
+      "3512a7c6-f64a-4bb7-8171-4e2dd24e791a"
+    ],
+    "nestedFlowId": null,
+    "artifactIds": [
+      "429b1edf-4726-4530-b8db-680ec0761622"
+    ],
+    "materialIds": [],
+    "systemIds": [
+      "798d71ae-178b-4f6b-bd3d-c3b58bd2013b",
+      "d08beab6-1d89-42e5-8f51-c12ddc9dcc93"
+    ],
+    "gapIds": [],
+    "path": "bom-recipe-management"
+  },
+  "fe32d3ac-44c1-4fb8-805e-785a9825ed67": {
+    "id": "fe32d3ac-44c1-4fb8-805e-785a9825ed67",
+    "flowId": "90cad837-185d-4f10-b99e-20bda9af4877",
+    "sequence": 3,
+    "name": "Master Production Schedule (MPS)",
+    "summary": "The plan specifying what finished products are produced, in what quantities, and on what dates, balancing demand against capacity, lot sizes, changeover time, and shelf life.",
+    "regulationIds": [],
+    "roleIds": [
+      "859b09e9-8ca9-407a-add8-cf8286ae4c47"
+    ],
+    "threadIds": [],
+    "nestedFlowId": null,
+    "artifactIds": [
+      "b6417e04-03ad-400f-bbe3-ba9a111eaeb9"
+    ],
+    "materialIds": [],
+    "systemIds": [
+      "798d71ae-178b-4f6b-bd3d-c3b58bd2013b",
+      "7e49ad00-a211-4140-a869-d669d929d49e"
+    ],
+    "gapIds": [],
+    "path": "master-production-schedule"
+  },
+  "b2f6e872-dcca-4767-9206-055cd8f5c052": {
+    "id": "b2f6e872-dcca-4767-9206-055cd8f5c052",
+    "flowId": "90cad837-185d-4f10-b99e-20bda9af4877",
+    "sequence": 4,
+    "name": "Material Requirements Planning (MRP)",
+    "summary": "Using the MPS and BOM to calculate what raw materials/packaging must be ordered and when, based on current inventory and supplier lead times.",
+    "regulationIds": [],
+    "roleIds": [
+      "cbf4a032-afb3-4874-808c-d4db7121ef29",
+      "9c565276-585b-4a14-b9a3-2bd47ffa9306"
+    ],
+    "threadIds": [],
+    "nestedFlowId": null,
+    "artifactIds": [
+      "429b1edf-4726-4530-b8db-680ec0761622",
+      "3250a117-60b4-4053-b8cf-bf13f59faa1b"
+    ],
+    "materialIds": [],
+    "systemIds": [
+      "798d71ae-178b-4f6b-bd3d-c3b58bd2013b"
+    ],
+    "gapIds": [],
+    "path": "material-requirements-planning"
+  },
+  "12b7b8be-c7d4-4b6a-b6a2-585f2f64776b": {
+    "id": "12b7b8be-c7d4-4b6a-b6a2-585f2f64776b",
+    "flowId": "90cad837-185d-4f10-b99e-20bda9af4877",
+    "sequence": 5,
+    "name": "Capacity & changeover planning",
+    "summary": "Ensuring the MPS can be executed given equipment/labor constraints (oven, cooker, retort, filling line capacity), and minimizing changeover frequency/downtime.",
+    "regulationIds": [],
+    "roleIds": [
+      "859b09e9-8ca9-407a-add8-cf8286ae4c47",
+      "3cfcbb7d-59c4-4e4c-a205-db57bcd17575"
+    ],
+    "threadIds": [],
+    "nestedFlowId": null,
+    "artifactIds": [
+      "b6417e04-03ad-400f-bbe3-ba9a111eaeb9"
+    ],
+    "materialIds": [],
+    "systemIds": [
+      "7e49ad00-a211-4140-a869-d669d929d49e"
+    ],
+    "gapIds": [],
+    "path": "capacity-changeover-planning"
+  },
+  "d2bd63b9-9b1c-47b2-8627-c590c5c69be5": {
+    "id": "d2bd63b9-9b1c-47b2-8627-c590c5c69be5",
+    "flowId": "90cad837-185d-4f10-b99e-20bda9af4877",
+    "sequence": 6,
+    "name": "Allergen sequencing",
+    "summary": "Using the allergen matrix to sequence runs so allergen-free products run first and lines move from fewer to more allergens, minimizing full allergen cleaning events.",
+    "regulationIds": [
+      "4db45158-1d5c-4b87-86ad-c022454a603e"
+    ],
+    "roleIds": [
+      "859b09e9-8ca9-407a-add8-cf8286ae4c47"
+    ],
+    "threadIds": [
+      "ab2d3c7a-9779-4af0-9227-d8ea16e6b524"
+    ],
+    "nestedFlowId": null,
+    "artifactIds": [
+      "e22bc4a2-d974-46c6-ac7b-9c3c1b5b3e04",
+      "b6417e04-03ad-400f-bbe3-ba9a111eaeb9",
+      "29c66c1b-1d4b-4c1a-92b4-2c951493253d"
+    ],
+    "materialIds": [],
+    "systemIds": [
+      "7e49ad00-a211-4140-a869-d669d929d49e"
+    ],
+    "gapIds": [],
+    "path": "allergen-sequencing"
+  },
+  "ad144aa0-ac9a-4052-9ae0-fda1670a59c1": {
+    "id": "ad144aa0-ac9a-4052-9ae0-fda1670a59c1",
+    "flowId": "c4221788-41dd-4111-a69a-2d4b8afac3a9",
+    "sequence": 1,
+    "name": "Material staging / pull",
+    "summary": "Pulling the specific raw material lots called for by the production order from storage to the line, per FEFO and hold status.",
+    "regulationIds": [],
+    "roleIds": [
+      "b03ed7b2-3c47-488d-a987-bbea51c118a4",
+      "6aae9040-366c-4cfe-903f-da172231f4f0"
+    ],
+    "threadIds": [
+      "3512a7c6-f64a-4bb7-8171-4e2dd24e791a"
+    ],
+    "nestedFlowId": null,
+    "artifactIds": [
+      "6eabd20b-f5d1-4efa-9f14-e80efb204c97"
+    ],
+    "materialIds": [],
+    "systemIds": [
+      "39da6cf5-44d6-44d3-b613-d86a3530a7b1",
+      "3628303b-f98e-4dc6-8627-9ad94b5af3dd"
+    ],
+    "gapIds": [],
+    "path": "material-staging-pull"
+  },
+  "662579e0-38ef-4570-a388-c7bcef2a32f3": {
+    "id": "662579e0-38ef-4570-a388-c7bcef2a32f3",
+    "flowId": "c4221788-41dd-4111-a69a-2d4b8afac3a9",
+    "sequence": 2,
+    "name": "Thawing",
+    "summary": "Controlled thawing of frozen inputs under time/temperature conditions that prevent pathogen growth before use.",
+    "regulationIds": [
+      "4db45158-1d5c-4b87-86ad-c022454a603e"
+    ],
+    "roleIds": [
+      "6aae9040-366c-4cfe-903f-da172231f4f0"
+    ],
+    "threadIds": [
+      "32d87d43-f171-4bfb-9a88-309f2f6bbdb4"
+    ],
+    "nestedFlowId": null,
+    "artifactIds": [
+      "620aaecb-0b8f-4336-8f3e-86716178923b"
+    ],
+    "materialIds": [
+      "9bc5fcf1-532d-40f8-86d1-2ba97b0b8950"
+    ],
+    "systemIds": [
+      "3628303b-f98e-4dc6-8627-9ad94b5af3dd"
+    ],
+    "gapIds": [],
+    "path": "thawing"
+  },
+  "ea870c3a-7428-4e75-ad57-8b96b9ea3139": {
+    "id": "ea870c3a-7428-4e75-ad57-8b96b9ea3139",
+    "flowId": "c4221788-41dd-4111-a69a-2d4b8afac3a9",
+    "sequence": 3,
+    "name": "Batching & weighing",
+    "summary": "Weighing and combining ingredients per the scaled BOM to build the batch that will be charged to the process.",
+    "regulationIds": [],
+    "roleIds": [
+      "6aae9040-366c-4cfe-903f-da172231f4f0"
+    ],
+    "threadIds": [
+      "3512a7c6-f64a-4bb7-8171-4e2dd24e791a",
+      "ab2d3c7a-9779-4af0-9227-d8ea16e6b524"
+    ],
+    "nestedFlowId": null,
+    "artifactIds": [
+      "29b066a1-910f-45b5-bd65-205d53da0ba4",
+      "429b1edf-4726-4530-b8db-680ec0761622"
+    ],
+    "materialIds": [
+      "bcf4ede9-5dde-4874-b14b-5de1a598bdb4"
+    ],
+    "systemIds": [
+      "3628303b-f98e-4dc6-8627-9ad94b5af3dd"
+    ],
+    "gapIds": [],
+    "path": "batching-weighing"
+  },
+  "00923788-92f4-40d0-868f-21eb57d5380b": {
+    "id": "00923788-92f4-40d0-868f-21eb57d5380b",
+    "flowId": "c4221788-41dd-4111-a69a-2d4b8afac3a9",
+    "sequence": 4,
+    "name": "Pre-run line clearance",
+    "summary": "Verification that the line is clear of the previous product/allergen and correctly set up before the new run starts.",
+    "regulationIds": [
+      "4db45158-1d5c-4b87-86ad-c022454a603e"
+    ],
+    "roleIds": [
+      "2c80f2c0-5690-4666-8bb3-872397ad1bf4",
+      "6aae9040-366c-4cfe-903f-da172231f4f0"
+    ],
+    "threadIds": [
+      "32d87d43-f171-4bfb-9a88-309f2f6bbdb4",
+      "ab2d3c7a-9779-4af0-9227-d8ea16e6b524"
+    ],
+    "nestedFlowId": null,
+    "artifactIds": [
+      "83d48320-9598-4069-b091-c032b4e36fd7"
+    ],
+    "materialIds": [
+      "72e2305e-e782-4fef-a0f0-684b001b4bf4",
+      "9a076e51-1e86-42a5-84d9-8c39da37e1d0"
+    ],
+    "systemIds": [
+      "3628303b-f98e-4dc6-8627-9ad94b5af3dd"
+    ],
+    "gapIds": [],
+    "path": "pre-run-line-clearance"
+  },
+  "3a08d5f0-1981-465e-a538-e1a7b674c81a": {
+    "id": "3a08d5f0-1981-465e-a538-e1a7b674c81a",
+    "flowId": "015da854-c2e2-4e69-8ead-a43b4a3a69dc",
+    "sequence": 1,
+    "name": "Process setup verification",
+    "summary": "Confirming equipment settings (temperature, pressure, speed) match the process specification before production begins.",
+    "regulationIds": [
+      "4db45158-1d5c-4b87-86ad-c022454a603e"
+    ],
+    "roleIds": [
+      "6aae9040-366c-4cfe-903f-da172231f4f0",
+      "2c80f2c0-5690-4666-8bb3-872397ad1bf4"
+    ],
+    "threadIds": [
+      "3512a7c6-f64a-4bb7-8171-4e2dd24e791a"
+    ],
+    "nestedFlowId": null,
+    "artifactIds": [
+      "56526379-12e6-4c0f-a1fc-bd1c83d9f1a0"
+    ],
+    "materialIds": [],
+    "systemIds": [
+      "3628303b-f98e-4dc6-8627-9ad94b5af3dd"
+    ],
+    "gapIds": [],
+    "path": "process-setup-verification"
+  },
+  "6105447b-2425-420c-acbe-3fd436d078c2": {
+    "id": "6105447b-2425-420c-acbe-3fd436d078c2",
+    "flowId": "015da854-c2e2-4e69-8ead-a43b4a3a69dc",
+    "sequence": 2,
+    "name": "CCP monitoring",
+    "summary": "Continuous or scheduled monitoring of Critical Control Points (e.g., cook temperature, pH, retort time/temperature) during a run.",
+    "regulationIds": [
+      "4db45158-1d5c-4b87-86ad-c022454a603e",
+      "daa53a8a-1ab0-4a41-823b-0bd2779f0ee4",
+      "0f215096-8098-4709-b7d5-8c2ecebf3422",
+      "a0ba0e0a-4847-4276-853c-1cc3b93e1c2e"
+    ],
+    "roleIds": [
+      "6aae9040-366c-4cfe-903f-da172231f4f0",
+      "2c80f2c0-5690-4666-8bb3-872397ad1bf4"
+    ],
+    "threadIds": [
+      "32d87d43-f171-4bfb-9a88-309f2f6bbdb4",
+      "3512a7c6-f64a-4bb7-8171-4e2dd24e791a"
+    ],
+    "nestedFlowId": null,
+    "artifactIds": [
+      "1bdfade9-acc5-4535-891f-87d4cf762f5c",
+      "7a252b54-ea94-4cd4-ac17-c4e00c174340",
+      "e8d03bfb-7a45-46f4-80ee-be037dd5e218"
+    ],
+    "materialIds": [
+      "9bc5fcf1-532d-40f8-86d1-2ba97b0b8950",
+      "8c17f733-178e-42a8-9a66-08c7e489d36b"
+    ],
+    "systemIds": [
+      "3628303b-f98e-4dc6-8627-9ad94b5af3dd"
+    ],
+    "gapIds": [],
+    "path": "ccp-monitoring"
+  },
+  "04a4e8bc-8ed5-4fae-8ca8-0d9081e7ecae": {
+    "id": "04a4e8bc-8ed5-4fae-8ca8-0d9081e7ecae",
+    "flowId": "015da854-c2e2-4e69-8ead-a43b4a3a69dc",
+    "sequence": 3,
+    "name": "CCP deviation & corrective action",
+    "summary": "When monitoring shows a CCP exceeded its critical limit, isolating/evaluating affected product, restoring control, and documenting the corrective action.",
+    "regulationIds": [
+      "4db45158-1d5c-4b87-86ad-c022454a603e",
+      "daa53a8a-1ab0-4a41-823b-0bd2779f0ee4"
+    ],
+    "roleIds": [
+      "2c80f2c0-5690-4666-8bb3-872397ad1bf4",
+      "7fb4b883-9d15-4a05-9762-f982fbe8c7c2"
+    ],
+    "threadIds": [
+      "3512a7c6-f64a-4bb7-8171-4e2dd24e791a"
+    ],
+    "nestedFlowId": null,
+    "artifactIds": [
+      "1123026c-158f-41ad-acb2-9f67b6fb4e09",
+      "9019fee0-1775-4638-a520-fece292e426e"
+    ],
+    "materialIds": [],
+    "systemIds": [
+      "06ff688b-147f-4fde-846c-35ad49d333bc",
+      "3628303b-f98e-4dc6-8627-9ad94b5af3dd"
+    ],
+    "gapIds": [],
+    "path": "ccp-deviation-corrective-action"
+  },
+  "12ed6f1d-97b8-4053-9e44-4bad182fddb3": {
+    "id": "12ed6f1d-97b8-4053-9e44-4bad182fddb3",
+    "flowId": "015da854-c2e2-4e69-8ead-a43b4a3a69dc",
+    "sequence": 4,
+    "name": "Allergen changeover cleaning",
+    "summary": "Physical cleaning and verification (visual, ELISA allergen swab, ATP) when switching a line from an allergen-containing product to a product without that allergen.",
+    "regulationIds": [
+      "4db45158-1d5c-4b87-86ad-c022454a603e"
+    ],
+    "roleIds": [
+      "b968abdd-8354-4eb8-91da-198e8cbb3caa",
+      "2c80f2c0-5690-4666-8bb3-872397ad1bf4"
+    ],
+    "threadIds": [
+      "32d87d43-f171-4bfb-9a88-309f2f6bbdb4",
+      "ab2d3c7a-9779-4af0-9227-d8ea16e6b524"
+    ],
+    "nestedFlowId": null,
+    "artifactIds": [
+      "238f08d4-2e35-498a-817d-683f36822b65",
+      "97409332-015e-4473-a32b-26b71bc67d07"
+    ],
+    "materialIds": [
+      "72e2305e-e782-4fef-a0f0-684b001b4bf4",
+      "9a076e51-1e86-42a5-84d9-8c39da37e1d0",
+      "076d8f82-c969-464d-a40b-1e5413058708"
+    ],
+    "systemIds": [
+      "06ff688b-147f-4fde-846c-35ad49d333bc"
+    ],
+    "gapIds": [],
+    "path": "allergen-changeover-cleaning"
+  },
+  "675a0808-4ab3-417e-9505-70fdf07a77d2": {
+    "id": "675a0808-4ab3-417e-9505-70fdf07a77d2",
+    "flowId": "015da854-c2e2-4e69-8ead-a43b4a3a69dc",
+    "sequence": 5,
+    "name": "Environmental monitoring",
+    "summary": "Swabbing environmental sites (drains, equipment junctions, floors) in ready-to-eat facilities to detect Listeria and other pathogens in the production environment before they contaminate product.",
+    "regulationIds": [
+      "4db45158-1d5c-4b87-86ad-c022454a603e"
+    ],
+    "roleIds": [
+      "fdafae64-3659-4c78-9715-e64c6531078a"
+    ],
+    "threadIds": [
+      "32d87d43-f171-4bfb-9a88-309f2f6bbdb4"
+    ],
+    "nestedFlowId": null,
+    "artifactIds": [
+      "4f930f5c-736e-451e-bd14-7a2b0e9538b1",
+      "28e2958f-d4ed-42e4-8c0f-0de1c418f5e1"
+    ],
+    "materialIds": [
+      "9a076e51-1e86-42a5-84d9-8c39da37e1d0"
+    ],
+    "systemIds": [
+      "06ff688b-147f-4fde-846c-35ad49d333bc",
+      "0aa50349-ec76-4ea4-b24d-bd61159fff84"
+    ],
+    "gapIds": [],
+    "path": "environmental-monitoring"
+  },
+  "885b5c81-29e7-42a9-be5e-72c6f48a9cde": {
+    "id": "885b5c81-29e7-42a9-be5e-72c6f48a9cde",
+    "flowId": "a799c4aa-7b95-41b8-9c06-9558f162c9f6",
+    "sequence": 1,
+    "name": "In-process sampling",
+    "summary": "Drawing samples per a defined sampling plan (e.g., AQL-based) during the run for testing against in-process and finished product specifications.",
+    "regulationIds": [],
+    "roleIds": [
+      "fdafae64-3659-4c78-9715-e64c6531078a"
+    ],
+    "threadIds": [
+      "3512a7c6-f64a-4bb7-8171-4e2dd24e791a"
+    ],
+    "nestedFlowId": null,
+    "artifactIds": [
+      "56526379-12e6-4c0f-a1fc-bd1c83d9f1a0",
+      "4c7a9c60-4652-4ccd-8a99-de688943fdf3"
+    ],
+    "materialIds": [],
+    "systemIds": [
+      "0aa50349-ec76-4ea4-b24d-bd61159fff84",
+      "06ff688b-147f-4fde-846c-35ad49d333bc"
+    ],
+    "gapIds": [],
+    "path": "in-process-sampling"
+  },
+  "a72fb5b8-011c-4547-924d-dd4814c8a897": {
+    "id": "a72fb5b8-011c-4547-924d-dd4814c8a897",
+    "flowId": "a799c4aa-7b95-41b8-9c06-9558f162c9f6",
+    "sequence": 2,
+    "name": "SPC charting",
+    "summary": "Plotting quality measurements (fill weight, pH, moisture) on control charts against statistically derived control limits to detect non-random process shifts.",
+    "regulationIds": [],
+    "roleIds": [
+      "fdafae64-3659-4c78-9715-e64c6531078a",
+      "7fb4b883-9d15-4a05-9762-f982fbe8c7c2"
+    ],
+    "threadIds": [],
+    "nestedFlowId": null,
+    "artifactIds": [
+      "19a94ed7-40fa-43b5-9868-a2ce2e2b1cef"
+    ],
+    "materialIds": [],
+    "systemIds": [
+      "06ff688b-147f-4fde-846c-35ad49d333bc"
+    ],
+    "gapIds": [],
+    "path": "spc-charting"
+  },
+  "006beb57-354a-4871-bdc7-32064cd309ba": {
+    "id": "006beb57-354a-4871-bdc7-32064cd309ba",
+    "flowId": "a799c4aa-7b95-41b8-9c06-9558f162c9f6",
+    "sequence": 3,
+    "name": "Nonconformance capture",
+    "summary": "Recording any result or observation that fails specification or expected parameters, as the trigger for OOS disposition and potential CAPA.",
+    "regulationIds": [],
+    "roleIds": [
+      "fdafae64-3659-4c78-9715-e64c6531078a"
+    ],
+    "threadIds": [
+      "3512a7c6-f64a-4bb7-8171-4e2dd24e791a"
+    ],
+    "nestedFlowId": null,
+    "artifactIds": [
+      "209c4879-7b77-46e8-91e2-153eac453a77"
+    ],
+    "materialIds": [],
+    "systemIds": [
+      "06ff688b-147f-4fde-846c-35ad49d333bc"
+    ],
+    "gapIds": [],
+    "path": "nonconformance-capture"
+  },
+  "d83408b4-06a9-462c-9c76-2f365071799d": {
+    "id": "d83408b4-06a9-462c-9c76-2f365071799d",
+    "flowId": "a799c4aa-7b95-41b8-9c06-9558f162c9f6",
+    "sequence": 4,
+    "name": "Out-of-spec (OOS) disposition",
+    "summary": "Quarantine of affected material/product, root cause investigation, and disposition decision (rework, retest, destroy, return to supplier), with CAPA as needed.",
+    "regulationIds": [],
+    "roleIds": [
+      "7fb4b883-9d15-4a05-9762-f982fbe8c7c2"
+    ],
+    "threadIds": [
+      "3512a7c6-f64a-4bb7-8171-4e2dd24e791a"
+    ],
+    "nestedFlowId": null,
+    "artifactIds": [
+      "76dd2e5a-20a8-4f19-8fc1-3b78be49fee3",
+      "9019fee0-1775-4638-a520-fece292e426e",
+      "209c4879-7b77-46e8-91e2-153eac453a77"
+    ],
+    "materialIds": [],
+    "systemIds": [
+      "06ff688b-147f-4fde-846c-35ad49d333bc"
+    ],
+    "gapIds": [],
+    "path": "oos-disposition"
+  },
+  "33a15d20-1aec-469d-b1da-b77fe7082daf": {
+    "id": "33a15d20-1aec-469d-b1da-b77fe7082daf",
+    "flowId": "99c5a4f4-1b92-4202-8736-d2d44e9ec4fb",
+    "sequence": 1,
+    "name": "Fill & seal",
+    "summary": "Filling product into its primary container and sealing it — a CCP in retort/aseptic contexts, and a general quality control point elsewhere.",
+    "regulationIds": [
+      "4db45158-1d5c-4b87-86ad-c022454a603e"
+    ],
+    "roleIds": [
+      "7ebd1afb-69de-4795-842d-9893e61046eb"
+    ],
+    "threadIds": [
+      "3512a7c6-f64a-4bb7-8171-4e2dd24e791a"
+    ],
+    "nestedFlowId": null,
+    "artifactIds": [
+      "29b066a1-910f-45b5-bd65-205d53da0ba4"
+    ],
+    "materialIds": [],
+    "systemIds": [
+      "3628303b-f98e-4dc6-8627-9ad94b5af3dd"
+    ],
+    "gapIds": [],
+    "path": "fill-seal"
+  },
+  "ff183065-f2ee-41fd-b20a-8cfc8ec36079": {
+    "id": "ff183065-f2ee-41fd-b20a-8cfc8ec36079",
+    "flowId": "99c5a4f4-1b92-4202-8736-d2d44e9ec4fb",
+    "sequence": 2,
+    "name": "Catch weight verification",
+    "summary": "For variable-weight products (meat, poultry, fish, produce), verifying and recording actual weight per unit/case in addition to count, since pricing is weight-based.",
+    "regulationIds": [],
+    "roleIds": [
+      "7ebd1afb-69de-4795-842d-9893e61046eb",
+      "fdafae64-3659-4c78-9715-e64c6531078a"
+    ],
+    "threadIds": [],
+    "nestedFlowId": null,
+    "artifactIds": [
+      "9e388600-1312-452b-8d07-3a0efd5202f9",
+      "2e49adf0-dbf5-4625-bfda-b538e7085483"
+    ],
+    "materialIds": [
+      "bcf4ede9-5dde-4874-b14b-5de1a598bdb4"
+    ],
+    "systemIds": [
+      "798d71ae-178b-4f6b-bd3d-c3b58bd2013b",
+      "39da6cf5-44d6-44d3-b613-d86a3530a7b1"
+    ],
+    "gapIds": [],
+    "path": "catch-weight-verification"
+  },
+  "e5fcc92a-5d13-46a8-8805-b1d2d868377e": {
+    "id": "e5fcc92a-5d13-46a8-8805-b1d2d868377e",
+    "flowId": "99c5a4f4-1b92-4202-8736-d2d44e9ec4fb",
+    "sequence": 3,
+    "name": "Primary & secondary packaging",
+    "summary": "Application of the primary consumer-facing container and secondary packaging (case, tray, shrink wrap) for handling and shipping.",
+    "regulationIds": [],
+    "roleIds": [
+      "7ebd1afb-69de-4795-842d-9893e61046eb"
+    ],
+    "threadIds": [],
+    "nestedFlowId": null,
+    "artifactIds": [],
+    "materialIds": [],
+    "systemIds": [
+      "3628303b-f98e-4dc6-8627-9ad94b5af3dd"
+    ],
+    "gapIds": [],
+    "path": "primary-secondary-packaging"
+  },
+  "a971aa07-e6bf-4eb2-b4b3-44873ab4484e": {
+    "id": "a971aa07-e6bf-4eb2-b4b3-44873ab4484e",
+    "flowId": "99c5a4f4-1b92-4202-8736-d2d44e9ec4fb",
+    "sequence": 4,
+    "name": "Package integrity check",
+    "summary": "Verifying seal integrity and checking for foreign material via metal detection or X-ray inspection before the product proceeds to labeling.",
+    "regulationIds": [
+      "4db45158-1d5c-4b87-86ad-c022454a603e"
+    ],
+    "roleIds": [
+      "fdafae64-3659-4c78-9715-e64c6531078a"
+    ],
+    "threadIds": [],
+    "nestedFlowId": null,
+    "artifactIds": [
+      "a7ea6ca7-6b6e-4101-beff-e581956d8a36"
+    ],
+    "materialIds": [
+      "22005d31-323d-4252-8610-41c71d08a023",
+      "402676d7-c0d4-45d1-9798-134b8b542939"
+    ],
+    "systemIds": [
+      "3628303b-f98e-4dc6-8627-9ad94b5af3dd"
+    ],
+    "gapIds": [],
+    "path": "package-integrity-check"
+  },
+  "1528d30a-75f1-4819-a2b3-acc03c4f0f41": {
+    "id": "1528d30a-75f1-4819-a2b3-acc03c4f0f41",
+    "flowId": "ead7c098-c397-416f-a9a0-d86344b3804b",
+    "sequence": 1,
+    "name": "Label copy drafting",
+    "summary": "Marketing/regulatory drafts label content — statement of identity, net quantity, ingredient statement, Nutrition Facts, claims — typically sourced from the BOM.",
+    "regulationIds": [
+      "18c16d22-6037-4b00-a54b-d91b55a2e001",
+      "5fedae94-25ee-4237-9dca-d14b6b92b2d5"
+    ],
+    "roleIds": [
+      "bf3074df-b754-4b6e-9ca0-4bc175a487fb",
+      "19d254bc-e885-4b41-86cb-5bc0fe0c623b"
+    ],
+    "threadIds": [],
+    "nestedFlowId": null,
+    "artifactIds": [
+      "6425e8df-c318-495b-ae4e-a3a81af541f1",
+      "429b1edf-4726-4530-b8db-680ec0761622"
+    ],
+    "materialIds": [],
+    "systemIds": [
+      "e7cf071d-ca71-42ea-81de-4924de27f07c"
+    ],
+    "gapIds": [],
+    "path": "label-copy-drafting"
+  },
+  "e6cd4f4e-49b0-45fb-8714-c20075af0438": {
+    "id": "e6cd4f4e-49b0-45fb-8714-c20075af0438",
+    "flowId": "ead7c098-c397-416f-a9a0-d86344b3804b",
+    "sequence": 2,
+    "name": "Allergen & claims verification",
+    "summary": "QA/regulatory review confirming all major allergens present in the formulation are correctly declared, and that any claims (health, nutrient content, organic, gluten-free) meet their regulatory standard.",
+    "regulationIds": [
+      "b92fd46c-08fa-4a05-95d7-d030b0203096",
+      "5fedae94-25ee-4237-9dca-d14b6b92b2d5",
+      "719f7e9a-1a25-4253-93f4-b03c648b5265"
+    ],
+    "roleIds": [
+      "bf3074df-b754-4b6e-9ca0-4bc175a487fb",
+      "9e3e7bec-9c72-4e45-bff2-97761eb57ae5"
+    ],
+    "threadIds": [
+      "ab2d3c7a-9779-4af0-9227-d8ea16e6b524"
+    ],
+    "nestedFlowId": null,
+    "artifactIds": [
+      "e22bc4a2-d974-46c6-ac7b-9c3c1b5b3e04",
+      "3afd5ba3-988d-462f-836b-b99ec6c661c2",
+      "d1139caf-37bd-4f97-9220-08feba95bdce"
+    ],
+    "materialIds": [],
+    "systemIds": [
+      "e7cf071d-ca71-42ea-81de-4924de27f07c"
+    ],
+    "gapIds": [],
+    "path": "allergen-claims-verification"
+  },
+  "26d65cd2-dfa3-4d1c-a2c3-a07b19df32c7": {
+    "id": "26d65cd2-dfa3-4d1c-a2c3-a07b19df32c7",
+    "flowId": "ead7c098-c397-416f-a9a0-d86344b3804b",
+    "sequence": 3,
+    "name": "Label artwork approval",
+    "summary": "Finished artwork returns from design for final sign-off; for USDA-regulated products this includes FSIS pre-approval, which is not required for most FDA-regulated products.",
+    "regulationIds": [
+      "18c16d22-6037-4b00-a54b-d91b55a2e001"
+    ],
+    "roleIds": [
+      "9e3e7bec-9c72-4e45-bff2-97761eb57ae5"
+    ],
+    "threadIds": [],
+    "nestedFlowId": null,
+    "artifactIds": [
+      "68a4cc0a-b5c0-4ba4-91de-332c4c74c684",
+      "f6d69f97-18d8-4a0f-b4fb-77c9320edb1d"
+    ],
+    "materialIds": [],
+    "systemIds": [
+      "e7cf071d-ca71-42ea-81de-4924de27f07c"
+    ],
+    "gapIds": [],
+    "path": "label-artwork-approval"
+  },
+  "4224adc1-d9bf-44b9-805f-1d15261eb870": {
+    "id": "4224adc1-d9bf-44b9-805f-1d15261eb870",
+    "flowId": "ead7c098-c397-416f-a9a0-d86344b3804b",
+    "sequence": 4,
+    "name": "Lot & date coding",
+    "summary": "Applying the manufacturer's lot/batch code and date code (best-by, use-by, or sell-by) to the package, forming the backbone of traceability and recall systems.",
+    "regulationIds": [
+      "93b63909-560d-4414-8cb4-0920241e45a4"
+    ],
+    "roleIds": [
+      "7ebd1afb-69de-4795-842d-9893e61046eb"
+    ],
+    "threadIds": [
+      "3512a7c6-f64a-4bb7-8171-4e2dd24e791a"
+    ],
+    "nestedFlowId": null,
+    "artifactIds": [
+      "ffb44422-779f-4bc8-86be-ff6fa6d73d68"
+    ],
+    "materialIds": [],
+    "systemIds": [
+      "3628303b-f98e-4dc6-8627-9ad94b5af3dd"
+    ],
+    "gapIds": [],
+    "path": "lot-date-coding"
+  },
+  "8a91ee5a-aeed-440e-8a2d-7579a0e91d2a": {
+    "id": "8a91ee5a-aeed-440e-8a2d-7579a0e91d2a",
+    "flowId": "ead7c098-c397-416f-a9a0-d86344b3804b",
+    "sequence": 5,
+    "name": "Label application verification",
+    "summary": "In-line check confirming the correct, current-version label was applied to the correct product (e.g., vision system checking label presence/alignment/lot code legibility).",
+    "regulationIds": [],
+    "roleIds": [
+      "fdafae64-3659-4c78-9715-e64c6531078a"
+    ],
+    "threadIds": [
+      "ab2d3c7a-9779-4af0-9227-d8ea16e6b524"
+    ],
+    "nestedFlowId": null,
+    "artifactIds": [
+      "f2777655-3ff5-43b8-9e51-494f0704b2a6"
+    ],
+    "materialIds": [
+      "26fc29f0-5637-42ef-87bd-820d14c68eb6"
+    ],
+    "systemIds": [
+      "3628303b-f98e-4dc6-8627-9ad94b5af3dd"
+    ],
+    "gapIds": [],
+    "path": "label-application-verification"
+  },
+  "fd5b2239-f5a6-4228-80fc-f7142d34e33b": {
+    "id": "fd5b2239-f5a6-4228-80fc-f7142d34e33b",
+    "flowId": "0c2b1002-986d-4b83-b2cf-c884adcc302d",
+    "sequence": 1,
+    "name": "Finished goods putaway",
+    "summary": "Moving finished, labeled product from the packaging line to its warehouse storage location, recording lot and location.",
+    "regulationIds": [],
+    "roleIds": [
+      "b03ed7b2-3c47-488d-a987-bbea51c118a4"
+    ],
+    "threadIds": [
+      "3512a7c6-f64a-4bb7-8171-4e2dd24e791a"
+    ],
+    "nestedFlowId": null,
+    "artifactIds": [
+      "733c42da-63cb-4309-b90f-eada2c4a97f7"
+    ],
+    "materialIds": [],
+    "systemIds": [
+      "39da6cf5-44d6-44d3-b613-d86a3530a7b1"
+    ],
+    "gapIds": [],
+    "path": "fg-putaway"
+  },
+  "590dacbb-6224-4d91-a903-1e2f444674b6": {
+    "id": "590dacbb-6224-4d91-a903-1e2f444674b6",
+    "flowId": "0c2b1002-986d-4b83-b2cf-c884adcc302d",
+    "sequence": 2,
+    "name": "Shelf-life tracking",
+    "summary": "Tracking remaining shelf life (RMSL) per lot against customer requirements, e.g., a retailer refusing product below a minimum remaining-shelf-life threshold on receipt.",
+    "regulationIds": [],
+    "roleIds": [
+      "cbf4a032-afb3-4874-808c-d4db7121ef29"
+    ],
+    "threadIds": [
+      "3512a7c6-f64a-4bb7-8171-4e2dd24e791a"
+    ],
+    "nestedFlowId": null,
+    "artifactIds": [
+      "70dd593f-d5f5-4ef5-8e57-decefe3ba0a5"
+    ],
+    "materialIds": [],
+    "systemIds": [
+      "39da6cf5-44d6-44d3-b613-d86a3530a7b1"
+    ],
+    "gapIds": [],
+    "path": "shelf-life-tracking"
+  },
+  "bd71a1dd-ab62-470d-9e12-96775aa2d6c5": {
+    "id": "bd71a1dd-ab62-470d-9e12-96775aa2d6c5",
+    "flowId": "0c2b1002-986d-4b83-b2cf-c884adcc302d",
+    "sequence": 3,
+    "name": "FEFO management (finished goods)",
+    "summary": "WMS-directed picking/replenishment of finished goods by earliest expiration date rather than receipt order.",
+    "regulationIds": [],
+    "roleIds": [
+      "b03ed7b2-3c47-488d-a987-bbea51c118a4"
+    ],
+    "threadIds": [
+      "3512a7c6-f64a-4bb7-8171-4e2dd24e791a"
+    ],
+    "nestedFlowId": null,
+    "artifactIds": [],
+    "materialIds": [],
+    "systemIds": [
+      "39da6cf5-44d6-44d3-b613-d86a3530a7b1"
+    ],
+    "gapIds": [],
+    "path": "fg-fefo-management"
+  },
+  "a73d62df-066b-404f-90c5-c0c72535170e": {
+    "id": "a73d62df-066b-404f-90c5-c0c72535170e",
+    "flowId": "0c2b1002-986d-4b83-b2cf-c884adcc302d",
+    "sequence": 4,
+    "name": "Finished goods inventory traceability",
+    "summary": "Maintaining lot-level visibility of on-hand finished goods so quantity-on-site can be determined quickly during a mock or real recall.",
+    "regulationIds": [
+      "93b63909-560d-4414-8cb4-0920241e45a4"
+    ],
+    "roleIds": [
+      "cbf4a032-afb3-4874-808c-d4db7121ef29",
+      "9d45f06e-8c0f-41d3-ba64-5f8fae92ba40"
+    ],
+    "threadIds": [
+      "3512a7c6-f64a-4bb7-8171-4e2dd24e791a",
+      "46744a4d-e3cb-46a7-a3fe-445ca941391a"
+    ],
+    "nestedFlowId": null,
+    "artifactIds": [
+      "733c42da-63cb-4309-b90f-eada2c4a97f7"
+    ],
+    "materialIds": [],
+    "systemIds": [
+      "39da6cf5-44d6-44d3-b613-d86a3530a7b1",
+      "22e46c8f-cf7e-4d53-b5f2-56c939ee76ff"
+    ],
+    "gapIds": [],
+    "path": "fg-inventory-traceability"
+  },
+  "59fcfd66-adbb-4ec7-bc35-c15cb11d00d0": {
+    "id": "59fcfd66-adbb-4ec7-bc35-c15cb11d00d0",
+    "flowId": "32075fac-92e3-4d58-8966-9eb423536b14",
+    "sequence": 1,
+    "name": "Shipping event / TLC recording",
+    "summary": "Recording the Shipping Critical Tracking Event: the Traceability Lot Code(s), quantity, and destination as product leaves the facility's possession — the plant-side half of FSMA 204's shipping/receiving CTE pair.",
+    "regulationIds": [
+      "93b63909-560d-4414-8cb4-0920241e45a4"
+    ],
+    "roleIds": [
+      "6855f374-f3ec-41b1-a96b-3f3f8284522b"
+    ],
+    "threadIds": [
+      "3512a7c6-f64a-4bb7-8171-4e2dd24e791a",
+      "46744a4d-e3cb-46a7-a3fe-445ca941391a"
+    ],
+    "nestedFlowId": null,
+    "artifactIds": [
+      "551a4e09-160c-4f45-ac51-2000370afcab",
+      "9cc2d1ff-a495-474c-bc2d-5615fe7e94bb"
+    ],
+    "materialIds": [],
+    "systemIds": [
+      "22e46c8f-cf7e-4d53-b5f2-56c939ee76ff",
+      "39da6cf5-44d6-44d3-b613-d86a3530a7b1"
+    ],
+    "gapIds": [],
+    "path": "shipping-event-tlc-recording"
+  },
+  "8f8fbd1c-e04c-41ce-a6f3-0f45dea98e31": {
+    "id": "8f8fbd1c-e04c-41ce-a6f3-0f45dea98e31",
+    "flowId": "32075fac-92e3-4d58-8966-9eb423536b14",
+    "sequence": 2,
+    "name": "ASN generation",
+    "summary": "Generating the outbound Advance Ship Notice (EDI 856) so the receiving customer's warehouse can prepare before the truck arrives.",
+    "regulationIds": [],
+    "roleIds": [
+      "6855f374-f3ec-41b1-a96b-3f3f8284522b"
+    ],
+    "threadIds": [
+      "3512a7c6-f64a-4bb7-8171-4e2dd24e791a"
+    ],
+    "nestedFlowId": null,
+    "artifactIds": [
+      "fc2cc2d7-c0e6-4a2c-b0e8-d110914627d2"
+    ],
+    "materialIds": [],
+    "systemIds": [
+      "0895906c-34f8-43a0-a4d8-112d3a9eb395"
+    ],
+    "gapIds": [],
+    "path": "asn-generation"
+  },
+  "23b48d9d-c8fd-495c-a4e1-bb8dcf84f8c3": {
+    "id": "23b48d9d-c8fd-495c-a4e1-bb8dcf84f8c3",
+    "flowId": "32075fac-92e3-4d58-8966-9eb423536b14",
+    "sequence": 3,
+    "name": "Carrier handoff & cold chain record",
+    "summary": "Recording the condition (temperature) and custody handoff to the carrier at trailer loading, the plant's last traceability touchpoint before the product leaves its direct control.",
+    "regulationIds": [
+      "41dc8af7-974a-4eaf-b4de-eacb5109dfb7"
+    ],
+    "roleIds": [
+      "6855f374-f3ec-41b1-a96b-3f3f8284522b"
+    ],
+    "threadIds": [
+      "3512a7c6-f64a-4bb7-8171-4e2dd24e791a"
+    ],
+    "nestedFlowId": null,
+    "artifactIds": [
+      "620aaecb-0b8f-4336-8f3e-86716178923b",
+      "551a4e09-160c-4f45-ac51-2000370afcab",
+      "b5e32a3a-afdb-4264-a583-9bfcf21d6999"
+    ],
+    "materialIds": [
+      "9bc5fcf1-532d-40f8-86d1-2ba97b0b8950"
+    ],
+    "systemIds": [
+      "22e46c8f-cf7e-4d53-b5f2-56c939ee76ff"
+    ],
+    "gapIds": [],
+    "path": "carrier-handoff-cold-chain-record"
+  },
+  "47719c67-7075-4fd1-94a1-0c456428d0b7": {
+    "id": "47719c67-7075-4fd1-94a1-0c456428d0b7",
+    "flowId": "4997a26b-e15e-4e11-a1db-c91a31401d18",
+    "sequence": 2,
+    "name": "Ingredient sourcing & procurement",
+    "summary": "Selecting and qualifying suppliers, receiving their shipments, and storing raw materials until they're pulled for production.",
+    "regulationIds": [
+      "ed70a1f5-bbb6-4ae3-96e3-0bea4d58dc9a",
+      "4db45158-1d5c-4b87-86ad-c022454a603e",
+      "41dc8af7-974a-4eaf-b4de-eacb5109dfb7"
+    ],
+    "agencyIds": [
+      "2cf6d02e-5c41-40c6-8dea-2c5d9756b9c1",
+      "3b121647-ec9f-444c-9084-8a6637d357da"
+    ],
+    "roleIds": [
+      "7b508ca3-d41f-46be-a4c1-d622437576a2",
+      "9c565276-585b-4a14-b9a3-2bd47ffa9306",
+      "7f9e6386-c3eb-4ecc-a0e6-a39378e6fc8b",
+      "fdafae64-3659-4c78-9715-e64c6531078a",
+      "b03ed7b2-3c47-488d-a987-bbea51c118a4",
+      "cbf4a032-afb3-4874-808c-d4db7121ef29"
+    ],
+    "threadIds": [
+      "3512a7c6-f64a-4bb7-8171-4e2dd24e791a",
+      "32d87d43-f171-4bfb-9a88-309f2f6bbdb4",
+      "ab2d3c7a-9779-4af0-9227-d8ea16e6b524"
+    ],
+    "nestedFlowId": "fa3dfd0e-f0b2-4d39-8caf-60db1a253cc1",
+    "artifactIds": [],
+    "materialIds": [],
+    "systemIds": [],
+    "gapIds": [],
+    "path": "ingredient-sourcing-procurement"
+  },
+  "c4f4e35a-a8a0-432c-b7d9-36a416b70a56": {
+    "id": "c4f4e35a-a8a0-432c-b7d9-36a416b70a56",
+    "flowId": "4997a26b-e15e-4e11-a1db-c91a31401d18",
+    "sequence": 3,
+    "name": "Processing & manufacturing",
+    "summary": "Planning, preparing, and running the transformation of raw materials into finished product, with in-process quality control alongside it.",
+    "regulationIds": [
+      "4db45158-1d5c-4b87-86ad-c022454a603e",
+      "daa53a8a-1ab0-4a41-823b-0bd2779f0ee4",
+      "0f215096-8098-4709-b7d5-8c2ecebf3422",
+      "a0ba0e0a-4847-4276-853c-1cc3b93e1c2e"
+    ],
+    "agencyIds": [
+      "2cf6d02e-5c41-40c6-8dea-2c5d9756b9c1",
+      "aac69997-d9a2-4428-860f-1d8813e9ba5a"
+    ],
+    "roleIds": [
+      "6dfbb1aa-62f9-4783-8024-7097442d4931",
+      "859b09e9-8ca9-407a-add8-cf8286ae4c47",
+      "19d254bc-e885-4b41-86cb-5bc0fe0c623b",
+      "6aae9040-366c-4cfe-903f-da172231f4f0",
+      "b03ed7b2-3c47-488d-a987-bbea51c118a4",
+      "1ff0e866-1829-4ebf-bc75-55adef9f19dd",
+      "2c80f2c0-5690-4666-8bb3-872397ad1bf4",
+      "fdafae64-3659-4c78-9715-e64c6531078a",
+      "7fb4b883-9d15-4a05-9762-f982fbe8c7c2"
+    ],
+    "threadIds": [
+      "3512a7c6-f64a-4bb7-8171-4e2dd24e791a",
+      "ab2d3c7a-9779-4af0-9227-d8ea16e6b524",
+      "32d87d43-f171-4bfb-9a88-309f2f6bbdb4"
+    ],
+    "nestedFlowId": "88001913-b6d1-4685-862a-f9ef01ba42a9",
+    "artifactIds": [],
+    "materialIds": [],
+    "systemIds": [],
+    "gapIds": [],
+    "path": "processing-manufacturing"
+  },
+  "dc388e98-2c28-4e90-95b2-cfcdab76fe8d": {
+    "id": "dc388e98-2c28-4e90-95b2-cfcdab76fe8d",
+    "flowId": "4997a26b-e15e-4e11-a1db-c91a31401d18",
+    "sequence": 4,
+    "name": "Packaging",
+    "summary": "Filling, sealing, and packing product, then applying and verifying its label.",
+    "regulationIds": [
+      "4db45158-1d5c-4b87-86ad-c022454a603e",
+      "18c16d22-6037-4b00-a54b-d91b55a2e001",
+      "5fedae94-25ee-4237-9dca-d14b6b92b2d5",
+      "b92fd46c-08fa-4a05-95d7-d030b0203096",
+      "2adc08a2-5082-4f11-9890-73c5c1bb546e"
+    ],
+    "agencyIds": [
+      "2cf6d02e-5c41-40c6-8dea-2c5d9756b9c1",
+      "aac69997-d9a2-4428-860f-1d8813e9ba5a",
+      "c8b293a1-17bc-42b2-b023-7d0c6dba905d",
+      "3c72b77c-84b1-4fc5-88bc-7a97193e2ffe"
+    ],
+    "roleIds": [
+      "7ebd1afb-69de-4795-842d-9893e61046eb",
+      "bf3074df-b754-4b6e-9ca0-4bc175a487fb",
+      "9e3e7bec-9c72-4e45-bff2-97761eb57ae5"
+    ],
+    "threadIds": [
+      "32d87d43-f171-4bfb-9a88-309f2f6bbdb4",
+      "3512a7c6-f64a-4bb7-8171-4e2dd24e791a",
+      "ab2d3c7a-9779-4af0-9227-d8ea16e6b524"
+    ],
+    "nestedFlowId": "ff5086d9-b478-4a7e-b868-4ed8a0a2d7ec",
+    "artifactIds": [],
+    "materialIds": [],
+    "systemIds": [],
+    "gapIds": [],
+    "path": "packaging"
+  },
+  "29f6789d-0abb-4306-bb15-a9bfd3d1d279": {
+    "id": "29f6789d-0abb-4306-bb15-a9bfd3d1d279",
+    "flowId": "4997a26b-e15e-4e11-a1db-c91a31401d18",
+    "sequence": 5,
+    "name": "Distribution",
+    "summary": "Storing finished goods and shipping them out through cold-chain-aware logistics to the next link in the supply chain.",
+    "regulationIds": [
+      "4db45158-1d5c-4b87-86ad-c022454a603e",
+      "41dc8af7-974a-4eaf-b4de-eacb5109dfb7"
+    ],
+    "agencyIds": [
+      "2cf6d02e-5c41-40c6-8dea-2c5d9756b9c1"
+    ],
+    "roleIds": [
+      "b03ed7b2-3c47-488d-a987-bbea51c118a4",
+      "cbf4a032-afb3-4874-808c-d4db7121ef29",
+      "6855f374-f3ec-41b1-a96b-3f3f8284522b",
+      "a24945f1-6c80-4a7f-9f67-15d6cf04d44a"
+    ],
+    "threadIds": [
+      "32d87d43-f171-4bfb-9a88-309f2f6bbdb4",
+      "3512a7c6-f64a-4bb7-8171-4e2dd24e791a",
+      "46744a4d-e3cb-46a7-a3fe-445ca941391a"
+    ],
+    "nestedFlowId": "87caa949-6840-4213-8110-16df363e1743",
+    "artifactIds": [],
+    "materialIds": [],
+    "systemIds": [],
+    "gapIds": [],
+    "path": "distribution"
+  }
+}

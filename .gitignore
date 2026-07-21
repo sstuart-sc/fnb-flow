@@ -1,0 +1,16 @@
+# OS cruft
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor
+.vscode/
+.idea/
+*.swp
+
+# Node (only relevant if npx caches locally / future tooling added)
+node_modules/
+npm-debug.log*
+
+# Local scratch
+*.local
