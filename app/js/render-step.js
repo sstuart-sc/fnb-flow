@@ -1,6 +1,7 @@
 import { resolveList, stepsForFlow, displayFlowName } from "./data.js";
 import { goToStep } from "./router.js";
 import { renderNodeRow } from "./render-node.js";
+import { openSourceModal } from "./render-source-modal.js";
 
 export function renderStepView(container, data, crumbs, stepId) {
   const step = data.steps[stepId];
@@ -63,19 +64,19 @@ export function renderStepView(container, data, crumbs, stepId) {
   const conceptGrid = document.createElement("div");
   conceptGrid.className = "detail-grid";
   conceptGrid.appendChild(
-    listCard("Regulations", resolveList(data, "regulations", step.regulationIds), (r) => ({
+    listCard(data, "Regulations", resolveList(data, "regulations", step.regulationIds), (r) => ({
       name: r.name,
       meta: [r.citation, r.year].filter(Boolean).join(" · "),
     }))
   );
   conceptGrid.appendChild(
-    listCard("Agencies", resolveList(data, "agencies", step.agencyIds), (a) => ({
+    listCard(data, "Agencies", resolveList(data, "agencies", step.agencyIds), (a) => ({
       name: a.name,
       meta: a.fullName,
     }))
   );
   conceptGrid.appendChild(
-    listCard("Roles", resolveList(data, "roles", step.roleIds), (r) => ({
+    listCard(data, "Roles", resolveList(data, "roles", step.roleIds), (r) => ({
       name: r.name,
       meta: r.summary,
     }))
@@ -97,19 +98,19 @@ export function renderStepView(container, data, crumbs, stepId) {
     const concreteGrid = document.createElement("div");
     concreteGrid.className = "detail-grid";
     concreteGrid.appendChild(
-      listCard("Artifacts", resolveList(data, "artifacts", step.artifactIds), (a) => ({
+      listCard(data, "Artifacts", resolveList(data, "artifacts", step.artifactIds), (a) => ({
         name: a.name,
         meta: [a.format, a.lifecycle].filter(Boolean).join(" — "),
       }))
     );
     concreteGrid.appendChild(
-      listCard("Materials & Equipment", resolveList(data, "materials", step.materialIds), (m) => ({
+      listCard(data, "Materials & Equipment", resolveList(data, "materials", step.materialIds), (m) => ({
         name: m.name,
         meta: m.notes,
       }))
     );
     concreteGrid.appendChild(
-      listCard("Systems", resolveList(data, "systems", step.systemIds), (s) => ({
+      listCard(data, "Systems", resolveList(data, "systems", step.systemIds), (s) => ({
         name: s.name,
         meta: s.examplePlatforms?.length ? `e.g. ${s.examplePlatforms.slice(0, 3).join(", ")}` : s.summary,
       }))
@@ -119,7 +120,7 @@ export function renderStepView(container, data, crumbs, stepId) {
 
 }
 
-function listCard(title, items, mapFn) {
+function listCard(data, title, items, mapFn) {
   const card = document.createElement("div");
   card.className = "detail-card";
   const h4 = document.createElement("h4");
@@ -148,8 +149,23 @@ function listCard(title, items, mapFn) {
       metaEl.textContent = meta;
       li.appendChild(metaEl);
     }
+    if (item.sourceIds?.length) {
+      li.appendChild(sourceNote(data, name, item.sourceIds));
+    }
     ul.appendChild(li);
   }
   card.appendChild(ul);
   return card;
+}
+
+// Clicking opens a modal listing this item's sources, each linking straight
+// to its own citation/url — see plan doc item 9a/10 UX decision (modal links
+// out directly rather than detouring through the sources page).
+function sourceNote(data, itemName, sourceIds) {
+  const note = document.createElement("button");
+  note.type = "button";
+  note.className = "item-source-note item-source-note--button";
+  note.textContent = `Sourced (${sourceIds.length})`;
+  note.addEventListener("click", () => openSourceModal(data, itemName, sourceIds));
+  return note;
 }

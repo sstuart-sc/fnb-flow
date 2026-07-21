@@ -3,54 +3,63 @@
     "id": "9bc5fcf1-532d-40f8-86d1-2ba97b0b8950",
     "name": "Temperature Probe / Sensor",
     "type": "equipment",
-    "notes": "Manual handheld or wireless IoT-connected; used at receiving, thawing, CCP monitoring, and transport."
+    "notes": "Manual handheld or wireless IoT-connected; used at receiving, thawing, CCP monitoring, and transport.",
+    "sourceIds": ["09e0ee20-5e5b-4fbf-b222-4f3347f347a7"]
   },
   "8c17f733-178e-42a8-9a66-08c7e489d36b": {
     "id": "8c17f733-178e-42a8-9a66-08c7e489d36b",
     "name": "pH Meter",
     "type": "equipment",
-    "notes": "Used at CCPs involving acidification/pH control (e.g., fermented or acidified products)."
+    "notes": "Used at CCPs involving acidification/pH control (e.g., fermented or acidified products) — FDA targets pH below 4.6 to control Clostridium botulinum in acidified foods.",
+    "sourceIds": ["d5d20924-e7bf-4c71-8293-4f22e6059606"]
   },
   "bcf4ede9-5dde-4874-b14b-5de1a598bdb4": {
     "id": "bcf4ede9-5dde-4874-b14b-5de1a598bdb4",
     "name": "Scale",
     "type": "equipment",
-    "notes": "Used in batching/weighing and catch-weight verification; may be integrated with MES for automatic weight capture."
+    "notes": "Used in batching/weighing and catch-weight verification; may be integrated with MES for automatic weight capture.",
+    "sourceIds": ["b118b0bf-0fcf-4cf9-9b87-993e4f18604d"]
   },
   "72e2305e-e782-4fef-a0f0-684b001b4bf4": {
     "id": "72e2305e-e782-4fef-a0f0-684b001b4bf4",
     "name": "ELISA Allergen Swab Test",
     "type": "test kit",
-    "notes": "Immunoassay-based test detecting specific allergen proteins (peanut, gluten, milk, etc.); used to verify allergen changeover cleaning."
+    "notes": "Immunoassay-based test detecting specific allergen proteins (peanut, gluten, milk, etc.). At-line allergen changeover verification typically uses the rapid lateral-flow immunoassay format (5-10 minute results); full lab-based ELISA is more commonly used for validation/quantitative work.",
+    "sourceIds": ["ee4d71d8-e90c-4bbd-a7eb-851b90bb3ac4"]
   },
   "9a076e51-1e86-42a5-84d9-8c39da37e1d0": {
     "id": "9a076e51-1e86-42a5-84d9-8c39da37e1d0",
     "name": "ATP Swab Test",
     "type": "test kit",
-    "notes": "Bioluminescence-based general cleanliness check; rapid pass/fail result used to verify cleaning before sanitizing or before production."
+    "notes": "Bioluminescence-based general cleanliness check; rapid pass/fail result used to verify cleaning before sanitizing or before production. Pass/fail thresholds are facility-established, not set by a universal external standard.",
+    "sourceIds": ["19b10a49-1d12-4222-9103-25859cefd368"]
   },
   "076d8f82-c969-464d-a40b-1e5413058708": {
     "id": "076d8f82-c969-464d-a40b-1e5413058708",
     "name": "Sanitizer Chemical",
     "type": "material",
-    "notes": "Common types: chlorine (bleach), quaternary ammonium compounds (quats), peroxyacetic acid (PAA); applied after cleaning, not a substitute for it."
+    "notes": "Common types: chlorine (bleach), quaternary ammonium compounds (quats), peroxyacetic acid (PAA); applied after cleaning, not a substitute for it — organic/soil load reduces sanitizer efficacy.",
+    "sourceIds": ["160c225b-f836-4037-8cf2-fe54b3b1b3f1"]
   },
   "22005d31-323d-4252-8610-41c71d08a023": {
     "id": "22005d31-323d-4252-8610-41c71d08a023",
     "name": "Metal Detector",
     "type": "equipment",
-    "notes": "Inline foreign-material detection for physical hazards; a common CCP."
+    "notes": "Inline foreign-material detection for physical hazards; a common CCP, especially for ground/chopped products.",
+    "sourceIds": ["dbc3414e-069f-4fbd-ab52-6ce551a7b53e"]
   },
   "402676d7-c0d4-45d1-9798-134b8b542939": {
     "id": "402676d7-c0d4-45d1-9798-134b8b542939",
     "name": "X-Ray Inspection System",
     "type": "equipment",
-    "notes": "Inline foreign-material and fill-check detection, more sensitive than metal detection for some materials (glass, dense plastics, bone)."
+    "notes": "Inline foreign-material and fill-check detection. More sensitive than metal detection for non-metallic, dense/high-density materials (glass, dense plastics, bone) via density contrast; metal detectors are limited to conductive contaminants and prone to false triggers on high-salt/moisture products.",
+    "sourceIds": ["ea02b52a-37bd-4fc0-bd76-16581f340071"]
   },
   "26fc29f0-5637-42ef-87bd-820d14c68eb6": {
     "id": "26fc29f0-5637-42ef-87bd-820d14c68eb6",
     "name": "Vision Inspection System",
     "type": "equipment",
-    "notes": "Camera-based computer vision checking label presence, alignment, and lot code legibility at line speed."
+    "notes": "Camera-based computer vision checking label presence, alignment, and lot code legibility at line speed (commonly 1,000+ units/min), including OCR/OCV for code legibility.",
+    "sourceIds": ["045e2081-03ba-4d0d-8afd-be2563b62663"]
   }
 }

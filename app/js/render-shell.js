@@ -56,7 +56,10 @@ function renderLevel(data, level, depth) {
   const flow = data.flows[level.flowId];
   const group = document.createElement("div");
   group.className = "minimap__level";
-  if (depth > 0) group.classList.add("minimap__level--nested");
+  if (depth > 0) {
+    group.classList.add("minimap__level--nested");
+    group.style.setProperty("--nest-depth", String(Math.min(depth, 6)));
+  }
   if (level.preview) group.classList.add("minimap__level--preview");
 
   const heading = document.createElement("h3");

@@ -4,6 +4,7 @@ import { renderMinimap } from "./render-shell.js";
 import { renderFlowView } from "./render-flow.js";
 import { renderStepView } from "./render-step.js";
 import { renderSearchView, buildSearchIndex } from "./render-search.js";
+import { renderSourcesView } from "./render-sources.js";
 
 // Optional progressive enhancement: if js/vendor/fuse.js is present and defines
 // window.Fuse, we use it for fuzzy search. Otherwise render-search.js falls back
@@ -49,10 +50,18 @@ async function main() {
 }
 
 function render(state, data, searchIndex, mainEl, searchInput) {
+  updateNavActiveState(state);
+
+  document.body.classList.toggle("no-minimap", state.mode !== "browse");
+
   if (state.mode === "search") {
     searchInput.value = state.query;
     renderSearchView(mainEl, data, searchIndex, state.query, fuse);
-    renderMinimap(data, []);
+    return;
+  }
+
+  if (state.mode === "sources") {
+    renderSourcesView(mainEl, data);
     return;
   }
 
@@ -68,6 +77,13 @@ function render(state, data, searchIndex, mainEl, searchInput) {
     const stepId = stepIdForPath(data, last.stepPath);
     renderStepView(mainEl, data, crumbs, stepId);
   }
+}
+
+function updateNavActiveState(state) {
+  const navFlow = document.getElementById("nav-flow");
+  const navSources = document.getElementById("nav-sources");
+  navFlow.classList.toggle("app-header__nav-link--active", state.mode === "browse");
+  navSources.classList.toggle("app-header__nav-link--active", state.mode === "sources");
 }
 
 main().catch((err) => {

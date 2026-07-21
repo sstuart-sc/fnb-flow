@@ -34,6 +34,10 @@ export function parseHash() {
     return { mode: "search", query: decodeURIComponent(parts[1] || "") };
   }
 
+  if (parts[0] === "sources") {
+    return { mode: "sources" };
+  }
+
   // parts look like: flow/<flowPath>/step/<stepPath>/flow/<flowPath>/step/<stepPath>...
   const crumbs = [];
   for (let i = 0; i < parts.length; i += 2) {
@@ -51,6 +55,9 @@ export function parseHash() {
 function serialize(state) {
   if (state.mode === "search") {
     return `#/search/${encodeURIComponent(state.query || "")}`;
+  }
+  if (state.mode === "sources") {
+    return `#/sources`;
   }
   const parts = state.crumbs.flatMap((c) =>
     c.type === "flow" ? ["flow", encodeURIComponent(c.flowPath)] : ["step", encodeURIComponent(c.stepPath)]
@@ -80,6 +87,10 @@ export function goToCrumb(crumbs, index) {
 
 export function goToSearch(query) {
   navigate({ mode: "search", query });
+}
+
+export function goToSources() {
+  navigate({ mode: "sources" });
 }
 
 export function initRouter() {

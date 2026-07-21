@@ -1,0 +1,783 @@
+{
+  "4ff0437a-4708-4a82-9ad1-3871f55b2fff": {
+    "id": "4ff0437a-4708-4a82-9ad1-3871f55b2fff",
+    "name": "FDA mandatory recall authority (FSMA Section 423) — infant formula exception",
+    "type": "regulation-text",
+    "citation": "FSMA Section 423; 21 CFR Part 107",
+    "note": "FSMA gives FDA mandatory recall authority for FDA-regulated foods generally; infant formula recall authority is a separate, older mandatory mechanism under 21 CFR Part 107."
+  },
+  "0b5a11ed-f395-4fa2-87f5-9387207c02fd": {
+    "id": "0b5a11ed-f395-4fa2-87f5-9387207c02fd",
+    "name": "FDA shell egg vs. USDA egg products jurisdiction split",
+    "type": "regulation-text",
+    "url": "https://www.fda.gov/food/eggs",
+    "note": "FDA regulates shell eggs; USDA FSIS regulates further-processed (liquid/frozen/dried) egg products."
+  },
+  "37bf5ebf-47ce-4e8a-9052-93d8eade2b5f": {
+    "id": "37bf5ebf-47ce-4e8a-9052-93d8eade2b5f",
+    "name": "FSIS recalls are voluntary, not mandatory",
+    "type": "regulation-text",
+    "url": "https://www.fsis.usda.gov/food-safety/recalls-public-health-alerts/understanding-fsis-food-recalls",
+    "note": "FSIS's own guidance confirms all its recalls are voluntary; its only compulsion lever on a refusing firm is DOJ referral for detention/seizure, not the power to directly order a recall."
+  },
+  "bcf4d03b-bac6-4217-bb3d-5b04c24dd48f": {
+    "id": "bcf4d03b-bac6-4217-bb3d-5b04c24dd48f",
+    "name": "FSIS generic label approval (label pre-approval now the exception)",
+    "type": "regulation-text",
+    "citation": "Federal Register 2023-00693",
+    "note": "Since the 2013/2023 rule changes, most meat/poultry labels are self-certified under generic label approval; FSIS pre-approval now applies only to special claims."
+  },
+  "30e9f383-71e7-4b37-9c98-e6679c982f25": {
+    "id": "30e9f383-71e7-4b37-9c98-e6679c982f25",
+    "name": "USDA AMS voluntary grading fee schedule",
+    "type": "regulation-text",
+    "url": "https://www.ams.usda.gov/services/grading/fees",
+    "note": "Confirms AMS grading (e.g. USDA Grade A, USDA Choice) is voluntary and fee-based."
+  },
+  "54f9b1c2-339d-484d-a76b-ddb53931fc08": {
+    "id": "54f9b1c2-339d-484d-a76b-ddb53931fc08",
+    "name": "USDA AMS National Bioengineered Food Disclosure Standard",
+    "type": "regulation-text",
+    "url": "https://www.ams.usda.gov/rules-regulations/be",
+    "note": "Confirms AMS administers NBFDS."
+  },
+  "a513ecce-17b3-40de-97fe-330f48f3e669": {
+    "id": "a513ecce-17b3-40de-97fe-330f48f3e669",
+    "name": "EPA pesticide tolerances under FFDCA / Food Quality Protection Act",
+    "type": "regulation-text",
+    "url": "https://www.epa.gov/laws-regulations/summary-food-quality-protection-act",
+    "note": "EPA sets maximum pesticide residue tolerances; FDA/USDA enforce them."
+  },
+  "bd24a8e8-29cd-4369-b0fb-5a0f34a6235d": {
+    "id": "bd24a8e8-29cd-4369-b0fb-5a0f34a6235d",
+    "name": "EPA drinking water standards (Safe Drinking Water Act)",
+    "type": "regulation-text",
+    "url": "https://www.epa.gov/ground-water-and-drinking-water/national-primary-drinking-water-regulations",
+    "note": "National Primary Drinking Water Regulations affecting food manufacturing water quality."
+  },
+  "5270eda2-77d9-4497-bcf3-5c27e681c78a": {
+    "id": "5270eda2-77d9-4497-bcf3-5c27e681c78a",
+    "name": "TTB jurisdiction threshold — wine 7% ABV or greater",
+    "type": "regulation-text",
+    "url": "https://www.ttb.gov/regulated-commodities/beverage-alcohol/wine/7percentormore",
+    "note": "TTB regulates wine at 7% ABV or greater (not \"above 7%\"); wine under 7% ABV falls to FDA. Also confirms beer under TTB requires both malted barley and hops."
+  },
+  "1690475b-ce2c-48e8-97d8-c971136d1b9b": {
+    "id": "1690475b-ce2c-48e8-97d8-c971136d1b9b",
+    "name": "FTC/FDA food advertising vs. labeling jurisdiction split",
+    "type": "regulation-text",
+    "url": "https://www.ftc.gov/legal-library/browse/enforcement-policy-statement-food-advertising",
+    "note": "Confirms the long-standing FTC/FDA liaison agreement (originally 1971) dividing advertising (FTC) from labeling (FDA) jurisdiction."
+  },
+  "18857130-e665-46e4-817a-bc9bca24767c": {
+    "id": "18857130-e665-46e4-817a-bc9bca24767c",
+    "name": "FDA Food Code adoption by states",
+    "type": "regulation-text",
+    "url": "https://www.fda.gov/food/retail-food-protection/fda-food-code",
+    "note": "Confirms the Food Code's voluntary-model status and adoption in some form by ~97% of states/territories."
+  },
+  "dae96c92-1d7e-463e-a37d-7c9c92177079": {
+    "id": "dae96c92-1d7e-463e-a37d-7c9c92177079",
+    "name": "NIST Handbook 44 as weights-and-measures reference model",
+    "type": "industry-standard",
+    "url": "https://www.nist.gov/pml/owm/nist-handbook-44-current-edition",
+    "note": "Federal reference model for weights-and-measures, enforced at state/local level."
+  },
+  "b86367cd-92f4-4447-886a-12fc38f32196": {
+    "id": "b86367cd-92f4-4447-886a-12fc38f32196",
+    "name": "CDC foodborne illness burden estimate (~48M/128,000/3,000)",
+    "type": "regulation-text",
+    "url": "https://www.cdc.gov/food-safety/data-research/facts-stats/index.html",
+    "note": "CDC's current published headline estimate; methodology traces to 2011 (Scallan et al.), not a recent study."
+  },
+  "b4a19aed-f8e7-4e34-812d-cecd8ae8a23f": {
+    "id": "b4a19aed-f8e7-4e34-812d-cecd8ae8a23f",
+    "name": "CDC 2025 narrower foodborne illness estimate (7 pathogens, 2019 data)",
+    "type": "regulation-text",
+    "url": "https://wwwnc.cdc.gov/eid/article/31/4/24-0913_article",
+    "note": "A separate, narrower 2025 CDC update covering 7 major pathogens only (~9.9M illnesses, ~53,300 hospitalizations, 931 deaths, 2019 data) — does not replace the broader 48M estimate, which also covers unspecified agents."
+  },
+  "9de163da-25db-489c-b6c9-30a755bec241": {
+    "id": "9de163da-25db-489c-b6c9-30a755bec241",
+    "name": "GS1 GLN data model standard",
+    "type": "industry-standard",
+    "url": "https://www.gs1.org/standards/gln-data-model-solution-standard",
+    "note": "Confirms GS1 GLN as a maintained standard."
+  },
+  "f29ea385-f063-431d-834e-a5d7eac523f8": {
+    "id": "f29ea385-f063-431d-834e-a5d7eac523f8",
+    "name": "GS1 EPCIS and CBV implementation guideline",
+    "type": "industry-standard",
+    "url": "https://www.gs1.org/standards/epcis-and-cbv-implementation-guideline",
+    "note": "Confirms GS1 EPCIS as a maintained traceability data standard."
+  },
+  "10d4f375-5d74-4952-b95e-e5655ba2aad6": {
+    "id": "10d4f375-5d74-4952-b95e-e5655ba2aad6",
+    "name": "GFSI recognition process (benchmarking, not certifying)",
+    "type": "industry-standard",
+    "url": "https://mygfsi.com/how-to-implement/recognition",
+    "note": "Confirms GFSI's role as a benchmarking body recognizing schemes like SQF, BRCGS, FSSC 22000, IFS, rather than certifying directly."
+  },
+  "221354f6-184a-4347-9632-e5f4510319de": {
+    "id": "221354f6-184a-4347-9632-e5f4510319de",
+    "name": "FSSC 22000 GFSI recognition confirmation",
+    "type": "industry-standard",
+    "url": "https://www.fssc.com",
+    "note": "Confirms FSSC 22000 as a GFSI-recognized certification scheme."
+  },
+  "40aa2d70-7490-4cd3-b572-d42b9f506489": {
+    "id": "40aa2d70-7490-4cd3-b572-d42b9f506489",
+    "name": "FD&C Act text and citation",
+    "type": "regulation-text",
+    "citation": "Pub. L. 75-717, 52 Stat. 1040; 21 U.S.C. § 301 et seq.",
+    "url": "https://www.fda.gov/regulatory-information/laws-enforced-fda/federal-food-drug-and-cosmetic-act-fdc-act",
+    "note": "Confirms enactment year 1938 and the adulteration/misbranding prohibition as FDA's core statutory authority."
+  },
+  "fa2343c4-52d5-496b-97e0-4edd5f69c36a": {
+    "id": "fa2343c4-52d5-496b-97e0-4edd5f69c36a",
+    "name": "FSMA background and full text",
+    "type": "regulation-text",
+    "citation": "Pub. L. 111-353",
+    "url": "https://www.fda.gov/food/food-safety-modernization-act-fsma/background-fda-food-safety-modernization-act-fsma",
+    "note": "Confirms signing date (Jan 4, 2011), preventive-model framing, and the seven foundational implementing rules."
+  },
+  "abcd7b91-6b10-4805-905b-b1da46aae541": {
+    "id": "abcd7b91-6b10-4805-905b-b1da46aae541",
+    "name": "PCHF final rule",
+    "type": "regulation-text",
+    "citation": "80 FR 55908 (Sept 17, 2015)",
+    "url": "https://www.federalregister.gov/documents/2015/09/17/2015-21920/current-good-manufacturing-practice-hazard-analysis-and-risk-based-preventive-controls-for-human",
+    "note": "Confirms 21 CFR Part 117, 2015 final rule date, PCQI requirement, and exemptions."
+  },
+  "07fed08e-e11c-42df-9eec-92305f751546": {
+    "id": "07fed08e-e11c-42df-9eec-92305f751546",
+    "name": "PCAF final rule",
+    "type": "regulation-text",
+    "citation": "80 FR 56170 (Sept 17, 2015)",
+    "url": "https://www.federalregister.gov/documents/2015/09/17/2015-21921/current-good-manufacturing-practice-hazard-analysis-and-risk-based-preventive-controls-for-food-for",
+    "note": "Confirms 21 CFR Part 507, 2015 final rule date."
+  },
+  "b849e231-2362-4766-bf73-d105f1277e6f": {
+    "id": "b849e231-2362-4766-bf73-d105f1277e6f",
+    "name": "Produce Safety Rule final rule",
+    "type": "regulation-text",
+    "citation": "80 FR 74354 (Nov 27, 2015)",
+    "url": "https://www.federalregister.gov/documents/2015/11/27/2015-28159/standards-for-the-growing-harvesting-packing-and-holding-of-produce-for-human-consumption",
+    "note": "Confirms 21 CFR Part 112 scope, exemptions, and 2015 final rule date."
+  },
+  "17a435a4-56f1-4d53-bd60-3f6b34185875": {
+    "id": "17a435a4-56f1-4d53-bd60-3f6b34185875",
+    "name": "FSVP final rule",
+    "type": "regulation-text",
+    "citation": "80 FR 74225 (Nov 27, 2015)",
+    "url": "https://www.federalregister.gov/documents/2015/11/27/2015-28158/foreign-supplier-verification-programs-for-importers-of-food-for-humans-and-animals",
+    "note": "Confirms 21 CFR Part 1 Subpart L and 2015 final rule date."
+  },
+  "6ba7f74b-eeab-44e4-9b0a-69ace5186859": {
+    "id": "6ba7f74b-eeab-44e4-9b0a-69ace5186859",
+    "name": "Sanitary Transportation Rule final rule",
+    "type": "regulation-text",
+    "url": "https://www.federalregister.gov/documents/2016/04/06/2016-07330/sanitary-transportation-of-human-and-animal-food",
+    "note": "Confirms 21 CFR Part 1 Subpart O, 2016 final rule (effective June 6, 2016)."
+  },
+  "abcb7c40-1113-47e2-b919-0b47f3364aba": {
+    "id": "abcb7c40-1113-47e2-b919-0b47f3364aba",
+    "name": "Intentional Adulteration Rule final rule",
+    "type": "regulation-text",
+    "url": "https://www.federalregister.gov/documents/2016/05/27/2016-12373/mitigation-strategies-to-protect-food-against-intentional-adulteration",
+    "note": "Confirms 21 CFR Part 121, 2016 final rule, and the four \"actionable process steps\" (official term, not \"Actionable Process Attacks\")."
+  },
+  "da05f47f-c44b-47f4-bd19-9ef07eda9955": {
+    "id": "da05f47f-c44b-47f4-bd19-9ef07eda9955",
+    "name": "FSMA 204 compliance date extension proposal",
+    "type": "regulation-text",
+    "url": "https://www.federalregister.gov/documents/2025/08/07/2025-14967/requirements-for-additional-traceability-records-for-certain-foods-compliance-date-extension",
+    "note": "FDA's August 2025 proposal to extend the compliance date by 30 months, to July 20, 2028."
+  },
+  "1d3a1d00-95ca-4af0-918f-5b3b8d0e1421": {
+    "id": "1d3a1d00-95ca-4af0-918f-5b3b8d0e1421",
+    "name": "Congressional appropriations act directive on FSMA 204 enforcement",
+    "type": "regulation-text",
+    "note": "The 2026 Continuing Appropriations, Agriculture, Legislative Branch, Military Construction and Veterans Affairs, and Extensions Act directed FDA not to enforce the Food Traceability Rule before July 20, 2028, making that the current binding compliance date rather than the original January 20, 2026."
+  },
+  "9a7e4ca7-93a7-4812-ba35-5ccbabc61913": {
+    "id": "9a7e4ca7-93a7-4812-ba35-5ccbabc61913",
+    "name": "FMIA statutory text",
+    "type": "regulation-text",
+    "citation": "21 U.S.C. § 601 et seq.; Pub. L. 59-382, 34 Stat. 669",
+    "url": "https://www.law.cornell.edu/uscode/text/21/601",
+    "note": "Confirms 1906 enactment and USDA FSIS as the implementing agency."
+  },
+  "451f2391-1c63-47a4-a556-7e4e73b64e37": {
+    "id": "451f2391-1c63-47a4-a556-7e4e73b64e37",
+    "name": "PPIA statutory text",
+    "type": "regulation-text",
+    "citation": "21 U.S.C. § 451 et seq.; Pub. L. 85-172, 71 Stat. 441",
+    "url": "https://www.law.cornell.edu/uscode/text/21/451",
+    "note": "Confirms 1957 enactment and scope (chicken, turkey, duck, other domesticated poultry)."
+  },
+  "002b2907-b2b9-48fd-a31a-29343c250028": {
+    "id": "002b2907-b2b9-48fd-a31a-29343c250028",
+    "name": "EPIA statutory text and FSIS egg products guidance",
+    "type": "regulation-text",
+    "citation": "21 U.S.C. § 1031-1056; Pub. L. 91-597, 84 Stat. 1620",
+    "url": "https://www.fsis.usda.gov/food-safety/safe-food-handling-and-preparation/eggs/egg-products-and-food-safety",
+    "note": "Confirms 1970 enactment and FDA/USDA jurisdiction split (shell eggs vs. egg products)."
+  },
+  "3de2e495-0a34-4d28-bd26-b0da95272e79": {
+    "id": "3de2e495-0a34-4d28-bd26-b0da95272e79",
+    "name": "FPLA statutory text and FTC administration",
+    "type": "regulation-text",
+    "citation": "15 U.S.C. § 1451 et seq.; Pub. L. 89-755",
+    "url": "https://www.ftc.gov/legal-library/browse/rules/fair-packaging-labeling-act-regulations-under-section-4-fair-packaging-labeling-act",
+    "note": "Confirms 1966 enactment and joint FDA/FTC administration split."
+  },
+  "cbbd031f-2050-4b54-b8fe-2dbe54d731d4": {
+    "id": "cbbd031f-2050-4b54-b8fe-2dbe54d731d4",
+    "name": "NLEA legislative history",
+    "type": "regulation-text",
+    "citation": "Pub. L. 101-535, 104 Stat. 2353",
+    "url": "https://www.congress.gov/bill/101st-congress/house-bill/3562",
+    "note": "Confirms 1990 enactment; implementing regulations followed in 1993 with the Nutrition Facts panel required starting 1994."
+  },
+  "32f43a5d-b00d-4c31-9899-39e364919865": {
+    "id": "32f43a5d-b00d-4c31-9899-39e364919865",
+    "name": "FALCPA statutory text and FASTER Act sesame amendment",
+    "type": "regulation-text",
+    "citation": "Pub. L. 108-282, Title II",
+    "url": "https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods/food-allergies",
+    "note": "Confirms 2004 enactment, the 8 original major allergens, and the FASTER Act's 2021 sesame addition (effective Jan 1, 2023)."
+  },
+  "cf86e662-dcc8-4393-9b08-8d9ec48442d1": {
+    "id": "cf86e662-dcc8-4393-9b08-8d9ec48442d1",
+    "name": "Bioterrorism Act statutory text and FDA facility registration guide",
+    "type": "regulation-text",
+    "citation": "Pub. L. 107-188",
+    "url": "https://www.fda.gov/food/online-registration-food-facilities/food-facility-registration-user-guide-biennial-registration-renewal",
+    "note": "Confirms 2002 enactment; biennial registration renewal is an FSMA (2011) amendment to FD&C Act § 415(a)(3), not part of the original 2002 Act."
+  },
+  "d6431e96-3fef-4372-92a0-1b8d058a44ae": {
+    "id": "d6431e96-3fef-4372-92a0-1b8d058a44ae",
+    "name": "\"One-up, one-back\" recordkeeping terminology",
+    "type": "regulation-text",
+    "url": "https://www.ecfr.gov/current/title-21/chapter-I/subchapter-A/part-1/subpart-H",
+    "note": "Confirms the official term is \"one-up, one-back,\" not \"one-up/one-down\": record immediate previous source and immediate subsequent recipient."
+  },
+  "5650c548-99c2-4084-8475-12768273c73d": {
+    "id": "5650c548-99c2-4084-8475-12768273c73d",
+    "name": "Meat/poultry HACCP final rule",
+    "type": "regulation-text",
+    "citation": "61 FR 38805 (July 25, 1996)",
+    "url": "https://www.govinfo.gov/content/pkg/FR-1996-07-25/pdf/96-17837.pdf",
+    "note": "Confirms 9 CFR Part 417 and the 1996 \"Pathogen Reduction/HACCP Systems\" final rule date."
+  },
+  "4bf11242-7644-408a-b6ce-d0de44084569": {
+    "id": "4bf11242-7644-408a-b6ce-d0de44084569",
+    "name": "Seafood HACCP final rule",
+    "type": "regulation-text",
+    "url": "https://www.ecfr.gov/current/title-21/chapter-I/subchapter-B/part-123",
+    "note": "Confirms 21 CFR Part 123, final rule published Dec 18, 1995, effective Dec 18, 1997."
+  },
+  "43dbde62-39be-4162-9845-3fcb640f768f": {
+    "id": "43dbde62-39be-4162-9845-3fcb640f768f",
+    "name": "Juice HACCP final rule",
+    "type": "regulation-text",
+    "citation": "66 FR 6137 (Jan 19, 2001)",
+    "url": "https://www.federalregister.gov/documents/2001/01/19/01-1291/hazard-analysis-and-critical-control-point-haacp-procedures-for-the-safe-and-sanitary-processing-and",
+    "note": "Confirms 21 CFR Part 120, 2001 final rule, phased effective dates through 2004."
+  },
+  "6970bad7-82d6-4df0-8a27-590bffc32cbc": {
+    "id": "6970bad7-82d6-4df0-8a27-590bffc32cbc",
+    "name": "NBFDS final rule and legislative history",
+    "type": "regulation-text",
+    "citation": "7 CFR Part 66; 83 FR 65814 (Dec 21, 2018)",
+    "url": "https://www.federalregister.gov/documents/2018/12/21/2018-27283/national-bioengineered-food-disclosure-standard",
+    "note": "Confirms enactment 2016 (amending the Agricultural Marketing Act of 1946), final rule 2018, mandatory compliance Jan 1, 2022 — corrects the record's original single \"2022\" year, which conflated three distinct dates."
+  },
+  "19b68aea-9a1a-4995-8c33-09070414d87f": {
+    "id": "19b68aea-9a1a-4995-8c33-09070414d87f",
+    "name": "NOP final rule and labeling tiers",
+    "type": "regulation-text",
+    "citation": "7 CFR Part 205; 65 FR 80548 (Dec 21, 2000)",
+    "url": "https://www.ams.usda.gov/rules-regulations/organic/labeling",
+    "note": "Confirms statutory basis (Organic Foods Production Act of 1990), final rule 2000, effective 2002, and the three labeling tiers exactly as described."
+  },
+  "09e0ee20-5e5b-4fbf-b222-4f3347f347a7": {
+    "id": "09e0ee20-5e5b-4fbf-b222-4f3347f347a7",
+    "name": "IoT/wireless temperature probe use in cold-chain food monitoring",
+    "type": "industry-standard",
+    "url": "https://www.monnit.com/applications/cold-chain-monitoring/",
+    "note": "Confirms wireless/IoT temperature sensors are standard for HACCP CCP monitoring, receiving, thawing, and cold-chain transport."
+  },
+  "d5d20924-e7bf-4c71-8293-4f22e6059606": {
+    "id": "d5d20924-e7bf-4c71-8293-4f22e6059606",
+    "name": "pH control for acidified foods (FDA botulinum target)",
+    "type": "regulation-text",
+    "url": "https://www.fda.gov/media/182173/download",
+    "note": "FDA Compliance Program Manual 7303.070 confirms pH below 4.6 as the standard target to control C. botulinum in acidified foods."
+  },
+  "b118b0bf-0fcf-4cf9-9b87-993e4f18604d": {
+    "id": "b118b0bf-0fcf-4cf9-9b87-993e4f18604d",
+    "name": "Scale/MES integration for catch-weight and batching",
+    "type": "subject-matter-judgment",
+    "note": "Well-established, low-risk equipment-use claim; not independently sourced beyond general industry knowledge of MES/batching integration — no red flags found on adjacent searches."
+  },
+  "ee4d71d8-e90c-4bbd-a7eb-851b90bb3ac4": {
+    "id": "ee4d71d8-e90c-4bbd-a7eb-851b90bb3ac4",
+    "name": "Allergen cleaning validation — ELISA vs. lateral-flow immunoassay",
+    "type": "industry-standard",
+    "url": "https://www.romerlabs.com/en/library/knowledge/detail/10-steps-to-validating-and-verifying-allergen-cleaning-procedures",
+    "note": "Confirms immunoassay-based allergen detection; rapid lateral-flow format (not full lab ELISA) is what's typically used at-line for changeover verification."
+  },
+  "19b10a49-1d12-4222-9103-25859cefd368": {
+    "id": "19b10a49-1d12-4222-9103-25859cefd368",
+    "name": "ATP bioluminescence cleaning verification",
+    "type": "industry-standard",
+    "url": "https://www.hygiena.com/hygiene-monitoring/atp-cleaning-verification",
+    "note": "Confirms ATP+luciferase bioluminescence gives rapid pass/fail cleaning verification; thresholds are facility-established, not a universal external standard."
+  },
+  "160c225b-f836-4037-8cf2-fe54b3b1b3f1": {
+    "id": "160c225b-f836-4037-8cf2-fe54b3b1b3f1",
+    "name": "Sanitizer chemistry classes and cleaning-before-sanitizing practice",
+    "type": "industry-standard",
+    "url": "https://www.food-safety.com/articles/6707-sanitizers-and-disinfectants-the-chemicals-of-prevention",
+    "note": "Confirms chlorine/quats/PAA as standard sanitizer classes and that organic/soil load reduces sanitizer efficacy if cleaning is skipped."
+  },
+  "dbc3414e-069f-4fbd-ab52-6ce551a7b53e": {
+    "id": "dbc3414e-069f-4fbd-ab52-6ce551a7b53e",
+    "name": "Metal detection as a common CCP",
+    "type": "industry-standard",
+    "url": "https://fortresstechnology.com/food-metal-detectors-for-every-product-type-and-haccp-risk/",
+    "note": "Confirms metal detectors as standard inline physical-hazard CCPs, especially for ground/chopped products."
+  },
+  "ea02b52a-37bd-4fc0-bd76-16581f340071": {
+    "id": "ea02b52a-37bd-4fc0-bd76-16581f340071",
+    "name": "X-ray vs. metal detection sensitivity by material type",
+    "type": "industry-standard",
+    "url": "https://www.thermofisher.com/blog/food/x-ray-inspection-vs-metal-detection/",
+    "note": "Confirms X-ray's density-contrast detection advantage over metal detection for glass, dense plastics, and bone."
+  },
+  "045e2081-03ba-4d0d-8afd-be2563b62663": {
+    "id": "045e2081-03ba-4d0d-8afd-be2563b62663",
+    "name": "Vision inspection systems for label/code verification",
+    "type": "industry-standard",
+    "url": "https://www.cognex.com/en/applications/automated-defect-detection/printed-label-inspection-and-verification/packaging-label-inspection-and-quality-verification",
+    "note": "Confirms camera-based vision systems for label presence/alignment and lot-code legibility (OCR/OCV) at line speed."
+  },
+  "160cb14f-303a-43ca-8346-2bddaa680cb8": {
+    "id": "160cb14f-303a-43ca-8346-2bddaa680cb8",
+    "name": "Food-manufacturing ERP platform naming (Aptean Ross/Deacom)",
+    "type": "vendor-doc",
+    "url": "https://erp-software.org/en/software/deacom/",
+    "note": "Confirms Deacom is now marketed as Aptean Deacom ERP, and Ross ERP as Aptean Process Manufacturing ERP – Ross Edition — both Aptean-owned process-manufacturing ERP lines, not independent brands."
+  },
+  "7b607a72-96cf-4ec0-97c8-59d37cf6d938": {
+    "id": "7b607a72-96cf-4ec0-97c8-59d37cf6d938",
+    "name": "MES platform rebrands (AVEVA/Wonderware, Plex/Rockwell)",
+    "type": "vendor-doc",
+    "url": "https://www.aveva.com/en/solutions/operations/wonderware/",
+    "note": "Confirms Wonderware fully rebranded to AVEVA MES, and Plex Systems was acquired by Rockwell Automation (2022), now marketed as Plex MES."
+  },
+  "0c8fa46a-d881-4be6-8fc3-55d803fe5df4": {
+    "id": "0c8fa46a-d881-4be6-8fc3-55d803fe5df4",
+    "name": "WMS platform rebrand (Körber/HighJump → Infios) and Fishbowl tier correction",
+    "type": "vendor-doc",
+    "url": "https://claruswms.ai/korber-wms/",
+    "note": "Confirms Körber's supply-chain software unit (including former HighJump) rebranded to Infios (March 2025). Fishbowl was removed from this list — confirmed as SMB-tier inventory software, not enterprise-grade WMS comparable to Manhattan/Blue Yonder/SAP EWM."
+  },
+  "9ea3e8c2-c580-4f66-a446-3c9f9104cc1d": {
+    "id": "9ea3e8c2-c580-4f66-a446-3c9f9104cc1d",
+    "name": "Intelex and Cority are separate, competing companies",
+    "type": "vendor-doc",
+    "url": "https://www.intelex.com/about/press-room/intelex-announces-definitive-agreement-be-acquired-industrial-scientific",
+    "note": "Corrects the prior \"Intelex (CORITY)\" entry — Intelex and Cority are unrelated, competing EHSQ software companies, not a merged entity. Listed separately."
+  },
+  "49663ec7-cffb-4c54-b89f-3a2bebc3c2b2": {
+    "id": "49663ec7-cffb-4c54-b89f-3a2bebc3c2b2",
+    "name": "LIMS role in food QA sample/result management",
+    "type": "industry-standard",
+    "url": "https://www.thermofisher.com/blog/connectedlab/lims-the-key-ingredient-for-compliance-in-food-testing/",
+    "note": "Confirms LIMS's standard role: sample intake/tracking, test result capture, comparison against specification limits, hold/release workflows."
+  },
+  "eb48e77e-26fe-4872-8960-93ee98d0db25": {
+    "id": "eb48e77e-26fe-4872-8960-93ee98d0db25",
+    "name": "Trustwell/FoodLogiQ rebrand",
+    "type": "vendor-doc",
+    "url": "https://www.trustwell.com/news-and-press/esha-research-and-foodlogiq-merge-to-form-trustwell/",
+    "note": "Confirms FoodLogiQ merged with ESHA Research (Oct 2022) and rebranded to Trustwell (Feb 2023); FoodLogiQ persists as a legacy product-line name."
+  },
+  "83d0e275-932a-453e-be0a-651cd1bf6d34": {
+    "id": "83d0e275-932a-453e-be0a-651cd1bf6d34",
+    "name": "rfxcel acquisition by Antares Vision Group",
+    "type": "vendor-doc",
+    "url": "https://antaresvisiongroup.com/pressrelease/the-antares-vision-group-finalises-the-acquisition-of-rfxcel-corporation/",
+    "note": "Confirms rfXcel was acquired by Antares Vision Group (2021); still operates as a named product/brand under that parent."
+  },
+  "57a5b52b-4ea4-4feb-ab23-13dcf3907ee2": {
+    "id": "57a5b52b-4ea4-4feb-ab23-13dcf3907ee2",
+    "name": "IBM Food Trust current active status (2026 direct check)",
+    "type": "vendor-doc",
+    "note": "Directly re-checked given known IBM blockchain-platform sunset history (e.g. TradeLens, 2022-2023): no discontinuation/divestment announcement found. IBM's Food Trust product docs remain live, and IBM/iFoodDS announced a new joint FSMA-204-focused solution in 2024/2025, indicating continued investment rather than sunset."
+  },
+  "68e8cd24-422d-4aaa-9e41-4787e40ef760": {
+    "id": "68e8cd24-422d-4aaa-9e41-4787e40ef760",
+    "name": "Label management platform categorization corrections",
+    "type": "vendor-doc",
+    "url": "https://nulogy.com/industries/contract-packaging-manufacturing/",
+    "note": "Removed Label Traxx (converter/printer-side ERP, not brand-side label compliance tooling, post-Amtech acquisition) and Nulogy (contract-packaging/CPG supply-chain collaboration software, not a label-creation/artwork tool) from this list as category mismatches for a brand-side label management system."
+  },
+  "0e3f3b1c-c41a-486e-9fdb-691f542734cb": {
+    "id": "0e3f3b1c-c41a-486e-9fdb-691f542734cb",
+    "name": "Advanced Planning & Scheduling (APS) in food/beverage manufacturing",
+    "type": "industry-standard",
+    "url": "https://www.planettogether.com/aps/industries/food-beverage",
+    "note": "Confirms APS category functionality: capacity optimization, changeover/allergen-changeover sequencing, raw material availability, shelf-life constraints, delivery deadlines, ERP integration."
+  },
+  "a6bb949d-d869-4c5d-8de7-bb74e2859b5e": {
+    "id": "a6bb949d-d869-4c5d-8de7-bb74e2859b5e",
+    "name": "Formulation/recipe management system category functionality",
+    "type": "industry-standard",
+    "url": "https://www.inecta.com/food-manufacturing-software",
+    "note": "Confirms version-controlled BOM/recipe as source of truth for nutrition calculation, allergen content, and MRP is standard across vendors in this category."
+  },
+  "7c8a187b-4b6c-4bc1-9399-436bff7668d7": {
+    "id": "7c8a187b-4b6c-4bc1-9399-436bff7668d7",
+    "name": "EDI X12 transaction set numbering (850/855/856/810/940/945)",
+    "type": "industry-standard",
+    "url": "https://www.stedi.com/edi/x12/transaction-set/945",
+    "note": "Confirms all six transaction-set number mappings: 850 Purchase Order, 855 PO Acknowledgment, 856 Advance Ship Notice, 810 Invoice, 940 Warehouse Shipping Order, 945 Warehouse Shipping Advice."
+  },
+  "ce2ee7b9-8a7f-416e-a0b4-5977277d202d": {
+    "id": "ce2ee7b9-8a7f-416e-a0b4-5977277d202d",
+    "name": "Supplier qualification questionnaire — standard industry practice",
+    "type": "subject-matter-judgment",
+    "note": "Generic supplier-qualification process document; no single external standard to cite, consistent with standard supplier onboarding practice."
+  },
+  "604ca7e5-697b-4266-8669-4bee3c0da479": {
+    "id": "604ca7e5-697b-4266-8669-4bee3c0da479",
+    "name": "Structured COA data schema — original design",
+    "type": "subject-matter-judgment",
+    "note": "Original data-model design for representing COA contents as structured, comparable data; not itself a named external standard, though it mirrors how Material/Product Specifications are already commonly structured."
+  },
+  "6e99f18a-4010-42d5-825e-13343930da2a": {
+    "id": "6e99f18a-4010-42d5-825e-13343930da2a",
+    "name": "Supplier risk assessment record — standard industry practice",
+    "type": "subject-matter-judgment",
+    "note": "Generic qualification-review process document; no single external standard to cite."
+  },
+  "7bba9c5e-beb9-4663-905c-1f234c1a6032": {
+    "id": "7bba9c5e-beb9-4663-905c-1f234c1a6032",
+    "name": "FSMA Preventive Controls supplier audit frequency baseline",
+    "type": "regulation-text",
+    "url": "https://www.ecfr.gov/current/title-21/chapter-I/subchapter-B/part-117/subpart-G/section-117.410",
+    "note": "21 CFR 117.410/117.425 requires an onsite audit before first use and at least annually for suppliers controlling a serious hazard, with no fixed tiered numeric schedule of its own — the artifact's specific 6-12/12-24/24-36 month bands are this design's own policy, not a regulatory citation."
+  },
+  "44c30246-80de-4c2b-9969-1097973d6151": {
+    "id": "44c30246-80de-4c2b-9969-1097973d6151",
+    "name": "Supplier risk-tiering bands — original design, not a codified standard",
+    "type": "subject-matter-judgment",
+    "note": "The specific audit-frequency-by-risk-tier ranges (6-12/12-24/24-36 months) are common-sense internal policy design, explicitly not traceable to any authoritative FSMA/GFSI source — flagged during the item 9a audit as invented specificity that must not be presented as codified. Recorded honestly as subject-matter judgment per content-standards.md."
+  },
+  "dee1afd1-994e-4c2b-a12e-4e044ffb0680": {
+    "id": "dee1afd1-994e-4c2b-a12e-4e044ffb0680",
+    "name": "GFSI scheme audit/re-certification cadence",
+    "type": "industry-standard",
+    "url": "https://mygfsi.com/how-to-implement/recognition/certification-programme-owners",
+    "note": "GFSI-recognized schemes (SQF, BRCGS, FSSC 22000) require annual surveillance audits, with full re-certification typically every 3 years for schemes like FSSC 22000/BRCGS."
+  },
+  "aa2411fc-8532-48e3-850d-1de626c802ca": {
+    "id": "aa2411fc-8532-48e3-850d-1de626c802ca",
+    "name": "Supplier certification record — standard industry practice",
+    "type": "subject-matter-judgment",
+    "note": "Generic certification-tracking document; no single external standard to cite."
+  },
+  "0b633476-f77a-412c-8b5f-907c85574052": {
+    "id": "0b633476-f77a-412c-8b5f-907c85574052",
+    "name": "Material/Product Specification — standard industry practice",
+    "type": "subject-matter-judgment",
+    "note": "Generic specification document practice; no single external standard to cite."
+  },
+  "56688231-e5c4-463f-a766-450a750a4cbb": {
+    "id": "56688231-e5c4-463f-a766-450a750a4cbb",
+    "name": "Lab test result record — standard industry practice",
+    "type": "subject-matter-judgment",
+    "note": "Generic lab-result recordkeeping; no single external standard to cite."
+  },
+  "b5ee7707-1e5a-4a6b-b50a-de955b74dbe7": {
+    "id": "b5ee7707-1e5a-4a6b-b50a-de955b74dbe7",
+    "name": "Approved Supplier List — standard industry practice",
+    "type": "subject-matter-judgment",
+    "note": "Generic procurement-control document; no single external standard to cite."
+  },
+  "4a1aaaef-b5d7-42bd-a002-0fb72f11ba1f": {
+    "id": "4a1aaaef-b5d7-42bd-a002-0fb72f11ba1f",
+    "name": "Certificate of Analysis — standard industry document",
+    "type": "subject-matter-judgment",
+    "note": "COAs are a standard, well-established supply-chain document; no single external standard governs their issuance."
+  },
+  "c2495ee1-d83e-48cc-8785-279addb18dc8": {
+    "id": "c2495ee1-d83e-48cc-8785-279addb18dc8",
+    "name": "Supplier performance KPI thresholds — typical industry convention",
+    "type": "subject-matter-judgment",
+    "note": "Good/Fair/Poor thresholds (e.g. on-time >=95%) are typical industry KPI conventions, not tied to a specific regulation or named standard."
+  },
+  "f6b36ec8-7953-4dd1-9f5a-c537de25b5b6": {
+    "id": "f6b36ec8-7953-4dd1-9f5a-c537de25b5b6",
+    "name": "EDI 856 Advance Ship Notice transaction set",
+    "type": "industry-standard",
+    "url": "https://www.stedi.com/edi/x12-008020/856",
+    "note": "Confirms EDI 856 as the correct ANSI X12 transaction set for Advance Ship Notice."
+  },
+  "6a7bbb14-bec6-4f1a-a7d1-1e59a5cc4a91": {
+    "id": "6a7bbb14-bec6-4f1a-a7d1-1e59a5cc4a91",
+    "name": "Receiving log — standard industry practice",
+    "type": "subject-matter-judgment",
+    "note": "Generic dock-receipt recordkeeping; no single external standard to cite."
+  },
+  "bdcb6135-702b-4188-928a-36e775c7c786": {
+    "id": "bdcb6135-702b-4188-928a-36e775c7c786",
+    "name": "Temperature record — standard cold-chain practice",
+    "type": "subject-matter-judgment",
+    "note": "Generic cold-chain recordkeeping practice; no single external standard to cite beyond general cold-chain evidence norms."
+  },
+  "1b5be89c-635d-4dad-98aa-280b1ed1bca2": {
+    "id": "1b5be89c-635d-4dad-98aa-280b1ed1bca2",
+    "name": "Receiving inspection record — standard industry practice",
+    "type": "subject-matter-judgment",
+    "note": "Generic incoming-inspection recordkeeping; no single external standard to cite."
+  },
+  "1a80f32f-5ac1-4d89-b208-1804b73889f9": {
+    "id": "1a80f32f-5ac1-4d89-b208-1804b73889f9",
+    "name": "Hold/quarantine tag — standard industry practice",
+    "type": "subject-matter-judgment",
+    "note": "Generic material-hold control; no single external standard to cite."
+  },
+  "cd89af6a-36cc-4b0a-9b7d-a3b139ac0691": {
+    "id": "cd89af6a-36cc-4b0a-9b7d-a3b139ac0691",
+    "name": "FEFO (First-Expired-First-Out) as standard food-industry inventory term",
+    "type": "industry-standard",
+    "url": "https://www.foodmanufacturing.com/supply-chain/article/22963729/mrpeasy-first-expired-first-out-what-is-fefo-in-food-manufacturing",
+    "note": "Confirms FEFO (not FIFO) as the correct, standard term for perishable-goods inventory management prioritizing by expiration date."
+  },
+  "95359c9c-3a50-46a2-a9c6-f33336343bef": {
+    "id": "95359c9c-3a50-46a2-a9c6-f33336343bef",
+    "name": "Allergen matrix — standard industry practice",
+    "type": "subject-matter-judgment",
+    "note": "Generic allergen-tracking document; no single external standard to cite."
+  },
+  "a43f873f-01f6-489b-ab25-293f6dc04bbe": {
+    "id": "a43f873f-01f6-489b-ab25-293f6dc04bbe",
+    "name": "Allergen sequencing algorithm — original design",
+    "type": "subject-matter-judgment",
+    "note": "Formalizes the widely-taught \"fewer to more allergens\" production-scheduling heuristic into an original subset-ordering algorithm; the specific formalization is original engineering design, not a citation to a named external methodology."
+  },
+  "3edca15f-02d0-4a7e-86a7-90ff6b9948f7": {
+    "id": "3edca15f-02d0-4a7e-86a7-90ff6b9948f7",
+    "name": "Demand forecast — standard industry practice",
+    "type": "subject-matter-judgment",
+    "note": "Generic demand-planning recordkeeping; no single external standard to cite."
+  },
+  "b3531b59-2526-4a74-9981-52518ffb046e": {
+    "id": "b3531b59-2526-4a74-9981-52518ffb046e",
+    "name": "FD&C Act ingredient statement accuracy requirement",
+    "type": "regulation-text",
+    "note": "FD&C Act misbranding provisions require the label's ingredient statement to accurately reflect actual formulation on an ongoing basis; \"at all times\" is an operational paraphrase of a continuous compliance obligation, not a literal regulatory phrase."
+  },
+  "14f29ec6-4a41-4610-bedd-fe3d71366556": {
+    "id": "14f29ec6-4a41-4610-bedd-fe3d71366556",
+    "name": "Master Production Schedule — standard industry practice",
+    "type": "subject-matter-judgment",
+    "note": "Generic production-planning recordkeeping; no single external standard to cite."
+  },
+  "1c23a6e5-8174-41ca-a87e-e2918784512d": {
+    "id": "1c23a6e5-8174-41ca-a87e-e2918784512d",
+    "name": "EDI 850/855 Purchase Order and Acknowledgment transaction sets",
+    "type": "industry-standard",
+    "url": "https://www.stedi.com/edi/x12/transaction-set/850",
+    "note": "Confirms 850 (Purchase Order) and 855 (PO Acknowledgment) as the correct ANSI X12 transaction set numbers."
+  },
+  "49fdc4f2-7589-449f-bb8f-819760907c7a": {
+    "id": "49fdc4f2-7589-449f-bb8f-819760907c7a",
+    "name": "Production/work order — standard industry practice",
+    "type": "subject-matter-judgment",
+    "note": "Generic shop-floor release document; no single external standard to cite."
+  },
+  "e8a1740f-7e51-4b29-8c28-2c799b0bf19e": {
+    "id": "e8a1740f-7e51-4b29-8c28-2c799b0bf19e",
+    "name": "Batch/production record — standard traceability concept",
+    "type": "subject-matter-judgment",
+    "note": "Core traceability recordkeeping concept, standard across the industry; no single external standard governs its exact shape."
+  },
+  "7319a19d-d6f5-4b24-8ba9-679a2866ecd1": {
+    "id": "7319a19d-d6f5-4b24-8ba9-679a2866ecd1",
+    "name": "Line clearance record — standard industry practice",
+    "type": "subject-matter-judgment",
+    "note": "Generic pre-run verification document; no single external standard to cite."
+  },
+  "f57aebef-5e5f-4b24-a520-d07e5d0b6cae": {
+    "id": "f57aebef-5e5f-4b24-a520-d07e5d0b6cae",
+    "name": "HACCP plan revalidation cadence — FSIS vs. FDA PCHF",
+    "type": "regulation-text",
+    "url": "https://www.ecfr.gov/current/title-9/chapter-III/subchapter-E/part-417/section-417.4",
+    "note": "9 CFR 417.4(a)(3)(i) requires USDA FSIS meat/poultry HACCP reassessment at least annually and on hazard-affecting change. FDA-regulated facilities under PCHF (21 CFR 117.170) instead require reanalysis at least every 3 years plus triggered reanalysis — a different cadence that the artifact now distinguishes explicitly."
+  },
+  "be484943-4fb9-4c8d-b55e-4d648e610674": {
+    "id": "be484943-4fb9-4c8d-b55e-4d648e610674",
+    "name": "165°F cook CCP critical limit example (FSIS poultry lethality)",
+    "type": "regulation-text",
+    "url": "https://www.fsis.usda.gov/guidelines/2021-0014",
+    "note": "Confirms 165°F internal temperature as a real, widely used FSIS critical-limit example for poultry cooking Salmonella lethality."
+  },
+  "0a8d44b5-f92e-4a4a-87a9-71fe6193e2ea": {
+    "id": "0a8d44b5-f92e-4a4a-87a9-71fe6193e2ea",
+    "name": "CCP monitoring log — core HACCP concept",
+    "type": "subject-matter-judgment",
+    "note": "Standard HACCP monitoring-evidence concept, consistent with FDA/USDA HACCP frameworks generally; no single citation beyond the CCP Definition's own sources."
+  },
+  "e1d01769-cbc3-4550-932a-a42fb37ecab6": {
+    "id": "e1d01769-cbc3-4550-932a-a42fb37ecab6",
+    "name": "Corrective action record — core HACCP concept",
+    "type": "subject-matter-judgment",
+    "note": "Standard HACCP corrective-action concept, consistent with FDA/USDA HACCP frameworks generally."
+  },
+  "c90f8576-1ae4-4165-bc67-f1e079a3821c": {
+    "id": "c90f8576-1ae4-4165-bc67-f1e079a3821c",
+    "name": "Allergen changeover cleaning record — standard industry practice",
+    "type": "subject-matter-judgment",
+    "note": "Generic allergen-changeover verification record; no single external standard to cite beyond the ELISA/ATP test-kit sources already recorded on the Materials collection."
+  },
+  "c4fb115e-64bf-4a2e-98cf-884f2f8c9e2b": {
+    "id": "c4fb115e-64bf-4a2e-98cf-884f2f8c9e2b",
+    "name": "Master Sanitation Schedule — standard GMP prerequisite program",
+    "type": "subject-matter-judgment",
+    "note": "Standard GMP prerequisite-program concept; no single external standard to cite beyond general GMP practice."
+  },
+  "88d46ab3-c98c-4466-aebd-74d899ce0448": {
+    "id": "88d46ab3-c98c-4466-aebd-74d899ce0448",
+    "name": "Environmental monitoring record — standard industry practice",
+    "type": "subject-matter-judgment",
+    "note": "Generic swab-event recordkeeping; specific zone concept sourced separately on the EMP Zone & Trending Standard artifact."
+  },
+  "fcbe4d9b-a7be-40b4-9ac3-eb36ac4b2ae9": {
+    "id": "fcbe4d9b-a7be-40b4-9ac3-eb36ac4b2ae9",
+    "name": "FDA draft guidance on Listeria control in RTE foods (EMP zone model)",
+    "type": "regulation-text",
+    "url": "https://www.fda.gov/media/102633/download",
+    "note": "Confirms the 4-zone EMP model and \"search and destroy\" terminology are consistent with FDA draft guidance; specific numeric escalation triggers (2 consecutive positives / 3 clean to close) are common industry practice, not FDA-codified thresholds — FDA's guidance emphasizes root-cause investigation over rigid escalation counts."
+  },
+  "fab381b3-e817-4657-b53b-9fc161b5c224": {
+    "id": "fab381b3-e817-4657-b53b-9fc161b5c224",
+    "name": "SPC control chart — standard statistical process control concept",
+    "type": "subject-matter-judgment",
+    "note": "Standard SPC concept (out-of-control vs. out-of-spec); not tied to a single external citation."
+  },
+  "e742f55c-2d62-4c07-bd63-e960ed8e7580": {
+    "id": "e742f55c-2d62-4c07-bd63-e960ed8e7580",
+    "name": "Nonconformance record — standard industry practice",
+    "type": "subject-matter-judgment",
+    "note": "Generic OOS/nonconformance recordkeeping; no single external standard to cite."
+  },
+  "e9cbd6aa-f86b-42b9-a9ac-754af4cb3549": {
+    "id": "e9cbd6aa-f86b-42b9-a9ac-754af4cb3549",
+    "name": "CAPA record — standard quality-management concept",
+    "type": "subject-matter-judgment",
+    "note": "Standard QMS CAPA concept (5 Whys/fishbone, effectiveness verification); generic industry practice, not tied to one regulation."
+  },
+  "2ab48fe9-23c5-4743-a5cf-fd07252ef54b": {
+    "id": "2ab48fe9-23c5-4743-a5cf-fd07252ef54b",
+    "name": "Catch weight record — standard industry practice",
+    "type": "subject-matter-judgment",
+    "note": "Generic catch-weight capture recordkeeping; external mechanism sourced on the Catch-Weight Data Model artifact."
+  },
+  "9303e717-7e74-4902-a12c-2e52967c09a2": {
+    "id": "9303e717-7e74-4902-a12c-2e52967c09a2",
+    "name": "GS1 variable-measure GTIN and GS1-128 Application Identifiers for net weight",
+    "type": "industry-standard",
+    "url": "https://www.gs1uk.org/sites/default/files/How_to_calculate_variable_measure_items_0.pdf",
+    "note": "Confirms the GS1 variable-measure GTIN prefix and GS1-128 AI (310n)/(320n) mechanism for carrying actual/catch weight through label and supply-chain data flows."
+  },
+  "22944f8c-b59b-47e6-8b84-a03d1b0b9f47": {
+    "id": "22944f8c-b59b-47e6-8b84-a03d1b0b9f47",
+    "name": "Package integrity inspection record — standard industry practice",
+    "type": "subject-matter-judgment",
+    "note": "Generic inspection-event recordkeeping; equipment sources already recorded on Materials collection (Metal Detector, X-Ray Inspection System)."
+  },
+  "3092edf5-03ac-4bd1-80dd-b9ab6d25262e": {
+    "id": "3092edf5-03ac-4bd1-80dd-b9ab6d25262e",
+    "name": "Label copy draft — standard industry practice",
+    "type": "subject-matter-judgment",
+    "note": "Generic label-drafting workflow; no single external standard to cite."
+  },
+  "20fe8002-7946-4835-9ab0-a532bd8fa294": {
+    "id": "20fe8002-7946-4835-9ab0-a532bd8fa294",
+    "name": "Label compliance checklist — standard industry practice",
+    "type": "subject-matter-judgment",
+    "note": "Generic manual-review checklist; specific rule citations sourced on the Label Compliance Check Catalog artifact."
+  },
+  "76aa2fc5-1b0f-4b8b-a5c9-9c81d57f1135": {
+    "id": "76aa2fc5-1b0f-4b8b-a5c9-9c81d57f1135",
+    "name": "FDA nutrient-content claim thresholds and gluten-free ppm threshold",
+    "type": "regulation-text",
+    "url": "https://www.ecfr.gov/current/title-21/chapter-I/subchapter-B/part-101/subpart-D/section-101.54",
+    "note": "Confirms and corrects citations: 21 CFR 101.54 governs \"good source of\" claims (10-19% DV/serving), 21 CFR 101.62 governs \"low fat\" (not 101.54 as previously implied), 21 CFR 101.61 governs \"reduced sodium\" (not 101.56, which governs \"light\"/\"lite\"), and 21 CFR 101.91 confirms the gluten-free <20ppm attestation threshold."
+  },
+  "2922e870-10ec-47cd-b719-fe8c401f4166": {
+    "id": "2922e870-10ec-47cd-b719-fe8c401f4166",
+    "name": "Label artwork file — standard industry practice",
+    "type": "subject-matter-judgment",
+    "note": "Generic artwork version-control workflow; no single external standard to cite."
+  },
+  "517d1350-79d2-440f-9e53-0cdd9777473a": {
+    "id": "517d1350-79d2-440f-9e53-0cdd9777473a",
+    "name": "FSIS generic label approval — pre-approval now the exception",
+    "type": "regulation-text",
+    "url": "https://www.federalregister.gov/documents/2023/01/18/2023-00693/prior-label-approval-system-expansion-of-generic-label-approval",
+    "note": "Confirms FSIS pre-approval is no longer the default: since 2013 and expanded by a 2023 final rule, most labels self-certify under generic approval; pre-approval now applies only to temporary approvals, religious exempt labels, and special-claim labels."
+  },
+  "de0131ba-0016-43c5-be42-b93590657a4b": {
+    "id": "de0131ba-0016-43c5-be42-b93590657a4b",
+    "name": "Lot/date code record — standard industry practice",
+    "type": "subject-matter-judgment",
+    "note": "Generic lot-coding recordkeeping; no single external standard to cite."
+  },
+  "609c4eca-7daf-4f64-a6a3-3c7c3efe6c85": {
+    "id": "609c4eca-7daf-4f64-a6a3-3c7c3efe6c85",
+    "name": "Label application verification record — standard industry practice",
+    "type": "subject-matter-judgment",
+    "note": "Generic in-line QA check recordkeeping; vision-system source already recorded on Materials collection."
+  },
+  "4c31a30a-41ae-4bd5-8b40-ccbd865b6521": {
+    "id": "4c31a30a-41ae-4bd5-8b40-ccbd865b6521",
+    "name": "Shelf-life record — standard industry/customer-contract practice",
+    "type": "subject-matter-judgment",
+    "note": "Customer minimum-remaining-shelf-life requirements are common industry/contract practice, not a single codified external standard."
+  },
+  "cfc228c5-177e-43ab-bb38-3abea6efd3e7": {
+    "id": "cfc228c5-177e-43ab-bb38-3abea6efd3e7",
+    "name": "FSMA 204 Shipping Critical Tracking Event",
+    "type": "regulation-text",
+    "url": "https://www.ecfr.gov/current/title-21/chapter-I/subchapter-A/part-1/subpart-S/subject-group-ECFRbfe98fb65ccc9f7/section-1.1340",
+    "note": "Confirms Shipping as one of the Critical Tracking Events defined at 21 CFR 1.1340."
+  },
+  "0edca96f-32ec-43c5-917e-f94d790820f0": {
+    "id": "0edca96f-32ec-43c5-917e-f94d790820f0",
+    "name": "FSMA 204 Shipping KDEs — corrected field list (21 CFR 1.1340)",
+    "type": "regulation-text",
+    "url": "https://www.law.cornell.edu/cfr/text/21/1.1340",
+    "note": "Corrects the prior KDE list: transporter identity is NOT a required KDE (the rule explicitly excludes transporters from the recipient-location KDE), and GTIN/GLN are optional implementation choices, not mandated formats. Actual required KDEs: traceability lot code, product description, quantity/UOM, ship-to/ship-from location descriptions, ship date, TLC source information, reference document type/number."
+  },
+  "d6ae1a5e-a73d-4a25-bdf6-c9ca43e71ea2": {
+    "id": "d6ae1a5e-a73d-4a25-bdf6-c9ca43e71ea2",
+    "name": "FSMA 204 Traceability Lot Code assignment rule (21 CFR 1.1320)",
+    "type": "regulation-text",
+    "url": "https://www.law.cornell.edu/cfr/text/21/1.1320",
+    "note": "Confirms a new TLC is assigned only at initial packing (non-seafood raw ag commodity), first land-based receiving from a fishing vessel, or transformation — not at other CTEs like shipping."
+  },
+  "b70fd9e6-8c23-4609-bb25-0cdd839edd76": {
+    "id": "b70fd9e6-8c23-4609-bb25-0cdd839edd76",
+    "name": "GS1 EPCIS core model and FSMA 204 positioning",
+    "type": "industry-standard",
+    "url": "https://documents.gs1us.org/adobe/assets/deliver/urn:aaid:aem:0c934e38-7cd7-4a86-aac3-c54b4c9ef293/EPCIS-Recommendations-FSMA-204-Critical-Tracking-Events.pdf",
+    "note": "Confirms EPCIS's \"what/where/when/why\" core dimensions and GS1 US's guidance mapping EPCIS 2.0 onto FSMA 204 CTEs/KDEs — industry-promoted, not FDA-mandated."
+  }
+}

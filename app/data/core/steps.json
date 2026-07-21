@@ -90,7 +90,7 @@
     "flowId": "fa3dfd0e-f0b2-4d39-8caf-60db1a253cc1",
     "sequence": 3,
     "name": "Raw material storage",
-    "summary": "Cold chain, dry storage, FIFO/FEFO rotation, and allergen segregation while materials wait to be used in production.",
+    "summary": "Cold chain, dry storage, FEFO (First-Expired-First-Out) rotation, and allergen segregation while materials wait to be used in production.",
     "regulationIds": [
       "4db45158-1d5c-4b87-86ad-c022454a603e"
     ],

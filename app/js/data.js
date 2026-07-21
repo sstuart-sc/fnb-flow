@@ -13,7 +13,7 @@ export async function loadAllData() {
 
   const [
     flows, steps, threads, artifacts, regulations,
-    agencies, materials, roles, systems, gaps, safetychain
+    agencies, materials, roles, systems, gaps, sources, safetychain
   ] = await Promise.all([
     loadJSON(`${DATA_BASE}/core/flows.json`),
     loadJSON(`${DATA_BASE}/core/steps.json`),
@@ -25,6 +25,7 @@ export async function loadAllData() {
     loadJSON(`${DATA_BASE}/core/roles.json`),
     loadJSON(`${DATA_BASE}/core/systems.json`),
     loadJSON(`${DATA_BASE}/core/gaps.json`),
+    loadJSON(`${DATA_BASE}/core/sources.json`),
     loadJSON(`${DATA_BASE}/products/safetychain.json`),
   ]);
 
@@ -39,7 +40,7 @@ export async function loadAllData() {
   for (const step of Object.values(steps)) stepIdByPath[step.path] = step.id;
 
   cache = {
-    flows, steps, threads, artifacts, regulations, agencies, materials, roles, systems, gaps, safetychain,
+    flows, steps, threads, artifacts, regulations, agencies, materials, roles, systems, gaps, sources, safetychain,
     flowIdByPath, stepIdByPath,
   };
   return cache;

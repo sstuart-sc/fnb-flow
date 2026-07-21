@@ -58,7 +58,8 @@ export function renderNodeRow(data, steps, activeStepId, size, onNodeClick) {
     if (i < steps.length - 1) {
       const connector = document.createElement("span");
       connector.className = "flow-connector";
-      connector.textContent = "→";
+      connector.innerHTML =
+        '<svg viewBox="0 0 24 10" width="24" height="10" focusable="false"><line x1="0" y1="5" x2="18" y2="5" /><path d="M14 1 L20 5 L14 9" /></svg>';
       connector.setAttribute("aria-hidden", "true");
       wrap.appendChild(connector);
     }
