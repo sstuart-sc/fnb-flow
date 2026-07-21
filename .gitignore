@@ -8,9 +8,17 @@ desktop.ini
 .idea/
 *.swp
 
-# Node (only relevant if npx caches locally / future tooling added)
+# Node
 node_modules/
 npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Vite build output
+dist/
+dist-ssr/
 
 # Local scratch
 *.local

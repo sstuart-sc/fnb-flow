@@ -51,7 +51,7 @@ html, body {
   font-family: -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
 }
 
-body {
+#app {
   display: grid;
   grid-template-columns: 280px 1fr;
   grid-template-rows: auto 1fr;
@@ -62,14 +62,14 @@ body {
   overflow: hidden;
 }
 
-body.no-minimap {
+#app.no-minimap {
   grid-template-columns: 1fr;
   grid-template-areas:
     "header"
     "main";
 }
 
-body.no-minimap .minimap {
+#app.no-minimap .minimap {
   display: none;
 }
 
@@ -702,7 +702,7 @@ body.no-minimap .minimap {
 }
 
 @media (max-width: 800px) {
-  body {
+  #app {
     grid-template-columns: 1fr;
     grid-template-areas:
       "header"

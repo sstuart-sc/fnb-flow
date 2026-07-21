@@ -1,4 +1,4 @@
-const DATA_BASE = "../data";
+const DATA_BASE = "/data";
 
 async function loadJSON(path) {
   const res = await fetch(path);
@@ -6,44 +6,47 @@ async function loadJSON(path) {
   return res.json();
 }
 
-let cache = null;
+let cachePromise = null;
 
-export async function loadAllData() {
-  if (cache) return cache;
+export function loadAllData() {
+  if (cachePromise) return cachePromise;
 
-  const [
-    flows, steps, threads, artifacts, regulations,
-    agencies, materials, roles, systems, gaps, sources, safetychain
-  ] = await Promise.all([
-    loadJSON(`${DATA_BASE}/core/flows.json`),
-    loadJSON(`${DATA_BASE}/core/steps.json`),
-    loadJSON(`${DATA_BASE}/core/threads.json`),
-    loadJSON(`${DATA_BASE}/core/artifacts.json`),
-    loadJSON(`${DATA_BASE}/core/regulations.json`),
-    loadJSON(`${DATA_BASE}/core/agencies.json`),
-    loadJSON(`${DATA_BASE}/core/materials.json`),
-    loadJSON(`${DATA_BASE}/core/roles.json`),
-    loadJSON(`${DATA_BASE}/core/systems.json`),
-    loadJSON(`${DATA_BASE}/core/gaps.json`),
-    loadJSON(`${DATA_BASE}/core/sources.json`),
-    loadJSON(`${DATA_BASE}/products/safetychain.json`),
-  ]);
+  cachePromise = (async () => {
+    const [
+      flows, steps, threads, artifacts, regulations,
+      agencies, materials, roles, systems, gaps, sources, safetychain
+    ] = await Promise.all([
+      loadJSON(`${DATA_BASE}/core/flows.json`),
+      loadJSON(`${DATA_BASE}/core/steps.json`),
+      loadJSON(`${DATA_BASE}/core/threads.json`),
+      loadJSON(`${DATA_BASE}/core/artifacts.json`),
+      loadJSON(`${DATA_BASE}/core/regulations.json`),
+      loadJSON(`${DATA_BASE}/core/agencies.json`),
+      loadJSON(`${DATA_BASE}/core/materials.json`),
+      loadJSON(`${DATA_BASE}/core/roles.json`),
+      loadJSON(`${DATA_BASE}/core/systems.json`),
+      loadJSON(`${DATA_BASE}/core/gaps.json`),
+      loadJSON(`${DATA_BASE}/core/sources.json`),
+      loadJSON(`${DATA_BASE}/products/safetychain.json`),
+    ]);
 
-  // id is the only real relational key (opaque, stable, never derived from
-  // content). path is a separate, human-readable, routable address — the two
-  // must never be conflated, so build a path->id index once here and keep all
-  // path<->id translation confined to this module.
-  const flowIdByPath = {};
-  for (const flow of Object.values(flows)) flowIdByPath[flow.path] = flow.id;
+    // id is the only real relational key (opaque, stable, never derived from
+    // content). path is a separate, human-readable, routable address — the two
+    // must never be conflated, so build a path->id index once here and keep all
+    // path<->id translation confined to this module.
+    const flowIdByPath = {};
+    for (const flow of Object.values(flows)) flowIdByPath[flow.path] = flow.id;
 
-  const stepIdByPath = {};
-  for (const step of Object.values(steps)) stepIdByPath[step.path] = step.id;
+    const stepIdByPath = {};
+    for (const step of Object.values(steps)) stepIdByPath[step.path] = step.id;
 
-  cache = {
-    flows, steps, threads, artifacts, regulations, agencies, materials, roles, systems, gaps, sources, safetychain,
-    flowIdByPath, stepIdByPath,
-  };
-  return cache;
+    return {
+      flows, steps, threads, artifacts, regulations, agencies, materials, roles, systems, gaps, sources, safetychain,
+      flowIdByPath, stepIdByPath,
+    };
+  })();
+
+  return cachePromise;
 }
 
 export function getFlow(data, flowId) {

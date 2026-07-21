@@ -2,10 +2,21 @@
   "name": "fnb-flow",
   "version": "0.1.0",
   "private": true,
-  "description": "Navigable data model and static viewer for the food & beverage manufacturing flow.",
+  "description": "Navigable data model and viewer for the food & beverage manufacturing flow.",
+  "type": "module",
   "scripts": {
-    "start": "npx --yes serve app -l 8000",
-    "serve": "npx --yes serve app -l 8000"
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "fuse.js": "^7.5.0",
+    "vue": "^3.5.39",
+    "vue-router": "^4.6.4"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^6.0.7",
+    "vite": "^8.1.1"
   },
   "license": "UNLICENSED"
 }
