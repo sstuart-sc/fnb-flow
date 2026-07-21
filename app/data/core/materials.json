@@ -4,62 +4,135 @@
     "name": "Temperature Probe / Sensor",
     "type": "equipment",
     "notes": "Manual handheld or wireless IoT-connected; used at receiving, thawing, CCP monitoring, and transport.",
-    "sourceIds": ["09e0ee20-5e5b-4fbf-b222-4f3347f347a7"]
+    "sourceIds": [
+      "09e0ee20-5e5b-4fbf-b222-4f3347f347a7"
+    ],
+    "description": "A device that measures the internal or ambient temperature of product, ingredients, or storage/transport environments, used wherever temperature is a control point rather than just a nice-to-know. Handheld probe thermometers are inserted directly into product (e.g. a case of incoming poultry, a thawing tub) for a spot reading; fixed or wireless IoT sensors instead log continuously and can alert automatically when a reading drifts outside a set range, which is what makes them suitable for unattended CCP monitoring such as cold storage or in-transit trailers. The reading itself only has value when it is captured against a defined limit — on a CCP it becomes the raw observation behind a CCP Monitoring Log entry; at receiving it becomes part of the Temperature Record and feeds the accept/reject decision on the Receiving Inspection Record.",
+    "relatedIds": [
+      "620aaecb-0b8f-4336-8f3e-86716178923b",
+      "49339f48-e8be-4bdb-a9d9-58a6193d1ac9",
+      "1bdfade9-acc5-4535-891f-87d4cf762f5c"
+    ]
   },
   "8c17f733-178e-42a8-9a66-08c7e489d36b": {
     "id": "8c17f733-178e-42a8-9a66-08c7e489d36b",
     "name": "pH Meter",
     "type": "equipment",
     "notes": "Used at CCPs involving acidification/pH control (e.g., fermented or acidified products) — FDA targets pH below 4.6 to control Clostridium botulinum in acidified foods.",
-    "sourceIds": ["d5d20924-e7bf-4c71-8293-4f22e6059606"]
+    "sourceIds": [
+      "d5d20924-e7bf-4c71-8293-4f22e6059606"
+    ],
+    "description": "A meter that measures the acidity of a product sample, most often used at CCPs for acidified or fermented foods where pH is the mechanism controlling pathogen growth rather than heat or refrigeration. A calibrated probe is inserted into a homogenized sample and produces a numeric pH reading, which is checked against the process's critical limit — commonly a target of pH below 4.6, the threshold FDA's own compliance guidance identifies as controlling Clostridium botulinum growth in acidified foods. Because the meter drifts over time, it is calibrated against buffer solutions on a defined schedule, and that calibration record is itself part of demonstrating the CCP was reliably monitored, not just that a passing number was written down.",
+    "relatedIds": [
+      "1bdfade9-acc5-4535-891f-87d4cf762f5c",
+      "e8d03bfb-7a45-46f4-80ee-be037dd5e218"
+    ]
   },
   "bcf4ede9-5dde-4874-b14b-5de1a598bdb4": {
     "id": "bcf4ede9-5dde-4874-b14b-5de1a598bdb4",
     "name": "Scale",
     "type": "equipment",
     "notes": "Used in batching/weighing and catch-weight verification; may be integrated with MES for automatic weight capture.",
-    "sourceIds": ["b118b0bf-0fcf-4cf9-9b87-993e4f18604d"]
+    "sourceIds": [
+      "b118b0bf-0fcf-4cf9-9b87-993e4f18604d",
+      "9303e717-7e74-4902-a12c-2e52967c09a2"
+    ],
+    "description": "Equipment that measures the weight of ingredients, in-process material, or finished product at points in the process where weight is either a formulation control (batching correct ingredient quantities) or a compliance/commercial control (catch-weight capture on variable-weight product like meat or produce). At the low-tech end this is a standalone platform scale an operator reads and records manually; at the higher end it is a checkweigher or load cell integrated directly with an MES or scale-control system so the weight reading is captured automatically into the batch record without manual transcription, reducing both labor and transcription-error risk.",
+    "relatedIds": [
+      "429b1edf-4726-4530-b8db-680ec0761622",
+      "29b066a1-910f-45b5-bd65-205d53da0ba4",
+      "9e388600-1312-452b-8d07-3a0efd5202f9",
+      "2e49adf0-dbf5-4625-bfda-b538e7085483"
+    ]
   },
   "72e2305e-e782-4fef-a0f0-684b001b4bf4": {
     "id": "72e2305e-e782-4fef-a0f0-684b001b4bf4",
     "name": "ELISA Allergen Swab Test",
     "type": "test kit",
     "notes": "Immunoassay-based test detecting specific allergen proteins (peanut, gluten, milk, etc.). At-line allergen changeover verification typically uses the rapid lateral-flow immunoassay format (5-10 minute results); full lab-based ELISA is more commonly used for validation/quantitative work.",
-    "sourceIds": ["ee4d71d8-e90c-4bbd-a7eb-851b90bb3ac4"]
+    "sourceIds": [
+      "ee4d71d8-e90c-4bbd-a7eb-851b90bb3ac4"
+    ],
+    "description": "An immunoassay-based test used to verify that an allergen has actually been removed from a production line or piece of equipment after an allergen changeover, rather than relying only on a visual clean check. The test detects specific allergen proteins (e.g. peanut, milk, egg, gluten) by binding them to antibodies on a swab or test strip; a color-change or line result indicates whether allergen protein is still present above the assay's detection threshold. In practice, the at-line version used for changeover verification is almost always the rapid lateral-flow immunoassay format, which gives a result in 5-10 minutes and is fast enough to release a line back to production; full laboratory ELISA is slower and quantitative, and is more commonly reserved for validation studies or investigating a suspected cross-contamination event rather than routine changeover release.",
+    "relatedIds": [
+      "238f08d4-2e35-498a-817d-683f36822b65",
+      "e22bc4a2-d974-46c6-ac7b-9c3c1b5b3e04",
+      "29c66c1b-1d4b-4c1a-92b4-2c951493253d",
+      "9a076e51-1e86-42a5-84d9-8c39da37e1d0"
+    ]
   },
   "9a076e51-1e86-42a5-84d9-8c39da37e1d0": {
     "id": "9a076e51-1e86-42a5-84d9-8c39da37e1d0",
     "name": "ATP Swab Test",
     "type": "test kit",
     "notes": "Bioluminescence-based general cleanliness check; rapid pass/fail result used to verify cleaning before sanitizing or before production. Pass/fail thresholds are facility-established, not set by a universal external standard.",
-    "sourceIds": ["19b10a49-1d12-4222-9103-25859cefd368"]
+    "sourceIds": [
+      "19b10a49-1d12-4222-9103-25859cefd368"
+    ],
+    "description": "A rapid test that checks for residual organic soil after cleaning by measuring adenosine triphosphate (ATP), a molecule present in any biological residue (food, microbial cells, etc.). A swab is wiped across a surface and inserted into a handheld luminometer, which mixes it with a luciferase reagent and reports a light-output reading in relative light units (RLU) — the more ATP present, the more light is produced. Unlike a microbial swab that takes days to culture, the ATP test gives a pass/fail result in seconds to minutes, which is what makes it practical as a routine pre-production or post-cleaning gate rather than just a periodic verification tool. It measures general cleanliness, not the presence of a specific pathogen or allergen, and the RLU pass/fail cutoff is set by each facility rather than by a universal external standard.",
+    "relatedIds": [
+      "076d8f82-c969-464d-a40b-1e5413058708",
+      "97409332-015e-4473-a32b-26b71bc67d07",
+      "72e2305e-e782-4fef-a0f0-684b001b4bf4"
+    ]
   },
   "076d8f82-c969-464d-a40b-1e5413058708": {
     "id": "076d8f82-c969-464d-a40b-1e5413058708",
     "name": "Sanitizer Chemical",
     "type": "material",
     "notes": "Common types: chlorine (bleach), quaternary ammonium compounds (quats), peroxyacetic acid (PAA); applied after cleaning, not a substitute for it — organic/soil load reduces sanitizer efficacy.",
-    "sourceIds": ["160c225b-f836-4037-8cf2-fe54b3b1b3f1"]
+    "sourceIds": [
+      "160c225b-f836-4037-8cf2-fe54b3b1b3f1"
+    ],
+    "description": "A chemical applied to equipment and food-contact surfaces to reduce microbial load to a safe level after physical cleaning has already removed visible soil and debris. The three chemistry classes most commonly used are chlorine-based compounds (e.g. bleach), quaternary ammonium compounds (\"quats\"), and peroxyacetic acid (PAA), each with different contact-time, corrosivity, and residue characteristics that drive which one a facility chooses for a given surface or product type. Sanitizing is a distinct step from cleaning, not a substitute for it: any remaining organic or soil load on a surface consumes and neutralizes the sanitizer's active chemistry, so a surface that wasn't actually cleaned first can pass a sanitizer application yet still test positive on an ATP or environmental swab afterward.",
+    "relatedIds": [
+      "97409332-015e-4473-a32b-26b71bc67d07",
+      "9a076e51-1e86-42a5-84d9-8c39da37e1d0"
+    ]
   },
   "22005d31-323d-4252-8610-41c71d08a023": {
     "id": "22005d31-323d-4252-8610-41c71d08a023",
     "name": "Metal Detector",
     "type": "equipment",
     "notes": "Inline foreign-material detection for physical hazards; a common CCP, especially for ground/chopped products.",
-    "sourceIds": ["dbc3414e-069f-4fbd-ab52-6ce551a7b53e"]
+    "sourceIds": [
+      "dbc3414e-069f-4fbd-ab52-6ce551a7b53e"
+    ],
+    "description": "An inline scanner that detects metallic foreign material in product moving along the line, typically by generating a small electromagnetic field and flagging any disturbance caused by a conductive object passing through it. It is one of the most common physical-hazard CCPs in food manufacturing, especially on ground or chopped products where a piece of processing equipment (a blade fragment, a wire) is a realistic contamination pathway that can't reliably be caught by visual inspection alone. When product triggers a detection, the line typically diverts or rejects the affected unit automatically and the line must be checked and cleared before continuing; detector sensitivity is verified periodically by passing calibrated metal-content test pieces through the unit, and that verification result is what actually demonstrates the CCP is under control, not just that the detector is switched on.",
+    "relatedIds": [
+      "1bdfade9-acc5-4535-891f-87d4cf762f5c",
+      "e8d03bfb-7a45-46f4-80ee-be037dd5e218",
+      "a7ea6ca7-6b6e-4101-beff-e581956d8a36",
+      "402676d7-c0d4-45d1-9798-134b8b542939"
+    ]
   },
   "402676d7-c0d4-45d1-9798-134b8b542939": {
     "id": "402676d7-c0d4-45d1-9798-134b8b542939",
     "name": "X-Ray Inspection System",
     "type": "equipment",
     "notes": "Inline foreign-material and fill-check detection. More sensitive than metal detection for non-metallic, dense/high-density materials (glass, dense plastics, bone) via density contrast; metal detectors are limited to conductive contaminants and prone to false triggers on high-salt/moisture products.",
-    "sourceIds": ["ea02b52a-37bd-4fc0-bd76-16581f340071"]
+    "sourceIds": [
+      "ea02b52a-37bd-4fc0-bd76-16581f340071"
+    ],
+    "description": "An inline scanner that passes product through a low-dose X-ray beam and analyzes the resulting density image to detect foreign material and, on many systems, verify fill level or count. Its detection mechanism is density contrast rather than conductivity, so it catches contaminants that a metal detector structurally cannot see — glass fragments, dense plastics, bone, stone — because those materials aren't conductive at all. It also avoids a metal detector's characteristic weakness of false triggers on high-salt or high-moisture products, where the product's own electrical conductivity can mask or mimic a real detection. The tradeoff is cost and complexity: X-ray systems are generally more expensive to purchase and maintain than metal detectors, which is why many lines still run a metal detector as the primary physical-hazard CCP and add X-ray only where the specific contaminant risk profile calls for it.",
+    "relatedIds": [
+      "22005d31-323d-4252-8610-41c71d08a023",
+      "a7ea6ca7-6b6e-4101-beff-e581956d8a36"
+    ]
   },
   "26fc29f0-5637-42ef-87bd-820d14c68eb6": {
     "id": "26fc29f0-5637-42ef-87bd-820d14c68eb6",
     "name": "Vision Inspection System",
     "type": "equipment",
     "notes": "Camera-based computer vision checking label presence, alignment, and lot code legibility at line speed (commonly 1,000+ units/min), including OCR/OCV for code legibility.",
-    "sourceIds": ["045e2081-03ba-4d0d-8afd-be2563b62663"]
+    "sourceIds": [
+      "045e2081-03ba-4d0d-8afd-be2563b62663"
+    ],
+    "description": "A camera-based inspection system that automatically checks packaging and labels at production-line speed rather than relying on manual visual spot-checks. It typically verifies several things in the same pass: that a label is present at all, that it's positioned and aligned correctly on the package, and that printed variable data (lot code, date code, best-by date) is present and legible — the last of these often through OCR/OCV (optical character recognition/verification) rather than a human reading each package. Because it operates at line speed, commonly 1,000 or more units per minute, it can inspect every unit rather than a sample, which is what makes it practical to catch a labeling defect (wrong label applied, missing lot code, unreadable print) before it reaches a pallet rather than after a customer complaint surfaces it.",
+    "relatedIds": [
+      "f2777655-3ff5-43b8-9e51-494f0704b2a6",
+      "ffb44422-779f-4bc8-86be-ff6fa6d73d68",
+      "3afd5ba3-988d-462f-836b-b99ec6c661c2"
+    ]
   }
 }

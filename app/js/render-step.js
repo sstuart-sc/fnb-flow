@@ -2,6 +2,7 @@ import { resolveList, stepsForFlow, displayFlowName } from "./data.js";
 import { goToStep } from "./router.js";
 import { renderNodeRow } from "./render-node.js";
 import { openSourceModal } from "./render-source-modal.js";
+import { openDetailModal } from "./render-detail-modal.js";
 
 export function renderStepView(container, data, crumbs, stepId) {
   const step = data.steps[stepId];
@@ -101,26 +102,26 @@ export function renderStepView(container, data, crumbs, stepId) {
       listCard(data, "Artifacts", resolveList(data, "artifacts", step.artifactIds), (a) => ({
         name: a.name,
         meta: [a.format, a.lifecycle].filter(Boolean).join(" — "),
-      }))
+      }), "artifacts")
     );
     concreteGrid.appendChild(
       listCard(data, "Materials & Equipment", resolveList(data, "materials", step.materialIds), (m) => ({
         name: m.name,
         meta: m.notes,
-      }))
+      }), "materials")
     );
     concreteGrid.appendChild(
       listCard(data, "Systems", resolveList(data, "systems", step.systemIds), (s) => ({
         name: s.name,
         meta: s.examplePlatforms?.length ? `e.g. ${s.examplePlatforms.slice(0, 3).join(", ")}` : s.summary,
-      }))
+      }), "systems")
     );
     container.appendChild(concreteGrid);
   }
 
 }
 
-function listCard(data, title, items, mapFn) {
+function listCard(data, title, items, mapFn, detailCollection) {
   const card = document.createElement("div");
   card.className = "detail-card";
   const h4 = document.createElement("h4");
@@ -138,7 +139,14 @@ function listCard(data, title, items, mapFn) {
   const ul = document.createElement("ul");
   for (const item of items) {
     const { name, meta } = mapFn(item);
+    const hasDetail = detailCollection && (item.description || item.fields?.length);
     const li = document.createElement("li");
+    if (hasDetail) {
+      li.className = "item-card";
+      li.tabIndex = 0;
+      li.setAttribute("role", "button");
+    }
+
     const nameEl = document.createElement("div");
     nameEl.className = "item-name";
     nameEl.textContent = name;
@@ -152,6 +160,21 @@ function listCard(data, title, items, mapFn) {
     if (item.sourceIds?.length) {
       li.appendChild(sourceNote(data, name, item.sourceIds));
     }
+
+    if (hasDetail) {
+      const open = () => openDetailModal(data, detailCollection, item);
+      li.addEventListener("click", (e) => {
+        if (e.target.closest(".item-source-note--button")) return;
+        open();
+      });
+      li.addEventListener("keydown", (e) => {
+        if (e.key === "Enter" || e.key === " ") {
+          e.preventDefault();
+          open();
+        }
+      });
+    }
+
     ul.appendChild(li);
   }
   card.appendChild(ul);

@@ -1,4 +1,4 @@
-# F&B Stream — Viewer
+# F&B Flow — Viewer
 
 A static, framework-free viewer for the stream-map data model. Plain
 HTML/CSS/JS (ES modules) — no build step, no `node_modules`, no bundler.

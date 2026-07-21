@@ -85,6 +85,57 @@ FDA-mandated"), say that plainly rather than writing around it — that's a
 legitimate, sourceable statement (`subject-matter-judgment` or the
 regulation's own stated timeline), not a gap to paper over.
 
+## 3a. The detail fields — `description`, `fields`, `relatedIds`
+
+Applies to `artifacts`, `materials`, and `systems` (plan section 11 item 10).
+These are optional per-record additions on top of the existing shape — they
+exist to give the detail modal something substantive to show, not to
+duplicate what the card preview (`name` + the existing short field) already
+says.
+
+There is deliberately no `example`/mock-instance field. A realistic worked
+example (sample lot numbers, sample company names, a fabricated reading)
+is effort spent on realism the site doesn't need — it's a conceptual/
+educational reference, not a tool anyone fills out with real data. The bar
+is a **plausible, sourced schema** (`fields`), not a plausible-looking
+instance of one. If a past record still has an `example` field, remove it
+rather than fix it — it's out of scope, not a smaller version of `fields`.
+
+- **`description`** — prose beyond the existing one-liner (`lifecycle` for
+  artifacts, `notes` for materials, `summary` for systems). Explain what the
+  thing actually is, who touches it, and why it matters to the step it's
+  attached to, in enough depth that a reader unfamiliar with the domain
+  understands it without needing the modal's other fields. Where the
+  existing short field already tells the whole story adequately, `description`
+  can restate it in fuller prose rather than straining for new content — but
+  never leave it as a near-duplicate of the short field's exact wording.
+- **`fields`** — an array of `{ name, description }` naming each column/
+  field/parameter the record captures and what it means. **Required test,
+  not a judgment call:** does this record represent a single, describable
+  instance of something with named parts (a form, a log entry, a schema, a
+  matrix row, a KDE set, a rubric)? If yes, `fields` is required, covering
+  every named part a reader would need to understand an instance of the
+  record — not a partial or illustrative subset. If the record is genuinely
+  just prose/narrative with no enumerable parts (e.g. a HACCP Plan as a
+  whole document, a Label Artwork File), omit `fields` entirely — don't pad
+  it with a fake breakdown to satisfy the letter of the rule. When in doubt,
+  default to including `fields`: most `format` values in this dataset
+  ("data record," "document, versioned," "reference table") describe
+  something with real internal structure, even when the existing `lifecycle`
+  text doesn't spell it out. Every `fields` entry must be a plausible,
+  sourced part of the real thing — grounded the same way any other claim in
+  the record is (section 2), not invented to look complete.
+- **`relatedIds`** — cross-references to other artifacts/materials/systems/
+  regulations this record actually interacts with in the domain (e.g.
+  Structured COA Data Schema ↔ Material/Product Specification). Only add a
+  relationship that's real and useful to know about — not every record that
+  is merely topically nearby. Must resolve per section 5's referential-
+  integrity rule, same as any other `*Ids` field.
+
+Sourcing (section 2) and vendor-neutrality (section 4) apply to this new
+content exactly as they do to the existing fields — a `fields` entry making
+a specific regulatory claim needs the same grounding as `lifecycle` would.
+
 ## 4. Vendor neutrality
 
 Per plan section 6: `systems.json` (core) stays generic/vendor-neutral —

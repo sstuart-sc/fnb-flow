@@ -1,4 +1,4 @@
-# F&B Stream
+# F&B Flow
 
 A navigable data model and viewer for the upstream-to-downstream flow of food
 processing and manufacturing — the 14-step primary flow, plus nested flows

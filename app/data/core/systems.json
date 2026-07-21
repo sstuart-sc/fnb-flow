@@ -12,7 +12,19 @@
       "Aptean Process Manufacturing ERP – Ross Edition",
       "Aptean Deacom ERP"
     ],
-    "sourceIds": ["160cb14f-303a-43ca-8346-2bddaa680cb8"]
+    "sourceIds": [
+      "160cb14f-303a-43ca-8346-2bddaa680cb8",
+      "cd89af6a-36cc-4b0a-9b7d-a3b139ac0691"
+    ],
+    "description": "ERP is the system of record for the plant's commercial and planning data: purchase orders, sales orders, inventory balances, cost accounting, and the master production schedule all live here, and every other plant system (MES, WMS, LIMS, QMS) either feeds it or reads from it. In food and beverage manufacturing specifically, a generic ERP is not enough - the platform needs process-manufacturing extensions for recipe/formula-based production (rather than discrete bill-of-materials assembly), catch weight (billing and inventory tracked by actual measured weight, not just unit count), FEFO-driven inventory allocation, lot-level traceability through transformation and blending, and by-product/co-product yield accounting. Implementations typically integrate ERP with MES for shop-floor execution data and with WMS for warehouse-level inventory movement.",
+    "relatedIds": [
+      "3628303b-f98e-4dc6-8627-9ad94b5af3dd",
+      "39da6cf5-44d6-44d3-b613-d86a3530a7b1",
+      "d08beab6-1d89-42e5-8f51-c12ddc9dcc93",
+      "7e49ad00-a211-4140-a869-d669d929d49e",
+      "b6417e04-03ad-400f-bbe3-ba9a111eaeb9",
+      "429b1edf-4726-4530-b8db-680ec0761622"
+    ]
   },
   "3628303b-f98e-4dc6-8627-9ad94b5af3dd": {
     "id": "3628303b-f98e-4dc6-8627-9ad94b5af3dd",
@@ -25,7 +37,17 @@
       "Plex MES (Rockwell Automation)",
       "Tulip"
     ],
-    "sourceIds": ["7b607a72-96cf-4ec0-97c8-59d37cf6d938"]
+    "sourceIds": [
+      "7b607a72-96cf-4ec0-97c8-59d37cf6d938",
+      "b118b0bf-0fcf-4cf9-9b87-993e4f18604d"
+    ],
+    "description": "MES sits between ERP's plan and the physical plant floor. It dispatches ERP-generated work orders to specific lines, captures real-time production and downtime data from PLCs and line sensors, and builds the electronic batch record as production runs, tying together what was produced, on which equipment, by whom, and against which recipe parameters. On the quality side, MES is typically where CCP monitoring data (temperatures, pressures, timings) gets captured at the point of the process step rather than on paper, and where OEE (availability, performance, quality) is calculated from the same downtime and output data. Because it talks directly to plant-floor automation (PLCs, SCADA), MES is the integration point that turns physical equipment events into the digital records ERP, QMS, and traceability systems consume.",
+    "relatedIds": [
+      "798d71ae-178b-4f6b-bd3d-c3b58bd2013b",
+      "29b066a1-910f-45b5-bd65-205d53da0ba4",
+      "1bdfade9-acc5-4535-891f-87d4cf762f5c",
+      "83d48320-9598-4069-b091-c032b4e36fd7"
+    ]
   },
   "39da6cf5-44d6-44d3-b613-d86a3530a7b1": {
     "id": "39da6cf5-44d6-44d3-b613-d86a3530a7b1",
@@ -38,7 +60,17 @@
       "Infios WMS (formerly Körber/HighJump)",
       "SAP Extended Warehouse Management"
     ],
-    "sourceIds": ["0c8fa46a-d881-4be6-8fc3-55d803fe5df4"]
+    "sourceIds": [
+      "0c8fa46a-d881-4be6-8fc3-55d803fe5df4",
+      "cd89af6a-36cc-4b0a-9b7d-a3b139ac0691"
+    ],
+    "description": "WMS governs the physical movement and storage of inventory within the four walls of the warehouse, distinct from ERP's higher-level inventory accounting. It directs receiving and putaway (which dock door, which rack location), drives pick sequencing for outbound orders using FEFO logic so that closer-to-expiry lots ship first, reconciles physical inventory counts against system records (cycle counts), and generates the pick/pack/load instructions and shipping documentation that feed the Advance Ship Notice. WMS typically holds the location-level detail (pallet, rack, bin) that ERP does not track at that granularity, and hands lot and location data back to ERP or a dedicated traceability platform to support genealogy queries.",
+    "relatedIds": [
+      "798d71ae-178b-4f6b-bd3d-c3b58bd2013b",
+      "733c42da-63cb-4309-b90f-eada2c4a97f7",
+      "fc2cc2d7-c0e6-4a2c-b0e8-d110914627d2",
+      "551a4e09-160c-4f45-ac51-2000370afcab"
+    ]
   },
   "06ff688b-147f-4fde-846c-35ad49d333bc": {
     "id": "06ff688b-147f-4fde-846c-35ad49d333bc",
@@ -54,7 +86,18 @@
       "ComplianceMate",
       "Corvium"
     ],
-    "sourceIds": ["9ea3e8c2-c580-4f66-a446-3c9f9104cc1d"]
+    "sourceIds": [
+      "9ea3e8c2-c580-4f66-a446-3c9f9104cc1d"
+    ],
+    "description": "QMS / food safety software is the digital home for the plant's food-safety and quality management system: the HACCP plan itself, the CCP monitoring and corrective-action records generated as production runs, CAPA workflows for nonconformances, document and record control (SOPs, specs, training records), internal audit management, and often supplier qualification data as well. Where MES captures process data at the point of the line, QMS is usually where that data (and manually entered checks that have no PLC source) gets reviewed, exception-managed, and retained as the auditable record a regulator or third-party certification auditor will ask to see. Because HACCP, supplier management, and labeling all generate records that need retention and review, QMS platforms in this space commonly span several of those domains rather than specializing in just one.",
+    "relatedIds": [
+      "7a252b54-ea94-4cd4-ac17-c4e00c174340",
+      "e8d03bfb-7a45-46f4-80ee-be037dd5e218",
+      "1bdfade9-acc5-4535-891f-87d4cf762f5c",
+      "1123026c-158f-41ad-acb2-9f67b6fb4e09",
+      "76dd2e5a-20a8-4f19-8fc1-3b78be49fee3",
+      "209c4879-7b77-46e8-91e2-153eac453a77"
+    ]
   },
   "0aa50349-ec76-4ea4-b24d-bd61159fff84": {
     "id": "0aa50349-ec76-4ea4-b24d-bd61159fff84",
@@ -62,7 +105,16 @@
     "category": "Laboratory",
     "summary": "Manages sample intake, test result capture, and comparison against specification limits for micro, chemical, and physical testing.",
     "examplePlatforms": [],
-    "sourceIds": ["49663ec7-cffb-4c54-b89f-3a2bebc3c2b2"]
+    "sourceIds": [
+      "49663ec7-cffb-4c54-b89f-3a2bebc3c2b2"
+    ],
+    "description": "LIMS manages the lifecycle of a lab sample: logging intake (what material, what lot, what test panel is required), tracking the sample through analytical testing (microbiological, chemical, physical), capturing the resulting test values, and automatically comparing those values against the specification limits defined for that material or product. LIMS typically drives the hold/release decision that gates whether a lot can move to the next step (e.g., a raw material can't be used, or a finished lot can't ship, until LIMS shows all required results within spec), and it is the system most directly upstream of the Lab Test Result and Certificate of Analysis records used elsewhere in the plant.",
+    "relatedIds": [
+      "4c7a9c60-4652-4ccd-8a99-de688943fdf3",
+      "69f4ab73-992a-4852-b94e-0440b2304521",
+      "56526379-12e6-4c0f-a1fc-bd1c83d9f1a0",
+      "9019fee0-1775-4638-a520-fece292e426e"
+    ]
   },
   "73835e3c-9d70-49bf-b855-e25139be8426": {
     "id": "73835e3c-9d70-49bf-b855-e25139be8426",
@@ -73,7 +125,19 @@
       "Trustwell (formerly FoodLogiQ)",
       "ReposiTrak"
     ],
-    "sourceIds": ["eb48e77e-26fe-4872-8960-93ee98d0db25"]
+    "sourceIds": [
+      "eb48e77e-26fe-4872-8960-93ee98d0db25",
+      "7bba9c5e-beb9-4663-905c-1f234c1a6032",
+      "dee1afd1-994e-4c2b-a12e-4e044ffb0680"
+    ],
+    "description": "A supplier management/portal system runs the ongoing lifecycle of qualifying and monitoring suppliers: it collects and stores qualification documents such as facility audits and GFSI-recognized certifications, gathers per-shipment COAs, and structures the ongoing monitoring workflows (re-audit reminders, certification expiration tracking, performance scorecards) that keep a supplier's status current rather than qualified once and forgotten. Because supplier qualification and monitoring are audit-facing obligations under FSMA's Preventive Controls supplier-verification requirements, this system is often the evidence source a plant points to when a regulator or customer audit asks how a given supplier was verified.",
+    "relatedIds": [
+      "e633d7e7-fd2f-458b-b7e0-837e92dbb64a",
+      "4e16ee4f-d132-44e5-ac05-b88b4767e5ff",
+      "5ecdd375-c8ce-4b2f-a069-1d1948c844e2",
+      "234121ca-a7cb-4c99-8a09-7e947e62d724",
+      "03dcbbf1-8518-4030-bb66-c10e4c777a5f"
+    ]
   },
   "22e46c8f-cf7e-4d53-b5f2-56c939ee76ff": {
     "id": "22e46c8f-cf7e-4d53-b5f2-56c939ee76ff",
@@ -87,7 +151,22 @@
       "Sourcemap",
       "IBM Food Trust"
     ],
-    "sourceIds": ["83d0e275-932a-453e-be0a-651cd1bf6d34", "57a5b52b-4ea4-4feb-ab23-13dcf3907ee2"]
+    "sourceIds": [
+      "83d0e275-932a-453e-be0a-651cd1bf6d34",
+      "57a5b52b-4ea4-4feb-ab23-13dcf3907ee2",
+      "0edca96f-32ec-43c5-917e-f94d790820f0",
+      "d6ae1a5e-a73d-4a25-bdf6-c9ca43e71ea2",
+      "b70fd9e6-8c23-4609-bb25-0cdd839edd76",
+      "da05f47f-c44b-47f4-bd19-9ef07eda9955",
+      "1d3a1d00-95ca-4af0-918f-5b3b8d0e1421"
+    ],
+    "description": "A dedicated traceability platform focuses specifically on lot genealogy and the critical tracking event (CTE) / key data element (KDE) capture that the FSMA Food Traceability Rule (FSMA 204) requires for foods on the Food Traceability List. Rather than trying to retrofit ERP or WMS to hold FSMA 204-specific data structures, plants handling covered foods often layer a purpose-built platform on top that ingests CTE/KDE data from those systems and exposes it in the standardized form regulators and trading partners expect, frequently built on the GS1 EPCIS event model so that traceability data can be exchanged across supply-chain partners on shared standards rather than proprietary formats.",
+    "relatedIds": [
+      "9cc2d1ff-a495-474c-bc2d-5615fe7e94bb",
+      "b5e32a3a-afdb-4264-a583-9bfcf21d6999",
+      "1188e42e-3097-4203-b657-0f88020f34f0",
+      "93b63909-560d-4414-8cb4-0920241e45a4"
+    ]
   },
   "e7cf071d-ca71-42ea-81de-4924de27f07c": {
     "id": "e7cf071d-ca71-42ea-81de-4924de27f07c",
@@ -98,7 +177,18 @@
       "Loftware",
       "Centric PLM (Food & Beverage)"
     ],
-    "sourceIds": ["68e8cd24-422d-4aaa-9e41-4787e40ef760"]
+    "sourceIds": [
+      "68e8cd24-422d-4aaa-9e41-4787e40ef760",
+      "76aa2fc5-1b0f-4b8b-a5c9-9c81d57f1135"
+    ],
+    "description": "Label management software handles the workflow around getting label artwork from initial copy draft to a compliant, approved, print-ready file: version control on artwork iterations, routing for regulatory/compliance review against nutrient-content and allergen labeling rules, and maintaining an audit trail of who approved which version and when. The strongest implementations link directly into the formulation/recipe database so that a formula change (a new ingredient, an updated allergen) automatically flags any label artwork built on the old formula as needing re-review, closing the gap where a recipe changes but nobody remembers to update the label.",
+    "relatedIds": [
+      "6425e8df-c318-495b-ae4e-a3a81af541f1",
+      "3afd5ba3-988d-462f-836b-b99ec6c661c2",
+      "d1139caf-37bd-4f97-9220-08feba95bdce",
+      "68a4cc0a-b5c0-4ba4-91de-332c4c74c684",
+      "d08beab6-1d89-42e5-8f51-c12ddc9dcc93"
+    ]
   },
   "7e49ad00-a211-4140-a869-d669d929d49e": {
     "id": "7e49ad00-a211-4140-a869-d669d929d49e",
@@ -106,7 +196,17 @@
     "category": "Production Planning",
     "summary": "Optimizes the production schedule across equipment capacity, changeover time (including allergen changeovers), raw material availability, shelf life, and delivery deadlines. Often integrated with ERP.",
     "examplePlatforms": [],
-    "sourceIds": ["0e3f3b1c-c41a-486e-9fdb-691f542734cb"]
+    "sourceIds": [
+      "0e3f3b1c-c41a-486e-9fdb-691f542734cb",
+      "a43f873f-01f6-489b-ab25-293f6dc04bbe"
+    ],
+    "description": "A production scheduling system (often called Advanced Planning & Scheduling, or APS) sits above simple ERP order sequencing to solve the harder combinatorial problem of ordering production runs across constraints that interact with each other: available equipment capacity, changeover time between runs (which is especially costly when it involves an allergen changeover requiring full cleaning and verification), raw material availability and shelf life, and outbound delivery deadlines. Scheduling allergen changeovers well is a particularly food-and-beverage-specific problem, since sequencing runs from fewer-allergen to more-allergen products (rather than the reverse) can reduce the cleaning burden between runs; this system is typically where that sequencing logic gets applied at the schedule level, working from the ERP-level Master Production Schedule down to an executable line-by-line sequence.",
+    "relatedIds": [
+      "b6417e04-03ad-400f-bbe3-ba9a111eaeb9",
+      "29c66c1b-1d4b-4c1a-92b4-2c951493253d",
+      "798d71ae-178b-4f6b-bd3d-c3b58bd2013b",
+      "238f08d4-2e35-498a-817d-683f36822b65"
+    ]
   },
   "d08beab6-1d89-42e5-8f51-c12ddc9dcc93": {
     "id": "d08beab6-1d89-42e5-8f51-c12ddc9dcc93",
@@ -114,7 +214,16 @@
     "category": "Formulation",
     "summary": "Maintains version-controlled BOMs/recipes as the source of truth for nutrition calculation, allergen content, and MRP.",
     "examplePlatforms": [],
-    "sourceIds": ["a6bb949d-d869-4c5d-8de7-bb74e2859b5e"]
+    "sourceIds": [
+      "a6bb949d-d869-4c5d-8de7-bb74e2859b5e"
+    ],
+    "description": "A formulation/recipe management system is the single source of truth for a product's exact composition, held as a version-controlled bill of materials rather than a static document. Every downstream calculation that depends on formula composition - nutrition facts panel generation, allergen declaration, cost rollups, and MRP demand for raw materials - pulls from this system rather than each maintaining its own separate copy, so that a single formula change propagates consistently everywhere it matters instead of requiring parallel manual updates across nutrition, labeling, and planning teams. Version control matters specifically because a plant needs to know which formula version was actually in effect for a given historical batch, not just what the current formula is.",
+    "relatedIds": [
+      "429b1edf-4726-4530-b8db-680ec0761622",
+      "e22bc4a2-d974-46c6-ac7b-9c3c1b5b3e04",
+      "798d71ae-178b-4f6b-bd3d-c3b58bd2013b",
+      "e7cf071d-ca71-42ea-81de-4924de27f07c"
+    ]
   },
   "0895906c-34f8-43a0-a4d8-112d3a9eb395": {
     "id": "0895906c-34f8-43a0-a4d8-112d3a9eb395",
@@ -122,6 +231,16 @@
     "category": "Data Exchange",
     "summary": "Computer-to-computer exchange of standard business documents (850 PO, 855 PO Ack, 856 ASN, 810 Invoice, 940 Warehouse Shipping Order, 945 Warehouse Shipping Advice) between trading partners, via a Value Added Network or direct AS2 connection.",
     "examplePlatforms": [],
-    "sourceIds": ["7c8a187b-4b6c-4bc1-9399-436bff7668d7"]
+    "sourceIds": [
+      "7c8a187b-4b6c-4bc1-9399-436bff7668d7",
+      "1c23a6e5-8174-41ca-a87e-e2918784512d",
+      "f6b36ec8-7953-4dd1-9f5a-c537de25b5b6"
+    ],
+    "description": "EDI is the long-established mechanism for exchanging standard business documents directly computer-to-computer between trading partners, replacing manual entry of purchase orders, invoices, and shipping notices with structured X12 transaction sets transmitted over a Value Added Network (a third-party intermediary that routes and translates EDI traffic between partners) or a direct AS2 connection (point-to-point transmission over the internet with built-in encryption and delivery receipts). In food and beverage supply chains, EDI is typically the transport layer underneath documents like the purchase order and advance ship notice - the business document's content and structure are what the transaction set numbers (850, 856, etc.) define, while EDI itself is just how that structured data physically moves between the buyer's and seller's systems.",
+    "relatedIds": [
+      "3250a117-60b4-4053-b8cf-bf13f59faa1b",
+      "fc2cc2d7-c0e6-4a2c-b0e8-d110914627d2",
+      "798d71ae-178b-4f6b-bd3d-c3b58bd2013b"
+    ]
   }
 }
