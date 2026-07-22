@@ -14,7 +14,7 @@ export function loadAllData() {
   cachePromise = (async () => {
     const [
       flows, steps, threads, artifacts, regulations,
-      agencies, materials, roles, systems, sources, safetychain
+      agencies, materials, roles, systems, sources, jurisdictions, safetychain
     ] = await Promise.all([
       loadJSON(`${DATA_BASE}/core/flows.json`),
       loadJSON(`${DATA_BASE}/core/steps.json`),
@@ -26,6 +26,7 @@ export function loadAllData() {
       loadJSON(`${DATA_BASE}/core/roles.json`),
       loadJSON(`${DATA_BASE}/core/systems.json`),
       loadJSON(`${DATA_BASE}/core/sources.json`),
+      loadJSON(`${DATA_BASE}/core/jurisdictions.json`),
       loadJSON(`${DATA_BASE}/products/safetychain.json`),
     ]);
 
@@ -52,7 +53,8 @@ export function loadAllData() {
     }
 
     return {
-      flows, steps, threads, artifacts, regulations, agencies, materials, roles, systems, sources, safetychain,
+      flows, steps, threads, artifacts, regulations, agencies, materials, roles, systems, sources,
+      jurisdictions, safetychain,
       flowIdByPath, stepIdByPath, pathByCollection,
     };
   })();

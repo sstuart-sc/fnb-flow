@@ -11,6 +11,8 @@ import SearchView from "./components/SearchView.vue";
 import SourcesView from "./components/SourcesView.vue";
 import CollectionView from "./components/CollectionView.vue";
 import ItemDetailView from "./components/ItemDetailView.vue";
+import RegulationsTimelineView from "./components/RegulationsTimelineView.vue";
+import AgencyGraphsView from "./components/AgencyGraphsView.vue";
 import { parseCrumbs } from "./router";
 
 const COLLECTION_NAV = [
@@ -29,6 +31,7 @@ const searchIndex = shallowRef([]);
 const loadError = ref(null);
 const searchInput = ref("");
 const mobileMenuOpen = ref(false);
+const openNavGroup = ref(null);
 let debounceHandle = null;
 
 onMounted(async () => {
@@ -44,6 +47,8 @@ onMounted(async () => {
 const isBrowse = computed(() => route.name === "browse");
 const isSources = computed(() => route.name === "sources");
 const isSearch = computed(() => route.name === "search");
+const isTimeline = computed(() => route.name === "timeline");
+const isAgencyGraphs = computed(() => route.name === "agency-graphs");
 const activeCollection = computed(() => {
   const match = COLLECTION_NAV.find(
     (c) => route.name === c.name || route.name === `${c.name}-detail`
@@ -58,14 +63,33 @@ const collectionDetailName = computed(() => {
   return match?.name || null;
 });
 
+const isToolsActive = computed(() => isTimeline.value || isAgencyGraphs.value);
+const isDataActive = computed(() => isSources.value || !!activeCollection.value);
+
+function toggleNavGroup(name) {
+  openNavGroup.value = openNavGroup.value === name ? null : name;
+}
+
 function onKeydown(e) {
-  if (e.key === "Escape" && mobileMenuOpen.value) mobileMenuOpen.value = false;
+  if (e.key === "Escape") {
+    if (openNavGroup.value) openNavGroup.value = null;
+    else if (mobileMenuOpen.value) mobileMenuOpen.value = false;
+  }
 }
 onMounted(() => document.addEventListener("keydown", onKeydown));
 onUnmounted(() => document.removeEventListener("keydown", onKeydown));
 
+function onClickOutside(e) {
+  if (openNavGroup.value && !e.target.closest(".app-header__nav-group")) {
+    openNavGroup.value = null;
+  }
+}
+onMounted(() => document.addEventListener("click", onClickOutside));
+onUnmounted(() => document.removeEventListener("click", onClickOutside));
+
 watch(route, () => {
   mobileMenuOpen.value = false;
+  openNavGroup.value = null;
 });
 
 // Vue's root is mounted directly into #app (see index.html/main.js), so the
@@ -127,18 +151,58 @@ function onHomeClick(e) {
             class="app-header__nav-link"
             :class="{ 'app-header__nav-link--active': isBrowse }"
           >Flow</router-link>
-          <router-link
-            to="/sources"
-            class="app-header__nav-link"
-            :class="{ 'app-header__nav-link--active': isSources }"
-          >Sources</router-link>
-          <router-link
-            v-for="c in COLLECTION_NAV"
-            :key="c.name"
-            :to="`/${c.name}`"
-            class="app-header__nav-link"
-            :class="{ 'app-header__nav-link--active': activeCollection === c.name }"
-          >{{ c.label }}</router-link>
+          <div class="app-header__nav-group">
+            <button
+              type="button"
+              class="app-header__nav-link app-header__nav-link--group"
+              :class="{ 'app-header__nav-link--active': isToolsActive }"
+              :aria-expanded="openNavGroup === 'tools'"
+              aria-haspopup="true"
+              @click="toggleNavGroup('tools')"
+            >Tools</button>
+            <div
+              class="app-header__nav-dropdown"
+              :class="{ 'app-header__nav-dropdown--open': openNavGroup === 'tools' }"
+            >
+              <router-link
+                to="/timeline"
+                class="app-header__nav-link"
+                :class="{ 'app-header__nav-link--active': isTimeline }"
+              >Regulation Timeline</router-link>
+              <router-link
+                to="/agency-graphs"
+                class="app-header__nav-link"
+                :class="{ 'app-header__nav-link--active': isAgencyGraphs }"
+              >Agency Graphs</router-link>
+            </div>
+          </div>
+          <div class="app-header__nav-group">
+            <button
+              type="button"
+              class="app-header__nav-link app-header__nav-link--group"
+              :class="{ 'app-header__nav-link--active': isDataActive }"
+              :aria-expanded="openNavGroup === 'data'"
+              aria-haspopup="true"
+              @click="toggleNavGroup('data')"
+            >Reference</button>
+            <div
+              class="app-header__nav-dropdown"
+              :class="{ 'app-header__nav-dropdown--open': openNavGroup === 'data' }"
+            >
+              <router-link
+                to="/sources"
+                class="app-header__nav-link"
+                :class="{ 'app-header__nav-link--active': isSources }"
+              >Sources</router-link>
+              <router-link
+                v-for="c in COLLECTION_NAV"
+                :key="c.name"
+                :to="`/${c.name}`"
+                class="app-header__nav-link"
+                :class="{ 'app-header__nav-link--active': activeCollection === c.name }"
+              >{{ c.label }}</router-link>
+            </div>
+          </div>
         </nav>
       </div>
     </header>
@@ -156,6 +220,8 @@ function onHomeClick(e) {
         :query="route.params.query"
       />
       <SourcesView v-else-if="isSources" :data="data" />
+      <RegulationsTimelineView v-else-if="isTimeline" :data="data" />
+      <AgencyGraphsView v-else-if="isAgencyGraphs" :data="data" />
       <CollectionView
         v-else-if="collectionViewName"
         :data="data"

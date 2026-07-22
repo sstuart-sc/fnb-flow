@@ -1,0 +1,177 @@
+{
+  "6de7ac50-cde3-496c-a259-8d295bd72b83": {
+    "id": "6de7ac50-cde3-496c-a259-8d295bd72b83",
+    "agencyId": "2cf6d02e-5c41-40c6-8dea-2c5d9756b9c1",
+    "relatedAgencyId": null,
+    "umbrellaDeptName": "US Department of Health and Human Services (HHS)",
+    "type": "organizational-parent",
+    "regulationIds": [],
+    "scopeNote": "FDA is a sub-agency of HHS.",
+    "sourceIds": ["4ff0437a-4708-4a82-9ad1-3871f55b2fff"]
+  },
+  "b32f63f0-56e3-40e4-a086-2c356fb10441": {
+    "id": "b32f63f0-56e3-40e4-a086-2c356fb10441",
+    "agencyId": "2ba049e2-d8dd-4172-b13b-5830326ab4ad",
+    "relatedAgencyId": null,
+    "umbrellaDeptName": "US Department of Health and Human Services (HHS)",
+    "type": "organizational-parent",
+    "regulationIds": [],
+    "scopeNote": "CDC is a sub-agency of HHS, the same parent department as FDA.",
+    "sourceIds": ["b86367cd-92f4-4447-886a-12fc38f32196"]
+  },
+  "51606a33-de06-44d9-b679-15f558c49009": {
+    "id": "51606a33-de06-44d9-b679-15f558c49009",
+    "agencyId": "aac69997-d9a2-4428-860f-1d8813e9ba5a",
+    "relatedAgencyId": null,
+    "umbrellaDeptName": "US Department of Agriculture",
+    "type": "organizational-parent",
+    "regulationIds": [],
+    "scopeNote": "FSIS is an agency of the US Department of Agriculture.",
+    "sourceIds": ["9a7e4ca7-93a7-4812-ba35-5ccbabc61913"]
+  },
+  "7e57a953-0bad-4b44-b8c3-ccd7511ccfb6": {
+    "id": "7e57a953-0bad-4b44-b8c3-ccd7511ccfb6",
+    "agencyId": "c8b293a1-17bc-42b2-b023-7d0c6dba905d",
+    "relatedAgencyId": null,
+    "umbrellaDeptName": "US Department of Agriculture",
+    "type": "organizational-parent",
+    "regulationIds": [],
+    "scopeNote": "AMS is an agency of the US Department of Agriculture, the same parent department as FSIS.",
+    "sourceIds": ["30e9f383-71e7-4b37-9c98-e6679c982f25"]
+  },
+  "c07a4bb5-efac-4b15-878b-b215ff85ada0": {
+    "id": "c07a4bb5-efac-4b15-878b-b215ff85ada0",
+    "agencyId": "fa6a738b-947e-4ff9-a3cf-9b076e39a7a7",
+    "relatedAgencyId": null,
+    "umbrellaDeptName": "US Department of the Treasury",
+    "type": "organizational-parent",
+    "regulationIds": [],
+    "scopeNote": "TTB is a bureau of the US Department of the Treasury, reflecting its tax-and-trade (not food-safety) statutory basis.",
+    "sourceIds": ["5270eda2-77d9-4497-bcf3-5c27e681c78a"]
+  },
+  "b3769841-d7dd-4c1b-ae19-608e76bd7f14": {
+    "id": "b3769841-d7dd-4c1b-ae19-608e76bd7f14",
+    "agencyId": "425f7abc-b53d-413d-b5ba-abfa92280e1c",
+    "relatedAgencyId": null,
+    "umbrellaDeptName": "US Department of Labor",
+    "type": "organizational-parent",
+    "regulationIds": [],
+    "scopeNote": "OSHA is an agency of the US Department of Labor.",
+    "sourceIds": ["6887f31d-a76f-4c46-8aa1-dc7b30c47b27"]
+  },
+  "230c46b2-2f28-447d-bcca-93eeda95aa58": {
+    "id": "230c46b2-2f28-447d-bcca-93eeda95aa58",
+    "agencyId": "9c1e2f3a-4b5c-4d6e-8f7a-1b2c3d4e5f6a",
+    "relatedAgencyId": null,
+    "umbrellaDeptName": "US Department of Homeland Security",
+    "type": "organizational-parent",
+    "regulationIds": [],
+    "scopeNote": "CBP is an agency of the US Department of Homeland Security.",
+    "sourceIds": ["0f348398-32a4-4ff9-9c34-90f1fd807870"]
+  },
+  "1d9e799e-43ff-4d9d-bb9e-87ceb3d0d989": {
+    "id": "1d9e799e-43ff-4d9d-bb9e-87ceb3d0d989",
+    "agencyId": "2cf6d02e-5c41-40c6-8dea-2c5d9756b9c1",
+    "relatedAgencyId": "aac69997-d9a2-4428-860f-1d8813e9ba5a",
+    "type": "jurisdiction-split",
+    "splitAxis": "product type (shell eggs vs. egg products)",
+    "splitDetail": "FDA regulates intact shell eggs sold in the carton; FSIS regulates liquid, frozen, and dried egg products once the eggs are broken at a breaking plant.",
+    "regulationIds": ["b69b1236-0674-4d3a-9a57-f37584b74134"],
+    "scopeNote": "Egg regulation splits by product form rather than by a single agency's mission: shell eggs stay with FDA, but jurisdiction shifts to FSIS under the Egg Products Inspection Act the moment eggs are broken into egg products.",
+    "sourceIds": ["0b5a11ed-f395-4fa2-87f5-9387207c02fd", "002b2907-b2b9-48fd-a31a-29343c250028"]
+  },
+  "9d832669-ef10-445a-b786-8f319230051f": {
+    "id": "9d832669-ef10-445a-b786-8f319230051f",
+    "agencyId": "2cf6d02e-5c41-40c6-8dea-2c5d9756b9c1",
+    "relatedAgencyId": "fa6a738b-947e-4ff9-a3cf-9b076e39a7a7",
+    "type": "jurisdiction-split",
+    "splitAxis": "alcohol by volume (ABV) and formulation (malted barley + hops)",
+    "splitDetail": "TTB regulates beer brewed with both malted barley and hops, wine at 7% ABV or greater, and distilled spirits; FDA regulates wine under 7% ABV and fermented malt beverages made without both malted barley and hops.",
+    "regulationIds": [],
+    "scopeNote": "Beverage-alcohol jurisdiction is split by a specific statutory threshold rather than by beverage category: two nominally similar drinks can fall to two different federal agencies depending on ABV and formulation.",
+    "sourceIds": ["5270eda2-77d9-4497-bcf3-5c27e681c78a"]
+  },
+  "b6bb687a-4213-4069-bcdf-b789879ecc26": {
+    "id": "b6bb687a-4213-4069-bcdf-b789879ecc26",
+    "agencyId": "2cf6d02e-5c41-40c6-8dea-2c5d9756b9c1",
+    "relatedAgencyId": "3c72b77c-84b1-4fc5-88bc-7a97193e2ffe",
+    "type": "jurisdiction-split",
+    "splitAxis": "label content vs. advertising medium",
+    "splitDetail": "FDA regulates what appears on the food label and packaging itself; FTC regulates advertising and marketing claims made elsewhere (TV, print, digital, social media).",
+    "regulationIds": ["18c16d22-6037-4b00-a54b-d91b55a2e001"],
+    "scopeNote": "The same claim can be regulated by two different agencies depending only on where it's made: on the package (FDA) versus in an ad (FTC), per a liaison agreement dating to the 1970s.",
+    "sourceIds": ["1690475b-ce2c-48e8-97d8-c971136d1b9b"]
+  },
+  "2b90bf3d-ed9a-4230-85e0-e100c7f871fd": {
+    "id": "2b90bf3d-ed9a-4230-85e0-e100c7f871fd",
+    "agencyId": "49089417-12e3-4123-8005-9e169c1ed9ce",
+    "relatedAgencyId": "2cf6d02e-5c41-40c6-8dea-2c5d9756b9c1",
+    "type": "delegation",
+    "regulationIds": ["a00be301-0e39-42d5-b4ec-c1f0f2877821"],
+    "scopeNote": "EPA sets maximum pesticide residue tolerances for food under the FD&C Act; FDA enforces those tolerances during its own inspection and sampling program rather than EPA policing residues directly.",
+    "sourceIds": ["a513ecce-17b3-40de-97fe-330f48f3e669"]
+  },
+  "cf1deacf-30b3-4451-87e3-969aac05c630": {
+    "id": "cf1deacf-30b3-4451-87e3-969aac05c630",
+    "agencyId": "49089417-12e3-4123-8005-9e169c1ed9ce",
+    "relatedAgencyId": "aac69997-d9a2-4428-860f-1d8813e9ba5a",
+    "type": "delegation",
+    "regulationIds": [],
+    "scopeNote": "EPA sets maximum pesticide residue tolerances for meat and poultry the same way it does for FDA-regulated food; FSIS enforces those tolerances during its own inspection and sampling of meat and poultry products.",
+    "sourceIds": ["a513ecce-17b3-40de-97fe-330f48f3e669"]
+  },
+  "09391a88-5ee5-47db-8cf0-a471d0794610": {
+    "id": "09391a88-5ee5-47db-8cf0-a471d0794610",
+    "agencyId": "9c1e2f3a-4b5c-4d6e-8f7a-1b2c3d4e5f6a",
+    "relatedAgencyId": "2cf6d02e-5c41-40c6-8dea-2c5d9756b9c1",
+    "type": "delegation",
+    "regulationIds": [],
+    "scopeNote": "CBP administers entry and customs processing for imported food shipments but refers each entry to FDA for the actual admissibility decision — CBP holds the physical/legal levers (detain, hold, refuse release) but does not decide food-safety compliance itself.",
+    "sourceIds": ["0f348398-32a4-4ff9-9c34-90f1fd807870"]
+  },
+  "1993067e-aa1a-414a-b73e-3487c65ec509": {
+    "id": "1993067e-aa1a-414a-b73e-3487c65ec509",
+    "agencyId": "57ebd4ad-028d-49a4-9840-805e858231d7",
+    "relatedAgencyId": "2cf6d02e-5c41-40c6-8dea-2c5d9756b9c1",
+    "type": "delegation",
+    "regulationIds": [],
+    "scopeNote": "FDA writes the Food Code as a model for retail/restaurant food safety, but has no authority to enforce it directly at a diner — enforcement is carried out by state and local health departments that have adopted it, in some form, in ~97% of states/territories.",
+    "sourceIds": ["18857130-e665-46e4-817a-bc9bca24767c"]
+  },
+  "6aaad084-5652-484d-a538-77aa4b494077": {
+    "id": "6aaad084-5652-484d-a538-77aa4b494077",
+    "agencyId": "425f7abc-b53d-413d-b5ba-abfa92280e1c",
+    "relatedAgencyId": "2cf6d02e-5c41-40c6-8dea-2c5d9756b9c1",
+    "type": "overlapping",
+    "regulationIds": [],
+    "scopeNote": "OSHA and FDA both inspect the same physical plant for different purposes: OSHA for worker safety and health conditions, FDA for product safety — neither agency defers to the other, and a facility answers to both independently and simultaneously.",
+    "sourceIds": ["6887f31d-a76f-4c46-8aa1-dc7b30c47b27"]
+  },
+  "62af2d47-1d13-4e9f-a823-4e8921cce336": {
+    "id": "62af2d47-1d13-4e9f-a823-4e8921cce336",
+    "agencyId": "425f7abc-b53d-413d-b5ba-abfa92280e1c",
+    "relatedAgencyId": "aac69997-d9a2-4428-860f-1d8813e9ba5a",
+    "type": "overlapping",
+    "regulationIds": [],
+    "scopeNote": "OSHA and FSIS both inspect the same meat/poultry plant for different purposes: OSHA for worker safety, FSIS for product safety — this is unaffected by FSIS's continuous-presence inspection model, since the two agencies' inspectors answer to entirely separate statutory mandates.",
+    "sourceIds": ["6887f31d-a76f-4c46-8aa1-dc7b30c47b27"]
+  },
+  "0a741e45-6de2-4456-aa59-8033a947a313": {
+    "id": "0a741e45-6de2-4456-aa59-8033a947a313",
+    "agencyId": "57ebd4ad-028d-49a4-9840-805e858231d7",
+    "relatedAgencyId": "2cf6d02e-5c41-40c6-8dea-2c5d9756b9c1",
+    "type": "overlapping",
+    "regulationIds": [],
+    "scopeNote": "States are generally free to set food-safety and labeling requirements stricter than federal FDA law (subject to federal preemption limits), so a facility can simultaneously answer to FDA at the federal level and to a stricter state or local requirement layered on top.",
+    "sourceIds": ["18857130-e665-46e4-817a-bc9bca24767c"]
+  },
+  "c079f527-10d8-4e93-b22b-51b9e35d28c6": {
+    "id": "c079f527-10d8-4e93-b22b-51b9e35d28c6",
+    "agencyId": "57ebd4ad-028d-49a4-9840-805e858231d7",
+    "relatedAgencyId": "aac69997-d9a2-4428-860f-1d8813e9ba5a",
+    "type": "overlapping",
+    "regulationIds": [],
+    "scopeNote": "State and local agencies layer their own licensing and inspection requirements on top of FSIS's federal meat/poultry oversight for anything sold direct-to-consumer at retail or produced under an intrastate-only license.",
+    "sourceIds": ["18857130-e665-46e4-817a-bc9bca24767c"]
+  }
+}

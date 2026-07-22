@@ -26,15 +26,20 @@ into the data.
 This is the standard the `sources.json` mechanism (plan section 11 item 8)
 exists to enforce. **No exceptions for new content going forward:**
 
-- Every new `artifacts`/`materials`/`systems`/`steps`/`regulations`/`agencies`
-  record must carry `sourceIds` pointing at one or more `sources.json`
-  entries. Regulations and agencies make objectively verifiable factual
-  claims (citation numbers, years, agency full names, jurisdiction) — if the
-  site's core premise (these facts are actually correct) isn't itself cited,
-  nothing downstream that references them is trustworthy either. `roles`,
-  `threads`, and `flows` stay exempt — they're domain-modeling/structural
-  (a role's duties, which steps a thread touches, a flow's step ordering),
-  not externally checkable facts to cite.
+- Every new `artifacts`/`materials`/`systems`/`steps`/`regulations`/`agencies`/
+  `jurisdictions` record must carry `sourceIds` pointing at one or more
+  `sources.json` entries. Regulations and agencies make objectively
+  verifiable factual claims (citation numbers, years, agency full names,
+  jurisdiction) — if the site's core premise (these facts are actually
+  correct) isn't itself cited, nothing downstream that references them is
+  trustworthy either. `jurisdictions` records (agency-to-agency relationship
+  edges — organizational parent, jurisdiction split, delegation, overlapping
+  oversight) are held to the same bar: a jurisdiction claim ("FDA regulates
+  shell eggs, FSIS regulates egg products") is precisely the kind of
+  externally checkable fact this rule exists for, not structural
+  domain-modeling. `roles`, `threads`, and `flows` stay exempt — they're
+  domain-modeling/structural (a role's duties, which steps a thread touches,
+  a flow's step ordering), not externally checkable facts to cite.
 - Each source's `type` must honestly reflect what grounds it:
   - `regulation-text` — the regulation's own text (cite section/part).
   - `industry-standard` — a named external standard (GS1, FSMA 204, GFSI,
@@ -216,9 +221,9 @@ A record is ready to commit when:
 1. It's scoped correctly (section 1).
 2. It carries `sourceIds` pointing at honestly-typed `sources.json` entries
    (section 2) — required for `artifacts`/`materials`/`systems`/`steps` and
-   also `regulations`/`agencies` (their facts are externally checkable and
-   the whole site's credibility rests on them). Only `roles`/`threads`/
-   `flows` are exempt as structural/domain-modeling content.
+   also `regulations`/`agencies`/`jurisdictions` (their facts are externally
+   checkable and the whole site's credibility rests on them). Only
+   `roles`/`threads`/`flows` are exempt as structural/domain-modeling content.
 3. Its prose fields meet the voice/length bar in section 3.
 4. It respects vendor neutrality (section 4) or is correctly placed in a
    `/products` overlay instead.

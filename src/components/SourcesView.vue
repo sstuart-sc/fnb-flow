@@ -77,20 +77,24 @@ function citedBy(sourceId) {
   <p v-if="!filtered.length" class="empty-state">No sources match.</p>
   <template v-for="group in grouped" :key="group.type">
     <h3 class="nested-flow-preview__heading" style="margin-top: 1.5rem">{{ group.label }} ({{ group.items.length }})</h3>
-    <div class="search-results">
+    <div class="search-results collection-grid source-grid">
       <div v-for="source in group.items" :key="source.id" :id="`source-${source.id}`" class="search-result source-card">
-        <div class="search-result__name">{{ source.name }}</div>
-        <div v-if="source.citation" class="search-result__meta">{{ source.citation }}</div>
-        <div v-if="source.note" class="search-result__meta">{{ source.note }}</div>
-        <a
-          v-if="source.url"
-          :href="source.url"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="source-card__link"
-        >Read the source ↗</a>
-        <div v-if="citedBy(source.id).length" class="source-card__cited-by">
-          Cited by: {{ citedBy(source.id).map((c) => c.item.name).join(", ") }}
+        <div class="collection-card__header">{{ source.name }}</div>
+        <div class="source-card__body">
+          <div v-if="source.citation" class="search-result__meta">{{ source.citation }}</div>
+          <div v-if="source.note" class="search-result__meta">{{ source.note }}</div>
+        </div>
+        <div v-if="source.url || citedBy(source.id).length" class="source-card__footer">
+          <a
+            v-if="source.url"
+            :href="source.url"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="source-card__link"
+          >Read the source ↗</a>
+          <div v-if="citedBy(source.id).length" class="source-card__cited-by">
+            Cited by: {{ citedBy(source.id).map((c) => c.item.name).join(", ") }}
+          </div>
         </div>
       </div>
     </div>

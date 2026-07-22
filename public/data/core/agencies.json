@@ -3,6 +3,7 @@
     "id": "2cf6d02e-5c41-40c6-8dea-2c5d9756b9c1",
     "name": "FDA",
     "fullName": "Food and Drug Administration",
+    "founded": 1930,
     "parent": "US Department of Health and Human Services (HHS)",
     "keyOffices": [
       "Center for Food Safety and Applied Nutrition (CFSAN)"
@@ -23,6 +24,7 @@
     "id": "aac69997-d9a2-4428-860f-1d8813e9ba5a",
     "name": "USDA FSIS",
     "fullName": "USDA Food Safety and Inspection Service",
+    "founded": 1981,
     "parent": "US Department of Agriculture",
     "keyOffices": [],
     "sourceIds": [
@@ -42,6 +44,7 @@
     "id": "c8b293a1-17bc-42b2-b023-7d0c6dba905d",
     "name": "USDA AMS",
     "fullName": "USDA Agricultural Marketing Service",
+    "founded": 1972,
     "parent": "US Department of Agriculture",
     "keyOffices": [],
     "sourceIds": [
@@ -61,6 +64,7 @@
     "id": "49089417-12e3-4123-8005-9e169c1ed9ce",
     "name": "EPA",
     "fullName": "Environmental Protection Agency",
+    "founded": 1970,
     "parent": null,
     "keyOffices": [],
     "sourceIds": [
@@ -78,6 +82,7 @@
     "id": "fa6a738b-947e-4ff9-a3cf-9b076e39a7a7",
     "name": "TTB",
     "fullName": "Alcohol and Tobacco Tax and Trade Bureau",
+    "founded": 2003,
     "parent": "US Department of the Treasury",
     "keyOffices": [],
     "sourceIds": [
@@ -93,6 +98,7 @@
     "id": "3c72b77c-84b1-4fc5-88bc-7a97193e2ffe",
     "name": "FTC",
     "fullName": "Federal Trade Commission",
+    "founded": 1914,
     "parent": null,
     "keyOffices": [],
     "sourceIds": [
@@ -126,6 +132,7 @@
     "id": "2ba049e2-d8dd-4172-b13b-5830326ab4ad",
     "name": "CDC",
     "fullName": "Centers for Disease Control and Prevention",
+    "founded": 1946,
     "parent": "US Department of Health and Human Services (HHS)",
     "keyOffices": [],
     "sourceIds": [
@@ -143,6 +150,7 @@
     "id": "2ba804d3-9dc2-4848-94d1-f48c41ad9703",
     "name": "GS1",
     "fullName": "GS1 (global standards nonprofit)",
+    "founded": 1974,
     "parent": null,
     "keyOffices": [],
     "sourceIds": [
@@ -161,6 +169,7 @@
     "id": "3b121647-ec9f-444c-9084-8a6637d357da",
     "name": "GFSI",
     "fullName": "Global Food Safety Initiative",
+    "founded": 2000,
     "parent": null,
     "keyOffices": [],
     "sourceIds": [
@@ -180,6 +189,7 @@
     "id": "425f7abc-b53d-413d-b5ba-abfa92280e1c",
     "name": "OSHA",
     "fullName": "Occupational Safety and Health Administration",
+    "founded": 1971,
     "parent": "US Department of Labor",
     "keyOffices": [],
     "sourceIds": [
@@ -198,6 +208,7 @@
     "id": "9c1e2f3a-4b5c-4d6e-8f7a-1b2c3d4e5f6a",
     "name": "CBP",
     "fullName": "U.S. Customs and Border Protection",
+    "founded": 2003,
     "parent": "US Department of Homeland Security",
     "keyOffices": [],
     "sourceIds": [

@@ -4,6 +4,8 @@ import SearchView from "../components/SearchView.vue";
 import SourcesView from "../components/SourcesView.vue";
 import CollectionView from "../components/CollectionView.vue";
 import ItemDetailView from "../components/ItemDetailView.vue";
+import RegulationsTimelineView from "../components/RegulationsTimelineView.vue";
+import AgencyGraphsView from "../components/AgencyGraphsView.vue";
 
 const COLLECTION_ROUTE_NAMES = ["regulations", "agencies", "systems", "artifacts", "materials"];
 
@@ -36,6 +38,8 @@ const collectionRoutes = COLLECTION_ROUTE_NAMES.flatMap((collectionName) => [
 const routes = [
   { path: "/search/:query*", name: "search", component: SearchView, props: true },
   { path: "/sources", name: "sources", component: SourcesView },
+  { path: "/timeline", name: "timeline", component: RegulationsTimelineView },
+  { path: "/agency-graphs", name: "agency-graphs", component: AgencyGraphsView },
   ...collectionRoutes,
   { path: "/flow/:crumbs+", name: "browse", component: BrowseView },
   { path: "/", redirect: "/flow/primary-flow" },
@@ -101,4 +105,12 @@ export function goToCollection(router, collectionName) {
 
 export function goToItem(router, collectionName, path) {
   router.push(`/${collectionName}/${encodeURIComponent(path)}`);
+}
+
+export function goToTimeline(router) {
+  router.push("/timeline");
+}
+
+export function goToAgencyGraphs(router) {
+  router.push("/agency-graphs");
 }

@@ -94,7 +94,8 @@ html, body {
   letter-spacing: 0.01em;
   color: var(--text);
   text-decoration: none;
-  flex-shrink: 0;
+  flex: 1;
+  min-width: 0;
 }
 
 .app-header__brand:hover {
@@ -116,6 +117,7 @@ html, body {
 .app-header__collapsible {
   display: flex;
   align-items: center;
+  justify-content: flex-end;
   flex: 1;
   min-width: 0;
 }
@@ -125,7 +127,7 @@ html, body {
   align-items: center;
   gap: 0.25rem;
   flex: 1;
-  justify-content: center;
+  justify-content: flex-end;
 }
 
 .app-header__search {
@@ -149,6 +151,49 @@ html, body {
 .app-header__nav-link--active {
   background: var(--accent-soft);
   color: var(--accent);
+}
+
+.app-header__nav-link--group {
+  border: none;
+  background: none;
+  font: inherit;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+}
+
+.app-header__nav-link--group::after {
+  content: "▾";
+  font-size: 0.7em;
+}
+
+.app-header__nav-group {
+  position: relative;
+}
+
+.app-header__nav-dropdown {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  flex-direction: column;
+  min-width: 160px;
+  padding: 0.4rem;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  box-shadow: 0 8px 16px -8px rgb(0 0 0 / 0.25);
+  z-index: 20;
+}
+
+.app-header__nav-dropdown--open {
+  display: flex;
+}
+
+.app-header__nav-dropdown .app-header__nav-link {
+  text-align: left;
+  border-radius: 6px;
 }
 
 .app-header__search input {
@@ -567,6 +612,78 @@ html, body {
 
 .search-result:hover { border-color: var(--accent); }
 
+/* Collection view: card grid instead of full-width rows */
+.collection-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.6rem;
+}
+
+@media (min-width: 480px) {
+  .collection-grid { grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); }
+}
+
+@media (min-width: 900px) {
+  .collection-grid { grid-template-columns: repeat(auto-fill, minmax(190px, 1fr)); }
+}
+
+@media (min-width: 1400px) {
+  .collection-grid { grid-template-columns: repeat(auto-fill, minmax(210px, 1fr)); }
+}
+
+.collection-grid .search-result {
+  width: auto;
+  max-width: none;
+  aspect-ratio: 1 / 1;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  padding: 0;
+  border: 1px solid var(--border);
+  border-top: 4px solid var(--accent);
+  box-shadow: var(--shadow);
+  transition: transform 0.12s ease, box-shadow 0.12s ease, border-color 0.12s ease;
+}
+
+.collection-grid .search-result:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px -6px rgb(0 0 0 / 0.25);
+  border-color: var(--accent);
+}
+
+.collection-card__header {
+  height: 3.6rem;
+  font-size: 0.95rem;
+  font-weight: 700;
+  line-height: 1.2;
+  padding: 0.5rem 0.85rem;
+  background: var(--accent-soft);
+  color: var(--accent);
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.collection-grid .search-result__meta {
+  padding: 0.3rem 0.85rem 0;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.collection-card__summary {
+  padding: 0.4rem 0.85rem 0.75rem;
+  font-size: 0.82rem;
+  color: var(--text-dim);
+  display: -webkit-box;
+  -webkit-line-clamp: 5;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
 .search-result__type {
   font-size: 0.72rem;
   text-transform: uppercase;
@@ -618,9 +735,38 @@ html, body {
 .source-card { cursor: default; }
 .source-card:hover { border-color: var(--border); }
 
+/* Sources cards are more verbose (citation, note, link, cited-by all shown
+   in-card, no detail page) — auto height instead of the square grid cards. */
+.source-grid .search-result {
+  aspect-ratio: auto;
+  height: auto;
+}
+
+.source-grid .search-result:hover {
+  transform: none;
+}
+
+.source-card__body {
+  padding: 0.3rem 0.85rem 0.5rem;
+  flex: 1;
+}
+
+.source-card__body .search-result__meta {
+  padding: 0;
+  margin-top: 0.3rem;
+  -webkit-line-clamp: unset;
+  overflow: visible;
+}
+
+.source-card__footer {
+  margin-top: auto;
+  padding: 0.5rem 0.85rem 0.75rem;
+  border-top: 1px solid var(--border);
+  flex-shrink: 0;
+}
+
 .source-card__link {
   display: inline-block;
-  margin-top: 0.4rem;
   font-size: 0.82rem;
   color: var(--accent);
   text-decoration: none;
@@ -892,6 +1038,20 @@ html, body {
     padding: 0.55rem 0.7rem;
   }
 
+  .app-header__nav-link--group::after {
+    content: "";
+  }
+
+  .app-header__nav-dropdown,
+  .app-header__nav-dropdown--open {
+    display: flex;
+    position: static;
+    box-shadow: none;
+    border: none;
+    padding: 0 0 0 0.75rem;
+    min-width: 0;
+  }
+
   .modal__fields-table {
     font-size: 0.8rem;
   }
@@ -904,3 +1064,362 @@ html, body {
     width: 38%;
   }
 }
+
+/* Regulations timeline */
+.timeline__swatch {
+  width: 0.65rem;
+  height: 0.65rem;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+/* Time now runs top-to-bottom on a fixed left rail; agencies are columns
+   across the top. Each year gets its own row (no shared horizontal strip
+   to squeeze labels into), and each agency name gets a header cell that
+   can wrap instead of a fixed-width side label. */
+.timeline__axis-spacer {
+  width: 70px;
+  flex-shrink: 0;
+}
+
+.timeline__lane-header {
+  display: flex;
+  align-items: flex-end;
+  gap: 0.5rem;
+}
+
+.timeline__lane-header .timeline__lane-label {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+  width: 130px;
+  flex-shrink: 0;
+  font-size: 0.78rem;
+  color: var(--text-dim);
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid var(--border);
+}
+
+.timeline__lane-label--clickable {
+  border: none;
+  background: none;
+  font: inherit;
+  text-align: left;
+  cursor: pointer;
+}
+
+.timeline__lane-label--clickable:hover,
+.timeline__lane-label--clickable:focus-visible {
+  color: var(--accent);
+  border-bottom-color: var(--accent);
+}
+
+.timeline__body {
+  display: flex;
+  position: relative;
+}
+
+.timeline__axis {
+  position: relative;
+  width: 70px;
+  flex-shrink: 0;
+  /* Must match .timeline__lane-track's margin-top so year labels stay
+     aligned with the dots they label. */
+  margin-top: 0.6rem;
+}
+
+.timeline__axis-tick {
+  position: absolute;
+  transform: translateY(-50%);
+  font-size: 0.72rem;
+  color: var(--text-dim);
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+}
+
+.timeline__lanes {
+  display: flex;
+  gap: 0.5rem;
+  flex: 1;
+}
+
+.timeline__lane-track {
+  position: relative;
+  width: 130px;
+  flex-shrink: 0;
+  overflow: hidden;
+  /* Rank-based spacing means height needs to scale with the number of
+     distinct years present, not a fixed constant — otherwise a dataset
+     with many distinct years re-compresses right back into the crowding
+     this scale change exists to fix. */
+  min-height: max(420px, calc(var(--timeline-year-count, 1) * 34px));
+  /* A little breathing room above/below the earliest/latest row so a dot
+     at 4%/96% doesn't sit flush against the header or the track's bottom
+     edge — without this the earliest row can read as if it belongs to the
+     header above rather than the track it's actually in. */
+  margin-top: 0.6rem;
+  border-left: 1px solid var(--border);
+}
+
+.timeline__dot {
+  position: absolute;
+  width: 0.85rem;
+  height: 0.85rem;
+  border-radius: 50%;
+  border: 2px solid var(--surface);
+  /* left is set inline as a percent + rem offset from the lane's own
+     center (see xOffsetRem in the component) — center the dot on that
+     point in both axes rather than just vertically. */
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+  padding: 0;
+  box-shadow: var(--shadow);
+}
+
+.timeline__dot:hover,
+.timeline__dot:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 1px;
+}
+
+/* The chart needs real width per agency column to stay legible — rather
+   than compressing it into unreadability on a narrow viewport, let it
+   scroll horizontally at a fixed minimum width. Below the phone breakpoint
+   there's no width worth scrolling to, so the chart is dropped entirely in
+   favor of a grouped list (see .timeline__list below). */
+.timeline__scroll {
+  overflow-x: auto;
+  overflow-y: hidden;
+  -webkit-overflow-scrolling: touch;
+}
+
+.timeline__scroll-inner {
+  width: max-content;
+}
+
+.timeline__list { display: none; }
+
+@media (max-width: 480px) {
+  .timeline__chart { display: none; }
+  .timeline__list { display: block; }
+}
+
+.timeline__list-group {
+  margin-bottom: 1.25rem;
+}
+
+.timeline__list-heading {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  width: 100%;
+  padding: 0;
+  margin: 0 0 0.4rem;
+  border: none;
+  background: none;
+  font: inherit;
+  font-size: 0.9rem;
+  color: var(--text-dim);
+  text-align: left;
+  cursor: pointer;
+}
+
+.timeline__list-heading:hover,
+.timeline__list-heading:focus-visible {
+  color: var(--accent);
+}
+
+.timeline__list-row {
+  display: flex;
+  align-items: baseline;
+  gap: 0.6rem;
+  width: 100%;
+  padding: 0.55rem 0.4rem;
+  border: none;
+  border-bottom: 1px solid var(--border);
+  background: none;
+  color: var(--text);
+  text-align: left;
+  font: inherit;
+  cursor: pointer;
+}
+
+.timeline__list-row:hover,
+.timeline__list-row:focus-visible {
+  color: var(--accent);
+}
+
+.timeline__list-year {
+  flex-shrink: 0;
+  width: 3em;
+  color: var(--text-dim);
+  font-variant-numeric: tabular-nums;
+  font-size: 0.82rem;
+}
+
+.timeline__list-name {
+  font-size: 0.9rem;
+}
+
+/* Jurisdiction explorer: one small ego-graph per agency (departments
+   above, peer relationships arced below, directional arrows), all shown
+   at once in a grid on a single page — not a flat all-edges table, not a
+   single all-agencies force/two-tier graph (both tried and dropped: a
+   flat table buries "tell me about FDA" under every other agency's rows,
+   and one shared graph either becomes an illegible mesh or loses the
+   per-agency legibility this ego-graph layout was specifically built to
+   have). */
+.jurisdiction-ego-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  align-items: start;
+  gap: 1rem;
+}
+
+.jurisdiction-ego-cell {
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--surface);
+  padding: 0.75rem 0.75rem 0.5rem;
+}
+
+.jurisdiction-ego-cell__title {
+  margin: 0 0 0.4rem;
+  text-align: center;
+}
+
+.jurisdiction-ego-cell__founded {
+  display: block;
+  font-size: 0.72rem;
+  font-weight: 400;
+  color: var(--text-dim);
+  margin-top: 0.15rem;
+}
+
+.jurisdiction-ego-cell__empty-note {
+  font-style: italic;
+}
+
+.jurisdiction-detail__title {
+  display: inline-block;
+  padding: 0;
+  border: none;
+  background: none;
+  font: inherit;
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--text);
+  cursor: pointer;
+  text-align: center;
+}
+
+.jurisdiction-detail__title:hover,
+.jurisdiction-detail__title:focus-visible {
+  color: var(--accent);
+}
+
+/* Line style/color communicates relationship kind on its own — the graph
+   should read correctly without a component needing to explain it via
+   prose underneath. Parent = hierarchy (accent), delegation = directional
+   authority (amber, matches the delegation badge elsewhere), split/
+   overlapping = symmetric peer relationships (neutral border color, no
+   direction implied). */
+.jurisdiction-ego__link {
+  stroke: var(--border);
+  stroke-width: 1.5;
+}
+
+.jurisdiction-ego__link--organizational-parent {
+  stroke: var(--accent);
+  stroke-width: 2;
+}
+
+.jurisdiction-ego__link--delegation {
+  stroke: #a8781f;
+  stroke-width: 2;
+}
+
+.jurisdiction-ego__link--jurisdiction-split,
+.jurisdiction-ego__link--overlapping {
+  stroke: var(--text-dim);
+  stroke-dasharray: 4 3;
+}
+
+.jurisdiction-ego__arrowhead--parent {
+  fill: var(--accent);
+}
+
+.jurisdiction-ego__arrowhead--delegation {
+  fill: #a8781f;
+}
+
+.jurisdiction-ego {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.jurisdiction-ego__center-node circle {
+  fill: var(--accent-soft);
+  stroke: var(--accent);
+  stroke-width: 2;
+}
+
+.jurisdiction-ego__center-node text {
+  font-size: 0.5rem;
+  font-weight: 700;
+  fill: var(--accent);
+  text-anchor: middle;
+}
+
+.jurisdiction-ego__node circle {
+  fill: var(--surface);
+  stroke: var(--border);
+  stroke-width: 2;
+}
+
+.jurisdiction-ego__node text {
+  font-size: 0.5rem;
+  fill: var(--text);
+  text-anchor: middle;
+}
+
+.jurisdiction-ego__node--clickable {
+  cursor: pointer;
+}
+
+.jurisdiction-ego__node--clickable:hover circle {
+  stroke: var(--accent);
+}
+
+/* Small, always-visible key on every card rather than once at the page
+   bottom — with 12 cards in a scrolling grid, a single page-level legend
+   scrolls out of view long before the user reaches the later cards. */
+.jurisdiction-ego__key {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.25rem 0.6rem;
+  margin-top: 0.4rem;
+  padding-top: 0.4rem;
+  border-top: 1px solid var(--border);
+  font-size: 0.66rem;
+  color: var(--text-dim);
+}
+
+.jurisdiction-ego__key span {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.jurisdiction-ego__key-swatch {
+  display: inline-block;
+  width: 0.9rem;
+  height: 0;
+  border-top: 2px solid;
+}
+
+.jurisdiction-ego__key-swatch--parent { border-top-color: var(--accent); }
+.jurisdiction-ego__key-swatch--delegation { border-top-color: #a8781f; }
+.jurisdiction-ego__key-swatch--peer { border-top-style: dashed; border-top-color: var(--text-dim); }

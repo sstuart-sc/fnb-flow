@@ -76,6 +76,14 @@ function metaLine(item) {
     .join(" · ");
 }
 
+const SUMMARY_LENGTH = 140;
+
+function summaryText(item) {
+  const desc = item.description || "";
+  if (desc.length <= SUMMARY_LENGTH) return desc;
+  return desc.slice(0, SUMMARY_LENGTH).trimEnd() + "…";
+}
+
 function onItemClick(item) {
   goToItem(router, props.collectionName, item.path);
 }
@@ -101,7 +109,7 @@ function onItemClick(item) {
   </div>
 
   <p v-if="!filtered.length" class="empty-state">No {{ meta.label.toLowerCase() }} match.</p>
-  <div v-else class="search-results">
+  <div v-else class="search-results collection-grid">
     <button
       v-for="item in filtered"
       :key="item.id"
@@ -109,8 +117,9 @@ function onItemClick(item) {
       class="search-result"
       @click="onItemClick(item)"
     >
-      <div class="search-result__name">{{ item.name }}</div>
+      <div class="search-result__name collection-card__header">{{ item.name }}</div>
       <div v-if="metaLine(item)" class="search-result__meta">{{ metaLine(item) }}</div>
+      <div v-if="summaryText(item)" class="collection-card__summary">{{ summaryText(item) }}</div>
     </button>
   </div>
 </template>
