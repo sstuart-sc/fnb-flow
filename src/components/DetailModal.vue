@@ -2,7 +2,7 @@
 import { computed, onMounted, onUnmounted, ref, watch } from "vue";
 import { useRouter } from "vue-router";
 import { modalState, closeDetailModal, openDetailModal } from "../composables/useModals";
-import { goToItem } from "../router";
+import { descriptionParagraphs } from "../composables/useData";
 
 const props = defineProps({ data: { type: Object, required: true } });
 
@@ -21,11 +21,7 @@ const closeBtn = ref(null);
 const entry = computed(() => modalState.detail);
 const item = computed(() => entry.value?.item);
 const kicker = computed(() => COLLECTION_LABEL[entry.value?.collectionName] || entry.value?.collectionName);
-const description = computed(() => {
-  const it = item.value;
-  if (!it) return null;
-  return it.description || it.lifecycle || it.notes || it.summary;
-});
+const descriptionParas = computed(() => descriptionParagraphs(item.value));
 
 function findRelated(id) {
   for (const collection of ["artifacts", "materials", "systems", "regulations"]) {
@@ -63,12 +59,11 @@ function onOverlayClick(e) {
   if (e.target === e.currentTarget) closeDetailModal();
 }
 
-function onViewFullPage() {
-  const collectionName = entry.value.collectionName;
-  const path = item.value.path;
-  closeDetailModal();
-  goToItem(router, collectionName, path);
-}
+const viewFullPageHref = computed(() => {
+  if (!item.value?.path) return null;
+  const { href } = router.resolve(`/${entry.value.collectionName}/${encodeURIComponent(item.value.path)}`);
+  return href;
+});
 </script>
 
 <template>
@@ -76,13 +71,16 @@ function onViewFullPage() {
     <div class="modal modal--detail" role="dialog" aria-modal="true">
       <div class="modal__kicker">{{ kicker }}</div>
       <h3 class="modal__heading">{{ item.name }}</h3>
-      <button
-        v-if="item.path"
-        type="button"
+      <a
+        v-if="viewFullPageHref"
+        :href="viewFullPageHref"
+        target="_blank"
+        rel="noopener noreferrer"
         class="modal__view-full-page"
-        @click="onViewFullPage"
-      >View full page →</button>
-      <p v-if="description" class="modal__description">{{ description }}</p>
+      >View full page →</a>
+      <div v-if="descriptionParas.length" class="modal__description">
+        <p v-for="(para, i) in descriptionParas" :key="i">{{ para }}</p>
+      </div>
 
       <div v-if="item.fields?.length" class="modal__section">
         <h4>Fields</h4>

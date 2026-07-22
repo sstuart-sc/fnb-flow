@@ -23,8 +23,10 @@ function onSelect(step) {
 <template>
   <p v-if="!flow" class="empty-state">Flow "{{ flowId }}" not found.</p>
   <template v-else>
-    <h2 class="flow-view__title">{{ displayFlowName(flow) }}</h2>
-    <p class="flow-view__summary">{{ flow.summary }}</p>
+    <div class="view-header-card">
+      <h2 class="flow-view__title">{{ displayFlowName(flow) }}</h2>
+      <p class="flow-view__summary">{{ flow.summary }}</p>
+    </div>
     <FlowNodeRow :data="data" :steps="steps" :active-step-id="null" size="full" @select="onSelect" />
   </template>
 </template>

@@ -3,7 +3,6 @@
     "id": "798d71ae-178b-4f6b-bd3d-c3b58bd2013b",
     "name": "ERP (Enterprise Resource Planning)",
     "category": "ERP",
-    "summary": "Operational backbone: orders, procurement, inventory, MPS/MRP, and finance. Food-specific capabilities include recipe/formula management, catch weight support, FEFO, lot traceability, and by-product handling.",
     "examplePlatforms": [
       "SAP S/4HANA",
       "Oracle JD Edwards EnterpriseOne",
@@ -31,7 +30,6 @@
     "id": "3628303b-f98e-4dc6-8627-9ad94b5af3dd",
     "name": "MES (Manufacturing Execution System)",
     "category": "MES",
-    "summary": "Sits between ERP planning and the plant floor: electronic batch records, work order management, equipment status/downtime, quality data capture (CCP monitoring), OEE tracking, and PLC integration.",
     "examplePlatforms": [
       "Rockwell Automation FactoryTalk",
       "AVEVA MES (formerly Wonderware)",
@@ -55,7 +53,6 @@
     "id": "39da6cf5-44d6-44d3-b613-d86a3530a7b1",
     "name": "WMS (Warehouse Management System)",
     "category": "WMS",
-    "summary": "Manages receiving/putaway, FEFO-based picking and replenishment, inventory counts, in-warehouse lot tracking, and shipping.",
     "examplePlatforms": [
       "Manhattan Associates",
       "Blue Yonder WMS",
@@ -79,7 +76,6 @@
     "id": "06ff688b-147f-4fde-846c-35ad49d333bc",
     "name": "QMS / Food Safety Software",
     "category": "Quality Management",
-    "summary": "HACCP plan management, CCP monitoring, CAPA, document/records control, internal audit, and supplier management.",
     "examplePlatforms": [
       "SafetyChain",
       "Alchemy (Intertek Alchemy)",
@@ -108,7 +104,6 @@
     "id": "0aa50349-ec76-4ea4-b24d-bd61159fff84",
     "name": "LIMS (Laboratory Information Management System)",
     "category": "Laboratory",
-    "summary": "Manages sample intake, test result capture, and comparison against specification limits for micro, chemical, and physical testing.",
     "examplePlatforms": [
       "LabWare",
       "STARLIMS",
@@ -132,7 +127,6 @@
     "id": "73835e3c-9d70-49bf-b855-e25139be8426",
     "name": "Supplier Management / Portal",
     "category": "Supplier Compliance",
-    "summary": "Supplier qualification, document collection (audits, certifications, specs), COA intake, and ongoing monitoring workflows.",
     "examplePlatforms": [
       "Trustwell (formerly FoodLogiQ)",
       "ReposiTrak"
@@ -156,7 +150,6 @@
     "id": "22e46c8f-cf7e-4d53-b5f2-56c939ee76ff",
     "name": "Traceability Platform",
     "category": "Traceability",
-    "summary": "Dedicated lot-genealogy and CTE/KDE capture, particularly for FSMA 204 compliance; often EPCIS-based.",
     "examplePlatforms": [
       "Trustwell (formerly FoodLogiQ)",
       "Wholechain",
@@ -186,7 +179,6 @@
     "id": "e7cf071d-ca71-42ea-81de-4924de27f07c",
     "name": "Label Management Software",
     "category": "Labeling",
-    "summary": "Label creation, compliance review, artwork version control, and approval workflow, ideally linked to the formulation/recipe database.",
     "examplePlatforms": [
       "Loftware",
       "Centric PLM (Food & Beverage)"
@@ -209,7 +201,6 @@
     "id": "7e49ad00-a211-4140-a869-d669d929d49e",
     "name": "Production Scheduling System",
     "category": "Production Planning",
-    "summary": "Optimizes the production schedule across equipment capacity, changeover time (including allergen changeovers), raw material availability, shelf life, and delivery deadlines. Often integrated with ERP.",
     "examplePlatforms": [
       "PlanetTogether (CAI)",
       "Siemens Opcenter (formerly Preactor)"
@@ -232,7 +223,6 @@
     "id": "d08beab6-1d89-42e5-8f51-c12ddc9dcc93",
     "name": "Formulation / Recipe Management System",
     "category": "Formulation",
-    "summary": "Maintains version-controlled BOMs/recipes as the source of truth for nutrition calculation, allergen content, and MRP.",
     "examplePlatforms": [
       "Genesis R&D (ESHA/Trustwell)",
       "Vicinity Software"
@@ -254,14 +244,13 @@
     "id": "0895906c-34f8-43a0-a4d8-112d3a9eb395",
     "name": "EDI (via VAN or AS2)",
     "category": "Data Exchange",
-    "summary": "Computer-to-computer exchange of standard business documents (850 PO, 855 PO Ack, 856 ASN, 810 Invoice, 940 Warehouse Shipping Order, 945 Warehouse Shipping Advice) between trading partners, via a Value Added Network or direct AS2 connection.",
     "examplePlatforms": [],
     "sourceIds": [
       "7c8a187b-4b6c-4bc1-9399-436bff7668d7",
       "1c23a6e5-8174-41ca-a87e-e2918784512d",
       "f6b36ec8-7953-4dd1-9f5a-c537de25b5b6"
     ],
-    "description": "EDI is the long-established mechanism for exchanging standard business documents directly computer-to-computer between trading partners, replacing manual entry of purchase orders, invoices, and shipping notices with structured X12 transaction sets transmitted over a Value Added Network (a third-party intermediary that routes and translates EDI traffic between partners) or a direct AS2 connection (point-to-point transmission over the internet with built-in encryption and delivery receipts). In food and beverage supply chains, EDI is typically the transport layer underneath documents like the purchase order and advance ship notice - the business document's content and structure are what the transaction set numbers (850, 856, etc.) define, while EDI itself is just how that structured data physically moves between the buyer's and seller's systems.",
+    "description": "EDI is the long-established mechanism for exchanging standard business documents directly computer-to-computer between trading partners, replacing manual entry of purchase orders, invoices, and shipping notices with structured X12 transaction sets transmitted over a Value Added Network (a third-party intermediary that routes and translates EDI traffic between partners) or a direct AS2 connection (point-to-point transmission over the internet with built-in encryption and delivery receipts). The transaction sets most common in food and beverage supply chains are the 850 (Purchase Order), 855 (Purchase Order Acknowledgment), 856 (Advance Ship Notice), 810 (Invoice), 940 (Warehouse Shipping Order), and 945 (Warehouse Shipping Advice). In this domain, EDI is typically the transport layer underneath documents like the purchase order and advance ship notice - the business document's content and structure are what the transaction set numbers define, while EDI itself is just how that structured data physically moves between the buyer's and seller's systems.",
     "relatedIds": [
       "3250a117-60b4-4053-b8cf-bf13f59faa1b",
       "fc2cc2d7-c0e6-4a2c-b0e8-d110914627d2",
@@ -273,7 +262,6 @@
     "id": "9831aefd-1733-472a-b8e0-954c68512132",
     "name": "Training / LMS (Learning Management System)",
     "category": "Training Management",
-    "summary": "Tracks food-safety and GMP training assignments, completion, and certification records per role, and evidences that personnel handling CCPs and food-safety tasks are qualified as required by law.",
     "examplePlatforms": [
       "Alchemy (Intertek Alchemy)",
       "ComplianceMate",
@@ -294,7 +282,6 @@
     "id": "2227d2ed-2fec-40de-a9d4-52e262f14809",
     "name": "SCADA / HMI",
     "category": "Process Control",
-    "summary": "Real-time supervisory control and data acquisition from PLCs and line sensors, with operator-facing HMI screens for direct equipment control — the plant-floor layer MES sits above rather than performs itself.",
     "examplePlatforms": [
       "Rockwell Automation FactoryTalk View",
       "AVEVA System Platform",

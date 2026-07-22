@@ -1,7 +1,7 @@
 <script setup>
 import { computed } from "vue";
 import { useRouter } from "vue-router";
-import { idForCollectionPath, buildStepReverseIndex, crumbsForFlow } from "../composables/useData";
+import { idForCollectionPath, buildStepReverseIndex, crumbsForFlow, findFlowIdForStep, descriptionParagraphs } from "../composables/useData";
 import { goToItem, goToStep } from "../router";
 
 const props = defineProps({
@@ -24,11 +24,7 @@ const itemId = computed(() => idForCollectionPath(props.data, props.collectionNa
 const item = computed(() => props.data[props.collectionName]?.[itemId.value]);
 const kicker = computed(() => COLLECTION_LABEL[props.collectionName] || props.collectionName);
 
-const description = computed(() => {
-  const it = item.value;
-  if (!it) return null;
-  return it.description || it.lifecycle || it.notes || it.summary;
-});
+const descriptionParas = computed(() => descriptionParagraphs(item.value));
 
 function findRelated(id) {
   for (const collection of ["artifacts", "materials", "systems", "regulations"]) {
@@ -60,7 +56,7 @@ function onRelatedClick(related) {
 }
 
 function onStepClick(step) {
-  goToStep(router, crumbsForFlow(props.data, step.flowId), step.path);
+  goToStep(router, crumbsForFlow(props.data, findFlowIdForStep(props.data, step.id)), step.path);
 }
 </script>
 
@@ -73,7 +69,9 @@ function onStepClick(step) {
     <h2 class="flow-view__title">{{ item.name }}</h2>
 
     <div class="item-detail-card">
-      <p v-if="description" class="modal__description">{{ description }}</p>
+      <div v-if="descriptionParas.length" class="modal__description">
+        <p v-for="(para, i) in descriptionParas" :key="i">{{ para }}</p>
+      </div>
 
       <div v-if="item.fields?.length" class="modal__section">
         <h4>Fields</h4>

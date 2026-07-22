@@ -94,9 +94,23 @@ export function stepsForFlow(data, flowId) {
   return flow.stepIds.map((id) => getStep(data, id)).filter(Boolean);
 }
 
+// Steps don't carry a flowId back-reference, so finding the flow that owns a
+// given step means scanning flows for whichever one's stepIds contains it.
+export function findFlowIdForStep(data, stepId) {
+  const flow = Object.values(data.flows).find((f) => f.stepIds.includes(stepId));
+  return flow?.id;
+}
+
 export function resolveList(data, collectionName, ids) {
   if (!ids || !ids.length) return [];
   return ids.map((id) => data[collectionName][id]).filter(Boolean);
+}
+
+export function descriptionParagraphs(item) {
+  if (!item) return [];
+  const text = item.description || item.lifecycle || item.notes || item.summary;
+  if (!text) return [];
+  return text.split(/\n{2,}/).map((p) => p.trim()).filter(Boolean);
 }
 
 export function safetychainModulesForStep(data, stepId) {
@@ -131,7 +145,7 @@ export function crumbsForFlow(data, flowId) {
   }
   const parentStep = Object.values(data.steps).find((s) => s.nestedFlowId === flowId);
   if (!parentStep) return [{ type: "flow", flowPath: flow.path }];
-  const parentFlow = getFlow(data, parentStep.flowId);
+  const parentFlow = getFlow(data, findFlowIdForStep(data, parentStep.id));
   return [
     { type: "flow", flowPath: parentFlow.path },
     { type: "step", stepPath: parentStep.path },

@@ -932,5 +932,45 @@
     "citation": "IFS Food, Version 8 (International Featured Standards)",
     "url": "https://www.ifs-certification.com/en/news/ifs-food-8-gains-gfsi-recognition",
     "note": "IFS's own announcement confirming Version 8 became mandatory Jan 1, 2024, and achieved GFSI recognition against the 2020 GFSI Benchmarking Requirements on Sept 16, 2024."
+  },
+  "f9e41b70-a445-4416-a1b2-34531925f625": {
+    "id": "f9e41b70-a445-4416-a1b2-34531925f625",
+    "name": "PCQI training standard (FSPCA curriculum)",
+    "type": "industry-standard",
+    "citation": "FSPCA Preventive Controls for Human Food curriculum, recognized by FDA under 21 CFR 117.155(a)",
+    "url": "https://www.ifsh.iit.edu/fspca/fspca-preventive-controls-human-food-pchf",
+    "note": "FDA's PCHF rule requires the PCQI to have completed training \"recognized as adequate by FDA\" or have equivalent job experience (21 CFR 117.180(c)(2)); the FSPCA standardized curriculum is the training FDA has recognized as meeting that bar."
+  },
+  "056a674f-40d6-45d0-912d-0ab23ad9b0ef": {
+    "id": "056a674f-40d6-45d0-912d-0ab23ad9b0ef",
+    "name": "FSVP Qualified Individual requirement",
+    "type": "regulation-text",
+    "citation": "21 CFR 1.503",
+    "url": "https://www.ecfr.gov/current/title-21/chapter-I/subchapter-A/part-1/subpart-L/subject-group-ECFR6d5522d7ef2b598",
+    "note": "Defines the qualified individual who must perform FSVP hazard analysis and supplier verification, and the qualification-by-training-or-experience standard."
+  },
+  "952ca2fe-d595-41d7-919f-ee3a4b051b74": {
+    "id": "952ca2fe-d595-41d7-919f-ee3a4b051b74",
+    "name": "Sanitary Transportation Rule carrier agreement requirement",
+    "type": "regulation-text",
+    "citation": "21 CFR 1.908",
+    "url": "https://www.ecfr.gov/current/title-21/chapter-I/subchapter-A/part-1/subpart-O",
+    "note": "Requires shippers to enter written agreements with carriers specifying temperature control and sanitation responsibilities for the transport operation."
+  },
+  "1d2fe9b9-71cc-4082-adb8-7c1e18917261": {
+    "id": "1d2fe9b9-71cc-4082-adb8-7c1e18917261",
+    "name": "FDA food facility inspection frequency (risk-based)",
+    "type": "regulation-text",
+    "citation": "FSMA Section 201; 21 U.S.C. 350j",
+    "url": "https://www.fda.gov/food/inspections-compliance-enforcement-and-criminal-investigations/inspections-and-compliance",
+    "note": "FSMA directs FDA to inspect high-risk facilities at least every 3 years and non-high-risk facilities at least every 5 years, replacing the pre-FSMA ad hoc inspection cadence — the basis for calling FDA's model \"periodic\" rather than continuous."
+  },
+  "6841e3f2-8c23-4f3a-b7ef-58ed455b51a9": {
+    "id": "6841e3f2-8c23-4f3a-b7ef-58ed455b51a9",
+    "name": "FSIS continuous inspection at slaughter",
+    "type": "regulation-text",
+    "citation": "9 CFR 307.5 (meat), 9 CFR 381.10 (poultry)",
+    "url": "https://www.ecfr.gov/current/title-9/chapter-III/subchapter-A/part-307",
+    "note": "Requires FSIS inspector presence during all hours slaughter operations are conducted — the regulatory basis for continuous (shift-by-shift) inspection at slaughter, distinct from FSIS's at-least-daily presence at processing-only plants."
   }
 }

@@ -4,13 +4,18 @@
     "name": "FDA",
     "fullName": "Food and Drug Administration",
     "parent": "US Department of Health and Human Services (HHS)",
-    "summary": "Regulates roughly 80% of the US food supply: packaged/processed foods, produce, seafood, dairy and shell eggs, bottled water, dietary supplements, wine under 7% ABV, and beer not made with both malted barley and hops. Conducts periodic (not continuous) inspections. Under FSMA Section 423, FDA has mandatory recall authority for FDA-regulated foods generally; infant formula has its own separate, longer-standing mandatory recall mechanism (21 CFR Part 107).",
     "keyOffices": [
       "Center for Food Safety and Applied Nutrition (CFSAN)"
     ],
     "sourceIds": [
       "4ff0437a-4708-4a82-9ad1-3871f55b2fff",
-      "0b5a11ed-f395-4fa2-87f5-9387207c02fd"
+      "0b5a11ed-f395-4fa2-87f5-9387207c02fd",
+      "1d2fe9b9-71cc-4082-adb8-7c1e18917261"
+    ],
+    "description": "FDA regulates roughly 80% of the US food supply by value: packaged/processed foods, produce, seafood, dairy and shell eggs, bottled water, dietary supplements, wine under 7% ABV, and beer not made with both malted barley and hops.\n\nIts authority is broader in scope but lighter-touch in presence than USDA FSIS's: rather than stationing an inspector at every regulated plant continuously, FSMA directs FDA to inspect high-risk facilities at least every 3 years and other facilities at least every 5 years, using registration and risk categorization (not physical presence) as the primary control. The practical consequence is that most day-to-day compliance assurance for FDA-regulated food comes from the facility's own PCHF-mandated Food Safety Plan and PCQI oversight, verified periodically by FDA inspection, rather than continuous federal oversight.\n\nFDA's recall authority is mandatory under FSMA Section 423 for FDA-regulated food generally, with a separate, older mandatory mechanism specifically for infant formula (21 CFR Part 107) that predates and works differently from Section 423.",
+    "relatedIds": [
+      "4db45158-1d5c-4b87-86ad-c022454a603e",
+      "2f72c0de-4634-4798-9aca-4d01ec2c0084"
     ],
     "path": "fda"
   },
@@ -19,11 +24,17 @@
     "name": "USDA FSIS",
     "fullName": "USDA Food Safety and Inspection Service",
     "parent": "US Department of Agriculture",
-    "summary": "Regulates meat, poultry, and processed egg products (not shell eggs). Maintains continuous, shift-by-shift inspector presence at slaughter (periodic, at-least-daily visits at processing-only plants), unlike FDA's periodic model. Since 2013/2023 rule changes, most meat/poultry labels are self-certified under generic label approval rather than FSIS pre-approval (pre-approval now applies only to special claims). All FSIS recalls are voluntary; FSIS has no authority to compel a recall, only to refer refusal cases to DOJ for detention/seizure.",
     "keyOffices": [],
     "sourceIds": [
       "37bf5ebf-47ce-4e8a-9052-93d8eade2b5f",
-      "bcf4d03b-bac6-4217-bb3d-5b04c24dd48f"
+      "bcf4d03b-bac6-4217-bb3d-5b04c24dd48f",
+      "6841e3f2-8c23-4f3a-b7ef-58ed455b51a9"
+    ],
+    "description": "FSIS regulates meat, poultry, and processed egg products (not shell eggs, which fall to FDA). Its inspection model is the inverse of FDA's: rather than periodic risk-based visits, federal law requires a USDA inspector physically present during all hours slaughter is conducted (continuous, shift-by-shift inspection), and inspectors visit processing-only plants (further processing, not slaughter) at least once per operating day. This reflects FMIA/PPIA's older, presence-based statutory design rather than FSMA's newer risk-based approach.\n\nSince 2013/2023 rule changes, most meat/poultry labels are self-certified under generic label approval rather than requiring FSIS pre-approval, which now applies only to special claims (e.g. \"organic,\" \"natural\").\n\nFSIS has no independent authority to compel a recall — every FSIS recall is voluntary, negotiated with the firm; if a firm refuses, FSIS's only lever is referring the matter to the Department of Justice for court-ordered detention or seizure of the product, a materially weaker enforcement posture than FDA's direct mandatory-recall authority under FSMA Section 423.",
+    "relatedIds": [
+      "52a1eeda-eb18-49b4-bc9f-d51a5ae9c39e",
+      "ac08bae1-7153-4c36-9af1-3969ebe48a4e",
+      "2cf6d02e-5c41-40c6-8dea-2c5d9756b9c1"
     ],
     "path": "usda-fsis"
   },

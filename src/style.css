@@ -43,6 +43,10 @@
 
 * { box-sizing: border-box; }
 
+html {
+  font-size: 18px;
+}
+
 html, body {
   margin: 0;
   height: 100%;
@@ -214,10 +218,13 @@ html, body {
 .minimap h3,
 .minimap__level h3 {
   margin: 0 0 0.6rem;
+  padding-bottom: 0.35rem;
   font-size: 0.75rem;
+  font-weight: 700;
   text-transform: uppercase;
-  letter-spacing: 0.06em;
+  letter-spacing: 0.08em;
   color: var(--text-dim);
+  border-bottom: 2px solid var(--accent-soft);
 }
 
 .minimap__list {
@@ -235,31 +242,40 @@ html, body {
   gap: 0.4rem;
   padding: 0.3rem 0.45rem;
   border-radius: 6px;
-  color: var(--text-dim);
+  color: var(--text);
   text-decoration: none;
   cursor: pointer;
   border: none;
+  border-left: 2px solid transparent;
   background: none;
   text-align: left;
   font-size: 0.78rem;
   width: 100%;
+  transition: background-color 0.12s ease, color 0.12s ease, border-color 0.12s ease;
 }
 
-.minimap__item:hover { background: var(--surface-2); }
-.minimap__item--active { background: var(--accent-soft); color: var(--accent); font-weight: 600; }
+.minimap__item:hover { background: var(--surface-2); color: var(--accent); border-left-color: var(--border); }
+.minimap__item--active { background: var(--accent-soft); color: var(--accent); font-weight: 600; border-left-color: var(--accent); }
 .minimap__item--has-nested { font-weight: 500; }
-.minimap__seq { opacity: 0.55; font-variant-numeric: tabular-nums; width: 1.4em; flex-shrink: 0; }
+.minimap__seq { opacity: 0.6; font-variant-numeric: tabular-nums; width: 1.4em; flex-shrink: 0; }
 
 /* Flow view: sequence of step nodes */
+.view-header-card {
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--surface);
+  padding: 1.25rem 1.5rem;
+  margin-bottom: 1.25rem;
+}
+
 .flow-view__title {
   margin: 0 0 0.25rem;
   font-size: 1.3rem;
 }
 
 .flow-view__summary {
-  margin: 0 0 1.25rem;
+  margin: 0;
   color: var(--text-dim);
-  max-width: 62ch;
 }
 
 .flow-nodes {
@@ -389,9 +405,8 @@ html, body {
 }
 
 .step-detail__summary {
-  margin: 0.4rem 0 1.5rem;
+  margin: 0.4rem 0 0;
   color: var(--text-dim);
-  max-width: 68ch;
   font-size: 1rem;
 }
 
@@ -569,8 +584,12 @@ html, body {
 .sources-controls {
   display: flex;
   gap: 0.6rem;
-  margin: 0 0 1.25rem;
+  margin: 1.1rem 0 0;
   flex-wrap: wrap;
+}
+
+.view-header-card > .sources-controls:last-child {
+  margin-bottom: 0;
 }
 
 .sources-controls__search {
@@ -579,7 +598,7 @@ html, body {
   padding: 0.45rem 0.75rem;
   border-radius: 999px;
   border: 1px solid var(--border);
-  background: var(--surface);
+  background: var(--surface-2);
   color: var(--text);
   font-size: 0.9rem;
 }
@@ -588,7 +607,7 @@ html, body {
   padding: 0.45rem 0.75rem;
   border-radius: 999px;
   border: 1px solid var(--border);
-  background: var(--surface);
+  background: var(--surface-2);
   color: var(--text);
   font-size: 0.9rem;
 }
@@ -707,8 +726,16 @@ html, body {
 .modal__description {
   color: var(--text-dim);
   font-size: 0.92rem;
-  line-height: 1.5;
+  line-height: 1.6;
   margin: 0 0 1rem;
+}
+
+.modal__description p {
+  margin: 0 0 0.85rem;
+}
+
+.modal__description p:last-child {
+  margin-bottom: 0;
 }
 
 .modal__section {
@@ -744,12 +771,24 @@ html, body {
 
 .modal__fields-table {
   width: 100%;
-  border-collapse: collapse;
+  border-collapse: separate;
+  border-spacing: 0;
   font-size: 0.85rem;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.modal__fields-table tr:nth-child(odd) {
+  background: var(--surface-2);
+}
+
+.modal__fields-table tr:hover {
+  background: var(--accent-soft);
 }
 
 .modal__fields-table td {
-  padding: 0.35rem 0.5rem 0.35rem 0;
+  padding: 0.5rem 0.75rem;
   vertical-align: top;
   border-bottom: 1px solid var(--border);
 }
@@ -760,8 +799,10 @@ html, body {
 
 .modal__fields-table-name {
   font-weight: 600;
+  color: var(--accent);
   white-space: nowrap;
   padding-right: 0.75rem;
+  border-right: 1px solid var(--border);
 }
 
 .modal__related-chips {

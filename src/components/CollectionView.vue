@@ -82,20 +82,22 @@ function onItemClick(item) {
 </script>
 
 <template>
-  <h2 class="flow-view__title">{{ meta.label }} ({{ items.length }})</h2>
-  <p class="flow-view__summary">{{ meta.description }}</p>
+  <div class="view-header-card">
+    <h2 class="flow-view__title">{{ meta.label }} ({{ items.length }})</h2>
+    <p class="flow-view__summary">{{ meta.description }}</p>
 
-  <div class="sources-controls">
-    <input
-      v-model="searchQuery"
-      type="search"
-      :placeholder="`Filter ${meta.label.toLowerCase()} by name…`"
-      class="sources-controls__search"
-    />
-    <select v-if="meta.filterField" v-model="filterValue" class="sources-controls__type">
-      <option value="">All</option>
-      <option v-for="opt in filterOptions" :key="opt" :value="opt">{{ opt }}</option>
-    </select>
+    <div class="sources-controls">
+      <input
+        v-model="searchQuery"
+        type="search"
+        :placeholder="`Filter ${meta.label.toLowerCase()} by name…`"
+        class="sources-controls__search"
+      />
+      <select v-if="meta.filterField" v-model="filterValue" class="sources-controls__type">
+        <option value="">All</option>
+        <option v-for="opt in filterOptions" :key="opt" :value="opt">{{ opt }}</option>
+      </select>
+    </div>
   </div>
 
   <p v-if="!filtered.length" class="empty-state">No {{ meta.label.toLowerCase() }} match.</p>

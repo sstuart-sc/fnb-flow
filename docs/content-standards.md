@@ -72,9 +72,15 @@ exists to enforce. **No exceptions for new content going forward:**
   a one-liner just because the field technically allows it.
 - **`notes` (materials)** — what the equipment/material is and why it's
   relevant to the step, not a spec sheet.
-- **`summary` (systems)** — what class of system this is and what it does,
-  vendor-neutral (see section 6 below) unless the record is explicitly in
-  a `/products` overlay file.
+- **`summary` (systems, regulations, agencies)** — deprecated once a record
+  has `description`. The UI no longer shows card-level summaries anywhere
+  (`CollectionView` doesn't render one), and every modal/detail view already
+  falls back through `description || lifecycle || notes || summary` — so a
+  standalone `summary` is dead weight once `description` exists. When adding
+  `description` to a record that still has `summary`, fold any fact in
+  `summary` that isn't already covered into `description`, then delete the
+  `summary` field entirely rather than keeping both. Don't add a new
+  `summary` to a record that's getting a `description` from scratch.
 - **`meta`/short fields** — must resolve to something a reader can act on
   (a citation, a year, a role name) — never restate the field's own label.
 
@@ -107,6 +113,14 @@ rather than fix it — it's out of scope, not a smaller version of `fields`.
   existing short field already tells the whole story adequately, `description`
   can restate it in fuller prose rather than straining for new content — but
   never leave it as a near-duplicate of the short field's exact wording.
+  **Break it into paragraphs**, separated by a blank line (`\n\n`) in the
+  JSON string — one idea per paragraph (what it is / who's obligated / how
+  it's enforced or structured / exceptions), 2-4 paragraphs total for a
+  substantial record. `ItemDetailView`/`DetailModal` split on `\n\n` and
+  render each paragraph as its own `<p>` (see `descriptionParagraphs` in
+  `useData.js`) — a `description` written as one dense block will render as
+  a single wall of text, so don't skip the break just because it's optional
+  in the schema.
 - **`fields`** — an array of `{ name, description }` naming each column/
   field/parameter the record captures and what it means. **Required test,
   not a judgment call:** does this record represent a single, describable

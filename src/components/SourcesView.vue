@@ -53,23 +53,25 @@ function citedBy(sourceId) {
 </script>
 
 <template>
-  <h2 class="flow-view__title">Sources</h2>
-  <p class="flow-view__summary">
-    Every regulation text, industry standard, vendor document, or explicit subject-matter judgment grounding a fact
-    in this data. Filter by type or search by name.
-  </p>
+  <div class="view-header-card">
+    <h2 class="flow-view__title">Sources</h2>
+    <p class="flow-view__summary">
+      Every regulation text, industry standard, vendor document, or explicit subject-matter judgment grounding a fact
+      in this data. Filter by type or search by name.
+    </p>
 
-  <div class="sources-controls">
-    <input
-      v-model="searchQuery"
-      type="search"
-      placeholder="Filter sources by name…"
-      class="sources-controls__search"
-    />
-    <select v-model="typeFilter" class="sources-controls__type">
-      <option value="">All types</option>
-      <option v-for="type in TYPE_ORDER" :key="type" :value="type">{{ TYPE_LABEL[type] }}</option>
-    </select>
+    <div class="sources-controls">
+      <input
+        v-model="searchQuery"
+        type="search"
+        placeholder="Filter sources by name…"
+        class="sources-controls__search"
+      />
+      <select v-model="typeFilter" class="sources-controls__type">
+        <option value="">All types</option>
+        <option v-for="type in TYPE_ORDER" :key="type" :value="type">{{ TYPE_LABEL[type] }}</option>
+      </select>
+    </div>
   </div>
 
   <p v-if="!filtered.length" class="empty-state">No sources match.</p>

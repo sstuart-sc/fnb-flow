@@ -29,9 +29,41 @@
     "citation": "21 CFR Part 117",
     "year": 2015,
     "agencyId": "2cf6d02e-5c41-40c6-8dea-2c5d9756b9c1",
-    "summary": "Central FSMA rule for most manufacturers. Requires a written Food Safety Plan (hazard analysis, preventive controls, monitoring, corrective actions, verification, recall plan) overseen by a Preventive Controls Qualified Individual (PCQI), plus updated Current Good Manufacturing Practices (CGMPs). Exempts very small businesses, farms, and retail/restaurants (or gives modified requirements).",
     "sourceIds": [
-      "abcd7b91-6b10-4805-905b-b1da46aae541"
+      "abcd7b91-6b10-4805-905b-b1da46aae541",
+      "f9e41b70-a445-4416-a1b2-34531925f625"
+    ],
+    "description": "PCHF is the rule most food manufacturers actually live under day to day. It requires a facility to write and maintain a Food Safety Plan, and it names who is allowed to write one: a Preventive Controls Qualified Individual (PCQI), a role defined by training or equivalent job experience rather than a license, most commonly satisfied by completing the FDA-recognized FSPCA standardized curriculum.\n\nThe plan itself has six required components (see Fields below), and the rule also folds in updated Current Good Manufacturing Practices (CGMPs) covering personnel hygiene, plant and grounds sanitation, and equipment design — the baseline conditions a preventive-controls system is built on top of.\n\nReanalysis is required at least every 3 years or whenever a change could introduce a new hazard (21 CFR 117.170). Very small businesses (under a revenue threshold), farms, and retail/restaurant operations are exempt or fall under modified requirements instead.",
+    "fields": [
+      {
+        "name": "Hazard analysis",
+        "description": "Written identification of biological, chemical (including radiological), and physical hazards that could affect the food, for each step in the process."
+      },
+      {
+        "name": "Preventive controls",
+        "description": "The specific controls applied to significant hazards — process controls (e.g. a CCP-style cook step), sanitation controls, allergen controls, and supply-chain controls."
+      },
+      {
+        "name": "Monitoring",
+        "description": "Procedures that confirm preventive controls are consistently performed as designed."
+      },
+      {
+        "name": "Corrective actions",
+        "description": "Documented steps taken when a preventive control isn't properly implemented, including evaluating affected product and correcting the cause."
+      },
+      {
+        "name": "Verification",
+        "description": "Activities beyond monitoring that confirm preventive controls are actually working (e.g. calibration checks, environmental monitoring, record review)."
+      },
+      {
+        "name": "Recall plan",
+        "description": "Written procedures for the facility to act on if a hazard requiring control is identified — how a recall would actually be executed."
+      }
+    ],
+    "relatedIds": [
+      "7a252b54-ea94-4cd4-ac17-c4e00c174340",
+      "06ff688b-147f-4fde-846c-35ad49d333bc",
+      "2daacfdd-b270-4df6-ad79-bd7a0af491f6"
     ],
     "path": "preventive-controls-for-human-food-pchf"
   },
@@ -65,9 +97,13 @@
     "citation": "21 CFR Part 1, Subpart L",
     "year": 2015,
     "agencyId": "2cf6d02e-5c41-40c6-8dea-2c5d9756b9c1",
-    "summary": "Applies to US importers. Requires hazard analysis of each imported food, supplier verification activities, written records, and an FSVP Qualified Individual.",
     "sourceIds": [
-      "17a435a4-56f1-4d53-bd60-3f6b34185875"
+      "17a435a4-56f1-4d53-bd60-3f6b34185875",
+      "056a674f-40d6-45d0-912d-0ab23ad9b0ef"
+    ],
+    "description": "FSVP shifts the compliance burden onto the US importer of record rather than the foreign supplier FDA can't directly inspect. Before an importer can bring in a food, they must determine what hazards require a control at the supplier, verify the supplier is actually controlling them, and keep records showing that verification happened. Verification can mean an audit, sampling/testing, or review of the supplier's food safety records — the appropriate method depends on the hazard and the supplier's track record.\n\nThis work must be performed or overseen by a qualified individual under 21 CFR 1.503, qualified by training or job experience, distinct from but often the same person as a facility's PCQI. FSVP applies per-importer, per-food — a company importing from multiple foreign suppliers needs a hazard analysis and verification plan for each.",
+    "relatedIds": [
+      "4db45158-1d5c-4b87-86ad-c022454a603e"
     ],
     "path": "foreign-supplier-verification-program-fsvp"
   },
@@ -77,10 +113,12 @@
     "citation": "21 CFR Part 1, Subpart O",
     "year": 2016,
     "agencyId": "2cf6d02e-5c41-40c6-8dea-2c5d9756b9c1",
-    "summary": "Applies to shippers, loaders, motor/rail carriers, and receivers. Requires written agreements defining responsibilities, vehicle/equipment cleanliness, temperature control during transport, and recordkeeping.",
     "sourceIds": [
-      "6ba7f74b-eeab-44e4-9b0a-69ace5186859"
+      "6ba7f74b-eeab-44e4-9b0a-69ace5186859",
+      "952ca2fe-d595-41d7-919f-ee3a4b051b74"
     ],
+    "description": "This rule addresses a gap that HACCP-style plant controls don't cover: contamination or temperature abuse in the vehicle between facilities. It puts specific, different obligations on each party in the transport chain — a shipper must specify in writing (21 CFR 1.908) whether the carrier or shipper is responsible for pre-cooling the vehicle and maintaining temperature in transit; a carrier must keep vehicles and transport equipment in sanitary condition and follow the temperature controls the shipper specifies; a receiver must check for signs of temperature abuse or contamination on arrival.\n\nIt applies to shelf-stable, frozen, and refrigerated food alike, though the practical burden — reefer unit monitoring, pre-cool verification, in-transit temperature logging — falls heaviest on temperature-sensitive product. Rail carriers, shippers by rail, and certain small businesses have modified or exempt status.",
+    "relatedIds": [],
     "path": "sanitary-transportation-rule"
   },
   "3eecd978-8139-4ab1-948f-828c00c79f63": {

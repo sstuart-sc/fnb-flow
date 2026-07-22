@@ -2,7 +2,7 @@
 import { computed } from "vue";
 import { useRouter } from "vue-router";
 import Fuse from "fuse.js";
-import { crumbsForFlow } from "../composables/useData";
+import { crumbsForFlow, findFlowIdForStep } from "../composables/useData";
 import { goToStep, goToItem } from "../router";
 import { simpleMatch } from "../composables/useSearchIndex";
 
@@ -35,7 +35,7 @@ const fallbackResults = computed(() =>
 function onResultClick(result) {
   if (result.collectionName === "steps") {
     const step = props.data.steps[result.itemId];
-    goToStep(router, crumbsForFlow(props.data, step.flowId), step.path);
+    goToStep(router, crumbsForFlow(props.data, findFlowIdForStep(props.data, step.id)), step.path);
     return;
   }
   if (result.path) {
@@ -44,7 +44,7 @@ function onResultClick(result) {
   }
   if (result.stepId) {
     const step = props.data.steps[result.stepId];
-    goToStep(router, crumbsForFlow(props.data, step.flowId), step.path);
+    goToStep(router, crumbsForFlow(props.data, findFlowIdForStep(props.data, step.id)), step.path);
   }
 }
 

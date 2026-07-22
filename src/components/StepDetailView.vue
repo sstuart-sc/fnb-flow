@@ -49,18 +49,20 @@ function onSelectChild(childStep) {
 <template>
   <p v-if="!step" class="empty-state">Step "{{ stepId }}" not found.</p>
   <template v-else>
-    <div class="step-detail__header">
-      <h2 class="step-detail__title">{{ step.name }}</h2>
-    </div>
-    <p class="step-detail__summary">{{ step.summary }}</p>
+    <div class="view-header-card">
+      <div class="step-detail__header">
+        <h2 class="step-detail__title">{{ step.name }}</h2>
+      </div>
+      <p class="step-detail__summary">{{ step.summary }}</p>
 
-    <div v-if="threadChips.length" class="thread-chips">
-      <span
-        v-for="thread in threadChips"
-        :key="thread.id"
-        class="thread-chip"
-        :class="`thread-chip--${thread.key}`"
-      >{{ thread.name }}</span>
+      <div v-if="threadChips.length" class="thread-chips">
+        <span
+          v-for="thread in threadChips"
+          :key="thread.id"
+          class="thread-chip"
+          :class="`thread-chip--${thread.key}`"
+        >{{ thread.name }}</span>
+      </div>
     </div>
 
     <div v-if="step.nestedFlowId" class="nested-flow-preview">

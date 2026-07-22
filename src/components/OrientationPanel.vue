@@ -42,7 +42,11 @@ const levels = computed(() => {
 
   if (!result.length) {
     const primaryFlowId = flowIdForPath(props.data, "primary-flow");
-    result.push({ flowId: primaryFlowId, activeStepId: null, crumbsUpToFlow: [] });
+    result.push({
+      flowId: primaryFlowId,
+      activeStepId: null,
+      crumbsUpToFlow: [{ type: "flow", flowPath: "primary-flow" }],
+    });
   }
 
   return result;
