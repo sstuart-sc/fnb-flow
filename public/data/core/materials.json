@@ -12,7 +12,8 @@
       "620aaecb-0b8f-4336-8f3e-86716178923b",
       "49339f48-e8be-4bdb-a9d9-58a6193d1ac9",
       "1bdfade9-acc5-4535-891f-87d4cf762f5c"
-    ]
+    ],
+    "path": "temperature-probe-sensor"
   },
   "8c17f733-178e-42a8-9a66-08c7e489d36b": {
     "id": "8c17f733-178e-42a8-9a66-08c7e489d36b",
@@ -26,7 +27,8 @@
     "relatedIds": [
       "1bdfade9-acc5-4535-891f-87d4cf762f5c",
       "e8d03bfb-7a45-46f4-80ee-be037dd5e218"
-    ]
+    ],
+    "path": "ph-meter"
   },
   "bcf4ede9-5dde-4874-b14b-5de1a598bdb4": {
     "id": "bcf4ede9-5dde-4874-b14b-5de1a598bdb4",
@@ -43,7 +45,8 @@
       "29b066a1-910f-45b5-bd65-205d53da0ba4",
       "9e388600-1312-452b-8d07-3a0efd5202f9",
       "2e49adf0-dbf5-4625-bfda-b538e7085483"
-    ]
+    ],
+    "path": "scale"
   },
   "72e2305e-e782-4fef-a0f0-684b001b4bf4": {
     "id": "72e2305e-e782-4fef-a0f0-684b001b4bf4",
@@ -59,7 +62,8 @@
       "e22bc4a2-d974-46c6-ac7b-9c3c1b5b3e04",
       "29c66c1b-1d4b-4c1a-92b4-2c951493253d",
       "9a076e51-1e86-42a5-84d9-8c39da37e1d0"
-    ]
+    ],
+    "path": "elisa-allergen-swab-test"
   },
   "9a076e51-1e86-42a5-84d9-8c39da37e1d0": {
     "id": "9a076e51-1e86-42a5-84d9-8c39da37e1d0",
@@ -74,7 +78,8 @@
       "076d8f82-c969-464d-a40b-1e5413058708",
       "97409332-015e-4473-a32b-26b71bc67d07",
       "72e2305e-e782-4fef-a0f0-684b001b4bf4"
-    ]
+    ],
+    "path": "atp-swab-test"
   },
   "076d8f82-c969-464d-a40b-1e5413058708": {
     "id": "076d8f82-c969-464d-a40b-1e5413058708",
@@ -88,7 +93,8 @@
     "relatedIds": [
       "97409332-015e-4473-a32b-26b71bc67d07",
       "9a076e51-1e86-42a5-84d9-8c39da37e1d0"
-    ]
+    ],
+    "path": "sanitizer-chemical"
   },
   "22005d31-323d-4252-8610-41c71d08a023": {
     "id": "22005d31-323d-4252-8610-41c71d08a023",
@@ -104,7 +110,8 @@
       "e8d03bfb-7a45-46f4-80ee-be037dd5e218",
       "a7ea6ca7-6b6e-4101-beff-e581956d8a36",
       "402676d7-c0d4-45d1-9798-134b8b542939"
-    ]
+    ],
+    "path": "metal-detector"
   },
   "402676d7-c0d4-45d1-9798-134b8b542939": {
     "id": "402676d7-c0d4-45d1-9798-134b8b542939",
@@ -118,7 +125,8 @@
     "relatedIds": [
       "22005d31-323d-4252-8610-41c71d08a023",
       "a7ea6ca7-6b6e-4101-beff-e581956d8a36"
-    ]
+    ],
+    "path": "x-ray-inspection-system"
   },
   "26fc29f0-5637-42ef-87bd-820d14c68eb6": {
     "id": "26fc29f0-5637-42ef-87bd-820d14c68eb6",
@@ -133,7 +141,8 @@
       "f2777655-3ff5-43b8-9e51-494f0704b2a6",
       "ffb44422-779f-4bc8-86be-ff6fa6d73d68",
       "3afd5ba3-988d-462f-836b-b99ec6c661c2"
-    ]
+    ],
+    "path": "vision-inspection-system"
   },
   "50e9bda3-e20a-4a57-b0b5-105c32bd945f": {
     "id": "50e9bda3-e20a-4a57-b0b5-105c32bd945f",
@@ -146,7 +155,8 @@
     "description": "A calibration weight set is a series of certified reference masses, traceable to NIST standards, used to check a scale's accuracy against a known value rather than assuming it is correct because it is turned on and reading a number. NIST Handbook 44 governs the accuracy and tolerance requirements commercial weighing devices must meet, and calibration against a traceable reference weight is the accepted means of demonstrating compliance. This matters everywhere a scale's reading drives a decision that has to hold up under scrutiny: a receiving-dock weight reconciled against a bill of lading, a batching scale dosing a formula ingredient, or a catch-weight reading that becomes the declared net weight on a package.",
     "relatedIds": [
       "bcf4ede9-5dde-4874-b14b-5de1a598bdb4"
-    ]
+    ],
+    "path": "calibration-weight-set"
   },
   "c3c6e60a-aea7-4825-99d9-04adb6452f49": {
     "id": "c3c6e60a-aea7-4825-99d9-04adb6452f49",
@@ -161,7 +171,8 @@
       "076d8f82-c969-464d-a40b-1e5413058708",
       "72e2305e-e782-4fef-a0f0-684b001b4bf4",
       "9a076e51-1e86-42a5-84d9-8c39da37e1d0"
-    ]
+    ],
+    "path": "cip-clean-in-place-skid"
   },
   "ea1e08a2-bf88-45df-8d47-6df44d9ae776": {
     "id": "ea1e08a2-bf88-45df-8d47-6df44d9ae776",
@@ -174,6 +185,7 @@
     "description": "Sanitizer only works within the concentration range it's designed for — too weak and it doesn't kill the target organisms in the intended contact time, too strong and it can leave residue or corrode equipment. Test strips give a quick color-change readout of a mixed solution's actual concentration (chlorine, quaternary ammonium, or peracetic acid, depending on the sanitizer chemical used) so a technician confirms the solution is at target strength before applying it during a changeover, rather than assuming a dilution ratio was mixed correctly.",
     "relatedIds": [
       "076d8f82-c969-464d-a40b-1e5413058708"
-    ]
+    ],
+    "path": "sanitizer-concentration-test-strips"
   }
 }

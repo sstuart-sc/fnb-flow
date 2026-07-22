@@ -24,7 +24,8 @@
       "7e49ad00-a211-4140-a869-d669d929d49e",
       "b6417e04-03ad-400f-bbe3-ba9a111eaeb9",
       "429b1edf-4726-4530-b8db-680ec0761622"
-    ]
+    ],
+    "path": "erp-enterprise-resource-planning"
   },
   "3628303b-f98e-4dc6-8627-9ad94b5af3dd": {
     "id": "3628303b-f98e-4dc6-8627-9ad94b5af3dd",
@@ -47,7 +48,8 @@
       "29b066a1-910f-45b5-bd65-205d53da0ba4",
       "1bdfade9-acc5-4535-891f-87d4cf762f5c",
       "83d48320-9598-4069-b091-c032b4e36fd7"
-    ]
+    ],
+    "path": "mes-manufacturing-execution-system"
   },
   "39da6cf5-44d6-44d3-b613-d86a3530a7b1": {
     "id": "39da6cf5-44d6-44d3-b613-d86a3530a7b1",
@@ -70,7 +72,8 @@
       "733c42da-63cb-4309-b90f-eada2c4a97f7",
       "fc2cc2d7-c0e6-4a2c-b0e8-d110914627d2",
       "551a4e09-160c-4f45-ac51-2000370afcab"
-    ]
+    ],
+    "path": "wms-warehouse-management-system"
   },
   "06ff688b-147f-4fde-846c-35ad49d333bc": {
     "id": "06ff688b-147f-4fde-846c-35ad49d333bc",
@@ -98,7 +101,8 @@
       "1123026c-158f-41ad-acb2-9f67b6fb4e09",
       "76dd2e5a-20a8-4f19-8fc1-3b78be49fee3",
       "209c4879-7b77-46e8-91e2-153eac453a77"
-    ]
+    ],
+    "path": "qms-food-safety-software"
   },
   "0aa50349-ec76-4ea4-b24d-bd61159fff84": {
     "id": "0aa50349-ec76-4ea4-b24d-bd61159fff84",
@@ -121,7 +125,8 @@
       "69f4ab73-992a-4852-b94e-0440b2304521",
       "56526379-12e6-4c0f-a1fc-bd1c83d9f1a0",
       "9019fee0-1775-4638-a520-fece292e426e"
-    ]
+    ],
+    "path": "lims-laboratory-information-management-system"
   },
   "73835e3c-9d70-49bf-b855-e25139be8426": {
     "id": "73835e3c-9d70-49bf-b855-e25139be8426",
@@ -144,7 +149,8 @@
       "5ecdd375-c8ce-4b2f-a069-1d1948c844e2",
       "234121ca-a7cb-4c99-8a09-7e947e62d724",
       "03dcbbf1-8518-4030-bb66-c10e4c777a5f"
-    ]
+    ],
+    "path": "supplier-management-portal"
   },
   "22e46c8f-cf7e-4d53-b5f2-56c939ee76ff": {
     "id": "22e46c8f-cf7e-4d53-b5f2-56c939ee76ff",
@@ -173,7 +179,8 @@
       "b5e32a3a-afdb-4264-a583-9bfcf21d6999",
       "1188e42e-3097-4203-b657-0f88020f34f0",
       "93b63909-560d-4414-8cb4-0920241e45a4"
-    ]
+    ],
+    "path": "traceability-platform"
   },
   "e7cf071d-ca71-42ea-81de-4924de27f07c": {
     "id": "e7cf071d-ca71-42ea-81de-4924de27f07c",
@@ -195,7 +202,8 @@
       "d1139caf-37bd-4f97-9220-08feba95bdce",
       "68a4cc0a-b5c0-4ba4-91de-332c4c74c684",
       "d08beab6-1d89-42e5-8f51-c12ddc9dcc93"
-    ]
+    ],
+    "path": "label-management-software"
   },
   "7e49ad00-a211-4140-a869-d669d929d49e": {
     "id": "7e49ad00-a211-4140-a869-d669d929d49e",
@@ -217,7 +225,8 @@
       "29c66c1b-1d4b-4c1a-92b4-2c951493253d",
       "798d71ae-178b-4f6b-bd3d-c3b58bd2013b",
       "238f08d4-2e35-498a-817d-683f36822b65"
-    ]
+    ],
+    "path": "production-scheduling-system"
   },
   "d08beab6-1d89-42e5-8f51-c12ddc9dcc93": {
     "id": "d08beab6-1d89-42e5-8f51-c12ddc9dcc93",
@@ -238,7 +247,8 @@
       "e22bc4a2-d974-46c6-ac7b-9c3c1b5b3e04",
       "798d71ae-178b-4f6b-bd3d-c3b58bd2013b",
       "e7cf071d-ca71-42ea-81de-4924de27f07c"
-    ]
+    ],
+    "path": "formulation-recipe-management-system"
   },
   "0895906c-34f8-43a0-a4d8-112d3a9eb395": {
     "id": "0895906c-34f8-43a0-a4d8-112d3a9eb395",
@@ -256,7 +266,8 @@
       "3250a117-60b4-4053-b8cf-bf13f59faa1b",
       "fc2cc2d7-c0e6-4a2c-b0e8-d110914627d2",
       "798d71ae-178b-4f6b-bd3d-c3b58bd2013b"
-    ]
+    ],
+    "path": "edi-via-van-or-as2"
   },
   "9831aefd-1733-472a-b8e0-954c68512132": {
     "id": "9831aefd-1733-472a-b8e0-954c68512132",
@@ -276,7 +287,8 @@
     "relatedIds": [
       "2d8b96d5-f9ba-4de5-a60b-0da0f60afaec",
       "06ff688b-147f-4fde-846c-35ad49d333bc"
-    ]
+    ],
+    "path": "training-lms-learning-management-system"
   },
   "2227d2ed-2fec-40de-a9d4-52e262f14809": {
     "id": "2227d2ed-2fec-40de-a9d4-52e262f14809",
@@ -295,6 +307,7 @@
     "description": "SCADA/HMI is the direct equipment-control and data-acquisition layer that talks to PLCs and line sensors in real time, giving operators the screens they actually use to run and monitor a line. ISA-95 (IEC 62264) formally separates this layer (Level 2, basic process control) from MES (Level 3, manufacturing operations management) — MES's own record in this dataset already describes talking to plant-floor automation such as PLCs and SCADA, which is exactly this layer, but no record covered it directly until now. In practice, SCADA/HMI is where a process setup gets dialed in and where a CCP's raw sensor reading first becomes a number an operator can see, before MES aggregates it into a batch record.",
     "relatedIds": [
       "3628303b-f98e-4dc6-8627-9ad94b5af3dd"
-    ]
+    ],
+    "path": "scada-hmi"
   }
 }

@@ -38,7 +38,8 @@
         "name": "References",
         "description": "Other customers or business contacts the buyer can follow up with to verify the supplier's claims."
       }
-    ]
+    ],
+    "path": "supplier-questionnaire"
   },
   "3dad5836-8dd0-4732-a84a-5efa09c84ba1": {
     "id": "3dad5836-8dd0-4732-a84a-5efa09c84ba1",
@@ -79,7 +80,8 @@
       "56526379-12e6-4c0f-a1fc-bd1c83d9f1a0",
       "69f4ab73-992a-4852-b94e-0440b2304521",
       "4c7a9c60-4652-4ccd-8a99-de688943fdf3"
-    ]
+    ],
+    "path": "structured-coa-data-schema"
   },
   "03dcbbf1-8518-4030-bb66-c10e4c777a5f": {
     "id": "03dcbbf1-8518-4030-bb66-c10e4c777a5f",
@@ -116,7 +118,8 @@
       "d3ffd93c-4dc3-4497-a82e-158181ac79e3",
       "234121ca-a7cb-4c99-8a09-7e947e62d724",
       "e633d7e7-fd2f-458b-b7e0-837e92dbb64a"
-    ]
+    ],
+    "path": "supplier-risk-assessment-record"
   },
   "d3ffd93c-4dc3-4497-a82e-158181ac79e3": {
     "id": "d3ffd93c-4dc3-4497-a82e-158181ac79e3",
@@ -153,7 +156,8 @@
     "relatedIds": [
       "03dcbbf1-8518-4030-bb66-c10e4c777a5f",
       "234121ca-a7cb-4c99-8a09-7e947e62d724"
-    ]
+    ],
+    "path": "supplier-risk-scoring-matrix"
   },
   "4e16ee4f-d132-44e5-ac05-b88b4767e5ff": {
     "id": "4e16ee4f-d132-44e5-ac05-b88b4767e5ff",
@@ -191,7 +195,8 @@
         "name": "Certificate validity period / next audit due date",
         "description": "The period the certification is valid for and when the next surveillance or re-certification audit is due."
       }
-    ]
+    ],
+    "path": "gfsi-recognized-audit-report"
   },
   "5ecdd375-c8ce-4b2f-a069-1d1948c844e2": {
     "id": "5ecdd375-c8ce-4b2f-a069-1d1948c844e2",
@@ -227,7 +232,8 @@
         "name": "Issue date and expiry date",
         "description": "When the certificate was issued and when it lapses, which drives this record's own renewal schedule."
       }
-    ]
+    ],
+    "path": "supplier-certification-record"
   },
   "56526379-12e6-4c0f-a1fc-bd1c83d9f1a0": {
     "id": "56526379-12e6-4c0f-a1fc-bd1c83d9f1a0",
@@ -260,7 +266,8 @@
       "3dad5836-8dd0-4732-a84a-5efa09c84ba1",
       "69f4ab73-992a-4852-b94e-0440b2304521",
       "4c7a9c60-4652-4ccd-8a99-de688943fdf3"
-    ]
+    ],
+    "path": "material-product-specification"
   },
   "4c7a9c60-4652-4ccd-8a99-de688943fdf3": {
     "id": "4c7a9c60-4652-4ccd-8a99-de688943fdf3",
@@ -301,7 +308,8 @@
         "name": "Pass/fail (in-spec / out-of-spec) result",
         "description": "The disposition-triggering outcome of comparing the reported value to the specification limit."
       }
-    ]
+    ],
+    "path": "lab-test-result"
   },
   "e633d7e7-fd2f-458b-b7e0-837e92dbb64a": {
     "id": "e633d7e7-fd2f-458b-b7e0-837e92dbb64a",
@@ -339,7 +347,8 @@
         "name": "Suspension/removal reason and date (if applicable)",
         "description": "What triggered a suspension or removal — a failed audit, quality event, or lapsed certification — and when it took effect, since this blocks new POs until resolved."
       }
-    ]
+    ],
+    "path": "approved-supplier-list-asl"
   },
   "69f4ab73-992a-4852-b94e-0440b2304521": {
     "id": "69f4ab73-992a-4852-b94e-0440b2304521",
@@ -376,7 +385,8 @@
         "name": "Pass/fail indication",
         "description": "Whether the reported value meets the specification, either stated by the supplier or derived by the receiver per the Structured COA Data Schema."
       }
-    ]
+    ],
+    "path": "certificate-of-analysis-coa"
   },
   "234121ca-a7cb-4c99-8a09-7e947e62d724": {
     "id": "234121ca-a7cb-4c99-8a09-7e947e62d724",
@@ -413,7 +423,8 @@
       "d3ffd93c-4dc3-4497-a82e-158181ac79e3",
       "03dcbbf1-8518-4030-bb66-c10e4c777a5f",
       "69f4ab73-992a-4852-b94e-0440b2304521"
-    ]
+    ],
+    "path": "supplier-performance-scorecard"
   },
   "fc2cc2d7-c0e6-4a2c-b0e8-d110914627d2": {
     "id": "fc2cc2d7-c0e6-4a2c-b0e8-d110914627d2",
@@ -446,7 +457,8 @@
         "name": "Quantity and unit of measure",
         "description": "How much of each item is being shipped and in what unit."
       }
-    ]
+    ],
+    "path": "advance-ship-notice-asn-edi-856"
   },
   "3877cc5e-51b7-411c-8dd0-f3cbfd93306d": {
     "id": "3877cc5e-51b7-411c-8dd0-f3cbfd93306d",
@@ -488,7 +500,8 @@
         "name": "Dock personnel who logged the receipt",
         "description": "Who created the entry, typically dock staff rather than QA."
       }
-    ]
+    ],
+    "path": "receiving-log"
   },
   "620aaecb-0b8f-4336-8f3e-86716178923b": {
     "id": "620aaecb-0b8f-4336-8f3e-86716178923b",
@@ -526,7 +539,8 @@
         "name": "Associated CCP or lot reference (if applicable)",
         "description": "Where the checkpoint is also a HACCP Critical Control Point, the CCP Definition and/or lot this reading is evidence for."
       }
-    ]
+    ],
+    "path": "temperature-record"
   },
   "49339f48-e8be-4bdb-a9d9-58a6193d1ac9": {
     "id": "49339f48-e8be-4bdb-a9d9-58a6193d1ac9",
@@ -572,7 +586,8 @@
         "name": "Disposition decision",
         "description": "The resulting accept, reject, or hold-pending-testing decision, which determines whether the lot proceeds to putaway or receives a Hold/Quarantine Tag."
       }
-    ]
+    ],
+    "path": "receiving-inspection-record"
   },
   "9019fee0-1775-4638-a520-fece292e426e": {
     "id": "9019fee0-1775-4638-a520-fece292e426e",
@@ -609,7 +624,8 @@
         "name": "Release authorization and date",
         "description": "Who has authority to formally release the hold and when that release occurred, since removal only happens on formal release."
       }
-    ]
+    ],
+    "path": "hold-quarantine-tag"
   },
   "733c42da-63cb-4309-b90f-eada2c4a97f7": {
     "id": "733c42da-63cb-4309-b90f-eada2c4a97f7",
@@ -645,7 +661,8 @@
         "name": "Expiration/best-by date reference",
         "description": "The date used as the core input to FEFO logic for determining pick priority."
       }
-    ]
+    ],
+    "path": "inventory-location-record"
   },
   "e22bc4a2-d974-46c6-ac7b-9c3c1b5b3e04": {
     "id": "e22bc4a2-d974-46c6-ac7b-9c3c1b5b3e04",
@@ -675,7 +692,8 @@
       "29c66c1b-1d4b-4c1a-92b4-2c951493253d",
       "238f08d4-2e35-498a-817d-683f36822b65",
       "429b1edf-4726-4530-b8db-680ec0761622"
-    ]
+    ],
+    "path": "allergen-matrix"
   },
   "29c66c1b-1d4b-4c1a-92b4-2c951493253d": {
     "id": "29c66c1b-1d4b-4c1a-92b4-2c951493253d",
@@ -708,7 +726,8 @@
       "e22bc4a2-d974-46c6-ac7b-9c3c1b5b3e04",
       "238f08d4-2e35-498a-817d-683f36822b65",
       "7e49ad00-a211-4140-a869-d669d929d49e"
-    ]
+    ],
+    "path": "allergen-sequencing-algorithm"
   },
   "88e93798-54de-421a-9d7c-cc54f65d4a47": {
     "id": "88e93798-54de-421a-9d7c-cc54f65d4a47",
@@ -751,7 +770,8 @@
         "name": "Historical actuals reference",
         "description": "Prior-period actual sales/consumption used as the baseline input for the projection."
       }
-    ]
+    ],
+    "path": "demand-forecast"
   },
   "429b1edf-4726-4530-b8db-680ec0761622": {
     "id": "429b1edf-4726-4530-b8db-680ec0761622",
@@ -781,7 +801,8 @@
       "6425e8df-c318-495b-ae4e-a3a81af541f1",
       "d08beab6-1d89-42e5-8f51-c12ddc9dcc93",
       "6eabd20b-f5d1-4efa-9f14-e80efb204c97"
-    ]
+    ],
+    "path": "bill-of-materials-bom-recipe"
   },
   "b6417e04-03ad-400f-bbe3-ba9a111eaeb9": {
     "id": "b6417e04-03ad-400f-bbe3-ba9a111eaeb9",
@@ -826,7 +847,8 @@
         "name": "Schedule version/rebuild date",
         "description": "When this MPS run was generated, since it is rebuilt on a rolling cadence rather than fixed once."
       }
-    ]
+    ],
+    "path": "master-production-schedule-mps"
   },
   "3250a117-60b4-4053-b8cf-bf13f59faa1b": {
     "id": "3250a117-60b4-4053-b8cf-bf13f59faa1b",
@@ -865,7 +887,8 @@
       "3877cc5e-51b7-411c-8dd0-f3cbfd93306d",
       "fc2cc2d7-c0e6-4a2c-b0e8-d110914627d2",
       "b6417e04-03ad-400f-bbe3-ba9a111eaeb9"
-    ]
+    ],
+    "path": "purchase-order-edi-850"
   },
   "6eabd20b-f5d1-4efa-9f14-e80efb204c97": {
     "id": "6eabd20b-f5d1-4efa-9f14-e80efb204c97",
@@ -910,7 +933,8 @@
         "name": "Source MPS line reference",
         "description": "The Master Production Schedule line this work order was released from."
       }
-    ]
+    ],
+    "path": "production-work-order"
   },
   "29b066a1-910f-45b5-bd65-205d53da0ba4": {
     "id": "29b066a1-910f-45b5-bd65-205d53da0ba4",
@@ -956,7 +980,8 @@
         "name": "Open/close timestamps",
         "description": "When the record was opened at batching and closed at run completion."
       }
-    ]
+    ],
+    "path": "batch-production-record"
   },
   "83d48320-9598-4069-b091-c032b4e36fd7": {
     "id": "83d48320-9598-4069-b091-c032b4e36fd7",
@@ -997,7 +1022,8 @@
         "name": "Signoff/authorization",
         "description": "Who verified and cleared the line, and when, since production is not authorized to start until this is signed off."
       }
-    ]
+    ],
+    "path": "line-clearance-record"
   },
   "7a252b54-ea94-4cd4-ac17-c4e00c174340": {
     "id": "7a252b54-ea94-4cd4-ac17-c4e00c174340",
@@ -1012,7 +1038,8 @@
       "e8d03bfb-7a45-46f4-80ee-be037dd5e218",
       "1bdfade9-acc5-4535-891f-87d4cf762f5c",
       "1123026c-158f-41ad-acb2-9f67b6fb4e09"
-    ]
+    ],
+    "path": "haccp-plan"
   },
   "e8d03bfb-7a45-46f4-80ee-be037dd5e218": {
     "id": "e8d03bfb-7a45-46f4-80ee-be037dd5e218",
@@ -1041,7 +1068,8 @@
       "7a252b54-ea94-4cd4-ac17-c4e00c174340",
       "1bdfade9-acc5-4535-891f-87d4cf762f5c",
       "1123026c-158f-41ad-acb2-9f67b6fb4e09"
-    ]
+    ],
+    "path": "ccp-definition"
   },
   "1bdfade9-acc5-4535-891f-87d4cf762f5c": {
     "id": "1bdfade9-acc5-4535-891f-87d4cf762f5c",
@@ -1087,7 +1115,8 @@
         "name": "Operator/system identifier",
         "description": "Who or what recorded the entry, for accountability."
       }
-    ]
+    ],
+    "path": "ccp-monitoring-log"
   },
   "1123026c-158f-41ad-acb2-9f67b6fb4e09": {
     "id": "1123026c-158f-41ad-acb2-9f67b6fb4e09",
@@ -1133,7 +1162,8 @@
         "name": "Responsible party",
         "description": "Who owns and signs off the corrective action."
       }
-    ]
+    ],
+    "path": "corrective-action-record"
   },
   "238f08d4-2e35-498a-817d-683f36822b65": {
     "id": "238f08d4-2e35-498a-817d-683f36822b65",
@@ -1176,7 +1206,8 @@
         "name": "Timestamp and signoff",
         "description": "When the cleaning and verification occurred and who attested to it, since this feeds directly into the Line Clearance Record's sign-off."
       }
-    ]
+    ],
+    "path": "allergen-changeover-cleaning-record"
   },
   "97409332-015e-4473-a32b-26b71bc67d07": {
     "id": "97409332-015e-4473-a32b-26b71bc67d07",
@@ -1217,7 +1248,8 @@
         "name": "Associated environmental swab reference",
         "description": "Where verification includes an environmental swab, the linked Environmental Monitoring Record."
       }
-    ]
+    ],
+    "path": "master-sanitation-schedule-mss"
   },
   "4f930f5c-736e-451e-bd14-7a2b0e9538b1": {
     "id": "4f930f5c-736e-451e-bd14-7a2b0e9538b1",
@@ -1259,7 +1291,8 @@
         "name": "Corrective action reference",
         "description": "Where a positive triggers escalation, the linked Corrective Action Record."
       }
-    ]
+    ],
+    "path": "environmental-monitoring-record"
   },
   "28e2958f-d4ed-42e4-8c0f-0de1c418f5e1": {
     "id": "28e2958f-d4ed-42e4-8c0f-0de1c418f5e1",
@@ -1298,7 +1331,8 @@
     ],
     "relatedIds": [
       "4f930f5c-736e-451e-bd14-7a2b0e9538b1"
-    ]
+    ],
+    "path": "emp-zone-trending-standard"
   },
   "19a94ed7-40fa-43b5-9868-a2ce2e2b1cef": {
     "id": "19a94ed7-40fa-43b5-9868-a2ce2e2b1cef",
@@ -1334,7 +1368,8 @@
         "name": "Out-of-control flag/rule triggered",
         "description": "Which SPC rule (e.g. a run of points trending one direction, points hugging one side of centerline) flagged a developing issue, if any."
       }
-    ]
+    ],
+    "path": "spc-control-chart"
   },
   "209c4879-7b77-46e8-91e2-153eac453a77": {
     "id": "209c4879-7b77-46e8-91e2-153eac453a77",
@@ -1379,7 +1414,8 @@
         "name": "CAPA reference",
         "description": "Link to a CAPA record if the nonconformance recurred or required root-cause investigation."
       }
-    ]
+    ],
+    "path": "nonconformance-record"
   },
   "76dd2e5a-20a8-4f19-8fc1-3b78be49fee3": {
     "id": "76dd2e5a-20a8-4f19-8fc1-3b78be49fee3",
@@ -1427,7 +1463,8 @@
         "name": "Effectiveness verification",
         "description": "The follow-up check confirming the action actually resolved the problem before the record is closed."
       }
-    ]
+    ],
+    "path": "capa-corrective-and-preventive-action-record"
   },
   "9e388600-1312-452b-8d07-3a0efd5202f9": {
     "id": "9e388600-1312-452b-8d07-3a0efd5202f9",
@@ -1462,7 +1499,8 @@
         "name": "Lot reference",
         "description": "The production lot the unit belongs to, tying the weight reading back to the batch."
       }
-    ]
+    ],
+    "path": "catch-weight-record"
   },
   "2e49adf0-dbf5-4625-bfda-b538e7085483": {
     "id": "2e49adf0-dbf5-4625-bfda-b538e7085483",
@@ -1501,7 +1539,8 @@
     ],
     "relatedIds": [
       "9e388600-1312-452b-8d07-3a0efd5202f9"
-    ]
+    ],
+    "path": "catch-weight-data-model"
   },
   "a7ea6ca7-6b6e-4101-beff-e581956d8a36": {
     "id": "a7ea6ca7-6b6e-4101-beff-e581956d8a36",
@@ -1540,7 +1579,8 @@
         "name": "Timestamp",
         "description": "When the inspection event occurred, needed to demonstrate the CCP was monitored at the required frequency."
       }
-    ]
+    ],
+    "path": "package-integrity-foreign-material-inspection-record"
   },
   "6425e8df-c318-495b-ae4e-a3a81af541f1": {
     "id": "6425e8df-c318-495b-ae4e-a3a81af541f1",
@@ -1581,7 +1621,8 @@
         "name": "Revision status",
         "description": "Where the draft stands in QA/regulatory review — pending, sent back for revision, or cleared to proceed to compliance checklist and artwork."
       }
-    ]
+    ],
+    "path": "label-copy-draft"
   },
   "3afd5ba3-988d-462f-836b-b99ec6c661c2": {
     "id": "3afd5ba3-988d-462f-836b-b99ec6c661c2",
@@ -1617,7 +1658,8 @@
         "name": "Date completed",
         "description": "When this checklist item was verified."
       }
-    ]
+    ],
+    "path": "label-compliance-checklist"
   },
   "d1139caf-37bd-4f97-9220-08feba95bdce": {
     "id": "d1139caf-37bd-4f97-9220-08feba95bdce",
@@ -1646,7 +1688,8 @@
     "relatedIds": [
       "3afd5ba3-988d-462f-836b-b99ec6c661c2",
       "56526379-12e6-4c0f-a1fc-bd1c83d9f1a0"
-    ]
+    ],
+    "path": "label-compliance-check-catalog"
   },
   "68a4cc0a-b5c0-4ba4-91de-332c4c74c684": {
     "id": "68a4cc0a-b5c0-4ba4-91de-332c4c74c684",
@@ -1660,7 +1703,8 @@
     "relatedIds": [
       "6425e8df-c318-495b-ae4e-a3a81af541f1",
       "3afd5ba3-988d-462f-836b-b99ec6c661c2"
-    ]
+    ],
+    "path": "label-artwork-file"
   },
   "f6d69f97-18d8-4a0f-b4fb-77c9320edb1d": {
     "id": "f6d69f97-18d8-4a0f-b4fb-77c9320edb1d",
@@ -1691,7 +1735,8 @@
       "3afd5ba3-988d-462f-836b-b99ec6c661c2",
       "d1139caf-37bd-4f97-9220-08feba95bdce",
       "ac08bae1-7153-4c36-9af1-3969ebe48a4e"
-    ]
+    ],
+    "path": "fsis-label-submission"
   },
   "ffb44422-779f-4bc8-86be-ff6fa6d73d68": {
     "id": "ffb44422-779f-4bc8-86be-ff6fa6d73d68",
@@ -1730,7 +1775,8 @@
         "name": "Coding equipment identifier",
         "description": "Which line coder/printer (ink-jet, laser, or thermal transfer) generated the code."
       }
-    ]
+    ],
+    "path": "lot-date-code-record"
   },
   "f2777655-3ff5-43b8-9e51-494f0704b2a6": {
     "id": "f2777655-3ff5-43b8-9e51-494f0704b2a6",
@@ -1761,7 +1807,8 @@
       "ffb44422-779f-4bc8-86be-ff6fa6d73d68",
       "68a4cc0a-b5c0-4ba4-91de-332c4c74c684",
       "26fc29f0-5637-42ef-87bd-820d14c68eb6"
-    ]
+    ],
+    "path": "label-application-verification-record"
   },
   "70dd593f-d5f5-4ef5-8e57-decefe3ba0a5": {
     "id": "70dd593f-d5f5-4ef5-8e57-decefe3ba0a5",
@@ -1802,7 +1849,8 @@
         "name": "Allocation outcome",
         "description": "Whether the lot was allocated to this order, diverted to a different customer, discounted, or written off."
       }
-    ]
+    ],
+    "path": "shelf-life-remaining-shelf-life-record"
   },
   "551a4e09-160c-4f45-ac51-2000370afcab": {
     "id": "551a4e09-160c-4f45-ac51-2000370afcab",
@@ -1841,7 +1889,8 @@
         "name": "Reference document type/number",
         "description": "The shipping document (e.g. bill of lading, ASN) tying the physical shipment to this record — a required Shipping KDE."
       }
-    ]
+    ],
+    "path": "shipping-record"
   },
   "b5e32a3a-afdb-4264-a583-9bfcf21d6999": {
     "id": "b5e32a3a-afdb-4264-a583-9bfcf21d6999",
@@ -1892,7 +1941,8 @@
       "1188e42e-3097-4203-b657-0f88020f34f0",
       "93b63909-560d-4414-8cb4-0920241e45a4",
       "620aaecb-0b8f-4336-8f3e-86716178923b"
-    ]
+    ],
+    "path": "carrier-handoff-kde-set"
   },
   "9cc2d1ff-a495-474c-bc2d-5615fe7e94bb": {
     "id": "9cc2d1ff-a495-474c-bc2d-5615fe7e94bb",
@@ -1927,7 +1977,8 @@
         "name": "Food Traceability List item reference",
         "description": "The specific FTL-covered food this TLC applies to, since the rule's TLC obligations apply only to items on that list."
       }
-    ]
+    ],
+    "path": "traceability-lot-code-tlc-record"
   },
   "1188e42e-3097-4203-b657-0f88020f34f0": {
     "id": "1188e42e-3097-4203-b657-0f88020f34f0",
@@ -1961,7 +2012,8 @@
         "name": "Why",
         "description": "The business context of the event — e.g. shipping, receiving, or a transformation step — mapped to the corresponding FSMA 204 Critical Tracking Event."
       }
-    ]
+    ],
+    "path": "epcis-event"
   },
   "4c3d5e6f-7a8b-4c9d-0e1f-2a3b4c5d6e7a": {
     "id": "4c3d5e6f-7a8b-4c9d-0e1f-2a3b4c5d6e7a",
@@ -2000,7 +2052,8 @@
         "name": "Disposition",
         "description": "Pass, or the corrective action taken for a mismatched/miscounted case (rework, hold, reject)."
       }
-    ]
+    ],
+    "path": "case-pack-configuration-verification-record"
   },
   "5d4e6f7a-8b9c-4d0e-1f2a-3b4c5d6e7f8b": {
     "id": "5d4e6f7a-8b9c-4d0e-1f2a-3b4c5d6e7f8b",
@@ -2039,7 +2092,8 @@
         "name": "Timestamp",
         "description": "When the override occurred."
       }
-    ]
+    ],
+    "path": "fefo-exception-override-log"
   },
   "7e7db815-8cfb-429d-be62-3f35e49fd6e3": {
     "id": "7e7db815-8cfb-429d-be62-3f35e49fd6e3",
@@ -2081,7 +2135,8 @@
         "name": "Next scheduled PM date",
         "description": "When the next planned maintenance interval falls due."
       }
-    ]
+    ],
+    "path": "preventive-maintenance-record"
   },
   "2d8b96d5-f9ba-4de5-a60b-0da0f60afaec": {
     "id": "2d8b96d5-f9ba-4de5-a60b-0da0f60afaec",
@@ -2123,6 +2178,7 @@
         "name": "Recertification due date",
         "description": "When this qualification must be renewed, per the facility's own retraining cadence."
       }
-    ]
+    ],
+    "path": "training-qualification-record"
   }
 }

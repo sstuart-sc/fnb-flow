@@ -13,12 +13,9 @@ Built with Vue 3 + Vite.
 ```
 src/    — Vue components, composables, and router
 public/ — static assets and the data the viewer renders (public/data/)
-docs/   — planning doc and content standards
+docs/   — content standards
 ```
 
-- **[`docs/food-mfg-stream-map-plan.md`](docs/food-mfg-stream-map-plan.md)** —
-  the project plan: schema, phased build-out, and the nested-flow gating
-  rationale (which steps get implementation-grade detail today, and why).
 - **[`docs/content-standards.md`](docs/content-standards.md)** — sourcing and
   content-quality bar for any new data added under `public/data/core`.
 

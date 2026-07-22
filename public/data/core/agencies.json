@@ -11,7 +11,8 @@
     "sourceIds": [
       "4ff0437a-4708-4a82-9ad1-3871f55b2fff",
       "0b5a11ed-f395-4fa2-87f5-9387207c02fd"
-    ]
+    ],
+    "path": "fda"
   },
   "aac69997-d9a2-4428-860f-1d8813e9ba5a": {
     "id": "aac69997-d9a2-4428-860f-1d8813e9ba5a",
@@ -23,7 +24,8 @@
     "sourceIds": [
       "37bf5ebf-47ce-4e8a-9052-93d8eade2b5f",
       "bcf4d03b-bac6-4217-bb3d-5b04c24dd48f"
-    ]
+    ],
+    "path": "usda-fsis"
   },
   "c8b293a1-17bc-42b2-b023-7d0c6dba905d": {
     "id": "c8b293a1-17bc-42b2-b023-7d0c6dba905d",
@@ -35,7 +37,8 @@
     "sourceIds": [
       "30e9f383-71e7-4b37-9c98-e6679c982f25",
       "54f9b1c2-339d-484d-a76b-ddb53931fc08"
-    ]
+    ],
+    "path": "usda-ams"
   },
   "49089417-12e3-4123-8005-9e169c1ed9ce": {
     "id": "49089417-12e3-4123-8005-9e169c1ed9ce",
@@ -47,7 +50,8 @@
     "sourceIds": [
       "a513ecce-17b3-40de-97fe-330f48f3e669",
       "bd24a8e8-29cd-4369-b0fb-5a0f34a6235d"
-    ]
+    ],
+    "path": "epa"
   },
   "fa6a738b-947e-4ff9-a3cf-9b076e39a7a7": {
     "id": "fa6a738b-947e-4ff9-a3cf-9b076e39a7a7",
@@ -58,7 +62,8 @@
     "keyOffices": [],
     "sourceIds": [
       "5270eda2-77d9-4497-bcf3-5c27e681c78a"
-    ]
+    ],
+    "path": "ttb"
   },
   "3c72b77c-84b1-4fc5-88bc-7a97193e2ffe": {
     "id": "3c72b77c-84b1-4fc5-88bc-7a97193e2ffe",
@@ -69,7 +74,8 @@
     "keyOffices": [],
     "sourceIds": [
       "1690475b-ce2c-48e8-97d8-c971136d1b9b"
-    ]
+    ],
+    "path": "ftc"
   },
   "57ebd4ad-028d-49a4-9840-805e858231d7": {
     "id": "57ebd4ad-028d-49a4-9840-805e858231d7",
@@ -81,7 +87,8 @@
     "sourceIds": [
       "18857130-e665-46e4-817a-bc9bca24767c",
       "dae96c92-1d7e-463e-a37d-7c9c92177079"
-    ]
+    ],
+    "path": "state-local-agencies"
   },
   "2ba049e2-d8dd-4172-b13b-5830326ab4ad": {
     "id": "2ba049e2-d8dd-4172-b13b-5830326ab4ad",
@@ -93,7 +100,8 @@
     "sourceIds": [
       "b86367cd-92f4-4447-886a-12fc38f32196",
       "b4a19aed-f8e7-4e34-812d-cecd8ae8a23f"
-    ]
+    ],
+    "path": "cdc"
   },
   "2ba804d3-9dc2-4848-94d1-f48c41ad9703": {
     "id": "2ba804d3-9dc2-4848-94d1-f48c41ad9703",
@@ -105,7 +113,8 @@
     "sourceIds": [
       "9de163da-25db-489c-b6c9-30a755bec241",
       "f29ea385-f063-431d-834e-a5d7eac523f8"
-    ]
+    ],
+    "path": "gs1"
   },
   "3b121647-ec9f-444c-9084-8a6637d357da": {
     "id": "3b121647-ec9f-444c-9084-8a6637d357da",
@@ -117,7 +126,8 @@
     "sourceIds": [
       "10d4f375-5d74-4952-b95e-e5655ba2aad6",
       "221354f6-184a-4347-9632-e5f4510319de"
-    ]
+    ],
+    "path": "gfsi"
   },
   "425f7abc-b53d-413d-b5ba-abfa92280e1c": {
     "id": "425f7abc-b53d-413d-b5ba-abfa92280e1c",
@@ -129,7 +139,8 @@
     "sourceIds": [
       "6887f31d-a76f-4c46-8aa1-dc7b30c47b27",
       "086b4e33-b8da-4f0b-a2df-e5b94639a8c6"
-    ]
+    ],
+    "path": "osha"
   },
   "9c1e2f3a-4b5c-4d6e-8f7a-1b2c3d4e5f6a": {
     "id": "9c1e2f3a-4b5c-4d6e-8f7a-1b2c3d4e5f6a",
@@ -140,6 +151,7 @@
     "keyOffices": [],
     "sourceIds": [
       "0f348398-32a4-4ff9-9c34-90f1fd807870"
-    ]
+    ],
+    "path": "cbp"
   }
 }

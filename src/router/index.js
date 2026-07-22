@@ -2,6 +2,10 @@ import { createRouter, createWebHashHistory } from "vue-router";
 import BrowseView from "../components/BrowseView.vue";
 import SearchView from "../components/SearchView.vue";
 import SourcesView from "../components/SourcesView.vue";
+import CollectionView from "../components/CollectionView.vue";
+import ItemDetailView from "../components/ItemDetailView.vue";
+
+const COLLECTION_ROUTE_NAMES = ["regulations", "agencies", "systems", "artifacts", "materials"];
 
 // Existing hash shape (preserved from the vanilla router):
 //   #/flow/<flowPath>
@@ -14,9 +18,25 @@ import SourcesView from "../components/SourcesView.vue";
 // (minus the leading #), so a single repeating "/flow/:path/step/:path/..."
 // pattern needs a wildcard match — captured here as a single `crumbs` param
 // split on "/", parsed the same way the old router.js parsed `parts`.
+const collectionRoutes = COLLECTION_ROUTE_NAMES.flatMap((collectionName) => [
+  {
+    path: `/${collectionName}`,
+    name: collectionName,
+    component: CollectionView,
+    props: { collectionName },
+  },
+  {
+    path: `/${collectionName}/:path`,
+    name: `${collectionName}-detail`,
+    component: ItemDetailView,
+    props: (route) => ({ collectionName, path: route.params.path }),
+  },
+]);
+
 const routes = [
   { path: "/search/:query*", name: "search", component: SearchView, props: true },
   { path: "/sources", name: "sources", component: SourcesView },
+  ...collectionRoutes,
   { path: "/flow/:crumbs+", name: "browse", component: BrowseView },
   { path: "/", redirect: "/flow/primary-flow" },
 ];
@@ -73,4 +93,12 @@ export function goToSearch(router, query) {
 
 export function goToSources(router) {
   router.push("/sources");
+}
+
+export function goToCollection(router, collectionName) {
+  router.push(`/${collectionName}`);
+}
+
+export function goToItem(router, collectionName, path) {
+  router.push(`/${collectionName}/${encodeURIComponent(path)}`);
 }

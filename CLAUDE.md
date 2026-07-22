@@ -10,11 +10,7 @@ carrying implementation-grade detail for the slice currently in scope
 (SafetyChain's operational surface: receiving through finished goods leaving
 the dock). Built with Vue 3 + Vite.
 
-**Start any new content/data session by reading
-[`docs/food-mfg-stream-map-plan.md`](docs/food-mfg-stream-map-plan.md)
-section 10 (progress log) then section 11 (next steps)** — it is the living
-source of truth for what's done, what's in progress, and why past decisions
-were made. Read [`docs/content-standards.md`](docs/content-standards.md)
+Read [`docs/content-standards.md`](docs/content-standards.md)
 before writing or backfilling any content in `public/data/core`.
 
 ## Commands
@@ -62,18 +58,25 @@ collapse it back into one field:
 - **`id`** — opaque UUIDv4, assigned once, never renamed. The *only* thing
   any relational reference (`stepIds`, `regulationIds`, `nestedFlowId`, etc.)
   points to.
-- **`path`** — human-readable, routable string. Only `flows` and `steps`
-  have one; the router puts `path` values in the URL hash, never `id`.
+- **`path`** — human-readable, routable string. `flows` and `steps` have had
+  one from the start; `regulations`, `agencies`, `systems`, `artifacts`, and
+  `materials` also carry one, added to support standalone browse/detail
+  pages for those 5 collections (`CollectionView.vue`/`ItemDetailView.vue`).
+  This is a deliberate, bounded exception — `roles`, `threads`, and `sources`
+  still have no `path` and aren't routable on their own (`threads` keeps its
+  separate `key` exception below; `roles`/`sources` are browsed/opened
+  in-context only). Don't add `path` to a collection without a concrete
+  routable page behind it.
 - **`key`** — narrow exception, only on `threads.json` (`sanitation`,
   `traceability`, `recall`, `allergen-control`). Load-bearing as a CSS
   class-name suffix (`thread-dot--sanitation`), not routable so not a
-  `path`. No other collection has a slug of any kind.
+  `path`.
 
 All path↔id translation is confined to
 [`src/composables/useData.js`](src/composables/useData.js)
-(`flowIdForPath`/`stepIdForPath`) — components and the router work with
-paths for navigation and ids for lookup, and should never do their own
-string-matching against data values.
+(`flowIdForPath`/`stepIdForPath`/`idForCollectionPath`) — components and the
+router work with paths for navigation and ids for lookup, and should never
+do their own string-matching against data values.
 
 `systems.json` (core) is vendor-neutral by design ("a QMS platform," not
 "SafetyChain QMS"). Vendor-specific claims live only in
@@ -96,8 +99,15 @@ Hash-based (`createWebHashHistory`), defined in
 `/flow/:path/step/:path/...` crumb trail, parsed by `parseCrumbs` into the
 same `[{type: "flow", flowPath} | {type: "step", stepPath}]` array used
 everywhere downstream (breadcrumbs, `OrientationPanel`). Use the `goToFlow` /
-`goToStep` / `goToNestedFlow` / `goToCrumb` / `goToSearch` / `goToSources`
-helpers to navigate rather than constructing paths by hand.
+`goToStep` / `goToNestedFlow` / `goToCrumb` / `goToSearch` / `goToSources` /
+`goToCollection` / `goToItem` helpers to navigate rather than constructing
+paths by hand.
+
+The 5 collections with a `path` (regulations/agencies/systems/artifacts/
+materials) each get a flat, non-crumb route pair: `/<collectionName>` (list,
+`CollectionView.vue`) and `/<collectionName>/:path` (detail,
+`ItemDetailView.vue`), generated in a loop in `router/index.js` rather than
+hand-written per collection.
 
 ### Modals
 
@@ -105,15 +115,24 @@ helpers to navigate rather than constructing paths by hand.
 single shared `reactive` `modalState` (detail modal + source modal) so any
 component — including related-item chips inside `DetailModal` itself — can
 open either modal without prop drilling. Opening one modal closes the other.
+`DetailModal` is a lightweight preview only — for any item with a `path`, it
+has a "View full page" link to that item's routable `ItemDetailView.vue`
+page (fuller detail, plus a "Referenced by steps" reverse lookup that
+doesn't fit a modal). `DetailModal`'s own related-item chips still open
+another modal (modal-chaining); only `ItemDetailView`'s related chips
+navigate to a full page.
 
 ### Search
 
 [`src/composables/useSearchIndex.js`](src/composables/useSearchIndex.js)
 builds a flat in-memory index (steps + artifacts/regulations/systems/
-materials/agencies/roles) once per data load, tagging each entry with the
-step that owns it (via `artifactIds`/`materialIds`/`systemIds` reverse
-lookup) so a result can route straight to step detail. Uses Fuse.js for
-fuzzy matching, with `simpleMatch` as a plain substring fallback.
+materials/agencies/roles) once per data load. Items from the 5 collections
+with their own `path` route straight to that item's own page; roles (and any
+future non-slugged collection) fall back to routing via the first step that
+references them, using the generalized `buildStepReverseIndex` (in
+`useData.js`) rather than a single-owner assumption — a regulation or
+agency is commonly referenced by several steps, not just one. Uses Fuse.js
+for fuzzy matching, with `simpleMatch` as a plain substring fallback.
 
 ## Content work (editing `public/data/core/*.json`)
 

@@ -1,6 +1,10 @@
+import { buildStepReverseIndex } from "./useData";
+
 // Flat searchable index built once per data load: every artifact, regulation,
-// system, material, agency, and step name/summary, tagged with its owning step
-// so a result can route straight to step detail.
+// system, material, agency, role, and step name/summary. Items from the 5
+// collections with their own detail page (path present) carry enough to
+// route straight there; roles (no path) and the owning-step hint for
+// everything else fall back to routing via the first referencing step.
 export function buildSearchIndex(data) {
   const entries = [];
 
@@ -9,6 +13,9 @@ export function buildSearchIndex(data) {
       type: "Step",
       name: step.name,
       meta: step.summary,
+      collectionName: "steps",
+      itemId: step.id,
+      path: step.path,
       stepId: step.id,
     });
   }
@@ -22,22 +29,19 @@ export function buildSearchIndex(data) {
     roles: { type: "Role", labelField: "name", metaField: "summary" },
   };
 
-  const idToOwningStep = {};
-  for (const step of Object.values(data.steps)) {
-    for (const key of ["artifactIds", "materialIds", "systemIds"]) {
-      for (const id of step[key] || []) {
-        idToOwningStep[id] = step.id;
-      }
-    }
-  }
+  const reverseIndex = buildStepReverseIndex(data);
 
   for (const [collectionName, meta] of Object.entries(collectionMeta)) {
     for (const item of Object.values(data[collectionName])) {
+      const referencingSteps = reverseIndex[item.id] || [];
       entries.push({
         type: meta.type,
         name: item[meta.labelField],
         meta: item[meta.metaField] || "",
-        stepId: idToOwningStep[item.id] || null,
+        collectionName,
+        itemId: item.id,
+        path: item.path || null,
+        stepId: referencingSteps[0]?.id || null,
       });
     }
   }

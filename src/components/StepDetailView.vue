@@ -1,7 +1,7 @@
 <script setup>
 import { computed } from "vue";
 import { useRouter } from "vue-router";
-import { resolveList, stepsForFlow, displayFlowName } from "../composables/useData";
+import { resolveList, stepsForFlow } from "../composables/useData";
 import { goToStep } from "../router";
 import FlowNodeRow from "./FlowNodeRow.vue";
 import ListCard from "./ListCard.vue";
@@ -64,13 +64,12 @@ function onSelectChild(childStep) {
     </div>
 
     <div v-if="step.nestedFlowId" class="nested-flow-preview">
-      <h3 class="nested-flow-preview__heading">{{ nestedFlow ? displayFlowName(nestedFlow) : "Nested flow" }}</h3>
       <FlowNodeRow :data="data" :steps="nestedSteps" :active-step-id="null" size="compact" @select="onSelectChild" />
     </div>
 
     <div class="detail-grid">
-      <ListCard title="Regulations" :items="regulations" :map-fn="nameOf" />
-      <ListCard title="Agencies" :items="agencies" :map-fn="nameOf" />
+      <ListCard title="Regulations" :items="regulations" :map-fn="nameOf" detail-collection="regulations" />
+      <ListCard title="Agencies" :items="agencies" :map-fn="nameOf" detail-collection="agencies" />
       <ListCard title="Roles" :items="roles" :map-fn="nameOf" />
     </div>
 

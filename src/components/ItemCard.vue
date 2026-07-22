@@ -8,8 +8,12 @@ const props = defineProps({
   detailCollection: { type: String, default: null },
 });
 
+// Mirrors DetailModal's own description fallback chain — a card only opens
+// the modal if there's actually something in it worth showing.
 const hasDetail = computed(
-  () => !!props.detailCollection && (props.item.description || props.item.fields?.length)
+  () =>
+    !!props.detailCollection &&
+    !!(props.item.description || props.item.lifecycle || props.item.notes || props.item.summary || props.item.fields?.length)
 );
 
 function open() {

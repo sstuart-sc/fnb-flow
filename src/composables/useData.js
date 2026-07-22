@@ -39,9 +39,21 @@ export function loadAllData() {
     const stepIdByPath = {};
     for (const step of Object.values(steps)) stepIdByPath[step.path] = step.id;
 
+    // Same id/path split as flows/steps, extended to the 5 reference
+    // collections that have their own browse/detail pages. Grouped under one
+    // key rather than 5 more top-level exports.
+    const pathCollections = { regulations, agencies, systems, artifacts, materials };
+    const pathByCollection = {};
+    for (const [collectionName, collection] of Object.entries(pathCollections)) {
+      pathByCollection[collectionName] = {};
+      for (const item of Object.values(collection)) {
+        pathByCollection[collectionName][item.path] = item.id;
+      }
+    }
+
     return {
       flows, steps, threads, artifacts, regulations, agencies, materials, roles, systems, sources, safetychain,
-      flowIdByPath, stepIdByPath,
+      flowIdByPath, stepIdByPath, pathByCollection,
     };
   })();
 
@@ -72,6 +84,10 @@ export function stepIdForPath(data, path) {
   return data.stepIdByPath[path];
 }
 
+export function idForCollectionPath(data, collectionName, path) {
+  return data.pathByCollection[collectionName]?.[path];
+}
+
 export function stepsForFlow(data, flowId) {
   const flow = getFlow(data, flowId);
   if (!flow) return [];
@@ -85,6 +101,23 @@ export function resolveList(data, collectionName, ids) {
 
 export function safetychainModulesForStep(data, stepId) {
   return data.safetychain.modules.filter((m) => m.mapsToStepIds?.includes(stepId));
+}
+
+const REVERSE_INDEX_KEYS = ["artifactIds", "materialIds", "systemIds", "regulationIds", "agencyIds"];
+
+// itemId -> Step[] referencing it. A regulation or agency is commonly cited
+// by several steps (unlike artifacts/materials/systems, which usually have
+// one owning step), so this must return a list, not a single owner.
+export function buildStepReverseIndex(data) {
+  const index = {};
+  for (const step of Object.values(data.steps)) {
+    for (const key of REVERSE_INDEX_KEYS) {
+      for (const id of step[key] || []) {
+        (index[id] ||= []).push(step);
+      }
+    }
+  }
+  return index;
 }
 
 // Steps don't carry a parent pointer, so finding the step that owns a nested

@@ -1,10 +1,14 @@
 <script setup>
-import { computed, onMounted, onUnmounted, ref, watch } from "vue";
+import { computed } from "vue";
 import { useRouter } from "vue-router";
-import { modalState, closeDetailModal, openDetailModal } from "../composables/useModals";
-import { goToItem } from "../router";
+import { idForCollectionPath, buildStepReverseIndex, crumbsForFlow } from "../composables/useData";
+import { goToItem, goToStep } from "../router";
 
-const props = defineProps({ data: { type: Object, required: true } });
+const props = defineProps({
+  data: { type: Object, required: true },
+  collectionName: { type: String, required: true },
+  path: { type: String, required: true },
+});
 
 const router = useRouter();
 
@@ -16,11 +20,10 @@ const COLLECTION_LABEL = {
   agencies: "Agency",
 };
 
-const closeBtn = ref(null);
+const itemId = computed(() => idForCollectionPath(props.data, props.collectionName, props.path));
+const item = computed(() => props.data[props.collectionName]?.[itemId.value]);
+const kicker = computed(() => COLLECTION_LABEL[props.collectionName] || props.collectionName);
 
-const entry = computed(() => modalState.detail);
-const item = computed(() => entry.value?.item);
-const kicker = computed(() => COLLECTION_LABEL[entry.value?.collectionName] || entry.value?.collectionName);
 const description = computed(() => {
   const it = item.value;
   if (!it) return null;
@@ -45,43 +48,31 @@ const sources = computed(() => {
   return item.value.sourceIds.map((id) => props.data.sources?.[id]).filter(Boolean);
 });
 
-function onKeydown(e) {
-  if (e.key === "Escape" && entry.value) closeDetailModal();
-}
-
-onMounted(() => document.addEventListener("keydown", onKeydown));
-onUnmounted(() => document.removeEventListener("keydown", onKeydown));
-
-watch(entry, async (val) => {
-  if (val) {
-    await new Promise((r) => requestAnimationFrame(r));
-    closeBtn.value?.focus();
-  }
+const referencingSteps = computed(() => {
+  if (!itemId.value) return [];
+  const reverseIndex = buildStepReverseIndex(props.data);
+  return reverseIndex[itemId.value] || [];
 });
 
-function onOverlayClick(e) {
-  if (e.target === e.currentTarget) closeDetailModal();
+function onRelatedClick(related) {
+  if (!related.item.path) return;
+  goToItem(router, related.collection, related.item.path);
 }
 
-function onViewFullPage() {
-  const collectionName = entry.value.collectionName;
-  const path = item.value.path;
-  closeDetailModal();
-  goToItem(router, collectionName, path);
+function onStepClick(step) {
+  goToStep(router, crumbsForFlow(props.data, step.flowId), step.path);
 }
 </script>
 
 <template>
-  <div v-if="entry" class="modal-overlay" @click="onOverlayClick">
-    <div class="modal modal--detail" role="dialog" aria-modal="true">
-      <div class="modal__kicker">{{ kicker }}</div>
-      <h3 class="modal__heading">{{ item.name }}</h3>
-      <button
-        v-if="item.path"
-        type="button"
-        class="modal__view-full-page"
-        @click="onViewFullPage"
-      >View full page →</button>
+  <p v-if="!item" class="empty-state">
+    {{ kicker }} "{{ path }}" not found.
+  </p>
+  <template v-else>
+    <div class="modal__kicker">{{ kicker }}</div>
+    <h2 class="flow-view__title">{{ item.name }}</h2>
+
+    <div class="item-detail-card">
       <p v-if="description" class="modal__description">{{ description }}</p>
 
       <div v-if="item.fields?.length" class="modal__section">
@@ -102,8 +93,22 @@ function onViewFullPage() {
             :key="related.item.id"
             type="button"
             class="related-chip"
-            @click="openDetailModal(related.collection, related.item)"
+            @click="onRelatedClick(related)"
           >{{ related.item.name }}</button>
+        </div>
+      </div>
+
+      <div class="modal__section">
+        <h4>Referenced by steps</h4>
+        <p v-if="!referencingSteps.length" class="empty-note">Not referenced by any step at this depth.</p>
+        <div v-else class="modal__related-chips">
+          <button
+            v-for="step in referencingSteps"
+            :key="step.id"
+            type="button"
+            class="related-chip"
+            @click="onStepClick(step)"
+          >{{ step.name }}</button>
         </div>
       </div>
 
@@ -124,14 +129,6 @@ function onViewFullPage() {
           </div>
         </div>
       </details>
-
-      <button
-        ref="closeBtn"
-        type="button"
-        class="modal__close"
-        aria-label="Close"
-        @click="closeDetailModal"
-      >×</button>
     </div>
-  </div>
+  </template>
 </template>

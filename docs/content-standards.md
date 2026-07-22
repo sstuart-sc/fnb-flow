@@ -3,10 +3,8 @@
 Governs what "good" looks like for any record added to `app/data/core/*.json`
 (or `app/data/products/*.json`) — regulations, agencies, roles, threads,
 flows, steps, artifacts, materials, systems, sources. Read this before
-writing new content or backfilling existing records (plan doc section 11,
-items 8–10). Schema shape itself (field names, `id`/`path`/`key` identity
-model) is defined in [`food-mfg-stream-map-plan.md`](food-mfg-stream-map-plan.md)
-section 5/5a — this document is about content *quality*, not structure.
+writing new content or backfilling existing records. This document is about
+content *quality*, not structure.
 
 ## 1. Scope fit — does this belong at all
 
@@ -157,6 +155,21 @@ all core files still resolves (see plan section 10's progress-log entries
 for the shape of the validation script used during past passes — throwaway
 scratchpad script is fine, it doesn't need to be committed, but it does
 need to actually run).
+
+## 5a. `path` for regulations/agencies/systems/artifacts/materials
+
+These 5 collections carry a `path` (routable slug) alongside `id`, backing
+their own browse/detail pages — see CLAUDE.md's Architecture section for
+why only these 5 (plus flows/steps) have one. When adding a new record to
+any of these files:
+
+- Derive `path` from `name`: lowercase, trim, collapse runs of non-alphanumeric
+  characters to a single hyphen, strip any leading/trailing hyphen.
+- Confirm it's unique *within that file* before committing — cross-collection
+  collisions are fine, since routes are namespaced by collection
+  (`/artifacts/scale` and `/materials/scale` can coexist).
+- Like flows/steps, `path` is assigned once and never renamed after the fact
+  — a relational reference is never allowed to point at it, only at `id`.
 
 ## 6. What "done" looks like for a new or backfilled record
 
