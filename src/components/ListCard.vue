@@ -18,8 +18,7 @@ const props = defineProps({
         v-for="item in items"
         :key="item.id"
         :item="item"
-        :name="mapFn(item).name"
-        :meta="mapFn(item).meta"
+        :name="mapFn(item)"
         :detail-collection="detailCollection"
       />
     </ul>

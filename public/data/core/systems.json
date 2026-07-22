@@ -84,10 +84,11 @@
       "Cority",
       "Ideagen",
       "ComplianceMate",
-      "Corvium"
+      "Neogen Analytics (formerly Corvium)"
     ],
     "sourceIds": [
-      "9ea3e8c2-c580-4f66-a446-3c9f9104cc1d"
+      "9ea3e8c2-c580-4f66-a446-3c9f9104cc1d",
+      "1fe3a2e7-4cc8-4ec1-b7e5-daa97c3dc2d7"
     ],
     "description": "QMS / food safety software is the digital home for the plant's food-safety and quality management system: the HACCP plan itself, the CCP monitoring and corrective-action records generated as production runs, CAPA workflows for nonconformances, document and record control (SOPs, specs, training records), internal audit management, and often supplier qualification data as well. Where MES captures process data at the point of the line, QMS is usually where that data (and manually entered checks that have no PLC source) gets reviewed, exception-managed, and retained as the auditable record a regulator or third-party certification auditor will ask to see. Because HACCP, supplier management, and labeling all generate records that need retention and review, QMS platforms in this space commonly span several of those domains rather than specializing in just one.",
     "relatedIds": [
@@ -104,9 +105,15 @@
     "name": "LIMS (Laboratory Information Management System)",
     "category": "Laboratory",
     "summary": "Manages sample intake, test result capture, and comparison against specification limits for micro, chemical, and physical testing.",
-    "examplePlatforms": [],
+    "examplePlatforms": [
+      "LabWare",
+      "STARLIMS",
+      "LabVantage",
+      "Thermo Fisher SampleManager"
+    ],
     "sourceIds": [
-      "49663ec7-cffb-4c54-b89f-3a2bebc3c2b2"
+      "49663ec7-cffb-4c54-b89f-3a2bebc3c2b2",
+      "f5b208bb-84ad-4c3a-9f80-47913b447491"
     ],
     "description": "LIMS manages the lifecycle of a lab sample: logging intake (what material, what lot, what test panel is required), tracking the sample through analytical testing (microbiological, chemical, physical), capturing the resulting test values, and automatically comparing those values against the specification limits defined for that material or product. LIMS typically drives the hold/release decision that gates whether a lot can move to the next step (e.g., a raw material can't be used, or a finished lot can't ship, until LIMS shows all required results within spec), and it is the system most directly upstream of the Lab Test Result and Certificate of Analysis records used elsewhere in the plant.",
     "relatedIds": [
@@ -195,10 +202,14 @@
     "name": "Production Scheduling System",
     "category": "Production Planning",
     "summary": "Optimizes the production schedule across equipment capacity, changeover time (including allergen changeovers), raw material availability, shelf life, and delivery deadlines. Often integrated with ERP.",
-    "examplePlatforms": [],
+    "examplePlatforms": [
+      "PlanetTogether (CAI)",
+      "Siemens Opcenter (formerly Preactor)"
+    ],
     "sourceIds": [
       "0e3f3b1c-c41a-486e-9fdb-691f542734cb",
-      "a43f873f-01f6-489b-ab25-293f6dc04bbe"
+      "a43f873f-01f6-489b-ab25-293f6dc04bbe",
+      "8406cc4a-f8f7-4a43-8f9f-e6223711bb31"
     ],
     "description": "A production scheduling system (often called Advanced Planning & Scheduling, or APS) sits above simple ERP order sequencing to solve the harder combinatorial problem of ordering production runs across constraints that interact with each other: available equipment capacity, changeover time between runs (which is especially costly when it involves an allergen changeover requiring full cleaning and verification), raw material availability and shelf life, and outbound delivery deadlines. Scheduling allergen changeovers well is a particularly food-and-beverage-specific problem, since sequencing runs from fewer-allergen to more-allergen products (rather than the reverse) can reduce the cleaning burden between runs; this system is typically where that sequencing logic gets applied at the schedule level, working from the ERP-level Master Production Schedule down to an executable line-by-line sequence.",
     "relatedIds": [
@@ -213,9 +224,13 @@
     "name": "Formulation / Recipe Management System",
     "category": "Formulation",
     "summary": "Maintains version-controlled BOMs/recipes as the source of truth for nutrition calculation, allergen content, and MRP.",
-    "examplePlatforms": [],
+    "examplePlatforms": [
+      "Genesis R&D (ESHA/Trustwell)",
+      "Vicinity Software"
+    ],
     "sourceIds": [
-      "a6bb949d-d869-4c5d-8de7-bb74e2859b5e"
+      "a6bb949d-d869-4c5d-8de7-bb74e2859b5e",
+      "0a0dae24-63cd-4e14-9486-51f03b2e12f5"
     ],
     "description": "A formulation/recipe management system is the single source of truth for a product's exact composition, held as a version-controlled bill of materials rather than a static document. Every downstream calculation that depends on formula composition - nutrition facts panel generation, allergen declaration, cost rollups, and MRP demand for raw materials - pulls from this system rather than each maintaining its own separate copy, so that a single formula change propagates consistently everywhere it matters instead of requiring parallel manual updates across nutrition, labeling, and planning teams. Version control matters specifically because a plant needs to know which formula version was actually in effect for a given historical batch, not just what the current formula is.",
     "relatedIds": [
@@ -241,6 +256,45 @@
       "3250a117-60b4-4053-b8cf-bf13f59faa1b",
       "fc2cc2d7-c0e6-4a2c-b0e8-d110914627d2",
       "798d71ae-178b-4f6b-bd3d-c3b58bd2013b"
+    ]
+  },
+  "9831aefd-1733-472a-b8e0-954c68512132": {
+    "id": "9831aefd-1733-472a-b8e0-954c68512132",
+    "name": "Training / LMS (Learning Management System)",
+    "category": "Training Management",
+    "summary": "Tracks food-safety and GMP training assignments, completion, and certification records per role, and evidences that personnel handling CCPs and food-safety tasks are qualified as required by law.",
+    "examplePlatforms": [
+      "Alchemy (Intertek Alchemy)",
+      "ComplianceMate",
+      "SafetyCulture (formerly iAuditor)"
+    ],
+    "sourceIds": [
+      "22fa4bf3-b797-4f1b-be0d-a1342f9b2f8c",
+      "5a0c77cc-b360-4d0e-8ecc-5bc412384ae6"
+    ],
+    "description": "A Training/LMS platform manages the assignment, completion tracking, and certification recordkeeping for food-safety and GMP training — the digital system of record behind the Training / Qualification Record artifact. It exists as a distinct category from QMS document control because assignment/completion/recertification tracking across a whole workforce, often against role-specific curricula, is a different problem than managing HACCP plan documents or CAPA workflows, even though the two systems' outputs (training evidence, food-safety records) both end up supporting the same audits.",
+    "relatedIds": [
+      "2d8b96d5-f9ba-4de5-a60b-0da0f60afaec",
+      "06ff688b-147f-4fde-846c-35ad49d333bc"
+    ]
+  },
+  "2227d2ed-2fec-40de-a9d4-52e262f14809": {
+    "id": "2227d2ed-2fec-40de-a9d4-52e262f14809",
+    "name": "SCADA / HMI",
+    "category": "Process Control",
+    "summary": "Real-time supervisory control and data acquisition from PLCs and line sensors, with operator-facing HMI screens for direct equipment control — the plant-floor layer MES sits above rather than performs itself.",
+    "examplePlatforms": [
+      "Rockwell Automation FactoryTalk View",
+      "AVEVA System Platform",
+      "Siemens WinCC",
+      "Ignition (Inductive Automation)"
+    ],
+    "sourceIds": [
+      "d34a2e5f-a618-483f-a8f6-42a1d6d9e156"
+    ],
+    "description": "SCADA/HMI is the direct equipment-control and data-acquisition layer that talks to PLCs and line sensors in real time, giving operators the screens they actually use to run and monitor a line. ISA-95 (IEC 62264) formally separates this layer (Level 2, basic process control) from MES (Level 3, manufacturing operations management) — MES's own record in this dataset already describes talking to plant-floor automation such as PLCs and SCADA, which is exactly this layer, but no record covered it directly until now. In practice, SCADA/HMI is where a process setup gets dialed in and where a CCP's raw sensor reading first becomes a number an operator can see, before MES aggregates it into a batch record.",
+    "relatedIds": [
+      "3628303b-f98e-4dc6-8627-9ad94b5af3dd"
     ]
   }
 }

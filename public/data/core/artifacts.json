@@ -1962,5 +1962,167 @@
         "description": "The business context of the event — e.g. shipping, receiving, or a transformation step — mapped to the corresponding FSMA 204 Critical Tracking Event."
       }
     ]
+  },
+  "4c3d5e6f-7a8b-4c9d-0e1f-2a3b4c5d6e7a": {
+    "id": "4c3d5e6f-7a8b-4c9d-0e1f-2a3b4c5d6e7a",
+    "name": "Case/Pack Configuration Verification Record",
+    "format": "data record",
+    "lifecycle": "Generated per case or pallet configuration event during primary/secondary packaging; verifies case count, case labeling, and outer-carton weight/date coding before the unit proceeds to package integrity check.",
+    "sourceIds": [
+      "2a1b3c4d-5e6f-4a7b-8c9d-0e1f2a3b4c5e"
+    ],
+    "description": "This record captures the verification step that happens as primary consumer-facing units are grouped into secondary packaging (cases, trays, shrink-wrapped multi-packs): confirming the case holds the correct unit count for its configuration, that outer-carton labeling (lot/date code, case GTIN) matches what's inside, and that the packed case's weight falls within expected range for a case of that size. It sits between the primary-package fill/seal step and the downstream package integrity check, catching configuration errors (wrong case count, mismatched labeling) before a unit reaches physical-hazard inspection. Unlike the Catch Weight Record (which verifies the primary unit's own net contents) or the Package Integrity / Foreign Material Inspection Record (which screens for physical hazards), this record is specifically about whether the secondary packaging itself was assembled correctly.",
+    "relatedIds": [
+      "a7ea6ca7-6b6e-4101-beff-e581956d8a36"
+    ],
+    "fields": [
+      {
+        "name": "Case/pallet configuration ID",
+        "description": "Identifies the specific case or pallet-build event being verified."
+      },
+      {
+        "name": "Expected unit count",
+        "description": "The case configuration's specified number of primary units per case."
+      },
+      {
+        "name": "Actual unit count (verified)",
+        "description": "The count confirmed present in the case at verification."
+      },
+      {
+        "name": "Case label / lot-date code match",
+        "description": "Confirmation that the outer-carton label's lot and date coding matches the units packed inside."
+      },
+      {
+        "name": "Case weight (verified)",
+        "description": "The packed case's measured weight, checked against expected range for that configuration."
+      },
+      {
+        "name": "Disposition",
+        "description": "Pass, or the corrective action taken for a mismatched/miscounted case (rework, hold, reject)."
+      }
+    ]
+  },
+  "5d4e6f7a-8b9c-4d0e-1f2a-3b4c5d6e7f8b": {
+    "id": "5d4e6f7a-8b9c-4d0e-1f2a-3b4c5d6e7f8b",
+    "name": "FEFO Exception/Override Log",
+    "format": "data record",
+    "lifecycle": "Generated whenever a WMS-directed FEFO pick is manually overridden (e.g. a closer-to-expiry pallet is inaccessible or damaged); logged alongside the routine FEFO pick transactions the WMS already records.",
+    "sourceIds": [
+      "3b2c4d5e-6f7a-4b8c-9d0e-1f2a3b4c5d6f"
+    ],
+    "description": "A WMS enforcing FEFO picking logic directs which specific lot/pallet should ship next based on expiration date, but real warehouse conditions occasionally force a departure from that system-directed sequence — a closer-to-expiry pallet blocked by rack access, damaged packaging discovered at pick time, or a customer-specific shelf-life requirement that calls for a later-expiring lot instead. This log captures those departures: which pick was overridden, the reason, who authorized it, and which lot actually shipped instead. It exists because a pure success-path FEFO transaction log doesn't show when and why the system's own rotation logic wasn't followed, which is exactly the information a shelf-life or recall investigation would need if a downstream complaint traces back to an unexpectedly old lot in a shipment.",
+    "relatedIds": [
+      "733c42da-63cb-4309-b90f-eada2c4a97f7"
+    ],
+    "fields": [
+      {
+        "name": "Override event ID",
+        "description": "Unique identifier for this departure from system-directed FEFO picking."
+      },
+      {
+        "name": "System-directed lot/pallet",
+        "description": "The lot the WMS would have picked under standard FEFO logic."
+      },
+      {
+        "name": "Actual lot/pallet shipped",
+        "description": "The lot actually picked and shipped instead."
+      },
+      {
+        "name": "Reason for override",
+        "description": "Why the system-directed pick wasn't followed (access issue, damage, customer requirement, etc.)."
+      },
+      {
+        "name": "Authorized by",
+        "description": "Who approved the departure from standard FEFO logic."
+      },
+      {
+        "name": "Timestamp",
+        "description": "When the override occurred."
+      }
+    ]
+  },
+  "7e7db815-8cfb-429d-be62-3f35e49fd6e3": {
+    "id": "7e7db815-8cfb-429d-be62-3f35e49fd6e3",
+    "name": "Preventive Maintenance Record",
+    "format": "data record, per maintenance event",
+    "lifecycle": "Generated per scheduled or unscheduled maintenance event on production/CCP equipment (retort, oven, filler, cooker, metal detector, refrigeration compressor) — captures what was serviced, when, by whom, and whether the equipment was returned to a verified operating state before production resumed.",
+    "sourceIds": [
+      "849bbfe5-b4df-4625-b515-53e6d75e7551"
+    ],
+    "description": "This record documents mechanical/electrical upkeep on production and CCP-critical equipment — distinct from a calibration record, which verifies a measurement instrument's accuracy against a reference. A Preventive Maintenance Record instead tracks belt replacement, seal inspection, compressor service, and similar work that keeps equipment mechanically capable of holding the process parameters a CCP depends on in the first place. A missed or overdue maintenance interval on CCP-critical equipment is itself a food-safety-relevant finding, since equipment failure mid-run is a well-established root cause behind CCP deviations.",
+    "relatedIds": [
+      "9bc5fcf1-532d-40f8-86d1-2ba97b0b8950",
+      "8c17f733-178e-42a8-9a66-08c7e489d36b",
+      "1bdfade9-acc5-4535-891f-87d4cf762f5c",
+      "1123026c-158f-41ad-acb2-9f67b6fb4e09"
+    ],
+    "fields": [
+      {
+        "name": "Equipment identifier",
+        "description": "The specific piece of production or CCP-critical equipment serviced."
+      },
+      {
+        "name": "Maintenance type (scheduled/unscheduled)",
+        "description": "Whether this was a planned PM interval or an unscheduled repair triggered by a fault or failure."
+      },
+      {
+        "name": "Work performed",
+        "description": "What was actually serviced, replaced, or repaired."
+      },
+      {
+        "name": "Date and technician",
+        "description": "When the work occurred and who performed it — internal maintenance staff or an outside contractor."
+      },
+      {
+        "name": "Return-to-service verification",
+        "description": "Confirmation the equipment was checked and capable of holding required process parameters before production resumed, since equipment failure is a common CCP-deviation root cause."
+      },
+      {
+        "name": "Next scheduled PM date",
+        "description": "When the next planned maintenance interval falls due."
+      }
+    ]
+  },
+  "2d8b96d5-f9ba-4de5-a60b-0da0f60afaec": {
+    "id": "2d8b96d5-f9ba-4de5-a60b-0da0f60afaec",
+    "name": "Training / Qualification Record",
+    "format": "data record, per employee per training event",
+    "lifecycle": "Created when an employee completes required training for a role-specific duty — CCP monitoring, allergen changeover/line clearance verification, or batching/weighing against a scaled BOM — and renewed on the facility's own recertification cadence or whenever a process/procedure the employee is qualified on changes materially.",
+    "sourceIds": [
+      "22fa4bf3-b797-4f1b-be0d-a1342f9b2f8c",
+      "c0849b4a-48dd-404e-bc40-c801459540fc"
+    ],
+    "description": "This record is the evidence that a person performing a competency-gated duty was actually trained and verified capable of it, not just assigned the task. FSMA PCHF requires individuals performing preventive-control-related duties to be qualified through training or experience, with the PCQI training requirement for the food safety plan itself being the narrowest, most explicit case; this dataset extends the same documented-competency principle to the operator-level duties already present here (CCP monitoring, line clearance, batching) as a reasonable design choice rather than a direct per-role mandate. In practice, this is exactly the kind of record a GFSI/HACCP audit samples — an auditor asking to see evidence an operator performing a CCP check was actually trained to recognize a deviation, not just handed the responsibility.",
+    "relatedIds": [
+      "83d48320-9598-4069-b091-c032b4e36fd7",
+      "1bdfade9-acc5-4535-891f-87d4cf762f5c",
+      "29b066a1-910f-45b5-bd65-205d53da0ba4"
+    ],
+    "fields": [
+      {
+        "name": "Employee identifier",
+        "description": "The individual who received the training or qualification."
+      },
+      {
+        "name": "Role/duty trained for",
+        "description": "The specific task the training qualifies the employee to perform, e.g. CCP monitoring, line clearance verification, batching."
+      },
+      {
+        "name": "Training date and method",
+        "description": "When the training occurred and how it was delivered — classroom, on-the-job, online module."
+      },
+      {
+        "name": "Trainer/qualifying authority",
+        "description": "Who conducted or verified the training."
+      },
+      {
+        "name": "Competency verification result",
+        "description": "How the employee's competency was confirmed — written test, observed demonstration, or supervisor sign-off."
+      },
+      {
+        "name": "Recertification due date",
+        "description": "When this qualification must be renewed, per the facility's own retraining cadence."
+      }
+    ]
   }
 }

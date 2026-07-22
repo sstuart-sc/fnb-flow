@@ -37,26 +37,8 @@ const hasConcrete = computed(
   () => step.value?.artifactIds?.length || step.value?.materialIds?.length || step.value?.systemIds?.length
 );
 
-function regMap(r) {
-  return { name: r.name, meta: [r.citation, r.year].filter(Boolean).join(" · ") };
-}
-function agencyMap(a) {
-  return { name: a.name, meta: a.fullName };
-}
-function roleMap(r) {
-  return { name: r.name, meta: r.summary };
-}
-function artifactMap(a) {
-  return { name: a.name, meta: [a.format, a.lifecycle].filter(Boolean).join(" — ") };
-}
-function materialMap(m) {
-  return { name: m.name, meta: m.notes };
-}
-function systemMap(s) {
-  return {
-    name: s.name,
-    meta: s.examplePlatforms?.length ? `e.g. ${s.examplePlatforms.slice(0, 3).join(", ")}` : s.summary,
-  };
+function nameOf(item) {
+  return item.name;
 }
 
 function onSelectChild(childStep) {
@@ -87,17 +69,17 @@ function onSelectChild(childStep) {
     </div>
 
     <div class="detail-grid">
-      <ListCard title="Regulations" :items="regulations" :map-fn="regMap" />
-      <ListCard title="Agencies" :items="agencies" :map-fn="agencyMap" />
-      <ListCard title="Roles" :items="roles" :map-fn="roleMap" />
+      <ListCard title="Regulations" :items="regulations" :map-fn="nameOf" />
+      <ListCard title="Agencies" :items="agencies" :map-fn="nameOf" />
+      <ListCard title="Roles" :items="roles" :map-fn="nameOf" />
     </div>
 
     <template v-if="hasConcrete">
       <h3 style="margin-top: 1.75rem">Implementation Detail</h3>
       <div class="detail-grid">
-        <ListCard title="Artifacts" :items="artifacts" :map-fn="artifactMap" detail-collection="artifacts" />
-        <ListCard title="Materials & Equipment" :items="materials" :map-fn="materialMap" detail-collection="materials" />
-        <ListCard title="Systems" :items="systems" :map-fn="systemMap" detail-collection="systems" />
+        <ListCard title="Artifacts" :items="artifacts" :map-fn="nameOf" detail-collection="artifacts" />
+        <ListCard title="Materials & Equipment" :items="materials" :map-fn="nameOf" detail-collection="materials" />
+        <ListCard title="Systems" :items="systems" :map-fn="nameOf" detail-collection="systems" />
       </div>
     </template>
   </template>

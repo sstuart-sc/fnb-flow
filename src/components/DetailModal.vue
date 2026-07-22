@@ -1,6 +1,6 @@
 <script setup>
 import { computed, onMounted, onUnmounted, ref, watch } from "vue";
-import { modalState, closeDetailModal, openDetailModal } from "../composables/useModals";
+import { modalState, closeDetailModal, openDetailModal, openSourceModal } from "../composables/useModals";
 
 const props = defineProps({ data: { type: Object, required: true } });
 
@@ -59,6 +59,12 @@ function onOverlayClick(e) {
     <div class="modal modal--detail" role="dialog" aria-modal="true">
       <div class="modal__kicker">{{ kicker }}</div>
       <h3 class="modal__heading">{{ item.name }}</h3>
+      <button
+        v-if="item.sourceIds?.length"
+        type="button"
+        class="item-source-note item-source-note--button modal__source-note"
+        @click="openSourceModal(item.name, item.sourceIds)"
+      >Sourced ({{ item.sourceIds.length }})</button>
       <p v-if="description" class="modal__description">{{ description }}</p>
 
       <div v-if="item.fields?.length" class="modal__section">

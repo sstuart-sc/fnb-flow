@@ -1,11 +1,10 @@
 <script setup>
 import { computed } from "vue";
-import { openDetailModal, openSourceModal } from "../composables/useModals";
+import { openDetailModal } from "../composables/useModals";
 
 const props = defineProps({
   item: { type: Object, required: true },
   name: { type: String, required: true },
-  meta: { type: String, default: "" },
   detailCollection: { type: String, default: null },
 });
 
@@ -23,15 +22,6 @@ function onKeydown(e) {
     open();
   }
 }
-
-function onClick(e) {
-  if (e.target.closest(".item-source-note--button")) return;
-  open();
-}
-
-function onSourceClick() {
-  openSourceModal(props.name, props.item.sourceIds);
-}
 </script>
 
 <template>
@@ -39,16 +29,12 @@ function onSourceClick() {
     :class="{ 'item-card': hasDetail }"
     :tabindex="hasDetail ? 0 : undefined"
     :role="hasDetail ? 'button' : undefined"
-    @click="hasDetail ? onClick($event) : undefined"
+    @click="hasDetail ? open() : undefined"
     @keydown="hasDetail ? onKeydown($event) : undefined"
   >
-    <div class="item-name">{{ name }}</div>
-    <div v-if="meta" class="item-meta">{{ meta }}</div>
-    <button
-      v-if="item.sourceIds?.length"
-      type="button"
-      class="item-source-note item-source-note--button"
-      @click="onSourceClick"
-    >Sourced ({{ item.sourceIds.length }})</button>
+    <div class="item-card__row">
+      <div class="item-name">{{ name }}</div>
+      <span v-if="hasDetail" class="item-card__chevron" aria-hidden="true">›</span>
+    </div>
   </li>
 </template>

@@ -8,7 +8,10 @@
     "keyOffices": [
       "Center for Food Safety and Applied Nutrition (CFSAN)"
     ],
-    "sourceIds": ["4ff0437a-4708-4a82-9ad1-3871f55b2fff", "0b5a11ed-f395-4fa2-87f5-9387207c02fd"]
+    "sourceIds": [
+      "4ff0437a-4708-4a82-9ad1-3871f55b2fff",
+      "0b5a11ed-f395-4fa2-87f5-9387207c02fd"
+    ]
   },
   "aac69997-d9a2-4428-860f-1d8813e9ba5a": {
     "id": "aac69997-d9a2-4428-860f-1d8813e9ba5a",
@@ -17,7 +20,10 @@
     "parent": "US Department of Agriculture",
     "summary": "Regulates meat, poultry, and processed egg products (not shell eggs). Maintains continuous, shift-by-shift inspector presence at slaughter (periodic, at-least-daily visits at processing-only plants), unlike FDA's periodic model. Since 2013/2023 rule changes, most meat/poultry labels are self-certified under generic label approval rather than FSIS pre-approval (pre-approval now applies only to special claims). All FSIS recalls are voluntary; FSIS has no authority to compel a recall, only to refer refusal cases to DOJ for detention/seizure.",
     "keyOffices": [],
-    "sourceIds": ["37bf5ebf-47ce-4e8a-9052-93d8eade2b5f", "bcf4d03b-bac6-4217-bb3d-5b04c24dd48f"]
+    "sourceIds": [
+      "37bf5ebf-47ce-4e8a-9052-93d8eade2b5f",
+      "bcf4d03b-bac6-4217-bb3d-5b04c24dd48f"
+    ]
   },
   "c8b293a1-17bc-42b2-b023-7d0c6dba905d": {
     "id": "c8b293a1-17bc-42b2-b023-7d0c6dba905d",
@@ -26,7 +32,10 @@
     "parent": "US Department of Agriculture",
     "summary": "Administers voluntary, fee-based grading and marketing standards (e.g., USDA Grade A, USDA Choice) and the National Organic Program (NOP), which certifies organic farms and handlers. Also administers the National Bioengineered Food Disclosure Standard (NBFDS).",
     "keyOffices": [],
-    "sourceIds": ["30e9f383-71e7-4b37-9c98-e6679c982f25", "54f9b1c2-339d-484d-a76b-ddb53931fc08"]
+    "sourceIds": [
+      "30e9f383-71e7-4b37-9c98-e6679c982f25",
+      "54f9b1c2-339d-484d-a76b-ddb53931fc08"
+    ]
   },
   "49089417-12e3-4123-8005-9e169c1ed9ce": {
     "id": "49089417-12e3-4123-8005-9e169c1ed9ce",
@@ -35,7 +44,10 @@
     "parent": null,
     "summary": "Sets maximum pesticide residue tolerances on food and feed under the Federal Food, Drug, and Cosmetic Act (enforced by FDA/USDA), regulates food-contact sanitizers as antimicrobial pesticides under FIFRA (with tolerance exemptions cross-referenced to FDA rules), and sets drinking water standards (Safe Drinking Water Act) that affect food manufacturing water quality.",
     "keyOffices": [],
-    "sourceIds": ["a513ecce-17b3-40de-97fe-330f48f3e669", "bd24a8e8-29cd-4369-b0fb-5a0f34a6235d"]
+    "sourceIds": [
+      "a513ecce-17b3-40de-97fe-330f48f3e669",
+      "bd24a8e8-29cd-4369-b0fb-5a0f34a6235d"
+    ]
   },
   "fa6a738b-947e-4ff9-a3cf-9b076e39a7a7": {
     "id": "fa6a738b-947e-4ff9-a3cf-9b076e39a7a7",
@@ -44,7 +56,9 @@
     "parent": "US Department of the Treasury",
     "summary": "Regulates labeling and production of beer made with both malted barley and hops, wine at 7% ABV or greater, and spirits. Wine under 7% ABV and other fermented malt beverages fall to FDA instead.",
     "keyOffices": [],
-    "sourceIds": ["5270eda2-77d9-4497-bcf3-5c27e681c78a"]
+    "sourceIds": [
+      "5270eda2-77d9-4497-bcf3-5c27e681c78a"
+    ]
   },
   "3c72b77c-84b1-4fc5-88bc-7a97193e2ffe": {
     "id": "3c72b77c-84b1-4fc5-88bc-7a97193e2ffe",
@@ -53,7 +67,9 @@
     "parent": null,
     "summary": "Regulates food advertising and marketing claims (as distinct from FDA, which regulates label content itself), per a long-standing FTC/FDA liaison agreement (originally 1971) dividing jurisdiction. Coordinates with FDA on misleading claims.",
     "keyOffices": [],
-    "sourceIds": ["1690475b-ce2c-48e8-97d8-c971136d1b9b"]
+    "sourceIds": [
+      "1690475b-ce2c-48e8-97d8-c971136d1b9b"
+    ]
   },
   "57ebd4ad-028d-49a4-9840-805e858231d7": {
     "id": "57ebd4ad-028d-49a4-9840-805e858231d7",
@@ -62,7 +78,10 @@
     "parent": null,
     "summary": "Can be stricter than federal standards but not laxer. Responsible for retail/restaurant licensing and inspection (using the FDA Food Code — adopted in some form by ~97% of states/territories — as a model), some intrastate manufacturing licensing, weights-and-measures verification (against NIST Handbook 44 as the federal reference model), and cottage food laws.",
     "keyOffices": [],
-    "sourceIds": ["18857130-e665-46e4-817a-bc9bca24767c", "dae96c92-1d7e-463e-a37d-7c9c92177079"]
+    "sourceIds": [
+      "18857130-e665-46e4-817a-bc9bca24767c",
+      "dae96c92-1d7e-463e-a37d-7c9c92177079"
+    ]
   },
   "2ba049e2-d8dd-4172-b13b-5830326ab4ad": {
     "id": "2ba049e2-d8dd-4172-b13b-5830326ab4ad",
@@ -71,7 +90,10 @@
     "parent": "US Department of Health and Human Services (HHS)",
     "summary": "Tracks and investigates foodborne illness outbreaks; estimates the annual US burden of foodborne disease at ~48M illnesses, ~128,000 hospitalizations, and ~3,000 deaths — CDC's current published headline estimate, though the methodology behind it dates to 2011 (Scallan et al.) rather than a recent study. A narrower, more recent CDC estimate (2025) covers just 7 major pathogens for 2019 (~9.9M illnesses, ~53,300 hospitalizations, 931 deaths) and does not replace the broader 48M figure, which also covers unspecified agents.",
     "keyOffices": [],
-    "sourceIds": ["b86367cd-92f4-4447-886a-12fc38f32196", "b4a19aed-f8e7-4e34-812d-cecd8ae8a23f"]
+    "sourceIds": [
+      "b86367cd-92f4-4447-886a-12fc38f32196",
+      "b4a19aed-f8e7-4e34-812d-cecd8ae8a23f"
+    ]
   },
   "2ba804d3-9dc2-4848-94d1-f48c41ad9703": {
     "id": "2ba804d3-9dc2-4848-94d1-f48c41ad9703",
@@ -80,7 +102,10 @@
     "parent": null,
     "summary": "Maintains the global identification standards (GTIN, GLN, SSCC, EPCIS) underlying barcodes, EDI, and traceability systems across industries, including food. Not a government regulator.",
     "keyOffices": [],
-    "sourceIds": ["9de163da-25db-489c-b6c9-30a755bec241", "f29ea385-f063-431d-834e-a5d7eac523f8"]
+    "sourceIds": [
+      "9de163da-25db-489c-b6c9-30a755bec241",
+      "f29ea385-f063-431d-834e-a5d7eac523f8"
+    ]
   },
   "3b121647-ec9f-444c-9084-8a6637d357da": {
     "id": "3b121647-ec9f-444c-9084-8a6637d357da",
@@ -89,6 +114,32 @@
     "parent": null,
     "summary": "Benchmarking body (not itself an auditing scheme) that recognizes third-party food safety certification schemes (SQF, BRC, FSSC 22000, IFS) as meeting an internationally agreed standard. Major retailers require GFSI-recognized certification as a commercial condition of doing business.",
     "keyOffices": [],
-    "sourceIds": ["10d4f375-5d74-4952-b95e-e5655ba2aad6", "221354f6-184a-4347-9632-e5f4510319de"]
+    "sourceIds": [
+      "10d4f375-5d74-4952-b95e-e5655ba2aad6",
+      "221354f6-184a-4347-9632-e5f4510319de"
+    ]
+  },
+  "425f7abc-b53d-413d-b5ba-abfa92280e1c": {
+    "id": "425f7abc-b53d-413d-b5ba-abfa92280e1c",
+    "name": "OSHA",
+    "fullName": "Occupational Safety and Health Administration",
+    "parent": "US Department of Labor",
+    "summary": "Sets and enforces workplace safety standards directly applicable to food manufacturing plants: the General Duty Clause (requiring a workplace free of recognized hazards), machine guarding, lockout/tagout, personal protective equipment, and Process Safety Management for facilities with large anhydrous ammonia refrigeration inventories (common in cold storage/finished-goods warehousing). Distinct from FDA/USDA FSIS, which regulate product safety rather than worker safety.",
+    "keyOffices": [],
+    "sourceIds": [
+      "6887f31d-a76f-4c46-8aa1-dc7b30c47b27",
+      "086b4e33-b8da-4f0b-a2df-e5b94639a8c6"
+    ]
+  },
+  "9c1e2f3a-4b5c-4d6e-8f7a-1b2c3d4e5f6a": {
+    "id": "9c1e2f3a-4b5c-4d6e-8f7a-1b2c3d4e5f6a",
+    "name": "CBP",
+    "fullName": "U.S. Customs and Border Protection",
+    "parent": "US Department of Homeland Security",
+    "summary": "Processes entry filings for imported goods, including FDA-regulated food, and refers those entries to FDA for admissibility review. Coordinates with FDA on detention, refusal, and redelivery of noncompliant shipments. A border-enforcement/logistics role distinct from FDA's FSVP, which places hazard-analysis and verification duties on the US importer itself.",
+    "keyOffices": [],
+    "sourceIds": [
+      "0f348398-32a4-4ff9-9c34-90f1fd807870"
+    ]
   }
 }

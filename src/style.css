@@ -419,7 +419,7 @@ html, body {
   list-style: none;
   display: flex;
   flex-direction: column;
-  gap: 0.5rem;
+  gap: 0.65rem;
 }
 
 .detail-card li {
@@ -428,20 +428,45 @@ html, body {
 }
 
 .detail-card .item-name { font-weight: 600; }
-.detail-card .item-meta { color: var(--text-dim); font-size: 0.8rem; }
 .detail-card .empty-note { color: var(--text-dim); font-style: italic; font-size: 0.85rem; }
 .detail-card .item-source-note { color: var(--text-dim); font-size: 0.72rem; margin-top: 0.15rem; }
 
 .detail-card .item-card {
   cursor: pointer;
-  padding: 0.4rem 0.5rem;
-  margin: -0.4rem -0.5rem;
+  padding: 0.5rem 0.65rem;
   border-radius: 6px;
-  transition: background 0.12s ease;
+  background: var(--surface-2);
+  border: 1px solid var(--border);
+  transition: background 0.12s ease, border-color 0.12s ease;
 }
 
 .detail-card .item-card:hover {
-  background: var(--surface-2);
+  background: var(--accent-soft);
+  border-color: var(--accent);
+}
+
+.item-card__row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+}
+
+.item-card__text {
+  min-width: 0;
+}
+
+.item-card__chevron {
+  flex-shrink: 0;
+  color: var(--text-dim);
+  font-size: 1.1rem;
+  line-height: 1;
+  transition: color 0.12s ease, transform 0.12s ease;
+}
+
+.detail-card .item-card:hover .item-card__chevron {
+  color: var(--accent);
+  transform: translateX(2px);
 }
 
 .detail-card .item-card:focus-visible {
@@ -472,11 +497,16 @@ html, body {
   gap: 0.35rem;
   padding: 0.25rem 0.6rem;
   border-radius: 999px;
-  border: 1px solid var(--border);
   font-size: 0.78rem;
-  color: var(--text-dim);
-  background: var(--surface-2);
+  font-weight: 600;
+  color: #fff;
+  border: none;
 }
+
+.thread-chip--sanitation { background: var(--thread-sanitation); }
+.thread-chip--traceability { background: var(--thread-traceability); }
+.thread-chip--recall { background: var(--thread-recall); }
+.thread-chip--allergen-control { background: var(--thread-allergen-control); }
 
 /* Search view */
 .search-results {
@@ -587,9 +617,14 @@ html, body {
 }
 
 .modal__heading {
-  margin: 0 0 1rem;
+  margin: 0 0 0.35rem;
   font-size: 1.1rem;
   padding-right: 1.5rem;
+}
+
+.modal__source-note {
+  display: inline-block;
+  margin: 0 0 1rem;
 }
 
 .modal__source-list {

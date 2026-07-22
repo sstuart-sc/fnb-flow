@@ -779,5 +779,158 @@
     "type": "industry-standard",
     "url": "https://documents.gs1us.org/adobe/assets/deliver/urn:aaid:aem:0c934e38-7cd7-4a86-aac3-c54b4c9ef293/EPCIS-Recommendations-FSMA-204-Critical-Tracking-Events.pdf",
     "note": "Confirms EPCIS's \"what/where/when/why\" core dimensions and GS1 US's guidance mapping EPCIS 2.0 onto FSMA 204 CTEs/KDEs — industry-promoted, not FDA-mandated."
+  },
+  "6887f31d-a76f-4c46-8aa1-dc7b30c47b27": {
+    "id": "6887f31d-a76f-4c46-8aa1-dc7b30c47b27",
+    "name": "OSH Act of 1970, Section 5(a) — General Duty Clause",
+    "type": "regulation-text",
+    "citation": "Pub. L. 91-596; 29 U.S.C. § 654(a)(1)",
+    "url": "https://www.osha.gov/laws-regs/oshact/section5-duties",
+    "note": "Establishes OSHA's general duty clause requiring employers to provide a workplace free of recognized hazards; statutory basis for OSHA's applicability to food manufacturing plants."
+  },
+  "086b4e33-b8da-4f0b-a2df-e5b94639a8c6": {
+    "id": "086b4e33-b8da-4f0b-a2df-e5b94639a8c6",
+    "name": "OSHA Process Safety Management standard — ammonia refrigeration applicability",
+    "type": "regulation-text",
+    "citation": "29 CFR 1910.119",
+    "url": "https://www.osha.gov/laws-regs/regulations/standardnumber/1910/1910.119",
+    "note": "PSM applies to facilities with anhydrous ammonia refrigeration inventories at or above the 10,000 lb threshold, common in food cold-storage/finished-goods warehousing."
+  },
+  "6df5fcc5-2076-421a-9545-d8a56ae4fcdc": {
+    "id": "6df5fcc5-2076-421a-9545-d8a56ae4fcdc",
+    "name": "FDA Nutrition Facts Label revision final rule (2016)",
+    "type": "regulation-text",
+    "citation": "81 FR 33742 (May 27, 2016); 21 CFR 101.9; compliance dates extended by 83 FR 19619 (2018)",
+    "url": "https://www.federalregister.gov/documents/2016/05/27/2016-11867/food-labeling-revision-of-the-nutrition-and-supplement-facts-labels",
+    "note": "Added-sugars declaration, updated Daily Values, revised serving sizes, larger/bolder calorie type. Compliance dates: Jan 1, 2020 (manufacturers with $10M+ annual food sales), Jan 1, 2021 (smaller manufacturers)."
+  },
+  "3f0518be-803d-4760-8c85-7b0bec95624f": {
+    "id": "3f0518be-803d-4760-8c85-7b0bec95624f",
+    "name": "FDA proposed front-of-package nutrition labeling rule (2025)",
+    "type": "regulation-text",
+    "citation": "Federal Register 2025-00778 (proposed rule, Jan 16, 2025)",
+    "url": "https://www.federalregister.gov/documents/2025/01/16/2025-00778/food-labeling-front-of-package-nutrition-information",
+    "note": "Proposed, not yet final as of this dataset's last check — a mandatory front-of-package 'Nutrition Info Box' covering saturated fat, sodium, and added sugars. Comment period extended to July 15, 2025; FDA's 2026 Human Foods Program priorities target a final rule around spring 2026, still pending as of this dataset's last verification."
+  },
+  "0f348398-32a4-4ff9-9c34-90f1fd807870": {
+    "id": "0f348398-32a4-4ff9-9c34-90f1fd807870",
+    "name": "CBP role in FDA-regulated food import entries",
+    "type": "regulation-text",
+    "url": "https://www.cbp.gov/",
+    "note": "CBP receives and processes entry filings for imported goods including FDA-regulated food, refers entries to FDA for admissibility review, and coordinates with FDA on detention, refusal, and redelivery — a border-enforcement/logistics role distinct from FDA's FSVP (importer-facing hazard-analysis/verification duties)."
+  },
+  "1fe3a2e7-4cc8-4ec1-b7e5-daa97c3dc2d7": {
+    "id": "1fe3a2e7-4cc8-4ec1-b7e5-daa97c3dc2d7",
+    "name": "Neogen acquisition of Corvium (2023 rebrand to Neogen Analytics)",
+    "type": "vendor-doc",
+    "url": "https://www.saasworthy.com/product/corvium",
+    "note": "Neogen Corporation acquired Corvium Inc.'s food safety software/data analytics business in February 2023; the product is now marketed as Neogen Analytics."
+  },
+  "f5b208bb-84ad-4c3a-9f80-47913b447491": {
+    "id": "f5b208bb-84ad-4c3a-9f80-47913b447491",
+    "name": "LIMS vendors serving food & beverage labs",
+    "type": "vendor-doc",
+    "url": "https://www.labware.com/industries/food-beverage",
+    "note": "LabWare, STARLIMS, LabVantage, and Thermo Fisher SampleManager are established LIMS vendors actively marketing to food & beverage testing labs."
+  },
+  "8406cc4a-f8f7-4a43-8f9f-e6223711bb31": {
+    "id": "8406cc4a-f8f7-4a43-8f9f-e6223711bb31",
+    "name": "Advanced planning & scheduling vendors serving food & beverage manufacturing",
+    "type": "vendor-doc",
+    "url": "https://www.planettogether.com/aps/industries/food-beverage",
+    "note": "PlanetTogether (acquired by CAI Software, rebranded CAI PlanetTogether, June 2026) markets allergen-aware, changeover-optimized APS scheduling for food & beverage manufacturers; Siemens Opcenter (formerly Preactor) is also actively used in the industry."
+  },
+  "0a0dae24-63cd-4e14-9486-51f03b2e12f5": {
+    "id": "0a0dae24-63cd-4e14-9486-51f03b2e12f5",
+    "name": "Formulation/recipe-management vendors serving food & beverage",
+    "type": "vendor-doc",
+    "url": "https://www.esha.com/",
+    "note": "Genesis R&D / ESHA Research (Trustwell) for formulation and nutrition-labeling; Vicinity Software for batch/formula/BOM version management, marketed as complementary to Genesis R&D."
+  },
+  "2a1b3c4d-5e6f-4a7b-8c9d-0e1f2a3b4c5e": {
+    "id": "2a1b3c4d-5e6f-4a7b-8c9d-0e1f2a3b4c5e",
+    "name": "Case/pack configuration verification as standard secondary-packaging practice",
+    "type": "subject-matter-judgment",
+    "note": "No single external regulation mandates a case/pack configuration record by this name. Asserted based on standard secondary-packaging practice: case count, case labeling, and outer-carton weight/date verification are routinely logged wherever a QMS or MES governs packaging, as evidenced by this dataset's own sibling steps (Fill & seal has a Batch/Production Record, Catch weight verification has a Catch Weight Record, Package integrity check has an Inspection Record) all of which log an equivalent verification step. Not independently sourced to a named regulation because none applies at this granularity."
+  },
+  "3b2c4d5e-6f7a-4b8c-9d0e-1f2a3b4c5d6f": {
+    "id": "3b2c4d5e-6f7a-4b8c-9d0e-1f2a3b4c5d6f",
+    "name": "FEFO exception/override logging as standard WMS practice",
+    "type": "subject-matter-judgment",
+    "note": "No external regulation mandates a FEFO exception log by this name. Asserted based on standard WMS practice: a system that enforces FEFO picking logic necessarily needs an override/exception path (e.g. a closer-to-expiry pallet blocked by a pick-face location issue), and that override needs to be logged for the same reason any manual departure from system-directed logic needs an audit trail under a food safety/quality management system. Not independently sourced to a named regulation because none applies at this granularity."
+  },
+  "beeaf2df-ff74-4740-9ffe-ffec459f7d12": {
+    "id": "beeaf2df-ff74-4740-9ffe-ffec459f7d12",
+    "name": "NIST Handbook 44 — weighing device calibration standards",
+    "type": "industry-standard",
+    "citation": "NIST Handbook 44, Specifications, Tolerances, and Other Technical Requirements for Weighing and Measuring Devices",
+    "url": "https://www.nist.gov/pml/owm/publications/nist-handbook-44",
+    "note": "The recognized US standard governing accuracy/calibration requirements for commercial scales; calibration weight sets traceable to NIST reference standards are the accepted means of demonstrating a scale meets it."
+  },
+  "10bcb8e9-c28f-4e35-9f7d-1ea885633302": {
+    "id": "10bcb8e9-c28f-4e35-9f7d-1ea885633302",
+    "name": "3-A Sanitary Standards for CIP-cleanable equipment",
+    "type": "industry-standard",
+    "citation": "3-A Sanitary Standards, Inc. — Accepted Practices for CIP-cleanable equipment/circuits",
+    "url": "https://www.3-a.org/",
+    "note": "3-A Sanitary Standards define design and cleanability requirements for dairy/food processing equipment intended to be cleaned in place, and are the industry-recognized reference for CIP system design in food and beverage manufacturing."
+  },
+  "cb31744a-7d69-4379-8f51-2d32122f39ba": {
+    "id": "cb31744a-7d69-4379-8f51-2d32122f39ba",
+    "name": "Sanitizer concentration test-strip verification as standard sanitation practice",
+    "type": "subject-matter-judgment",
+    "note": "No single regulation mandates test-strip verification by name — only the sanitization outcome is regulated. Confirming mixed sanitizer concentration before use via test strips is standard, widely documented sanitation practice (sold by major sanitation chemical suppliers for this purpose), asserted honestly as subject-matter-judgment."
+  },
+  "849bbfe5-b4df-4625-b515-53e6d75e7551": {
+    "id": "849bbfe5-b4df-4625-b515-53e6d75e7551",
+    "name": "PCHF equipment maintenance requirement",
+    "type": "regulation-text",
+    "citation": "21 CFR 117.40(a)",
+    "url": "https://www.ecfr.gov/current/title-21/chapter-I/subchapter-B/part-117/subpart-B/section-117.40",
+    "note": "Requires plant equipment be adequately maintained; grounds the mechanical/electrical upkeep side of equipment-dependent CCP and process-control steps, distinct from measurement-accuracy calibration."
+  },
+  "22fa4bf3-b797-4f1b-be0d-a1342f9b2f8c": {
+    "id": "22fa4bf3-b797-4f1b-be0d-a1342f9b2f8c",
+    "name": "PCHF qualified-individual and personnel training requirement",
+    "type": "regulation-text",
+    "citation": "21 CFR 117.4(b)(1); 21 CFR 117.180",
+    "url": "https://www.ecfr.gov/current/title-21/chapter-I/subchapter-B/part-117/subpart-A/section-117.4",
+    "note": "117.4(b)(1) requires individuals performing preventive-control-related duties be qualified through training/experience; 117.180 covers the PCQI training requirement for the food safety plan itself. Grounds the general training-record obligation."
+  },
+  "c0849b4a-48dd-404e-bc40-c801459540fc": {
+    "id": "c0849b4a-48dd-404e-bc40-c801459540fc",
+    "name": "Documented competency records extended to operator-level duties",
+    "type": "subject-matter-judgment",
+    "note": "Extending a documented-competency-record principle to specific operator-level duties named in this dataset (CCP monitoring, line clearance, batching) beyond the narrower PCQI role is this design's own reasonable extension of PCHF's qualified-individual principle, not a direct per-role regulatory mandate — flagged honestly rather than force-citing a rule that doesn't name these roles specifically."
+  },
+  "5a0c77cc-b360-4d0e-8ecc-5bc412384ae6": {
+    "id": "5a0c77cc-b360-4d0e-8ecc-5bc412384ae6",
+    "name": "Training/LMS as a distinct plant system category",
+    "type": "subject-matter-judgment",
+    "note": "Alchemy (Intertek) and ComplianceMate are real, currently marketed training/LMS-capable platforms in food manufacturing; distinguishing Training/LMS as its own system category from QMS document control is a reasonable but not externally mandated organizational choice."
+  },
+  "d34a2e5f-a618-483f-a8f6-42a1d6d9e156": {
+    "id": "d34a2e5f-a618-483f-a8f6-42a1d6d9e156",
+    "name": "ISA-95 (IEC 62264) enterprise-control system integration hierarchy",
+    "type": "industry-standard",
+    "citation": "ISA-95 / IEC 62264",
+    "url": "https://www.isa.org/standards-and-publications/isa-standards/isa-standards-committees/isa95",
+    "note": "Defines the standard Level 2 (SCADA/basic control) vs. Level 3 (MES) functional split, grounding SCADA/HMI as a distinct layer from MES."
+  },
+  "56c9cddc-092d-4c21-b006-bd6604d3dd42": {
+    "id": "56c9cddc-092d-4c21-b006-bd6604d3dd42",
+    "name": "BRCGS Global Standard for Food Safety, Issue 9 publication",
+    "type": "industry-standard",
+    "citation": "BRCGS Global Standard for Food Safety, Issue 9",
+    "url": "https://www.brcgs.com/about-brcgs/news/2022/published-issue-9-leading-the-way-in-global-food-safety/",
+    "note": "BRCGS's own announcement of Issue 9's publication (August 2022) and certification timeline (audits from Feb 1, 2023)."
+  },
+  "16daba2d-f77e-4992-ab4a-f4793abacb52": {
+    "id": "16daba2d-f77e-4992-ab4a-f4793abacb52",
+    "name": "IFS Food Standard Version 8 GFSI recognition",
+    "type": "industry-standard",
+    "citation": "IFS Food, Version 8 (International Featured Standards)",
+    "url": "https://www.ifs-certification.com/en/news/ifs-food-8-gains-gfsi-recognition",
+    "note": "IFS's own announcement confirming Version 8 became mandatory Jan 1, 2024, and achieved GFSI recognition against the 2020 GFSI Benchmarking Requirements on Sept 16, 2024."
   }
 }

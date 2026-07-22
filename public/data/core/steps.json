@@ -25,7 +25,6 @@
     "artifactIds": [],
     "materialIds": [],
     "systemIds": [],
-    "gapIds": [],
     "path": "primary-production"
   },
   "9f14dc8e-3874-4a73-8f30-aca5b61feb7f": {
@@ -53,7 +52,6 @@
     "artifactIds": [],
     "materialIds": [],
     "systemIds": [],
-    "gapIds": [],
     "path": "supplier-sourcing-qualification"
   },
   "772ddd54-cf9a-4959-8bfd-ef9951aa4180": {
@@ -82,7 +80,6 @@
     "artifactIds": [],
     "materialIds": [],
     "systemIds": [],
-    "gapIds": [],
     "path": "inbound-logistics-receiving"
   },
   "927aa4de-d050-4430-a674-60c42bbfdc28": {
@@ -109,7 +106,6 @@
     "artifactIds": [],
     "materialIds": [],
     "systemIds": [],
-    "gapIds": [],
     "path": "raw-material-storage"
   },
   "99b5625d-0e93-40b0-867e-6ac8add14b46": {
@@ -137,7 +133,6 @@
     "artifactIds": [],
     "materialIds": [],
     "systemIds": [],
-    "gapIds": [],
     "path": "formulation-production-planning"
   },
   "4937d2be-bd1b-49ae-9ea4-6ecafaf6cb1d": {
@@ -165,7 +160,6 @@
     "artifactIds": [],
     "materialIds": [],
     "systemIds": [],
-    "gapIds": [],
     "path": "pre-production-preparation"
   },
   "50c3d0e3-a82a-420b-9870-66a51c7c4d43": {
@@ -198,7 +192,6 @@
     "artifactIds": [],
     "materialIds": [],
     "systemIds": [],
-    "gapIds": [],
     "path": "processing-production"
   },
   "c40392f3-562d-4b24-a5d9-a4acf26e27f1": {
@@ -224,7 +217,6 @@
     "artifactIds": [],
     "materialIds": [],
     "systemIds": [],
-    "gapIds": [],
     "path": "in-process-quality-control"
   },
   "623c072a-ae9f-4a59-be16-976e0d8a73f6": {
@@ -252,7 +244,6 @@
     "artifactIds": [],
     "materialIds": [],
     "systemIds": [],
-    "gapIds": [],
     "path": "packaging-fill-seal"
   },
   "3e709089-908f-4655-b4ef-a0477c3dda52": {
@@ -285,7 +276,6 @@
     "artifactIds": [],
     "materialIds": [],
     "systemIds": [],
-    "gapIds": [],
     "path": "labeling"
   },
   "19458b96-3769-4644-ae1b-47cafc47db17": {
@@ -312,7 +302,6 @@
     "artifactIds": [],
     "materialIds": [],
     "systemIds": [],
-    "gapIds": [],
     "path": "finished-goods-storage"
   },
   "a32ac29d-5ba0-414b-b459-014cf2d33b3c": {
@@ -339,7 +328,6 @@
     "artifactIds": [],
     "materialIds": [],
     "systemIds": [],
-    "gapIds": [],
     "path": "outbound-distribution-logistics"
   },
   "d74be816-2ce9-4275-bab1-064b6e28d187": {
@@ -363,7 +351,6 @@
     "artifactIds": [],
     "materialIds": [],
     "systemIds": [],
-    "gapIds": [],
     "path": "retail-foodservice"
   },
   "6f24e94d-2d62-4c5c-aa1a-bea63415d895": {
@@ -387,7 +374,6 @@
     "artifactIds": [],
     "materialIds": [],
     "systemIds": [],
-    "gapIds": [],
     "path": "consumer"
   },
   "30866752-f7e4-4c98-a5e4-39e2cba6beb1": {
@@ -411,9 +397,9 @@
     ],
     "materialIds": [],
     "systemIds": [
-      "73835e3c-9d70-49bf-b855-e25139be8426"
+      "73835e3c-9d70-49bf-b855-e25139be8426",
+      "9831aefd-1733-472a-b8e0-954c68512132"
     ],
-    "gapIds": [],
     "path": "supplier-questionnaire-review"
   },
   "a97eb99a-b765-4743-a8e9-b522717fcdcc": {
@@ -439,7 +425,6 @@
     "systemIds": [
       "73835e3c-9d70-49bf-b855-e25139be8426"
     ],
-    "gapIds": [],
     "path": "supplier-risk-assessment"
   },
   "f44a19ca-d12c-4566-858e-bcd15867ff74": {
@@ -462,7 +447,6 @@
     "systemIds": [
       "73835e3c-9d70-49bf-b855-e25139be8426"
     ],
-    "gapIds": [],
     "path": "supplier-audit-certification-review"
   },
   "704ab72d-6c58-4cf4-b4f4-b7eedea828af": {
@@ -489,7 +473,6 @@
     "systemIds": [
       "0aa50349-ec76-4ea4-b24d-bd61159fff84"
     ],
-    "gapIds": [],
     "path": "initial-material-testing"
   },
   "27cb1649-3e29-4c72-a163-72c3b8c30028": {
@@ -516,7 +499,6 @@
       "73835e3c-9d70-49bf-b855-e25139be8426",
       "798d71ae-178b-4f6b-bd3d-c3b58bd2013b"
     ],
-    "gapIds": [],
     "path": "supplier-approval-onboarding"
   },
   "c14b6c21-87d1-4c98-b874-b89d86f990f5": {
@@ -542,7 +524,6 @@
     "systemIds": [
       "73835e3c-9d70-49bf-b855-e25139be8426"
     ],
-    "gapIds": [],
     "path": "ongoing-supplier-monitoring"
   },
   "8b56f152-c4f6-4607-9270-eefa91e81140": {
@@ -567,7 +548,6 @@
       "0895906c-34f8-43a0-a4d8-112d3a9eb395",
       "39da6cf5-44d6-44d3-b613-d86a3530a7b1"
     ],
-    "gapIds": [],
     "path": "asn-pre-receipt"
   },
   "790dfcba-2db1-41c2-a9a6-f8fbfc1267d7": {
@@ -592,12 +572,12 @@
       "620aaecb-0b8f-4336-8f3e-86716178923b"
     ],
     "materialIds": [
-      "9bc5fcf1-532d-40f8-86d1-2ba97b0b8950"
+      "9bc5fcf1-532d-40f8-86d1-2ba97b0b8950",
+      "50e9bda3-e20a-4a57-b0b5-105c32bd945f"
     ],
     "systemIds": [
       "39da6cf5-44d6-44d3-b613-d86a3530a7b1"
     ],
-    "gapIds": [],
     "path": "dock-receipt-unloading"
   },
   "454a05bd-7e29-4750-8738-b0add331db8b": {
@@ -624,7 +604,6 @@
     "systemIds": [
       "06ff688b-147f-4fde-846c-35ad49d333bc"
     ],
-    "gapIds": [],
     "path": "incoming-inspection"
   },
   "6532e290-5ee1-4d59-b364-33f4308347cb": {
@@ -652,7 +631,6 @@
     "systemIds": [
       "06ff688b-147f-4fde-846c-35ad49d333bc"
     ],
-    "gapIds": [],
     "path": "coa-review"
   },
   "b9382349-bf15-4564-b822-de458d7e1e02": {
@@ -682,7 +660,6 @@
       "39da6cf5-44d6-44d3-b613-d86a3530a7b1",
       "06ff688b-147f-4fde-846c-35ad49d333bc"
     ],
-    "gapIds": [],
     "path": "receiving-disposition"
   },
   "c77fe376-334a-4009-ab47-bdae557cb26c": {
@@ -707,7 +684,6 @@
     "systemIds": [
       "39da6cf5-44d6-44d3-b613-d86a3530a7b1"
     ],
-    "gapIds": [],
     "path": "putaway"
   },
   "17687176-061a-4bcd-a503-bca8d8f62fa1": {
@@ -735,7 +711,6 @@
       "39da6cf5-44d6-44d3-b613-d86a3530a7b1",
       "798d71ae-178b-4f6b-bd3d-c3b58bd2013b"
     ],
-    "gapIds": [],
     "path": "inventory-tracking-holds"
   },
   "f04cba8c-96ab-471b-acc1-bf9304194a95": {
@@ -758,7 +733,6 @@
     "systemIds": [
       "39da6cf5-44d6-44d3-b613-d86a3530a7b1"
     ],
-    "gapIds": [],
     "path": "fefo-rotation-monitoring"
   },
   "e43ad2c4-a64f-4e54-9f3c-93cb221ef0df": {
@@ -784,7 +758,6 @@
     "systemIds": [
       "39da6cf5-44d6-44d3-b613-d86a3530a7b1"
     ],
-    "gapIds": [],
     "path": "allergen-segregation-storage"
   },
   "2fb84bc7-c1cb-447f-8a14-84418b7615a3": {
@@ -806,7 +779,6 @@
     "systemIds": [
       "798d71ae-178b-4f6b-bd3d-c3b58bd2013b"
     ],
-    "gapIds": [],
     "path": "demand-forecasting"
   },
   "66457337-68b1-4f15-9207-36d3601e6d76": {
@@ -832,7 +804,6 @@
       "798d71ae-178b-4f6b-bd3d-c3b58bd2013b",
       "d08beab6-1d89-42e5-8f51-c12ddc9dcc93"
     ],
-    "gapIds": [],
     "path": "bom-recipe-management"
   },
   "fe32d3ac-44c1-4fb8-805e-785a9825ed67": {
@@ -855,7 +826,6 @@
       "798d71ae-178b-4f6b-bd3d-c3b58bd2013b",
       "7e49ad00-a211-4140-a869-d669d929d49e"
     ],
-    "gapIds": [],
     "path": "master-production-schedule"
   },
   "b2f6e872-dcca-4767-9206-055cd8f5c052": {
@@ -879,7 +849,6 @@
     "systemIds": [
       "798d71ae-178b-4f6b-bd3d-c3b58bd2013b"
     ],
-    "gapIds": [],
     "path": "material-requirements-planning"
   },
   "12b7b8be-c7d4-4b6a-b6a2-585f2f64776b": {
@@ -898,11 +867,12 @@
     "artifactIds": [
       "b6417e04-03ad-400f-bbe3-ba9a111eaeb9"
     ],
-    "materialIds": [],
+    "materialIds": [
+      "c3c6e60a-aea7-4825-99d9-04adb6452f49"
+    ],
     "systemIds": [
       "7e49ad00-a211-4140-a869-d669d929d49e"
     ],
-    "gapIds": [],
     "path": "capacity-changeover-planning"
   },
   "d2bd63b9-9b1c-47b2-8627-c590c5c69be5": {
@@ -930,7 +900,6 @@
     "systemIds": [
       "7e49ad00-a211-4140-a869-d669d929d49e"
     ],
-    "gapIds": [],
     "path": "allergen-sequencing"
   },
   "ad144aa0-ac9a-4052-9ae0-fda1670a59c1": {
@@ -956,7 +925,6 @@
       "39da6cf5-44d6-44d3-b613-d86a3530a7b1",
       "3628303b-f98e-4dc6-8627-9ad94b5af3dd"
     ],
-    "gapIds": [],
     "path": "material-staging-pull"
   },
   "662579e0-38ef-4570-a388-c7bcef2a32f3": {
@@ -984,7 +952,6 @@
     "systemIds": [
       "3628303b-f98e-4dc6-8627-9ad94b5af3dd"
     ],
-    "gapIds": [],
     "path": "thawing"
   },
   "ea870c3a-7428-4e75-ad57-8b96b9ea3139": {
@@ -1004,15 +971,16 @@
     "nestedFlowId": null,
     "artifactIds": [
       "29b066a1-910f-45b5-bd65-205d53da0ba4",
-      "429b1edf-4726-4530-b8db-680ec0761622"
+      "429b1edf-4726-4530-b8db-680ec0761622",
+      "2d8b96d5-f9ba-4de5-a60b-0da0f60afaec"
     ],
     "materialIds": [
-      "bcf4ede9-5dde-4874-b14b-5de1a598bdb4"
+      "bcf4ede9-5dde-4874-b14b-5de1a598bdb4",
+      "50e9bda3-e20a-4a57-b0b5-105c32bd945f"
     ],
     "systemIds": [
       "3628303b-f98e-4dc6-8627-9ad94b5af3dd"
     ],
-    "gapIds": [],
     "path": "batching-weighing"
   },
   "00923788-92f4-40d0-868f-21eb57d5380b": {
@@ -1034,7 +1002,8 @@
     ],
     "nestedFlowId": null,
     "artifactIds": [
-      "83d48320-9598-4069-b091-c032b4e36fd7"
+      "83d48320-9598-4069-b091-c032b4e36fd7",
+      "2d8b96d5-f9ba-4de5-a60b-0da0f60afaec"
     ],
     "materialIds": [
       "72e2305e-e782-4fef-a0f0-684b001b4bf4",
@@ -1043,7 +1012,6 @@
     "systemIds": [
       "3628303b-f98e-4dc6-8627-9ad94b5af3dd"
     ],
-    "gapIds": [],
     "path": "pre-run-line-clearance"
   },
   "3a08d5f0-1981-465e-a538-e1a7b674c81a": {
@@ -1064,13 +1032,14 @@
     ],
     "nestedFlowId": null,
     "artifactIds": [
-      "56526379-12e6-4c0f-a1fc-bd1c83d9f1a0"
+      "56526379-12e6-4c0f-a1fc-bd1c83d9f1a0",
+      "7e7db815-8cfb-429d-be62-3f35e49fd6e3"
     ],
     "materialIds": [],
     "systemIds": [
-      "3628303b-f98e-4dc6-8627-9ad94b5af3dd"
+      "3628303b-f98e-4dc6-8627-9ad94b5af3dd",
+      "2227d2ed-2fec-40de-a9d4-52e262f14809"
     ],
-    "gapIds": [],
     "path": "process-setup-verification"
   },
   "6105447b-2425-420c-acbe-3fd436d078c2": {
@@ -1097,16 +1066,19 @@
     "artifactIds": [
       "1bdfade9-acc5-4535-891f-87d4cf762f5c",
       "7a252b54-ea94-4cd4-ac17-c4e00c174340",
-      "e8d03bfb-7a45-46f4-80ee-be037dd5e218"
+      "e8d03bfb-7a45-46f4-80ee-be037dd5e218",
+      "7e7db815-8cfb-429d-be62-3f35e49fd6e3",
+      "2d8b96d5-f9ba-4de5-a60b-0da0f60afaec"
     ],
     "materialIds": [
       "9bc5fcf1-532d-40f8-86d1-2ba97b0b8950",
       "8c17f733-178e-42a8-9a66-08c7e489d36b"
     ],
     "systemIds": [
-      "3628303b-f98e-4dc6-8627-9ad94b5af3dd"
+      "3628303b-f98e-4dc6-8627-9ad94b5af3dd",
+      "2227d2ed-2fec-40de-a9d4-52e262f14809",
+      "9831aefd-1733-472a-b8e0-954c68512132"
     ],
-    "gapIds": [],
     "path": "ccp-monitoring"
   },
   "04a4e8bc-8ed5-4fae-8ca8-0d9081e7ecae": {
@@ -1136,7 +1108,6 @@
       "06ff688b-147f-4fde-846c-35ad49d333bc",
       "3628303b-f98e-4dc6-8627-9ad94b5af3dd"
     ],
-    "gapIds": [],
     "path": "ccp-deviation-corrective-action"
   },
   "12ed6f1d-97b8-4053-9e44-4bad182fddb3": {
@@ -1164,12 +1135,14 @@
     "materialIds": [
       "72e2305e-e782-4fef-a0f0-684b001b4bf4",
       "9a076e51-1e86-42a5-84d9-8c39da37e1d0",
-      "076d8f82-c969-464d-a40b-1e5413058708"
+      "076d8f82-c969-464d-a40b-1e5413058708",
+      "c3c6e60a-aea7-4825-99d9-04adb6452f49",
+      "ea1e08a2-bf88-45df-8d47-6df44d9ae776"
     ],
     "systemIds": [
-      "06ff688b-147f-4fde-846c-35ad49d333bc"
+      "06ff688b-147f-4fde-846c-35ad49d333bc",
+      "9831aefd-1733-472a-b8e0-954c68512132"
     ],
-    "gapIds": [],
     "path": "allergen-changeover-cleaning"
   },
   "675a0808-4ab3-417e-9505-70fdf07a77d2": {
@@ -1197,9 +1170,9 @@
     ],
     "systemIds": [
       "06ff688b-147f-4fde-846c-35ad49d333bc",
-      "0aa50349-ec76-4ea4-b24d-bd61159fff84"
+      "0aa50349-ec76-4ea4-b24d-bd61159fff84",
+      "9831aefd-1733-472a-b8e0-954c68512132"
     ],
-    "gapIds": [],
     "path": "environmental-monitoring"
   },
   "885b5c81-29e7-42a9-be5e-72c6f48a9cde": {
@@ -1225,7 +1198,6 @@
       "0aa50349-ec76-4ea4-b24d-bd61159fff84",
       "06ff688b-147f-4fde-846c-35ad49d333bc"
     ],
-    "gapIds": [],
     "path": "in-process-sampling"
   },
   "a72fb5b8-011c-4547-924d-dd4814c8a897": {
@@ -1248,7 +1220,6 @@
     "systemIds": [
       "06ff688b-147f-4fde-846c-35ad49d333bc"
     ],
-    "gapIds": [],
     "path": "spc-charting"
   },
   "006beb57-354a-4871-bdc7-32064cd309ba": {
@@ -1272,7 +1243,6 @@
     "systemIds": [
       "06ff688b-147f-4fde-846c-35ad49d333bc"
     ],
-    "gapIds": [],
     "path": "nonconformance-capture"
   },
   "d83408b4-06a9-462c-9c76-2f365071799d": {
@@ -1298,7 +1268,6 @@
     "systemIds": [
       "06ff688b-147f-4fde-846c-35ad49d333bc"
     ],
-    "gapIds": [],
     "path": "oos-disposition"
   },
   "33a15d20-1aec-469d-b1da-b77fe7082daf": {
@@ -1322,9 +1291,9 @@
     ],
     "materialIds": [],
     "systemIds": [
-      "3628303b-f98e-4dc6-8627-9ad94b5af3dd"
+      "3628303b-f98e-4dc6-8627-9ad94b5af3dd",
+      "2227d2ed-2fec-40de-a9d4-52e262f14809"
     ],
-    "gapIds": [],
     "path": "fill-seal"
   },
   "ff183065-f2ee-41fd-b20a-8cfc8ec36079": {
@@ -1345,13 +1314,13 @@
       "2e49adf0-dbf5-4625-bfda-b538e7085483"
     ],
     "materialIds": [
-      "bcf4ede9-5dde-4874-b14b-5de1a598bdb4"
+      "bcf4ede9-5dde-4874-b14b-5de1a598bdb4",
+      "50e9bda3-e20a-4a57-b0b5-105c32bd945f"
     ],
     "systemIds": [
       "798d71ae-178b-4f6b-bd3d-c3b58bd2013b",
       "39da6cf5-44d6-44d3-b613-d86a3530a7b1"
     ],
-    "gapIds": [],
     "path": "catch-weight-verification"
   },
   "e5fcc92a-5d13-46a8-8805-b1d2d868377e": {
@@ -1366,12 +1335,13 @@
     ],
     "threadIds": [],
     "nestedFlowId": null,
-    "artifactIds": [],
+    "artifactIds": [
+      "4c3d5e6f-7a8b-4c9d-0e1f-2a3b4c5d6e7a"
+    ],
     "materialIds": [],
     "systemIds": [
       "3628303b-f98e-4dc6-8627-9ad94b5af3dd"
     ],
-    "gapIds": [],
     "path": "primary-secondary-packaging"
   },
   "a971aa07-e6bf-4eb2-b4b3-44873ab4484e": {
@@ -1398,7 +1368,6 @@
     "systemIds": [
       "3628303b-f98e-4dc6-8627-9ad94b5af3dd"
     ],
-    "gapIds": [],
     "path": "package-integrity-check"
   },
   "1528d30a-75f1-4819-a2b3-acc03c4f0f41": {
@@ -1425,7 +1394,6 @@
     "systemIds": [
       "e7cf071d-ca71-42ea-81de-4924de27f07c"
     ],
-    "gapIds": [],
     "path": "label-copy-drafting"
   },
   "e6cd4f4e-49b0-45fb-8714-c20075af0438": {
@@ -1456,7 +1424,6 @@
     "systemIds": [
       "e7cf071d-ca71-42ea-81de-4924de27f07c"
     ],
-    "gapIds": [],
     "path": "allergen-claims-verification"
   },
   "26d65cd2-dfa3-4d1c-a2c3-a07b19df32c7": {
@@ -1481,7 +1448,6 @@
     "systemIds": [
       "e7cf071d-ca71-42ea-81de-4924de27f07c"
     ],
-    "gapIds": [],
     "path": "label-artwork-approval"
   },
   "4224adc1-d9bf-44b9-805f-1d15261eb870": {
@@ -1507,7 +1473,6 @@
     "systemIds": [
       "3628303b-f98e-4dc6-8627-9ad94b5af3dd"
     ],
-    "gapIds": [],
     "path": "lot-date-coding"
   },
   "8a91ee5a-aeed-440e-8a2d-7579a0e91d2a": {
@@ -1533,7 +1498,6 @@
     "systemIds": [
       "3628303b-f98e-4dc6-8627-9ad94b5af3dd"
     ],
-    "gapIds": [],
     "path": "label-application-verification"
   },
   "fd5b2239-f5a6-4228-80fc-f7142d34e33b": {
@@ -1557,7 +1521,6 @@
     "systemIds": [
       "39da6cf5-44d6-44d3-b613-d86a3530a7b1"
     ],
-    "gapIds": [],
     "path": "fg-putaway"
   },
   "590dacbb-6224-4d91-a903-1e2f444674b6": {
@@ -1581,7 +1544,6 @@
     "systemIds": [
       "39da6cf5-44d6-44d3-b613-d86a3530a7b1"
     ],
-    "gapIds": [],
     "path": "shelf-life-tracking"
   },
   "bd71a1dd-ab62-470d-9e12-96775aa2d6c5": {
@@ -1598,12 +1560,13 @@
       "3512a7c6-f64a-4bb7-8171-4e2dd24e791a"
     ],
     "nestedFlowId": null,
-    "artifactIds": [],
+    "artifactIds": [
+      "5d4e6f7a-8b9c-4d0e-1f2a-3b4c5d6e7f8b"
+    ],
     "materialIds": [],
     "systemIds": [
       "39da6cf5-44d6-44d3-b613-d86a3530a7b1"
     ],
-    "gapIds": [],
     "path": "fg-fefo-management"
   },
   "a73d62df-066b-404f-90c5-c0c72535170e": {
@@ -1632,7 +1595,6 @@
       "39da6cf5-44d6-44d3-b613-d86a3530a7b1",
       "22e46c8f-cf7e-4d53-b5f2-56c939ee76ff"
     ],
-    "gapIds": [],
     "path": "fg-inventory-traceability"
   },
   "59fcfd66-adbb-4ec7-bc35-c15cb11d00d0": {
@@ -1661,7 +1623,6 @@
       "22e46c8f-cf7e-4d53-b5f2-56c939ee76ff",
       "39da6cf5-44d6-44d3-b613-d86a3530a7b1"
     ],
-    "gapIds": [],
     "path": "shipping-event-tlc-recording"
   },
   "8f8fbd1c-e04c-41ce-a6f3-0f45dea98e31": {
@@ -1685,7 +1646,6 @@
     "systemIds": [
       "0895906c-34f8-43a0-a4d8-112d3a9eb395"
     ],
-    "gapIds": [],
     "path": "asn-generation"
   },
   "23b48d9d-c8fd-495c-a4e1-bb8dcf84f8c3": {
@@ -1715,7 +1675,6 @@
     "systemIds": [
       "22e46c8f-cf7e-4d53-b5f2-56c939ee76ff"
     ],
-    "gapIds": [],
     "path": "carrier-handoff-cold-chain-record"
   },
   "47719c67-7075-4fd1-94a1-0c456428d0b7": {
@@ -1750,7 +1709,6 @@
     "artifactIds": [],
     "materialIds": [],
     "systemIds": [],
-    "gapIds": [],
     "path": "ingredient-sourcing-procurement"
   },
   "c4f4e35a-a8a0-432c-b7d9-36a416b70a56": {
@@ -1789,7 +1747,6 @@
     "artifactIds": [],
     "materialIds": [],
     "systemIds": [],
-    "gapIds": [],
     "path": "processing-manufacturing"
   },
   "dc388e98-2c28-4e90-95b2-cfcdab76fe8d": {
@@ -1825,7 +1782,6 @@
     "artifactIds": [],
     "materialIds": [],
     "systemIds": [],
-    "gapIds": [],
     "path": "packaging"
   },
   "29f6789d-0abb-4306-bb15-a9bfd3d1d279": {
@@ -1856,7 +1812,6 @@
     "artifactIds": [],
     "materialIds": [],
     "systemIds": [],
-    "gapIds": [],
     "path": "distribution"
   }
 }

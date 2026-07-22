@@ -14,7 +14,11 @@
       "47719c67-7075-4fd1-94a1-0c456428d0b7",
       "c4f4e35a-a8a0-432c-b7d9-36a416b70a56",
       "dc388e98-2c28-4e90-95b2-cfcdab76fe8d",
-      "29f6789d-0abb-4306-bb15-a9bfd3d1d279"
+      "29f6789d-0abb-4306-bb15-a9bfd3d1d279",
+      "790dfcba-2db1-41c2-a9a6-f8fbfc1267d7",
+      "662579e0-38ef-4570-a388-c7bcef2a32f3",
+      "00923788-92f4-40d0-868f-21eb57d5380b",
+      "6105447b-2425-420c-acbe-3fd436d078c2"
     ],
     "key": "sanitation"
   },
@@ -40,7 +44,33 @@
       "47719c67-7075-4fd1-94a1-0c456428d0b7",
       "c4f4e35a-a8a0-432c-b7d9-36a416b70a56",
       "dc388e98-2c28-4e90-95b2-cfcdab76fe8d",
-      "29f6789d-0abb-4306-bb15-a9bfd3d1d279"
+      "29f6789d-0abb-4306-bb15-a9bfd3d1d279",
+      "30866752-f7e4-4c98-a5e4-39e2cba6beb1",
+      "8b56f152-c4f6-4607-9270-eefa91e81140",
+      "790dfcba-2db1-41c2-a9a6-f8fbfc1267d7",
+      "6532e290-5ee1-4d59-b364-33f4308347cb",
+      "b9382349-bf15-4564-b822-de458d7e1e02",
+      "c77fe376-334a-4009-ab47-bdae557cb26c",
+      "17687176-061a-4bcd-a503-bca8d8f62fa1",
+      "f04cba8c-96ab-471b-acc1-bf9304194a95",
+      "66457337-68b1-4f15-9207-36d3601e6d76",
+      "ad144aa0-ac9a-4052-9ae0-fda1670a59c1",
+      "ea870c3a-7428-4e75-ad57-8b96b9ea3139",
+      "3a08d5f0-1981-465e-a538-e1a7b674c81a",
+      "6105447b-2425-420c-acbe-3fd436d078c2",
+      "04a4e8bc-8ed5-4fae-8ca8-0d9081e7ecae",
+      "885b5c81-29e7-42a9-be5e-72c6f48a9cde",
+      "006beb57-354a-4871-bdc7-32064cd309ba",
+      "d83408b4-06a9-462c-9c76-2f365071799d",
+      "33a15d20-1aec-469d-b1da-b77fe7082daf",
+      "4224adc1-d9bf-44b9-805f-1d15261eb870",
+      "fd5b2239-f5a6-4228-80fc-f7142d34e33b",
+      "590dacbb-6224-4d91-a903-1e2f444674b6",
+      "bd71a1dd-ab62-470d-9e12-96775aa2d6c5",
+      "a73d62df-066b-404f-90c5-c0c72535170e",
+      "59fcfd66-adbb-4ec7-bc35-c15cb11d00d0",
+      "8f8fbd1c-e04c-41ce-a6f3-0f45dea98e31",
+      "23b48d9d-c8fd-495c-a4e1-bb8dcf84f8c3"
     ],
     "key": "traceability"
   },
@@ -63,7 +93,9 @@
       "47719c67-7075-4fd1-94a1-0c456428d0b7",
       "c4f4e35a-a8a0-432c-b7d9-36a416b70a56",
       "dc388e98-2c28-4e90-95b2-cfcdab76fe8d",
-      "29f6789d-0abb-4306-bb15-a9bfd3d1d279"
+      "29f6789d-0abb-4306-bb15-a9bfd3d1d279",
+      "a73d62df-066b-404f-90c5-c0c72535170e",
+      "59fcfd66-adbb-4ec7-bc35-c15cb11d00d0"
     ],
     "key": "recall"
   },
@@ -81,7 +113,19 @@
       "3e709089-908f-4655-b4ef-a0477c3dda52",
       "47719c67-7075-4fd1-94a1-0c456428d0b7",
       "c4f4e35a-a8a0-432c-b7d9-36a416b70a56",
-      "dc388e98-2c28-4e90-95b2-cfcdab76fe8d"
+      "dc388e98-2c28-4e90-95b2-cfcdab76fe8d",
+      "704ab72d-6c58-4cf4-b4f4-b7eedea828af",
+      "454a05bd-7e29-4750-8738-b0add331db8b",
+      "b9382349-bf15-4564-b822-de458d7e1e02",
+      "c77fe376-334a-4009-ab47-bdae557cb26c",
+      "e43ad2c4-a64f-4e54-9f3c-93cb221ef0df",
+      "66457337-68b1-4f15-9207-36d3601e6d76",
+      "d2bd63b9-9b1c-47b2-8627-c590c5c69be5",
+      "ea870c3a-7428-4e75-ad57-8b96b9ea3139",
+      "00923788-92f4-40d0-868f-21eb57d5380b",
+      "12ed6f1d-97b8-4053-9e44-4bad182fddb3",
+      "e6cd4f4e-49b0-45fb-8714-c20075af0438",
+      "8a91ee5a-aeed-440e-8a2d-7579a0e91d2a"
     ],
     "key": "allergen-control"
   }

@@ -6,7 +6,9 @@
     "year": 1938,
     "agencyId": "2cf6d02e-5c41-40c6-8dea-2c5d9756b9c1",
     "summary": "Cornerstone of FDA's food authority. Prohibits adulterated or misbranded food in interstate commerce; nearly all FDA food regulations issued under it.",
-    "sourceIds": ["40aa2d70-7490-4cd3-b572-d42b9f506489"]
+    "sourceIds": [
+      "40aa2d70-7490-4cd3-b572-d42b9f506489"
+    ]
   },
   "2f72c0de-4634-4798-9aca-4d01ec2c0084": {
     "id": "2f72c0de-4634-4798-9aca-4d01ec2c0084",
@@ -15,7 +17,9 @@
     "year": 2011,
     "agencyId": "2cf6d02e-5c41-40c6-8dea-2c5d9756b9c1",
     "summary": "The most significant overhaul of US food safety law since 1938. Shifts food safety from a reactive (respond-to-outbreaks) model to a preventive model. Directed FDA to write seven major implementing rules (see fsma-pchf, fsma-pcaf, fsma-produce-safety-rule, fsma-fsvp, fsma-strf, fsma-ia-rule, fsma-204).",
-    "sourceIds": ["fa2343c4-52d5-496b-97e0-4edd5f69c36a"]
+    "sourceIds": [
+      "fa2343c4-52d5-496b-97e0-4edd5f69c36a"
+    ]
   },
   "4db45158-1d5c-4b87-86ad-c022454a603e": {
     "id": "4db45158-1d5c-4b87-86ad-c022454a603e",
@@ -24,7 +28,9 @@
     "year": 2015,
     "agencyId": "2cf6d02e-5c41-40c6-8dea-2c5d9756b9c1",
     "summary": "Central FSMA rule for most manufacturers. Requires a written Food Safety Plan (hazard analysis, preventive controls, monitoring, corrective actions, verification, recall plan) overseen by a Preventive Controls Qualified Individual (PCQI), plus updated Current Good Manufacturing Practices (CGMPs). Exempts very small businesses, farms, and retail/restaurants (or gives modified requirements).",
-    "sourceIds": ["abcd7b91-6b10-4805-905b-b1da46aae541"]
+    "sourceIds": [
+      "abcd7b91-6b10-4805-905b-b1da46aae541"
+    ]
   },
   "2daacfdd-b270-4df6-ad79-bd7a0af491f6": {
     "id": "2daacfdd-b270-4df6-ad79-bd7a0af491f6",
@@ -33,7 +39,9 @@
     "year": 2015,
     "agencyId": "2cf6d02e-5c41-40c6-8dea-2c5d9756b9c1",
     "summary": "PCHF-equivalent rule for manufacturers of pet food and livestock feed; requires hazard analysis and preventive controls.",
-    "sourceIds": ["07fed08e-e11c-42df-9eec-92305f751546"]
+    "sourceIds": [
+      "07fed08e-e11c-42df-9eec-92305f751546"
+    ]
   },
   "bbacc25c-33bb-407e-bb70-c6e7a67f8784": {
     "id": "bbacc25c-33bb-407e-bb70-c6e7a67f8784",
@@ -42,7 +50,9 @@
     "year": 2015,
     "agencyId": "2cf6d02e-5c41-40c6-8dea-2c5d9756b9c1",
     "summary": "Applies to farms growing, harvesting, packing, or holding fresh produce consumed raw. Sets standards for agricultural water, biological soil amendments, worker hygiene, equipment/buildings, and animal intrusion. Does not apply to produce destined for commercial processing (e.g., canning) with adequate reduction of microorganisms.",
-    "sourceIds": ["b849e231-2362-4766-bf73-d105f1277e6f"]
+    "sourceIds": [
+      "b849e231-2362-4766-bf73-d105f1277e6f"
+    ]
   },
   "ed70a1f5-bbb6-4ae3-96e3-0bea4d58dc9a": {
     "id": "ed70a1f5-bbb6-4ae3-96e3-0bea4d58dc9a",
@@ -51,7 +61,9 @@
     "year": 2015,
     "agencyId": "2cf6d02e-5c41-40c6-8dea-2c5d9756b9c1",
     "summary": "Applies to US importers. Requires hazard analysis of each imported food, supplier verification activities, written records, and an FSVP Qualified Individual.",
-    "sourceIds": ["17a435a4-56f1-4d53-bd60-3f6b34185875"]
+    "sourceIds": [
+      "17a435a4-56f1-4d53-bd60-3f6b34185875"
+    ]
   },
   "41dc8af7-974a-4eaf-b4de-eacb5109dfb7": {
     "id": "41dc8af7-974a-4eaf-b4de-eacb5109dfb7",
@@ -60,7 +72,9 @@
     "year": 2016,
     "agencyId": "2cf6d02e-5c41-40c6-8dea-2c5d9756b9c1",
     "summary": "Applies to shippers, loaders, motor/rail carriers, and receivers. Requires written agreements defining responsibilities, vehicle/equipment cleanliness, temperature control during transport, and recordkeeping.",
-    "sourceIds": ["6ba7f74b-eeab-44e4-9b0a-69ace5186859"]
+    "sourceIds": [
+      "6ba7f74b-eeab-44e4-9b0a-69ace5186859"
+    ]
   },
   "3eecd978-8139-4ab1-948f-828c00c79f63": {
     "id": "3eecd978-8139-4ab1-948f-828c00c79f63",
@@ -69,7 +83,9 @@
     "year": 2016,
     "agencyId": "2cf6d02e-5c41-40c6-8dea-2c5d9756b9c1",
     "summary": "Requires large food facilities to maintain a Food Defense Plan (including a vulnerability assessment and mitigation strategies) addressing deliberate contamination risk at four \"actionable process steps\" (bulk liquid receiving/loading, liquid storage/handling, secondary ingredient handling, mixing).",
-    "sourceIds": ["abcb7c40-1113-47e2-b919-0b47f3364aba"]
+    "sourceIds": [
+      "abcb7c40-1113-47e2-b919-0b47f3364aba"
+    ]
   },
   "93b63909-560d-4414-8cb4-0920241e45a4": {
     "id": "93b63909-560d-4414-8cb4-0920241e45a4",
@@ -79,7 +95,10 @@
     "complianceDeadline": "2028-07-20",
     "agencyId": "2cf6d02e-5c41-40c6-8dea-2c5d9756b9c1",
     "summary": "Requires companies that manufacture, process, pack, or hold foods on the Food Traceability List (FTL) to capture Key Data Elements (KDEs) at Critical Tracking Events (CTEs) and produce records to FDA within 24 hours of request. Electronic recordkeeping strongly encouraged given the retrieval window. Original compliance date (January 20, 2026) was extended: FDA proposed a 30-month extension in August 2025, and Congress subsequently directed FDA (via a 2026 appropriations act) not to enforce before July 20, 2028 — the current operative date.",
-    "sourceIds": ["da05f47f-c44b-47f4-bd19-9ef07eda9955", "1d3a1d00-95ca-4af0-918f-5b3b8d0e1421"]
+    "sourceIds": [
+      "da05f47f-c44b-47f4-bd19-9ef07eda9955",
+      "1d3a1d00-95ca-4af0-918f-5b3b8d0e1421"
+    ]
   },
   "52a1eeda-eb18-49b4-bc9f-d51a5ae9c39e": {
     "id": "52a1eeda-eb18-49b4-bc9f-d51a5ae9c39e",
@@ -88,7 +107,9 @@
     "year": 1906,
     "agencyId": "aac69997-d9a2-4428-860f-1d8813e9ba5a",
     "summary": "Gives FSIS authority over beef, pork, lamb, and other amenable livestock species; requires ante-mortem and post-mortem inspection of animals.",
-    "sourceIds": ["9a7e4ca7-93a7-4812-ba35-5ccbabc61913"]
+    "sourceIds": [
+      "9a7e4ca7-93a7-4812-ba35-5ccbabc61913"
+    ]
   },
   "ac08bae1-7153-4c36-9af1-3969ebe48a4e": {
     "id": "ac08bae1-7153-4c36-9af1-3969ebe48a4e",
@@ -97,7 +118,9 @@
     "year": 1957,
     "agencyId": "aac69997-d9a2-4428-860f-1d8813e9ba5a",
     "summary": "FMIA-equivalent for chicken, turkey, duck, and other domesticated poultry.",
-    "sourceIds": ["451f2391-1c63-47a4-a556-7e4e73b64e37"]
+    "sourceIds": [
+      "451f2391-1c63-47a4-a556-7e4e73b64e37"
+    ]
   },
   "b69b1236-0674-4d3a-9a57-f37584b74134": {
     "id": "b69b1236-0674-4d3a-9a57-f37584b74134",
@@ -106,7 +129,9 @@
     "year": 1970,
     "agencyId": "aac69997-d9a2-4428-860f-1d8813e9ba5a",
     "summary": "Covers processed (liquid, frozen, dried) egg products; shell eggs remain under FDA (with USDA AMS providing voluntary grading).",
-    "sourceIds": ["002b2907-b2b9-48fd-a31a-29343c250028"]
+    "sourceIds": [
+      "002b2907-b2b9-48fd-a31a-29343c250028"
+    ]
   },
   "18c16d22-6037-4b00-a54b-d91b55a2e001": {
     "id": "18c16d22-6037-4b00-a54b-d91b55a2e001",
@@ -115,7 +140,9 @@
     "year": 1966,
     "agencyId": "2cf6d02e-5c41-40c6-8dea-2c5d9756b9c1",
     "summary": "Requires honest, informative labels on consumer products including food; jointly enforced by FDA (foods/drugs/cosmetics/devices) and FTC (other consumer commodities).",
-    "sourceIds": ["3de2e495-0a34-4d28-bd26-b0da95272e79"]
+    "sourceIds": [
+      "3de2e495-0a34-4d28-bd26-b0da95272e79"
+    ]
   },
   "5fedae94-25ee-4237-9dca-d14b6b92b2d5": {
     "id": "5fedae94-25ee-4237-9dca-d14b6b92b2d5",
@@ -124,7 +151,9 @@
     "year": 1990,
     "agencyId": "2cf6d02e-5c41-40c6-8dea-2c5d9756b9c1",
     "summary": "Mandated the standardized Nutrition Facts panel on most packaged food and authorized specific nutrient content and health claims. Implementing regulations followed in 1993, with the panel required on labels starting 1994.",
-    "sourceIds": ["cbbd031f-2050-4b54-b8fe-2dbe54d731d4"]
+    "sourceIds": [
+      "cbbd031f-2050-4b54-b8fe-2dbe54d731d4"
+    ]
   },
   "b92fd46c-08fa-4a05-95d7-d030b0203096": {
     "id": "b92fd46c-08fa-4a05-95d7-d030b0203096",
@@ -133,7 +162,9 @@
     "year": 2004,
     "agencyId": "2cf6d02e-5c41-40c6-8dea-2c5d9756b9c1",
     "summary": "Requires the 8 original major food allergens (milk, egg, fish, crustacean shellfish, tree nuts, peanuts, wheat, soybeans) to be declared on labels either parenthetically in the ingredient list or via a 'Contains' statement. Amended by the FASTER Act (2021) to add sesame as the 9th major allergen, effective January 1, 2023.",
-    "sourceIds": ["32f43a5d-b00d-4c31-9899-39e364919865"]
+    "sourceIds": [
+      "32f43a5d-b00d-4c31-9899-39e364919865"
+    ]
   },
   "21122a4e-a901-444d-b6d5-8e7a03d67054": {
     "id": "21122a4e-a901-444d-b6d5-8e7a03d67054",
@@ -143,7 +174,10 @@
     "year": 2002,
     "agencyId": "2cf6d02e-5c41-40c6-8dea-2c5d9756b9c1",
     "summary": "Required domestic and foreign food facilities to register with FDA and give prior notice of imported shipments. Established the baseline traceability requirement, officially termed \"one-up, one-back\" recordkeeping: non-transporters must record their immediate previous source and immediate subsequent recipient. Biennial registration renewal (Oct 1 - Dec 31 of even-numbered years) was not part of this original 2002 Act — it was added later by FSMA (2011), which amended FD&C Act § 415(a)(3).",
-    "sourceIds": ["cf86e662-dcc8-4393-9b08-8d9ec48442d1", "d6431e96-3fef-4372-92a0-1b8d058a44ae"]
+    "sourceIds": [
+      "cf86e662-dcc8-4393-9b08-8d9ec48442d1",
+      "d6431e96-3fef-4372-92a0-1b8d058a44ae"
+    ]
   },
   "daa53a8a-1ab0-4a41-823b-0bd2779f0ee4": {
     "id": "daa53a8a-1ab0-4a41-823b-0bd2779f0ee4",
@@ -152,7 +186,9 @@
     "year": 1996,
     "agencyId": "aac69997-d9a2-4428-860f-1d8813e9ba5a",
     "summary": "Makes HACCP mandatory in USDA-regulated meat and poultry plants. Final rule (\"Pathogen Reduction/HACCP Systems\") published July 25, 1996.",
-    "sourceIds": ["5650c548-99c2-4084-8475-12768273c73d"]
+    "sourceIds": [
+      "5650c548-99c2-4084-8475-12768273c73d"
+    ]
   },
   "0f215096-8098-4709-b7d5-8c2ecebf3422": {
     "id": "0f215096-8098-4709-b7d5-8c2ecebf3422",
@@ -161,7 +197,9 @@
     "year": 1995,
     "agencyId": "2cf6d02e-5c41-40c6-8dea-2c5d9756b9c1",
     "summary": "Makes HACCP mandatory for seafood processors. Final rule published December 18, 1995, effective December 18, 1997.",
-    "sourceIds": ["4bf11242-7644-408a-b6ce-d0de44084569"]
+    "sourceIds": [
+      "4bf11242-7644-408a-b6ce-d0de44084569"
+    ]
   },
   "a0ba0e0a-4847-4276-853c-1cc3b93e1c2e": {
     "id": "a0ba0e0a-4847-4276-853c-1cc3b93e1c2e",
@@ -170,7 +208,9 @@
     "year": 2001,
     "agencyId": "2cf6d02e-5c41-40c6-8dea-2c5d9756b9c1",
     "summary": "Makes HACCP mandatory for juice manufacturers. Final rule published January 19, 2001, with phased effective dates (large businesses 2002, small 2003, very small 2004).",
-    "sourceIds": ["43dbde62-39be-4162-9845-3fcb640f768f"]
+    "sourceIds": [
+      "43dbde62-39be-4162-9845-3fcb640f768f"
+    ]
   },
   "2adc08a2-5082-4f11-9890-73c5c1bb546e": {
     "id": "2adc08a2-5082-4f11-9890-73c5c1bb546e",
@@ -179,7 +219,9 @@
     "year": 2016,
     "agencyId": "c8b293a1-17bc-42b2-b023-7d0c6dba905d",
     "summary": "Requires disclosure of bioengineered (GMO) food ingredients via text, USDA BE symbol, QR code, or phone number/URL. Enacted 2016 (amending the Agricultural Marketing Act of 1946); final rule published December 2018; implementation began January 2020 (2021 for small manufacturers); mandatory compliance began January 1, 2022. Highly refined ingredients with no detectable modified genetic material are generally exempt.",
-    "sourceIds": ["6970bad7-82d6-4df0-8a27-590bffc32cbc"]
+    "sourceIds": [
+      "6970bad7-82d6-4df0-8a27-590bffc32cbc"
+    ]
   },
   "719f7e9a-1a25-4253-93f4-b03c648b5265": {
     "id": "719f7e9a-1a25-4253-93f4-b03c648b5265",
@@ -188,6 +230,52 @@
     "year": 2000,
     "agencyId": "c8b293a1-17bc-42b2-b023-7d0c6dba905d",
     "summary": "Certifies organic farms and handlers and defines labeling tiers: 100% Organic, Organic (≥95%), Made with Organic [ingredient] (≥70%, up to 3 ingredients/categories listed). Statutory basis is the Organic Foods Production Act of 1990; final rule published December 2000, effective October 2002.",
-    "sourceIds": ["19b68aea-9a1a-4995-8c33-09070414d87f"]
+    "sourceIds": [
+      "19b68aea-9a1a-4995-8c33-09070414d87f"
+    ]
+  },
+  "2b3c4d5e-6f7a-4b8c-9d0e-1f2a3b4c5d6e": {
+    "id": "2b3c4d5e-6f7a-4b8c-9d0e-1f2a3b4c5d6e",
+    "name": "Nutrition Facts Label Final Rule (2016 revision)",
+    "citation": "81 FR 33742 (May 27, 2016); 21 CFR 101.9",
+    "year": 2016,
+    "agencyId": "2cf6d02e-5c41-40c6-8dea-2c5d9756b9c1",
+    "summary": "Substantially redesigned the Nutrition Facts panel established by NLEA: added a mandatory added-sugars declaration, updated Daily Values, enlarged/bolded calorie type, and revised serving sizes to better reflect actual consumption. Compliance dates (extended from the original rule by a 2018 rule) were January 1, 2020 for manufacturers with $10M+ in annual food sales and January 1, 2021 for smaller manufacturers.",
+    "sourceIds": [
+      "6df5fcc5-2076-421a-9545-d8a56ae4fcdc"
+    ]
+  },
+  "3c4d5e6f-7a8b-4c9d-0e1f-2a3b4c5d6e7f": {
+    "id": "3c4d5e6f-7a8b-4c9d-0e1f-2a3b4c5d6e7f",
+    "name": "Front-of-Package Nutrition Information (proposed rule)",
+    "citation": "Federal Register 2025-00778 (proposed, not yet final)",
+    "year": 2025,
+    "agencyId": "2cf6d02e-5c41-40c6-8dea-2c5d9756b9c1",
+    "summary": "FDA proposed a mandatory front-of-package 'Nutrition Info Box' disclosing saturated fat, sodium, and added sugars levels. Not yet final law as of this dataset's last check — comment period closed July 2025, with FDA's stated priorities targeting a final rule around spring 2026. Tracked here as an in-flight regulation the way FSMA 204's compliance-date extension was tracked before becoming binding.",
+    "sourceIds": [
+      "3f0518be-803d-4760-8c85-7b0bec95624f"
+    ]
+  },
+  "a36806f7-5f25-486d-b4f0-dc3a8e6c4210": {
+    "id": "a36806f7-5f25-486d-b4f0-dc3a8e6c4210",
+    "name": "BRCGS Global Standard for Food Safety",
+    "citation": "BRCGS Global Standard for Food Safety, Issue 9",
+    "year": 2022,
+    "agencyId": "3b121647-ec9f-444c-9084-8a6637d357da",
+    "summary": "GFSI-recognized certification standard (formerly the British Retail Consortium standard, now branded BRCGS) covering food safety management systems, HACCP, and site standards. Issue 9 published August 2022, with certification audits against it beginning February 2023. Widely required by UK and European retailers as a supplier qualification condition.",
+    "sourceIds": [
+      "56c9cddc-092d-4c21-b006-bd6604d3dd42"
+    ]
+  },
+  "2cda1fd4-2d76-488e-a222-04d4b30c88f8": {
+    "id": "2cda1fd4-2d76-488e-a222-04d4b30c88f8",
+    "name": "IFS Food Standard",
+    "citation": "IFS Food, Version 8 (International Featured Standards)",
+    "year": 2024,
+    "agencyId": "3b121647-ec9f-444c-9084-8a6637d357da",
+    "summary": "GFSI-recognized certification standard developed by International Featured Standards (IFS), assessing food safety and process/product quality across several processing scopes. Version 8 became mandatory for all certified companies on January 1, 2024, and achieved GFSI recognition against the 2020 GFSI Benchmarking Requirements in September 2024. A common supplier-qualification requirement, particularly for European retail buyers.",
+    "sourceIds": [
+      "16daba2d-f77e-4992-ab4a-f4793abacb52"
+    ]
   }
 }
