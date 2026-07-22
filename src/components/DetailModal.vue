@@ -92,6 +92,16 @@ const viewFullPageHref = computed(() => {
         </table>
       </div>
 
+      <div v-if="item.capabilities?.length" class="modal__section">
+        <h4>Capabilities</h4>
+        <table class="modal__fields-table">
+          <tr v-for="capability in item.capabilities" :key="capability.name">
+            <td class="modal__fields-table-name">{{ capability.name }}</td>
+            <td>{{ capability.description }}</td>
+          </tr>
+        </table>
+      </div>
+
       <div v-if="relatedChips.length" class="modal__section">
         <h4>Related</h4>
         <div class="modal__related-chips">

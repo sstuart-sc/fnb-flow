@@ -43,11 +43,17 @@
     "name": "USDA AMS",
     "fullName": "USDA Agricultural Marketing Service",
     "parent": "US Department of Agriculture",
-    "summary": "Administers voluntary, fee-based grading and marketing standards (e.g., USDA Grade A, USDA Choice) and the National Organic Program (NOP), which certifies organic farms and handlers. Also administers the National Bioengineered Food Disclosure Standard (NBFDS).",
     "keyOffices": [],
     "sourceIds": [
       "30e9f383-71e7-4b37-9c98-e6679c982f25",
       "54f9b1c2-339d-484d-a76b-ddb53931fc08"
+    ],
+    "description": "USDA's Agricultural Marketing Service runs programs that are opt-in rather than baseline safety law: quality grading (e.g. USDA Choice, USDA Grade A) is a voluntary, fee-based service a company requests, not a floor every facility must clear.\n\nAMS also administers two disclosure regimes that function more like labeling law than grading: the National Organic Program, which accredits third-party certifying agents who in turn certify individual farms and handlers against the organic standard, and the National Bioengineered Food Disclosure Standard, which sets the disclosure format for bioengineered ingredients.\n\nBecause AMS's authority is program-based rather than a general food-safety mandate, a plant can be fully outside AMS's reach for grading purposes while still falling under FDA or FSIS for basic safety and labeling.",
+    "relatedIds": [
+      "719f7e9a-1a25-4253-93f4-b03c648b5265",
+      "2adc08a2-5082-4f11-9890-73c5c1bb546e",
+      "2cf6d02e-5c41-40c6-8dea-2c5d9756b9c1",
+      "aac69997-d9a2-4428-860f-1d8813e9ba5a"
     ],
     "path": "usda-ams"
   },
@@ -56,11 +62,15 @@
     "name": "EPA",
     "fullName": "Environmental Protection Agency",
     "parent": null,
-    "summary": "Sets maximum pesticide residue tolerances on food and feed under the Federal Food, Drug, and Cosmetic Act (enforced by FDA/USDA), regulates food-contact sanitizers as antimicrobial pesticides under FIFRA (with tolerance exemptions cross-referenced to FDA rules), and sets drinking water standards (Safe Drinking Water Act) that affect food manufacturing water quality.",
     "keyOffices": [],
     "sourceIds": [
       "a513ecce-17b3-40de-97fe-330f48f3e669",
       "bd24a8e8-29cd-4369-b0fb-5a0f34a6235d"
+    ],
+    "description": "EPA's reach into food manufacturing runs through chemical regulation rather than a food-safety mandate of its own. Under the Federal Food, Drug, and Cosmetic Act, EPA sets the tolerances — maximum allowable pesticide residue levels — for raw agricultural commodities and processed foods; FDA and FSIS then enforce those tolerances during their own inspection and sampling programs.\n\nEPA also regulates food-contact sanitizers and antimicrobial treatments as pesticides under FIFRA. Separately, EPA's drinking water standards under the Safe Drinking Water Act set the quality bar for water used as an ingredient or in sanitation, which matters to any plant on a municipal or private well supply.\n\nEnforcement is largely upstream of the manufacturing floor — registration and tolerance-setting happen at the product/chemical level — so a plant's day-to-day EPA exposure is mostly about buying compliant sanitizers and staying under residue tolerances set elsewhere in the supply chain.",
+    "relatedIds": [
+      "2cf6d02e-5c41-40c6-8dea-2c5d9756b9c1",
+      "aac69997-d9a2-4428-860f-1d8813e9ba5a"
     ],
     "path": "epa"
   },
@@ -69,10 +79,13 @@
     "name": "TTB",
     "fullName": "Alcohol and Tobacco Tax and Trade Bureau",
     "parent": "US Department of the Treasury",
-    "summary": "Regulates labeling and production of beer made with both malted barley and hops, wine at 7% ABV or greater, and spirits. Wine under 7% ABV and other fermented malt beverages fall to FDA instead.",
     "keyOffices": [],
     "sourceIds": [
       "5270eda2-77d9-4497-bcf3-5c27e681c78a"
+    ],
+    "description": "TTB is a Treasury Department bureau, not a food-safety agency — its authority over beverage alcohol comes from tax and trade law rather than product-safety law. Jurisdiction is split by a specific statutory line: TTB regulates beer brewed with both malted barley and hops, wine at 7% ABV or greater, and distilled spirits.\n\nProducts that fall outside that line — wine under 7% ABV, and fermented malt beverages made without both malted barley and hops — are FDA's responsibility instead, meaning two nominally similar beverage products can answer to two entirely different federal agencies depending on formulation and alcohol content.\n\nBecause TTB's mandate is tax and trade rather than food safety, a TTB-regulated facility is not thereby exempt from FDA or state sanitation and food-safety requirements that apply independently; TTB oversight is additive.",
+    "relatedIds": [
+      "2cf6d02e-5c41-40c6-8dea-2c5d9756b9c1"
     ],
     "path": "ttb"
   },
@@ -81,10 +94,14 @@
     "name": "FTC",
     "fullName": "Federal Trade Commission",
     "parent": null,
-    "summary": "Regulates food advertising and marketing claims (as distinct from FDA, which regulates label content itself), per a long-standing FTC/FDA liaison agreement (originally 1971) dividing jurisdiction. Coordinates with FDA on misleading claims.",
     "keyOffices": [],
     "sourceIds": [
       "1690475b-ce2c-48e8-97d8-c971136d1b9b"
+    ],
+    "description": "The FTC is an independent federal agency whose consumer-protection mission covers deceptive or unfair advertising and marketing claims across all industries, food included. It does not regulate what appears on a food label itself — that is FDA's territory — but it does regulate how a food product is advertised: TV, print, digital, and social media claims, endorsements, and pricing/promotional practices.\n\nThe dividing line has been formalized since the 1970s in a liaison agreement between FTC and FDA: label and packaging claims fall to FDA, while an identical claim made in a magazine ad or a commercial falls to FTC.\n\nEnforcement is civil, not inspection-based — the FTC has no field force that visits plants. Because its jurisdiction is advertising rather than the physical product, the FTC has essentially no touchpoints in the physical receiving-through-shipping flow this dataset models; its relevance here is mostly as a boundary marker explaining why label content and ad content are governed by different bodies.",
+    "relatedIds": [
+      "2cf6d02e-5c41-40c6-8dea-2c5d9756b9c1",
+      "18c16d22-6037-4b00-a54b-d91b55a2e001"
     ],
     "path": "ftc"
   },
@@ -93,11 +110,15 @@
     "name": "State & Local Agencies",
     "fullName": "State departments of agriculture/health and local health departments",
     "parent": null,
-    "summary": "Can be stricter than federal standards but not laxer. Responsible for retail/restaurant licensing and inspection (using the FDA Food Code — adopted in some form by ~97% of states/territories — as a model), some intrastate manufacturing licensing, weights-and-measures verification (against NIST Handbook 44 as the federal reference model), and cottage food laws.",
     "keyOffices": [],
     "sourceIds": [
       "18857130-e665-46e4-817a-bc9bca24767c",
       "dae96c92-1d7e-463e-a37d-7c9c92177079"
+    ],
+    "description": "This is a catch-all for the layer of government below the federal agencies: state departments of agriculture and health, and county/municipal health departments. States are generally free to set food-safety and labeling requirements stricter than federal law, though federal preemption limits how far state rules can diverge in specific areas.\n\nStates and localities own several jobs the federal agencies don't do directly: licensing and routine inspection of retail food establishments and restaurants (FDA writes the Food Code as a model — adopted in some form by ~97% of states/territories — but has no authority to enforce it at a diner), some intrastate manufacturing licensing, weights-and-measures verification against NIST Handbook 44 as the federal reference model, and cottage food laws exempting small home-based producers (thresholds vary by state).\n\nFor a manufacturer already operating under FDA or FSIS oversight, state/local agencies are usually a secondary layer rather than the primary regulator, but they become primary for anything sold direct-to-consumer at retail or produced under an intrastate-only license.",
+    "relatedIds": [
+      "2cf6d02e-5c41-40c6-8dea-2c5d9756b9c1",
+      "aac69997-d9a2-4428-860f-1d8813e9ba5a"
     ],
     "path": "state-local-agencies"
   },
@@ -106,11 +127,15 @@
     "name": "CDC",
     "fullName": "Centers for Disease Control and Prevention",
     "parent": "US Department of Health and Human Services (HHS)",
-    "summary": "Tracks and investigates foodborne illness outbreaks; estimates the annual US burden of foodborne disease at ~48M illnesses, ~128,000 hospitalizations, and ~3,000 deaths — CDC's current published headline estimate, though the methodology behind it dates to 2011 (Scallan et al.) rather than a recent study. A narrower, more recent CDC estimate (2025) covers just 7 major pathogens for 2019 (~9.9M illnesses, ~53,300 hospitalizations, 931 deaths) and does not replace the broader 48M figure, which also covers unspecified agents.",
     "keyOffices": [],
     "sourceIds": [
       "b86367cd-92f4-4447-886a-12fc38f32196",
       "b4a19aed-f8e7-4e34-812d-cecd8ae8a23f"
+    ],
+    "description": "The CDC is the federal public-health agency responsible for detecting, investigating, and characterizing foodborne illness outbreaks after the fact — it has no regulatory or inspection authority over food facilities and cannot issue recalls or shut down a plant. Its role sits downstream of the manufacturing and distribution flow this dataset models: illness is reported by clinicians and state health departments, CDC aggregates and analyzes the case data, and it works jointly with FDA or USDA FSIS once a suspected food source is identified.\n\nCDC also produces the periodic national burden-of-illness estimates: its current published headline estimate is ~48M illnesses, ~128,000 hospitalizations, and ~3,000 deaths annually, though the methodology behind it dates to 2011 (Scallan et al.) rather than a recent study. A narrower, more recent CDC estimate (2025) covers just 7 major pathogens for 2019 (~9.9M illnesses, ~53,300 hospitalizations, 931 deaths) and does not replace the broader 48M figure, which also covers unspecified agents.\n\nWhile CDC touches no artifact or system in the receiving-to-shipping flow directly, its outbreak data is part of the evidentiary backdrop informing why traceability, sanitation, and allergen-control requirements exist in the form they do.",
+    "relatedIds": [
+      "2cf6d02e-5c41-40c6-8dea-2c5d9756b9c1",
+      "aac69997-d9a2-4428-860f-1d8813e9ba5a"
     ],
     "path": "cdc"
   },
@@ -119,11 +144,16 @@
     "name": "GS1",
     "fullName": "GS1 (global standards nonprofit)",
     "parent": null,
-    "summary": "Maintains the global identification standards (GTIN, GLN, SSCC, EPCIS) underlying barcodes, EDI, and traceability systems across industries, including food. Not a government regulator.",
     "keyOffices": [],
     "sourceIds": [
       "9de163da-25db-489c-b6c9-30a755bec241",
       "f29ea385-f063-431d-834e-a5d7eac523f8"
+    ],
+    "description": "GS1 is a global nonprofit standards organization, not a government body and not a regulator of any kind. It has no statutory authority and enforces nothing directly; its influence comes from the fact that retailers, distributors, and trading partners across the food supply chain widely use its identifier and data-exchange standards — including GTIN, GLN, SSCC, and EPCIS — as a common language for products, locations, and shipments.\n\nGS1 standards intersect with food-safety regulation indirectly: FDA's Food Traceability Rule (FSMA 204) does not mandate GS1 specifically, but its required data elements (location identifiers, event data) map onto concepts GS1's standards already model.",
+    "relatedIds": [
+      "93b63909-560d-4414-8cb4-0920241e45a4",
+      "9cc2d1ff-a495-474c-bc2d-5615fe7e94bb",
+      "1188e42e-3097-4203-b657-0f88020f34f0"
     ],
     "path": "gs1"
   },
@@ -132,11 +162,17 @@
     "name": "GFSI",
     "fullName": "Global Food Safety Initiative",
     "parent": null,
-    "summary": "Benchmarking body (not itself an auditing scheme) that recognizes third-party food safety certification schemes (SQF, BRC, FSSC 22000, IFS) as meeting an internationally agreed standard. Major retailers require GFSI-recognized certification as a commercial condition of doing business.",
     "keyOffices": [],
     "sourceIds": [
       "10d4f375-5d74-4952-b95e-e5655ba2aad6",
       "221354f6-184a-4347-9632-e5f4510319de"
+    ],
+    "description": "GFSI (Global Food Safety Initiative) is a private-sector benchmarking body, not a certifying or auditing organization itself. It publishes benchmarking requirements that define what a food safety certification scheme must contain, and then reviews individual third-party schemes (SQF, BRCGS, FSSC 22000, IFS Food) against that document. A scheme that passes is declared \"GFSI-recognized\" — the actual audits and certificates are issued by the scheme owners and their accredited certification bodies, not by GFSI.\n\nGFSI recognition matters commercially rather than legally: it has no government authority. Its leverage comes from major retailers and foodservice buyers requiring suppliers to hold a GFSI-recognized certification as a condition of doing business, layered on top of, not in place of, regulatory compliance.\n\nBecause GFSI-recognized schemes are built around HACCP, a facility already compliant with PCHF is usually most of the way toward meeting a GFSI scheme's requirements, though the audit covers additional management-system and prerequisite-program elements.",
+    "relatedIds": [
+      "a36806f7-5f25-486d-b4f0-dc3a8e6c4210",
+      "2cda1fd4-2d76-488e-a222-04d4b30c88f8",
+      "4db45158-1d5c-4b87-86ad-c022454a603e",
+      "7a252b54-ea94-4cd4-ac17-c4e00c174340"
     ],
     "path": "gfsi"
   },
@@ -145,11 +181,16 @@
     "name": "OSHA",
     "fullName": "Occupational Safety and Health Administration",
     "parent": "US Department of Labor",
-    "summary": "Sets and enforces workplace safety standards directly applicable to food manufacturing plants: the General Duty Clause (requiring a workplace free of recognized hazards), machine guarding, lockout/tagout, personal protective equipment, and Process Safety Management for facilities with large anhydrous ammonia refrigeration inventories (common in cold storage/finished-goods warehousing). Distinct from FDA/USDA FSIS, which regulate product safety rather than worker safety.",
     "keyOffices": [],
     "sourceIds": [
       "6887f31d-a76f-4c46-8aa1-dc7b30c47b27",
       "086b4e33-b8da-4f0b-a2df-e5b94639a8c6"
+    ],
+    "description": "OSHA is a federal agency within the Department of Labor with authority over workplace safety and health conditions for nearly all private-sector employers, including food manufacturing plants. Its jurisdiction is the worker, not the product — a plant answers to FDA or USDA FSIS for product safety and to OSHA, separately and simultaneously, for conditions affecting employees.\n\nStandards directly relevant to food plants include the General Duty Clause (requiring a workplace free of recognized hazards), machine guarding, lockout/tagout, personal protective equipment, the Hazard Communication Standard (chemical labeling, including sanitation and pest-control chemicals), and Process Safety Management for facilities with large anhydrous ammonia refrigeration inventories (common in cold storage/finished-goods warehousing). Enforcement runs through workplace inspections that can result in citations and civil penalties; many states also run their own OSHA-approved state plans.\n\nBecause OSHA and food-safety regulators inspect the same physical plant for different purposes, their requirements can touch the same equipment or process from different angles without either agency deferring to the other.",
+    "relatedIds": [
+      "2cf6d02e-5c41-40c6-8dea-2c5d9756b9c1",
+      "aac69997-d9a2-4428-860f-1d8813e9ba5a",
+      "57ebd4ad-028d-49a4-9840-805e858231d7"
     ],
     "path": "osha"
   },
@@ -158,10 +199,14 @@
     "name": "CBP",
     "fullName": "U.S. Customs and Border Protection",
     "parent": "US Department of Homeland Security",
-    "summary": "Processes entry filings for imported goods, including FDA-regulated food, and refers those entries to FDA for admissibility review. Coordinates with FDA on detention, refusal, and redelivery of noncompliant shipments. A border-enforcement/logistics role distinct from FDA's FSVP, which places hazard-analysis and verification duties on the US importer itself.",
     "keyOffices": [],
     "sourceIds": [
       "0f348398-32a4-4ff9-9c34-90f1fd807870"
+    ],
+    "description": "CBP is the Department of Homeland Security agency responsible for administering entry of goods across U.S. borders, including all imported food. When a shipment of FDA-regulated food arrives, the importer (or its broker) files entry documents with CBP, which refers those entries to FDA for an admissibility decision — CBP itself does not decide whether a food shipment is safe or compliant.\n\nCBP holds the physical and legal levers of border control: it can detain, hold, or refuse to release a shipment based on FDA's determination, and it collects duties and enforces customs law independent of food safety. This is a border-enforcement/logistics role distinct from FDA's FSVP, which places hazard-analysis and verification duties on the US importer itself — the shipment physically moves through CBP's entry process even though FSVP compliance is verified and enforced by FDA.",
+    "relatedIds": [
+      "2cf6d02e-5c41-40c6-8dea-2c5d9756b9c1",
+      "ed70a1f5-bbb6-4ae3-96e3-0bea4d58dc9a"
     ],
     "path": "cbp"
   }

@@ -89,13 +89,27 @@ FDA-mandated"), say that plainly rather than writing around it — that's a
 legitimate, sourceable statement (`subject-matter-judgment` or the
 regulation's own stated timeline), not a gap to paper over.
 
-## 3a. The detail fields — `description`, `fields`, `relatedIds`
+## 3a. The detail fields — `description`, `fields`/`capabilities`, `relatedIds`
 
 Applies to `artifacts`, `materials`, and `systems` (plan section 11 item 10).
 These are optional per-record additions on top of the existing shape — they
 exist to give the detail modal something substantive to show, not to
 duplicate what the card preview (`name` + the existing short field) already
 says.
+
+`fields` and `capabilities` are deliberately separate keys with separate
+semantics — don't conflate them or reuse one for the other's purpose:
+
+- **`fields`** (`artifacts` only) — named parts/columns of a single
+  describable instance (a form, a log entry, a schema). See the test below.
+- **`capabilities`** (`systems` only) — named functional capabilities/modules
+  a platform provides. A system is an ongoing platform, not a single
+  instance with named parts, so it was never a good fit for `fields` — this
+  key exists specifically because `systems.json` records were originally
+  (incorrectly) given `fields` arrays that actually enumerated modules,
+  transaction types, or process stages, none of which are "parts of one
+  instance." Every `systems` record uses `capabilities`; none should ever
+  reintroduce `fields`.
 
 There is deliberately no `example`/mock-instance field. A realistic worked
 example (sample lot numbers, sample company names, a fabricated reading)
@@ -121,22 +135,32 @@ rather than fix it — it's out of scope, not a smaller version of `fields`.
   `useData.js`) — a `description` written as one dense block will render as
   a single wall of text, so don't skip the break just because it's optional
   in the schema.
-- **`fields`** — an array of `{ name, description }` naming each column/
-  field/parameter the record captures and what it means. **Required test,
-  not a judgment call:** does this record represent a single, describable
-  instance of something with named parts (a form, a log entry, a schema, a
-  matrix row, a KDE set, a rubric)? If yes, `fields` is required, covering
-  every named part a reader would need to understand an instance of the
-  record — not a partial or illustrative subset. If the record is genuinely
-  just prose/narrative with no enumerable parts (e.g. a HACCP Plan as a
-  whole document, a Label Artwork File), omit `fields` entirely — don't pad
-  it with a fake breakdown to satisfy the letter of the rule. When in doubt,
-  default to including `fields`: most `format` values in this dataset
-  ("data record," "document, versioned," "reference table") describe
-  something with real internal structure, even when the existing `lifecycle`
-  text doesn't spell it out. Every `fields` entry must be a plausible,
-  sourced part of the real thing — grounded the same way any other claim in
-  the record is (section 2), not invented to look complete.
+- **`fields`** (`artifacts` only) — an array of `{ name, description }`
+  naming each column/field/parameter the record captures and what it means.
+  **Required test, not a judgment call:** does this record represent a
+  single, describable instance of something with named parts (a form, a log
+  entry, a schema, a matrix row, a KDE set, a rubric)? If yes, `fields` is
+  required, covering every named part a reader would need to understand an
+  instance of the record — not a partial or illustrative subset. If the
+  record is genuinely just prose/narrative with no enumerable parts (e.g. a
+  HACCP Plan as a whole document, a Label Artwork File), omit `fields`
+  entirely — don't pad it with a fake breakdown to satisfy the letter of the
+  rule. When in doubt, default to including `fields`: most `format` values in
+  this dataset ("data record," "document, versioned," "reference table")
+  describe something with real internal structure, even when the existing
+  `lifecycle` text doesn't spell it out. Every `fields` entry must be a
+  plausible, sourced part of the real thing — grounded the same way any
+  other claim in the record is (section 2), not invented to look complete.
+  Do not add `fields` to a `systems` record — see `capabilities` below.
+- **`capabilities`** (`systems` only) — an array of `{ name, description }`
+  naming each distinct functional capability/module the platform provides
+  (e.g. ERP's "Purchase and sales order management," MES's "Electronic batch
+  record"). A `systems` record describes an ongoing platform, not a single
+  instance with named parts, so `fields`'s instance-parts test doesn't apply
+  to it — use `capabilities` unconditionally instead whenever a system's
+  functional breadth is worth enumerating. Same sourcing/plausibility bar as
+  `fields` (section 2): every entry must be a real, grounded capability, not
+  an invented one.
 - **`relatedIds`** — cross-references to other artifacts/materials/systems/
   regulations this record actually interacts with in the domain (e.g.
   Structured COA Data Schema ↔ Material/Product Specification). Only add a

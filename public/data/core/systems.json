@@ -16,6 +16,32 @@
       "cd89af6a-36cc-4b0a-9b7d-a3b139ac0691"
     ],
     "description": "ERP is the system of record for the plant's commercial and planning data: purchase orders, sales orders, inventory balances, cost accounting, and the master production schedule all live here, and every other plant system (MES, WMS, LIMS, QMS) either feeds it or reads from it. In food and beverage manufacturing specifically, a generic ERP is not enough - the platform needs process-manufacturing extensions for recipe/formula-based production (rather than discrete bill-of-materials assembly), catch weight (billing and inventory tracked by actual measured weight, not just unit count), FEFO-driven inventory allocation, lot-level traceability through transformation and blending, and by-product/co-product yield accounting. Implementations typically integrate ERP with MES for shop-floor execution data and with WMS for warehouse-level inventory movement.",
+    "capabilities": [
+      {
+        "name": "Purchase and sales order management",
+        "description": "Tracks purchase orders to suppliers and sales orders to customers, tying procurement and fulfillment to the plant's commercial records."
+      },
+      {
+        "name": "Inventory and cost accounting",
+        "description": "Maintains inventory balances and cost accounting records, the financial and quantity system of record for materials and finished goods."
+      },
+      {
+        "name": "Master production schedule",
+        "description": "Holds the plant's production plan, driving what is scheduled to run and when."
+      },
+      {
+        "name": "Recipe/formula and catch weight support",
+        "description": "Process-manufacturing extensions that handle formula-based production and variable (catch) weight products, which a generic ERP does not natively support."
+      },
+      {
+        "name": "FEFO-driven inventory allocation",
+        "description": "Allocates inventory for orders based on first-expired-first-out logic rather than simple FIFO, required for perishable food inventory."
+      },
+      {
+        "name": "Lot-level traceability and co-product/by-product yield accounting",
+        "description": "Tracks lots through production and accounts for yield across primary, co-, and by-products, supporting recall and traceability requirements."
+      }
+    ],
     "relatedIds": [
       "3628303b-f98e-4dc6-8627-9ad94b5af3dd",
       "39da6cf5-44d6-44d3-b613-d86a3530a7b1",
@@ -41,6 +67,28 @@
       "b118b0bf-0fcf-4cf9-9b87-993e4f18604d"
     ],
     "description": "MES sits between ERP's plan and the physical plant floor. It dispatches ERP-generated work orders to specific lines, captures real-time production and downtime data from PLCs and line sensors, and builds the electronic batch record as production runs, tying together what was produced, on which equipment, by whom, and against which recipe parameters. On the quality side, MES is typically where CCP monitoring data (temperatures, pressures, timings) gets captured at the point of the process step rather than on paper, and where OEE (availability, performance, quality) is calculated from the same downtime and output data. Because it talks directly to plant-floor automation (PLCs, SCADA), MES is the integration point that turns physical equipment events into the digital records ERP, QMS, and traceability systems consume.",
+    "capabilities": [
+      {
+        "name": "Work order dispatch",
+        "description": "Receives ERP-generated work orders and dispatches them to specific lines/equipment for execution."
+      },
+      {
+        "name": "Real-time production and downtime capture",
+        "description": "Pulls production counts, equipment status, and downtime events directly from PLCs and line sensors as they occur."
+      },
+      {
+        "name": "Electronic batch record",
+        "description": "Assembles the record of what was produced, on which equipment, by whom, and against which recipe parameters as the run happens."
+      },
+      {
+        "name": "CCP monitoring data capture",
+        "description": "Captures critical-control-point readings (temperatures, pressures, timings) at the point of the process step rather than on paper."
+      },
+      {
+        "name": "OEE calculation",
+        "description": "Calculates overall equipment effectiveness (availability, performance, quality) from the same downtime and output data MES already captures."
+      }
+    ],
     "relatedIds": [
       "798d71ae-178b-4f6b-bd3d-c3b58bd2013b",
       "29b066a1-910f-45b5-bd65-205d53da0ba4",
@@ -64,6 +112,24 @@
       "cd89af6a-36cc-4b0a-9b7d-a3b139ac0691"
     ],
     "description": "WMS governs the physical movement and storage of inventory within the four walls of the warehouse, distinct from ERP's higher-level inventory accounting. It directs receiving and putaway (which dock door, which rack location), drives pick sequencing for outbound orders using FEFO logic so that closer-to-expiry lots ship first, reconciles physical inventory counts against system records (cycle counts), and generates the pick/pack/load instructions and shipping documentation that feed the Advance Ship Notice. WMS typically holds the location-level detail (pallet, rack, bin) that ERP does not track at that granularity, and hands lot and location data back to ERP or a dedicated traceability platform to support genealogy queries.",
+    "capabilities": [
+      {
+        "name": "Receiving and putaway",
+        "description": "Directs incoming product to a specific dock door and rack/bin location as it enters the warehouse."
+      },
+      {
+        "name": "FEFO pick sequencing",
+        "description": "Drives outbound pick order using first-expired-first-out logic so closer-to-expiry lots ship first."
+      },
+      {
+        "name": "Cycle counts",
+        "description": "Reconciles physical inventory counts against system records on an ongoing basis rather than a single annual count."
+      },
+      {
+        "name": "Pick/pack/load and ASN generation",
+        "description": "Produces the pick/pack/load instructions and shipping documentation that feed the Advance Ship Notice sent to the receiving customer."
+      }
+    ],
     "relatedIds": [
       "798d71ae-178b-4f6b-bd3d-c3b58bd2013b",
       "733c42da-63cb-4309-b90f-eada2c4a97f7",
@@ -90,6 +156,32 @@
       "1fe3a2e7-4cc8-4ec1-b7e5-daa97c3dc2d7"
     ],
     "description": "QMS / food safety software is the digital home for the plant's food-safety and quality management system: the HACCP plan itself, the CCP monitoring and corrective-action records generated as production runs, CAPA workflows for nonconformances, document and record control (SOPs, specs, training records), internal audit management, and often supplier qualification data as well. Where MES captures process data at the point of the line, QMS is usually where that data (and manually entered checks that have no PLC source) gets reviewed, exception-managed, and retained as the auditable record a regulator or third-party certification auditor will ask to see. Because HACCP, supplier management, and labeling all generate records that need retention and review, QMS platforms in this space commonly span several of those domains rather than specializing in just one.",
+    "capabilities": [
+      {
+        "name": "HACCP Plan Management",
+        "description": "Digital storage and version control of the written HACCP plan, including hazard analysis, CCPs, critical limits, and monitoring procedures."
+      },
+      {
+        "name": "CCP Monitoring & Corrective Action",
+        "description": "Capture of real-time or logged monitoring data at critical control points, with workflows to record deviations and the corrective actions taken."
+      },
+      {
+        "name": "CAPA Workflows",
+        "description": "Structured corrective and preventive action tracking - root cause analysis, assigned remediation tasks, and verification of effectiveness."
+      },
+      {
+        "name": "Document & Record Control",
+        "description": "Version-controlled repository for SOPs, policies, and other controlled documents, with approval routing and record retention."
+      },
+      {
+        "name": "Internal Audit",
+        "description": "Scheduling, checklist execution, and findings tracking for internal self-inspections against food safety and quality standards."
+      },
+      {
+        "name": "Supplier Qualification Data",
+        "description": "Storage and tracking of supplier approval documentation, certifications, and ongoing supplier performance/compliance records."
+      }
+    ],
     "relatedIds": [
       "7a252b54-ea94-4cd4-ac17-c4e00c174340",
       "e8d03bfb-7a45-46f4-80ee-be037dd5e218",
@@ -115,6 +207,28 @@
       "f5b208bb-84ad-4c3a-9f80-47913b447491"
     ],
     "description": "LIMS manages the lifecycle of a lab sample: logging intake (what material, what lot, what test panel is required), tracking the sample through analytical testing (microbiological, chemical, physical), capturing the resulting test values, and automatically comparing those values against the specification limits defined for that material or product. LIMS typically drives the hold/release decision that gates whether a lot can move to the next step (e.g., a raw material can't be used, or a finished lot can't ship, until LIMS shows all required results within spec), and it is the system most directly upstream of the Lab Test Result and Certificate of Analysis records used elsewhere in the plant.",
+    "capabilities": [
+      {
+        "name": "Sample intake",
+        "description": "Logs incoming samples with identifying metadata such as sample type, source lot, collection date/time, and the test panel to be run."
+      },
+      {
+        "name": "Test assignment and tracking",
+        "description": "Assigns required analytical tests to a sample and tracks each test's status (pending, in progress, complete) through the lab workflow."
+      },
+      {
+        "name": "Result capture",
+        "description": "Records analytical results entered manually or pulled from lab instruments, tied back to the originating sample and test."
+      },
+      {
+        "name": "Spec-limit comparison",
+        "description": "Compares captured results against applicable specification limits to flag in-spec versus out-of-spec outcomes."
+      },
+      {
+        "name": "Hold/release decisioning",
+        "description": "Uses the spec comparison outcome to drive disposition of the associated lot - holding it pending review or releasing it for the next step."
+      }
+    ],
     "relatedIds": [
       "4c7a9c60-4652-4ccd-8a99-de688943fdf3",
       "69f4ab73-992a-4852-b94e-0440b2304521",
@@ -143,6 +257,32 @@
       "5ecdd375-c8ce-4b2f-a069-1d1948c844e2",
       "234121ca-a7cb-4c99-8a09-7e947e62d724",
       "03dcbbf1-8518-4030-bb66-c10e4c777a5f"
+    ],
+    "capabilities": [
+      {
+        "name": "Supplier qualification lifecycle",
+        "description": "Tracks a supplier from initial onboarding through approval, including collection of required qualification documentation before a supplier is approved to ship."
+      },
+      {
+        "name": "Audit/certification document collection",
+        "description": "Intake and storage of third-party audit reports and certification documents (e.g. GFSI certificates), typically with expiration dates tracked against the source document."
+      },
+      {
+        "name": "COA intake",
+        "description": "Collection and retention of Certificates of Analysis submitted by suppliers for incoming lots, tied to specific shipments or ingredient lots."
+      },
+      {
+        "name": "Re-audit reminders",
+        "description": "Automated alerts triggered as a supplier's audit or certification approaches its expiration date, prompting renewal before it lapses."
+      },
+      {
+        "name": "Expiration tracking",
+        "description": "Ongoing monitoring of validity dates across all supplier-submitted documents so expired records are flagged rather than silently relied upon."
+      },
+      {
+        "name": "Supplier scorecards",
+        "description": "Ongoing performance monitoring that aggregates supplier-related metrics into a recurring rating used for approval status decisions."
+      }
     ],
     "path": "supplier-management-portal"
   },
@@ -173,6 +313,28 @@
       "1188e42e-3097-4203-b657-0f88020f34f0",
       "93b63909-560d-4414-8cb4-0920241e45a4"
     ],
+    "capabilities": [
+      {
+        "name": "Lot genealogy tracking",
+        "description": "Captures parent-child relationships between lots as materials move through receiving, transformation, and shipping, so any finished lot can be traced back to its component inputs."
+      },
+      {
+        "name": "CTE (Critical Tracking Event) capture",
+        "description": "Records the key supply-chain events FSMA 204 requires - growing, receiving, transformation, creation, and shipping - at the point each occurs."
+      },
+      {
+        "name": "KDE (Key Data Element) recordkeeping",
+        "description": "Stores the specific data points tied to each CTE (e.g. lot code, quantity, unit of measure, location, date/time, source) in the structured form regulators expect."
+      },
+      {
+        "name": "GS1 EPCIS event modeling",
+        "description": "Structures traceability events using the GS1 EPCIS (Electronic Product Code Information Services) standard so events are interoperable with trading partners and industry traceability networks."
+      },
+      {
+        "name": "Recall/lookback query support",
+        "description": "Enables rapid forward-and-backward tracing from a given lot or shipment to support recall scope determination and lookback investigations."
+      }
+    ],
     "path": "traceability-platform"
   },
   "e7cf071d-ca71-42ea-81de-4924de27f07c": {
@@ -194,6 +356,24 @@
       "d1139caf-37bd-4f97-9220-08feba95bdce",
       "68a4cc0a-b5c0-4ba4-91de-332c4c74c684",
       "d08beab6-1d89-42e5-8f51-c12ddc9dcc93"
+    ],
+    "capabilities": [
+      {
+        "name": "Version Control",
+        "description": "Tracks label artwork revisions over time, maintaining a history of changes and preventing outdated versions from being used in production."
+      },
+      {
+        "name": "Compliance Review Routing",
+        "description": "Routes label artwork through required review steps (e.g., regulatory, quality, legal) before approval, ensuring the correct reviewers sign off before a label can proceed."
+      },
+      {
+        "name": "Approval Audit Trail",
+        "description": "Records who approved each label version, when, and under what review cycle, creating a defensible record for regulatory or customer audits."
+      },
+      {
+        "name": "Formulation/Recipe Database Linkage",
+        "description": "Ideally connects label content (ingredient statements, allergen declarations, nutrition facts) to the underlying formulation or recipe record so label claims stay synchronized with actual product composition."
+      }
     ],
     "path": "label-management-software"
   },
@@ -217,6 +397,24 @@
       "798d71ae-178b-4f6b-bd3d-c3b58bd2013b",
       "238f08d4-2e35-498a-817d-683f36822b65"
     ],
+    "capabilities": [
+      {
+        "name": "Capacity Planning",
+        "description": "Models available equipment/line capacity and throughput constraints to determine feasible production schedules."
+      },
+      {
+        "name": "Changeover Optimization",
+        "description": "Sequences production runs to minimize changeover time, including allergen changeovers that require validated cleaning/clearance steps between runs."
+      },
+      {
+        "name": "Raw Material Availability & Shelf-Life Tracking",
+        "description": "Checks on-hand and incoming raw material quantities and shelf-life windows to ensure scheduled runs have usable inputs at production time."
+      },
+      {
+        "name": "Delivery Deadline Alignment",
+        "description": "Sequences and prioritizes production orders against customer or distribution delivery deadlines."
+      }
+    ],
     "path": "production-scheduling-system"
   },
   "d08beab6-1d89-42e5-8f51-c12ddc9dcc93": {
@@ -238,6 +436,32 @@
       "798d71ae-178b-4f6b-bd3d-c3b58bd2013b",
       "e7cf071d-ca71-42ea-81de-4924de27f07c"
     ],
+    "capabilities": [
+      {
+        "name": "Recipe/BOM authoring",
+        "description": "Structured definition of a product's formulation as a bill of materials — ingredients, sub-recipes, and quantities/percentages that make up the finished product."
+      },
+      {
+        "name": "Version control",
+        "description": "Tracks formulation changes over time so the current and historical composition of any product can be reconstructed, supporting reformulations and audit trail."
+      },
+      {
+        "name": "Nutrition calculation",
+        "description": "Derives nutrition facts panel values from the underlying formulation by rolling up ingredient-level nutrient data."
+      },
+      {
+        "name": "Allergen declaration",
+        "description": "Propagates allergen status from component ingredients up through the BOM to generate the finished product's allergen declarations."
+      },
+      {
+        "name": "Cost rollup",
+        "description": "Calculates finished product cost by aggregating ingredient and sub-recipe costs according to the formulation."
+      },
+      {
+        "name": "MRP feed",
+        "description": "Supplies the formulation/BOM data to materials requirements planning so ingredient purchasing and production planning reflect the current recipe."
+      }
+    ],
     "path": "formulation-recipe-management-system"
   },
   "0895906c-34f8-43a0-a4d8-112d3a9eb395": {
@@ -255,6 +479,36 @@
       "3250a117-60b4-4053-b8cf-bf13f59faa1b",
       "fc2cc2d7-c0e6-4a2c-b0e8-d110914627d2",
       "798d71ae-178b-4f6b-bd3d-c3b58bd2013b"
+    ],
+    "capabilities": [
+      {
+        "name": "Purchase Order (850)",
+        "description": "Sent by a buyer/customer to place an order specifying items, quantities, and requested delivery terms."
+      },
+      {
+        "name": "Purchase Order Acknowledgment (855)",
+        "description": "Sent by the supplier to confirm, reject, or propose changes to a received 850 order."
+      },
+      {
+        "name": "Advance Ship Notice (856)",
+        "description": "Sent ahead of a shipment detailing carton/pallet contents and expected delivery, typically paired with barcode labels used at receiving."
+      },
+      {
+        "name": "Invoice (810)",
+        "description": "Sent by the supplier to bill the buyer for goods shipped, referencing the corresponding purchase order and shipment."
+      },
+      {
+        "name": "Warehouse Shipping Order (940)",
+        "description": "Sent by a shipper instructing a third-party warehouse to pick and ship specific goods."
+      },
+      {
+        "name": "Warehouse Shipping Advice (945)",
+        "description": "Sent by the warehouse back to the shipper confirming what was actually picked and shipped against a 940 order."
+      },
+      {
+        "name": "Transport method",
+        "description": "The connection mechanism used to exchange these documents computer-to-computer, either through a Value-Added Network (VAN) intermediary or a direct AS2 connection."
+      }
     ],
     "path": "edi-via-van-or-as2"
   },
@@ -276,6 +530,28 @@
       "2d8b96d5-f9ba-4de5-a60b-0da0f60afaec",
       "06ff688b-147f-4fde-846c-35ad49d333bc"
     ],
+    "capabilities": [
+      {
+        "name": "Training assignment / curriculum management",
+        "description": "Maps required courses, modules, or curricula to individuals or roles and schedules recurring or triggered assignments."
+      },
+      {
+        "name": "Completion tracking",
+        "description": "Records when each assigned training item is started and completed, including pass/fail or attendance status, and flags overdue or missing completions."
+      },
+      {
+        "name": "Competency assessment",
+        "description": "Captures quiz, test, or observed skill-check results tied to a training module, used to verify understanding rather than mere attendance."
+      },
+      {
+        "name": "Certification / credential recordkeeping",
+        "description": "Stores issued certificates, expiration dates, and renewal requirements for credentials such as HACCP certification, allergen training, or equipment-specific qualifications."
+      },
+      {
+        "name": "Audit-ready reporting",
+        "description": "Generates exportable records of who was trained on what and when, formatted to support regulatory inspection or customer audit requests for training documentation."
+      }
+    ],
     "path": "training-lms-learning-management-system"
   },
   "2227d2ed-2fec-40de-a9d4-52e262f14809": {
@@ -294,6 +570,32 @@
     "description": "SCADA/HMI is the direct equipment-control and data-acquisition layer that talks to PLCs and line sensors in real time, giving operators the screens they actually use to run and monitor a line. ISA-95 (IEC 62264) formally separates this layer (Level 2, basic process control) from MES (Level 3, manufacturing operations management) — MES's own record in this dataset already describes talking to plant-floor automation such as PLCs and SCADA, which is exactly this layer, but no record covered it directly until now. In practice, SCADA/HMI is where a process setup gets dialed in and where a CCP's raw sensor reading first becomes a number an operator can see, before MES aggregates it into a batch record.",
     "relatedIds": [
       "3628303b-f98e-4dc6-8627-9ad94b5af3dd"
+    ],
+    "capabilities": [
+      {
+        "name": "Data acquisition",
+        "description": "Continuous polling/collection of real-time process values from PLCs, sensors, and field instrumentation."
+      },
+      {
+        "name": "Human-machine interface (HMI)",
+        "description": "Operator-facing screens for visualizing live equipment/process status and issuing manual control commands."
+      },
+      {
+        "name": "Alarm and event management",
+        "description": "Threshold-based alerting and event logging when process values move outside normal operating ranges."
+      },
+      {
+        "name": "Control interface to PLCs",
+        "description": "The real-time communication layer (e.g., OPC, Modbus, proprietary protocols) that reads from and writes control commands to programmable logic controllers."
+      },
+      {
+        "name": "Historian / trending",
+        "description": "Time-series storage of acquired data supporting trend charts and short-to-medium-term historical review at the equipment level."
+      },
+      {
+        "name": "Level 2/3 interface",
+        "description": "The upward data hand-off point where SCADA/HMI (ISA-95 Level 2) feeds aggregated production data to MES (Level 3)."
+      }
     ],
     "path": "scada-hmi"
   }

@@ -5,9 +5,16 @@
     "citation": "Pub. L. 75-717, 52 Stat. 1040; codified at 21 U.S.C. § 301 et seq.",
     "year": 1938,
     "agencyId": "2cf6d02e-5c41-40c6-8dea-2c5d9756b9c1",
-    "summary": "Cornerstone of FDA's food authority. Prohibits adulterated or misbranded food in interstate commerce; nearly all FDA food regulations issued under it.",
     "sourceIds": [
       "40aa2d70-7490-4cd3-b572-d42b9f506489"
+    ],
+    "description": "The FD&C Act is the foundational federal statute for FDA's authority over food (as well as drugs, medical devices, and cosmetics). It prohibits introducing \"adulterated\" or \"misbranded\" food into interstate commerce, and those two terms — adulteration and misbranding — are the legal hooks nearly every downstream FDA food rule hangs on. Adulteration covers contamination, unsafe substances, and unsanitary production conditions; misbranding covers false or misleading labeling and failure to declare required information.\n\nVirtually every food manufacturer, importer, and distributor operating in the US is subject to it, whether or not they ever interact with a more specific rule. It has been amended repeatedly since 1938 rather than replaced, and FSMA itself operates by amending this Act rather than standing alone.\n\nBecause it predates modern preventive-controls thinking, the Act's original text says relatively little about HACCP-style systems or supply-chain verification — those obligations were layered on by FSMA and by earlier HACCP rules for meat, poultry, seafood, and juice, each also codified as amendments or companion regulations under this same statutory umbrella.",
+    "relatedIds": [
+      "2f72c0de-4634-4798-9aca-4d01ec2c0084",
+      "4db45158-1d5c-4b87-86ad-c022454a603e",
+      "18c16d22-6037-4b00-a54b-d91b55a2e001",
+      "5fedae94-25ee-4237-9dca-d14b6b92b2d5",
+      "2cf6d02e-5c41-40c6-8dea-2c5d9756b9c1"
     ],
     "path": "federal-food-drug-and-cosmetic-act-fd-c-act"
   },
@@ -17,9 +24,20 @@
     "citation": "Pub. L. 111-353",
     "year": 2011,
     "agencyId": "2cf6d02e-5c41-40c6-8dea-2c5d9756b9c1",
-    "summary": "The most significant overhaul of US food safety law since 1938. Shifts food safety from a reactive (respond-to-outbreaks) model to a preventive model. Directed FDA to write seven major implementing rules (see fsma-pchf, fsma-pcaf, fsma-produce-safety-rule, fsma-fsvp, fsma-strf, fsma-ia-rule, fsma-204).",
     "sourceIds": [
       "fa2343c4-52d5-496b-97e0-4edd5f69c36a"
+    ],
+    "description": "FSMA is the most significant overhaul of US food safety law since 1938, shifting food safety from a reactive, respond-to-outbreaks model to a preventive one: facilities are required to identify hazards in advance and put controls in place to prevent them, rather than FDA responding only after contaminated product has already reached the public.\n\nFSMA itself is an amendment to the FD&C Act, not a freestanding code — it directed FDA to write seven major implementing rules covering preventive controls for human food (PCHF), preventive controls for animal food (PCAF), produce safety, foreign supplier verification (FSVP), sanitary transportation, intentional adulteration, and food traceability (FSMA 204). Each of those is its own regulation with its own compliance dates and applicability rules; FSMA is the umbrella statute that created the requirement for them to exist.\n\nWho is covered depends entirely on which implementing rule applies — a domestic finished-goods manufacturer, a produce farm, and an importer of food ingredients are all \"under FSMA\" but each answers to a different rule with different obligations.",
+    "relatedIds": [
+      "a00be301-0e39-42d5-b4ec-c1f0f2877821",
+      "4db45158-1d5c-4b87-86ad-c022454a603e",
+      "2daacfdd-b270-4df6-ad79-bd7a0af491f6",
+      "bbacc25c-33bb-407e-bb70-c6e7a67f8784",
+      "ed70a1f5-bbb6-4ae3-96e3-0bea4d58dc9a",
+      "41dc8af7-974a-4eaf-b4de-eacb5109dfb7",
+      "3eecd978-8139-4ab1-948f-828c00c79f63",
+      "93b63909-560d-4414-8cb4-0920241e45a4",
+      "2cf6d02e-5c41-40c6-8dea-2c5d9756b9c1"
     ],
     "path": "food-safety-modernization-act-fsma"
   },
@@ -73,9 +91,12 @@
     "citation": "21 CFR Part 507",
     "year": 2015,
     "agencyId": "2cf6d02e-5c41-40c6-8dea-2c5d9756b9c1",
-    "summary": "PCHF-equivalent rule for manufacturers of pet food and livestock feed; requires hazard analysis and preventive controls.",
     "sourceIds": [
       "07fed08e-e11c-42df-9eec-92305f751546"
+    ],
+    "description": "Part 507 is the animal-food counterpart to Preventive Controls for Human Food (PCHF): it applies the same risk-based framework to facilities that manufacture, process, pack, or hold food for animals, from pet food and treats to livestock and poultry feed. Covered facilities must conduct a hazard analysis and, where a hazard requires one, implement preventive controls with associated monitoring, verification, and corrective-action procedures.\n\nThe rule also carries Current Good Manufacturing Practices (CGMPs) tailored to animal food production, adapted from the human-food CGMPs but reflecting that finished product is feed rather than food for people. Facilities must document their food safety plan in writing and keep it on-site, subject to FDA inspection.\n\nSmall and very small businesses get qualified exemptions or modified requirements similar to those under PCHF, and there is a separate supply-chain program requirement when a hazard is controlled by a supplier rather than the receiving facility itself.",
+    "relatedIds": [
+      "4db45158-1d5c-4b87-86ad-c022454a603e"
     ],
     "path": "preventive-controls-for-animal-food-pcaf"
   },
@@ -85,10 +106,10 @@
     "citation": "21 CFR Part 112",
     "year": 2015,
     "agencyId": "2cf6d02e-5c41-40c6-8dea-2c5d9756b9c1",
-    "summary": "Applies to farms growing, harvesting, packing, or holding fresh produce consumed raw. Sets standards for agricultural water, biological soil amendments, worker hygiene, equipment/buildings, and animal intrusion. Does not apply to produce destined for commercial processing (e.g., canning) with adequate reduction of microorganisms.",
     "sourceIds": [
       "b849e231-2362-4766-bf73-d105f1277e6f"
     ],
+    "description": "The Produce Safety Rule sets federal, science-based minimum standards for the safe growing, harvesting, packing, and holding of fruits and vegetables that are typically eaten raw, applying at the farm level rather than to processing facilities. It covers agricultural water quality, use of biological soil amendments of animal origin, worker health and hygiene training, animal intrusion into growing areas, and sanitary design of equipment and buildings.\n\nThe rule does not apply to produce destined for commercial processing (e.g., canning) that includes an adequate reduction of microorganisms, and farms below certain size thresholds qualify for exemptions or modified requirements.\n\nFDA enforcement is primarily through on-farm inspections, often delegated to state departments of agriculture under cooperative agreements, rather than the desk audits typical of facility-based rules. Because this rule governs the growing/harvesting end of the supply chain, it sits upstream of the receiving-through-shipping scope this dataset otherwise focuses on, but it shapes what documentation a receiving facility may require from produce suppliers.",
     "path": "produce-safety-rule-psr"
   },
   "ed70a1f5-bbb6-4ae3-96e3-0bea4d58dc9a": {
@@ -127,10 +148,10 @@
     "citation": "21 CFR Part 121",
     "year": 2016,
     "agencyId": "2cf6d02e-5c41-40c6-8dea-2c5d9756b9c1",
-    "summary": "Requires large food facilities to maintain a Food Defense Plan (including a vulnerability assessment and mitigation strategies) addressing deliberate contamination risk at four \"actionable process steps\" (bulk liquid receiving/loading, liquid storage/handling, secondary ingredient handling, mixing).",
     "sourceIds": [
       "abcb7c40-1113-47e2-b919-0b47f3364aba"
     ],
+    "description": "The Intentional Adulteration rule is the FSMA rule aimed not at accidental contamination but at deliberate, large-scale attacks on the food supply — economically motivated tampering or terrorism, not a sick worker or a dirty conveyor. It applies to large domestic and foreign food facilities and requires each to develop and maintain a written Food Defense Plan, including a vulnerability assessment and mitigation strategies.\n\nFDA's own analysis identified four process steps as the ones most commonly requiring evaluation across the industry: bulk liquid receiving and loading, liquid storage and handling, secondary ingredient handling, and mixing — facilities must evaluate whether these and other steps in their own process are significant vulnerabilities, and where one is identified, implement mitigation strategies with associated monitoring, corrective actions, and verification.\n\nSmall businesses are exempt, and the rule doesn't apply to farms.",
     "path": "intentional-adulteration-rule-food-defense"
   },
   "93b63909-560d-4414-8cb4-0920241e45a4": {
@@ -140,10 +161,17 @@
     "year": 2022,
     "complianceDeadline": "2028-07-20",
     "agencyId": "2cf6d02e-5c41-40c6-8dea-2c5d9756b9c1",
-    "summary": "Requires companies that manufacture, process, pack, or hold foods on the Food Traceability List (FTL) to capture Key Data Elements (KDEs) at Critical Tracking Events (CTEs) and produce records to FDA within 24 hours of request. Electronic recordkeeping strongly encouraged given the retrieval window. Original compliance date (January 20, 2026) was extended: FDA proposed a 30-month extension in August 2025, and Congress subsequently directed FDA (via a 2026 appropriations act) not to enforce before July 20, 2028 — the current operative date.",
     "sourceIds": [
       "da05f47f-c44b-47f4-bd19-9ef07eda9955",
       "1d3a1d00-95ca-4af0-918f-5b3b8d0e1421"
+    ],
+    "description": "The Food Traceability Rule, issued under FSMA Section 204, targets a narrower problem than the other FSMA rules: not whether food is safe, but whether it can be traced fast enough during an outbreak or recall to prevent illness and limit unnecessary destruction of unaffected product. It applies only to foods on FDA's Food Traceability List (FTL) — a defined set of higher-risk items including soft cheeses, shell eggs, leafy greens, melons, certain seafood, and nut butters — and to the entities that manufacture, process, pack, or hold them.\n\nCovered entities must capture Key Data Elements (KDEs) at specified Critical Tracking Events (CTEs) in the supply chain and maintain those records in a way that lets the full chain reconstruct, from any given point, both where a lot came from and where it went. Records must be produced to FDA within 24 hours of a request, which in practice means most affected facilities need electronic, indexed traceability records rather than paper files that would take days to search.\n\nThe rule builds on but doesn't replace the general one-up-one-back recordkeeping obligations already imposed by the Bioterrorism Act; FTL foods carry additional, more prescriptive traceability requirements layered on top. The original compliance date (January 20, 2026) was extended: FDA proposed a 30-month extension in August 2025, and Congress subsequently directed FDA (via a 2026 appropriations act) not to enforce before July 20, 2028 — the current operative date.",
+    "relatedIds": [
+      "21122a4e-a901-444d-b6d5-8e7a03d67054",
+      "9cc2d1ff-a495-474c-bc2d-5615fe7e94bb",
+      "1188e42e-3097-4203-b657-0f88020f34f0",
+      "b5e32a3a-afdb-4264-a583-9bfcf21d6999",
+      "22e46c8f-cf7e-4d53-b5f2-56c939ee76ff"
     ],
     "path": "food-traceability-rule-fsma-section-204"
   },
@@ -153,9 +181,15 @@
     "citation": "21 U.S.C. § 601 et seq. (Pub. L. 59-382, 34 Stat. 669)",
     "year": 1906,
     "agencyId": "aac69997-d9a2-4428-860f-1d8813e9ba5a",
-    "summary": "Gives FSIS authority over beef, pork, lamb, and other amenable livestock species; requires ante-mortem and post-mortem inspection of animals.",
     "sourceIds": [
       "9a7e4ca7-93a7-4812-ba35-5ccbabc61913"
+    ],
+    "description": "The Federal Meat Inspection Act is the founding statute for federal meat safety oversight in the United States, giving USDA's Food Safety and Inspection Service (FSIS) — not FDA — jurisdiction over cattle, hogs, sheep, goats, and other amenable livestock species. It requires ante-mortem inspection of live animals and post-mortem inspection of every carcass before it can be labeled and move into commerce.\n\nThis inspector-presence model is a structural difference from FDA-regulated food plants, which are inspected periodically rather than continuously — FMIA plants are also outside FDA's Food Safety Modernization Act framework; the parallel food-safety-plan requirement for meat and poultry is the separate USDA HACCP mandate, not PCHF.",
+    "relatedIds": [
+      "ac08bae1-7153-4c36-9af1-3969ebe48a4e",
+      "b69b1236-0674-4d3a-9a57-f37584b74134",
+      "daa53a8a-1ab0-4a41-823b-0bd2779f0ee4",
+      "aac69997-d9a2-4428-860f-1d8813e9ba5a"
     ],
     "path": "federal-meat-inspection-act-fmia"
   },
@@ -165,9 +199,14 @@
     "citation": "21 U.S.C. § 451 et seq. (Pub. L. 85-172, 71 Stat. 441)",
     "year": 1957,
     "agencyId": "aac69997-d9a2-4428-860f-1d8813e9ba5a",
-    "summary": "FMIA-equivalent for chicken, turkey, duck, and other domesticated poultry.",
     "sourceIds": [
       "451f2391-1c63-47a4-a556-7e4e73b64e37"
+    ],
+    "description": "The Poultry Products Inspection Act extends the same FSIS inspection model established by FMIA to chicken, turkey, duck, and other domesticated poultry — a separate act of Congress in 1957 because poultry slaughter and FMIA's amenable-species list are legally distinct.\n\nFSIS administers PPIA alongside FMIA, and the two acts are typically discussed as a pair for that reason. As with FMIA, PPIA-covered poultry sits outside FDA's FSMA preventive-controls framework — the food-safety-plan obligation runs through USDA HACCP instead.",
+    "relatedIds": [
+      "52a1eeda-eb18-49b4-bc9f-d51a5ae9c39e",
+      "daa53a8a-1ab0-4a41-823b-0bd2779f0ee4",
+      "aac69997-d9a2-4428-860f-1d8813e9ba5a"
     ],
     "path": "poultry-products-inspection-act-ppia"
   },
@@ -177,9 +216,16 @@
     "citation": "21 U.S.C. § 1031-1056 (Pub. L. 91-597, 84 Stat. 1620)",
     "year": 1970,
     "agencyId": "aac69997-d9a2-4428-860f-1d8813e9ba5a",
-    "summary": "Covers processed (liquid, frozen, dried) egg products; shell eggs remain under FDA (with USDA AMS providing voluntary grading).",
     "sourceIds": [
       "002b2907-b2b9-48fd-a31a-29343c250028"
+    ],
+    "description": "The Egg Products Inspection Act covers only egg products that have left the shell — liquid, frozen, and dried egg products produced by breaking plants — and gives FSIS inspection authority over those facilities. Intact shell eggs sold in the carton are regulated by FDA instead, under the general FD&C Act framework; the moment those eggs are broken and turned into a liquid, frozen, or dried product, jurisdiction shifts to USDA.\n\nUSDA's Agricultural Marketing Service (AMS) also plays a role here that doesn't exist for meat and poultry: AMS runs a voluntary shell-egg grading program (the familiar Grade AA/A/B marks), distinct from FSIS's mandatory safety inspection of egg products.",
+    "relatedIds": [
+      "52a1eeda-eb18-49b4-bc9f-d51a5ae9c39e",
+      "ac08bae1-7153-4c36-9af1-3969ebe48a4e",
+      "aac69997-d9a2-4428-860f-1d8813e9ba5a",
+      "c8b293a1-17bc-42b2-b023-7d0c6dba905d",
+      "a00be301-0e39-42d5-b4ec-c1f0f2877821"
     ],
     "path": "egg-products-inspection-act-epia"
   },
@@ -189,9 +235,15 @@
     "citation": "15 U.S.C. § 1451 et seq. (Pub. L. 89-755)",
     "year": 1966,
     "agencyId": "2cf6d02e-5c41-40c6-8dea-2c5d9756b9c1",
-    "summary": "Requires honest, informative labels on consumer products including food; jointly enforced by FDA (foods/drugs/cosmetics/devices) and FTC (other consumer commodities).",
     "sourceIds": [
       "3de2e495-0a34-4d28-bd26-b0da95272e79"
+    ],
+    "description": "The Fair Packaging and Labeling Act is the baseline federal statute governing what a consumer commodity's label must disclose, regardless of what the product actually is. It requires honest, informative labeling — identifying the product and its manufacturer/packer/distributor and stating net quantity of contents — and does not itself set nutrition or safety standards.\n\nEnforcement is split by jurisdiction: FDA enforces FPLA for foods, drugs, cosmetics, and medical devices; FTC enforces it for other consumer commodities not regulated by FDA, such as household goods.\n\nFPLA's label-mechanics requirements sit underneath the more visible nutrition and allergen mandates added later by NLEA and FALCPA — those newer statutes added content requirements on top of the identity and net-quantity baseline FPLA established.",
+    "relatedIds": [
+      "a00be301-0e39-42d5-b4ec-c1f0f2877821",
+      "5fedae94-25ee-4237-9dca-d14b6b92b2d5",
+      "b92fd46c-08fa-4a05-95d7-d030b0203096",
+      "2cf6d02e-5c41-40c6-8dea-2c5d9756b9c1"
     ],
     "path": "fair-packaging-and-labeling-act-fpla"
   },
@@ -201,9 +253,16 @@
     "citation": "Pub. L. 101-535, 104 Stat. 2353; amends 21 U.S.C. § 343",
     "year": 1990,
     "agencyId": "2cf6d02e-5c41-40c6-8dea-2c5d9756b9c1",
-    "summary": "Mandated the standardized Nutrition Facts panel on most packaged food and authorized specific nutrient content and health claims. Implementing regulations followed in 1993, with the panel required on labels starting 1994.",
     "sourceIds": [
-      "cbbd031f-2050-4b54-b8fe-2dbe54d731d4"
+      "cbbd031f-2050-4b54-b8fe-2dbe54d731d4",
+      "6df5fcc5-2076-421a-9545-d8a56ae4fcdc"
+    ],
+    "description": "NLEA amended the FD&C Act to make nutrition labeling mandatory on almost all packaged foods regulated by FDA, ending the prior system where nutrition information was voluntary unless a claim was made. It directed FDA to define a standardized format — the Nutrition Facts panel — with implementing regulations following in 1993 and the panel required on labels starting 1994.\n\nThe statute also gave FDA authority to regulate nutrient content claims (\"low fat,\" \"high fiber\") and health claims linking a nutrient or food to reduced disease risk.\n\nNLEA is a statute, not a fixed format — the actual panel layout has been revised by FDA rulemaking since, most recently the 2016 Nutrition Facts Label update adding an Added Sugars declaration and revised serving sizes. USDA-regulated meat and poultry products fall outside NLEA's scope and are labeled under FMIA/PPIA instead.",
+    "relatedIds": [
+      "a00be301-0e39-42d5-b4ec-c1f0f2877821",
+      "18c16d22-6037-4b00-a54b-d91b55a2e001",
+      "2b3c4d5e-6f7a-4b8c-9d0e-1f2a3b4c5d6e",
+      "2cf6d02e-5c41-40c6-8dea-2c5d9756b9c1"
     ],
     "path": "nutrition-labeling-and-education-act-nlea"
   },
@@ -213,9 +272,15 @@
     "citation": "Pub. L. 108-282, Title II; amends 21 U.S.C. § 321",
     "year": 2004,
     "agencyId": "2cf6d02e-5c41-40c6-8dea-2c5d9756b9c1",
-    "summary": "Requires the 8 original major food allergens (milk, egg, fish, crustacean shellfish, tree nuts, peanuts, wheat, soybeans) to be declared on labels either parenthetically in the ingredient list or via a 'Contains' statement. Amended by the FASTER Act (2021) to add sesame as the 9th major allergen, effective January 1, 2023.",
     "sourceIds": [
       "32f43a5d-b00d-4c31-9899-39e364919865"
+    ],
+    "description": "FALCPA requires that any of the major food allergens present as an ingredient be plainly declared on the label, either by naming the allergen source in parentheses right after an unclear ingredient term (e.g., \"whey (milk)\") or by grouping all of them into a single \"Contains\" statement beneath the ingredient list.\n\nThe original law covered eight major allergens — milk, eggs, fish, crustacean shellfish, tree nuts, peanuts, wheat, and soybeans. The FASTER Act amended FALCPA in 2021 to add sesame as the ninth major allergen, with the labeling requirement taking effect January 1, 2023.\n\nFor a manufacturer, FALCPA compliance is where allergen labeling and allergen control on the plant floor meet: what the label says must match what an allergen matrix and changeover/cleaning verification actually confirm is or isn't present.",
+    "relatedIds": [
+      "a00be301-0e39-42d5-b4ec-c1f0f2877821",
+      "18c16d22-6037-4b00-a54b-d91b55a2e001",
+      "e22bc4a2-d974-46c6-ac7b-9c3c1b5b3e04",
+      "2cf6d02e-5c41-40c6-8dea-2c5d9756b9c1"
     ],
     "path": "food-allergen-labeling-and-consumer-protection-act-falcpa"
   },
@@ -226,10 +291,16 @@
     "citation": "Pub. L. 107-188",
     "year": 2002,
     "agencyId": "2cf6d02e-5c41-40c6-8dea-2c5d9756b9c1",
-    "summary": "Required domestic and foreign food facilities to register with FDA and give prior notice of imported shipments. Established the baseline traceability requirement, officially termed \"one-up, one-back\" recordkeeping: non-transporters must record their immediate previous source and immediate subsequent recipient. Biennial registration renewal (Oct 1 - Dec 31 of even-numbered years) was not part of this original 2002 Act — it was added later by FSMA (2011), which amended FD&C Act § 415(a)(3).",
     "sourceIds": [
       "cf86e662-dcc8-4393-9b08-8d9ec48442d1",
       "d6431e96-3fef-4372-92a0-1b8d058a44ae"
+    ],
+    "description": "The Bioterrorism Act (formally the Public Health Security and Bioterrorism Preparedness and Response Act) directs FDA to require registration of every domestic and foreign facility that manufactures, processes, packs, or holds food for U.S. consumption, and to require prior notice before any food shipment enters the country. Biennial registration renewal (Oct 1 - Dec 31 of even-numbered years) was not part of this original 2002 Act — it was added later by FSMA (2011), which amended FD&C Act § 415(a)(3).\n\nIts recordkeeping provision reaches every FDA-regulated facility's day-to-day operations: each facility must be able to identify the immediate previous source of a food (\"one-up\") and the immediate subsequent recipient (\"one-back\"). That one-up-one-back chain is deliberately minimal — it does not require internal lot-level tracking or a shared data format between trading partners — which is the gap FSMA's Food Traceability Rule was later written to close for a defined list of high-risk foods.\n\nFSIS-regulated meat, poultry, and egg products are not subject to this Act — traceability obligations there flow instead from FMIA/PPIA/EPIA and their own recordkeeping rules.",
+    "relatedIds": [
+      "2f72c0de-4634-4798-9aca-4d01ec2c0084",
+      "93b63909-560d-4414-8cb4-0920241e45a4",
+      "a00be301-0e39-42d5-b4ec-c1f0f2877821",
+      "2cf6d02e-5c41-40c6-8dea-2c5d9756b9c1"
     ],
     "path": "bioterrorism-act"
   },
@@ -239,9 +310,48 @@
     "citation": "9 CFR Part 417",
     "year": 1996,
     "agencyId": "aac69997-d9a2-4428-860f-1d8813e9ba5a",
-    "summary": "Makes HACCP mandatory in USDA-regulated meat and poultry plants. Final rule (\"Pathogen Reduction/HACCP Systems\") published July 25, 1996.",
     "sourceIds": [
       "5650c548-99c2-4084-8475-12768273c73d"
+    ],
+    "description": "9 CFR Part 417 is the regulation that made HACCP mandatory in every USDA-inspected meat and poultry establishment, replacing a purely organoleptic (sight, smell, touch) inspection model with one where the plant itself identifies where contamination is reasonably likely to occur and builds controls around those points. It was published alongside the companion Pathogen Reduction rule (\"Pathogen Reduction/HACCP Systems,\" July 25, 1996), which added microbial testing requirements that work in tandem with the HACCP plan.\n\nThe regulation requires every covered plant to conduct a hazard analysis, and if that analysis identifies a food safety hazard reasonably likely to occur, to maintain a written HACCP plan covering it — critical control points, critical limits, monitoring, corrective actions, verification, and recordkeeping. A plant that determines no hazard is reasonably likely to occur at any step still has to document that determination.\n\nFSIS inspectors verify HACCP plans in-plant, checking records, taking measurements, and testing product against the plant's own critical limits, reflecting FSIS's continuous-presence inspection model for meat and poultry.",
+    "fields": [
+      {
+        "name": "Hazard analysis",
+        "description": "Written identification of biological, chemical, and physical hazards reasonably likely to occur at each step of the process"
+      },
+      {
+        "name": "Critical control points (CCPs)",
+        "description": "Steps identified where control can be applied to prevent, eliminate, or reduce an identified hazard to an acceptable level"
+      },
+      {
+        "name": "Critical limits",
+        "description": "Maximum or minimum value for a physical, biological, or chemical parameter that must be met at each CCP"
+      },
+      {
+        "name": "Monitoring procedures",
+        "description": "Procedures and frequency for observing and recording whether a CCP is under control"
+      },
+      {
+        "name": "Corrective actions",
+        "description": "Predetermined steps taken when monitoring shows a critical limit has been exceeded"
+      },
+      {
+        "name": "Verification activities",
+        "description": "Methods, including review of monitoring and calibration of instruments, used to confirm the HACCP system is working as intended"
+      },
+      {
+        "name": "Recordkeeping",
+        "description": "Documentation of the hazard analysis, the plan, and all monitoring, corrective action, and verification records"
+      }
+    ],
+    "relatedIds": [
+      "52a1eeda-eb18-49b4-bc9f-d51a5ae9c39e",
+      "ac08bae1-7153-4c36-9af1-3969ebe48a4e",
+      "aac69997-d9a2-4428-860f-1d8813e9ba5a",
+      "7a252b54-ea94-4cd4-ac17-c4e00c174340",
+      "e8d03bfb-7a45-46f4-80ee-be037dd5e218",
+      "1bdfade9-acc5-4535-891f-87d4cf762f5c",
+      "1123026c-158f-41ad-acb2-9f67b6fb4e09"
     ],
     "path": "haccp-regulation-for-meat-and-poultry"
   },
@@ -251,9 +361,44 @@
     "citation": "21 CFR Part 123",
     "year": 1995,
     "agencyId": "2cf6d02e-5c41-40c6-8dea-2c5d9756b9c1",
-    "summary": "Makes HACCP mandatory for seafood processors. Final rule published December 18, 1995, effective December 18, 1997.",
     "sourceIds": [
       "4bf11242-7644-408a-b6ce-d0de44084569"
+    ],
+    "description": "21 CFR Part 123 was FDA's first mandatory HACCP regulation for a food category, published December 18, 1995 and effective December 18, 1997. It applies to seafood processors and importers, following the same hazard analysis / HACCP plan structure used elsewhere in food regulation.\n\nEvery seafood processor must conduct a hazard analysis for each product, and where a hazard is reasonably likely to occur, implement a HACCP plan; a processor that determines no hazards are reasonably likely still has to keep that determination on file. Importers have a distinct obligation under this same Part: they must verify that the foreign processor they buy from has an equivalent HACCP system in place.\n\nFDA enforces through periodic inspection rather than continuous in-plant presence, checking plan documentation and monitoring records against actual practice.",
+    "fields": [
+      {
+        "name": "Hazard analysis",
+        "description": "Species- and process-specific identification of hazards reasonably likely to occur"
+      },
+      {
+        "name": "Critical control points (CCPs)",
+        "description": "Points where controls (e.g., cooking, freezing, formulation) are applied to control identified hazards"
+      },
+      {
+        "name": "Critical limits",
+        "description": "Measurable parameters that must be met at each CCP"
+      },
+      {
+        "name": "Monitoring procedures",
+        "description": "Procedures confirming CCPs are under control during production"
+      },
+      {
+        "name": "Corrective actions",
+        "description": "Steps taken when a critical limit is not met"
+      },
+      {
+        "name": "Verification and recordkeeping",
+        "description": "Review, calibration, and documentation activities confirming the HACCP system functions as designed"
+      },
+      {
+        "name": "Importer verification",
+        "description": "Procedures importers must use to verify foreign processors operate an equivalent HACCP system"
+      }
+    ],
+    "relatedIds": [
+      "a00be301-0e39-42d5-b4ec-c1f0f2877821",
+      "ed70a1f5-bbb6-4ae3-96e3-0bea4d58dc9a",
+      "2cf6d02e-5c41-40c6-8dea-2c5d9756b9c1"
     ],
     "path": "haccp-regulation-for-seafood"
   },
@@ -263,9 +408,44 @@
     "citation": "21 CFR Part 120",
     "year": 2001,
     "agencyId": "2cf6d02e-5c41-40c6-8dea-2c5d9756b9c1",
-    "summary": "Makes HACCP mandatory for juice manufacturers. Final rule published January 19, 2001, with phased effective dates (large businesses 2002, small 2003, very small 2004).",
     "sourceIds": [
       "43dbde62-39be-4162-9845-3fcb640f768f"
+    ],
+    "description": "21 CFR Part 120 makes HACCP mandatory for juice manufacturers, whether the product is sold packaged or fresh-squeezed for immediate sale in some retail settings. It requires a written hazard analysis and, where hazards are reasonably likely to occur, a HACCP plan built around the standard principles used elsewhere in food regulation.\n\nWhat sets this regulation apart is its specific performance standard: covered juice processes must achieve a 5-log reduction in the pertinent microorganism, a numeric target most plants meet through pasteurization, though the rule doesn't mandate a specific technology. Juice sold with a warning label about the absence of that treatment is a permitted alternative compliance path.\n\nAs with seafood, importers of juice must verify their foreign suppliers operate an equivalent HACCP program, and FDA enforcement runs through inspection of plans and monitoring records. Final rule published January 19, 2001, with phased effective dates (large businesses 2002, small 2003, very small 2004).",
+    "fields": [
+      {
+        "name": "Hazard analysis",
+        "description": "Identification of hazards reasonably likely to occur in the specific juice and process"
+      },
+      {
+        "name": "Critical control points (CCPs)",
+        "description": "Process step(s), typically the pathogen-reduction/pasteurization step, where control is applied"
+      },
+      {
+        "name": "5-log pathogen reduction standard",
+        "description": "Numeric performance requirement that the process achieve a 5-log reduction in the pertinent microorganism"
+      },
+      {
+        "name": "Critical limits and monitoring",
+        "description": "Parameters (time, temperature, dose) and monitoring procedures confirming the reduction standard is met"
+      },
+      {
+        "name": "Corrective actions and verification",
+        "description": "Steps taken on deviation and activities confirming ongoing system effectiveness"
+      },
+      {
+        "name": "Recordkeeping",
+        "description": "Documentation of hazard analysis, plan, monitoring, and verification"
+      },
+      {
+        "name": "Warning label alternative",
+        "description": "Permitted compliance path allowing sale of juice without the full pathogen-reduction process if labeled with the required warning statement"
+      }
+    ],
+    "relatedIds": [
+      "a00be301-0e39-42d5-b4ec-c1f0f2877821",
+      "ed70a1f5-bbb6-4ae3-96e3-0bea4d58dc9a",
+      "2cf6d02e-5c41-40c6-8dea-2c5d9756b9c1"
     ],
     "path": "haccp-regulation-for-juice"
   },
@@ -275,9 +455,15 @@
     "citation": "7 CFR Part 66",
     "year": 2016,
     "agencyId": "c8b293a1-17bc-42b2-b023-7d0c6dba905d",
-    "summary": "Requires disclosure of bioengineered (GMO) food ingredients via text, USDA BE symbol, QR code, or phone number/URL. Enacted 2016 (amending the Agricultural Marketing Act of 1946); final rule published December 2018; implementation began January 2020 (2021 for small manufacturers); mandatory compliance began January 1, 2022. Highly refined ingredients with no detectable modified genetic material are generally exempt.",
     "sourceIds": [
       "6970bad7-82d6-4df0-8a27-590bffc32cbc"
+    ],
+    "description": "The National Bioengineered Food Disclosure Standard requires most food manufacturers to tell consumers when a product contains bioengineered (BE) ingredients — the regulatory term for what's commonly called GMO. USDA's Agricultural Marketing Service administers the standard, not FDA.\n\nA covered manufacturer discloses via one of several formats: on-package text, the USDA-designed BE symbol, a QR code or other digital link, or a phone-number option. Highly refined ingredients with no detectable modified genetic material are generally exempt, even if the source crop was bioengineered.\n\nEnacted 2016 (amending the Agricultural Marketing Act of 1946); final rule published December 2018; implementation began January 2020 (2021 for small manufacturers); mandatory compliance began January 1, 2022.",
+    "relatedIds": [
+      "18c16d22-6037-4b00-a54b-d91b55a2e001",
+      "68a4cc0a-b5c0-4ba4-91de-332c4c74c684",
+      "e7cf071d-ca71-42ea-81de-4924de27f07c",
+      "c8b293a1-17bc-42b2-b023-7d0c6dba905d"
     ],
     "path": "national-bioengineered-food-disclosure-standard-nbfds"
   },
@@ -287,9 +473,13 @@
     "citation": "7 CFR Part 205",
     "year": 2000,
     "agencyId": "c8b293a1-17bc-42b2-b023-7d0c6dba905d",
-    "summary": "Certifies organic farms and handlers and defines labeling tiers: 100% Organic, Organic (≥95%), Made with Organic [ingredient] (≥70%, up to 3 ingredients/categories listed). Statutory basis is the Organic Foods Production Act of 1990; final rule published December 2000, effective October 2002.",
     "sourceIds": [
       "19b68aea-9a1a-4995-8c33-09070414d87f"
+    ],
+    "description": "The National Organic Program, run by USDA's Agricultural Marketing Service, is the accreditation and enforcement system behind the word \"organic\" on a food label. Farms and handling facilities that want to sell or process food as organic must be certified by a USDA-accredited third-party certifying agent.\n\nNOP defines a labeling hierarchy: \"100% Organic\" (every agricultural ingredient is organic), \"Organic\" (at least 95% of agricultural content is organic), and \"Made with Organic [ingredient/category]\" (at least 70% organic content, up to 3 ingredients/categories listed). Statutory basis is the Organic Foods Production Act of 1990; final rule published December 2000, effective October 2002.\n\nBecause certification and labeling are handled by a separate USDA agency (AMS) from the one that oversees meat and poultry inspection (FSIS) or general food safety (FDA), a single product can be subject to NOP labeling rules on top of whichever agency's core food-safety jurisdiction it falls under.",
+    "relatedIds": [
+      "18c16d22-6037-4b00-a54b-d91b55a2e001",
+      "c8b293a1-17bc-42b2-b023-7d0c6dba905d"
     ],
     "path": "national-organic-program-nop"
   },
@@ -299,9 +489,16 @@
     "citation": "81 FR 33742 (May 27, 2016); 21 CFR 101.9",
     "year": 2016,
     "agencyId": "2cf6d02e-5c41-40c6-8dea-2c5d9756b9c1",
-    "summary": "Substantially redesigned the Nutrition Facts panel established by NLEA: added a mandatory added-sugars declaration, updated Daily Values, enlarged/bolded calorie type, and revised serving sizes to better reflect actual consumption. Compliance dates (extended from the original rule by a 2018 rule) were January 1, 2020 for manufacturers with $10M+ in annual food sales and January 1, 2021 for smaller manufacturers.",
     "sourceIds": [
       "6df5fcc5-2076-421a-9545-d8a56ae4fcdc"
+    ],
+    "description": "This is FDA's most significant redesign of the Nutrition Facts panel since NLEA established it. It's issued under the same statutory authority as the original Nutrition Facts requirement but as a standalone final rule, so it's tracked separately here because it changed content and format requirements, not the underlying legal mandate to label at all.\n\nThe headline changes: a new Added Sugars declaration, updated Daily Values, a larger/bolder typeface for the calorie count, and revised serving-size reference amounts intended to better reflect actual consumption.\n\nCompliance dates (extended from the original rule by a 2018 rule) were January 1, 2020 for manufacturers with $10M+ in annual food sales and January 1, 2021 for smaller manufacturers. Getting this wrong means printing an out-of-date or noncompliant label, which turns into a label-artwork revision cycle across every affected SKU.",
+    "relatedIds": [
+      "5fedae94-25ee-4237-9dca-d14b6b92b2d5",
+      "18c16d22-6037-4b00-a54b-d91b55a2e001",
+      "68a4cc0a-b5c0-4ba4-91de-332c4c74c684",
+      "e7cf071d-ca71-42ea-81de-4924de27f07c",
+      "3c4d5e6f-7a8b-4c9d-0e1f-2a3b4c5d6e7f"
     ],
     "path": "nutrition-facts-label-final-rule-2016-revision"
   },
@@ -311,9 +508,15 @@
     "citation": "Federal Register 2025-00778 (proposed, not yet final)",
     "year": 2025,
     "agencyId": "2cf6d02e-5c41-40c6-8dea-2c5d9756b9c1",
-    "summary": "FDA proposed a mandatory front-of-package 'Nutrition Info Box' disclosing saturated fat, sodium, and added sugars levels. Not yet final law as of this dataset's last check — comment period closed July 2025, with FDA's stated priorities targeting a final rule around spring 2026. Tracked here as an in-flight regulation the way FSMA 204's compliance-date extension was tracked before becoming binding.",
     "sourceIds": [
       "3f0518be-803d-4760-8c85-7b0bec95624f"
+    ],
+    "description": "FDA proposed this rule to require a standardized \"Nutrition Info Box\" on the front of most packaged food, in addition to the existing Nutrition Facts panel on the back or side. The stated goal is to let shoppers see at a glance whether a product is high, medium, or low in saturated fat, sodium, and added sugars — the three nutrients most tied to diet-related chronic disease.\n\nThis is a proposed rule, not a final one — it has gone through public comment (which closed July 2025) but has not been finalized, and both its ultimate content and its effective/compliance dates remain unsettled. FDA's stated priorities target a final rule around spring 2026, but manufacturers should not treat any specific design or deadline from the proposal as locked in.\n\nTracked here as an in-flight regulation the way FSMA 204's compliance-date extension was tracked before becoming binding — the record should be revisited once (and if) FDA issues a final rule.",
+    "relatedIds": [
+      "2b3c4d5e-6f7a-4b8c-9d0e-1f2a3b4c5d6e",
+      "5fedae94-25ee-4237-9dca-d14b6b92b2d5",
+      "68a4cc0a-b5c0-4ba4-91de-332c4c74c684",
+      "e7cf071d-ca71-42ea-81de-4924de27f07c"
     ],
     "path": "front-of-package-nutrition-information-proposed-rule"
   },
@@ -323,9 +526,15 @@
     "citation": "BRCGS Global Standard for Food Safety, Issue 9",
     "year": 2022,
     "agencyId": "3b121647-ec9f-444c-9084-8a6637d357da",
-    "summary": "GFSI-recognized certification standard (formerly the British Retail Consortium standard, now branded BRCGS) covering food safety management systems, HACCP, and site standards. Issue 9 published August 2022, with certification audits against it beginning February 2023. Widely required by UK and European retailers as a supplier qualification condition.",
     "sourceIds": [
       "56c9cddc-092d-4c21-b006-bd6604d3dd42"
+    ],
+    "description": "The BRCGS Global Standard for Food Safety is a private certification standard (formerly the British Retail Consortium standard, now branded BRCGS) covering food safety management systems, HACCP, and site standards. It is recognized by the Global Food Safety Initiative (GFSI), meaning major retailers and foodservice buyers accept a passing BRCGS audit as evidence a supplier's food safety system meets a common benchmark.\n\nCertification is issued following an audit by an accredited third-party certification body, not by BRCGS itself or by any government agency. Issue 9 was published August 2022, with certification audits against it beginning February 2023.\n\nBecause it is privately administered, BRCGS certification operates alongside, not instead of, government food safety law — a US facility holding BRCGS certification is still separately subject to FDA's or FSIS's regulatory requirements. It is widely required by UK and European retailers as a supplier-qualification condition.",
+    "relatedIds": [
+      "3b121647-ec9f-444c-9084-8a6637d357da",
+      "4db45158-1d5c-4b87-86ad-c022454a603e",
+      "2cda1fd4-2d76-488e-a222-04d4b30c88f8",
+      "06ff688b-147f-4fde-846c-35ad49d333bc"
     ],
     "path": "brcgs-global-standard-for-food-safety"
   },
@@ -335,9 +544,14 @@
     "citation": "IFS Food, Version 8 (International Featured Standards)",
     "year": 2024,
     "agencyId": "3b121647-ec9f-444c-9084-8a6637d357da",
-    "summary": "GFSI-recognized certification standard developed by International Featured Standards (IFS), assessing food safety and process/product quality across several processing scopes. Version 8 became mandatory for all certified companies on January 1, 2024, and achieved GFSI recognition against the 2020 GFSI Benchmarking Requirements in September 2024. A common supplier-qualification requirement, particularly for European retail buyers.",
     "sourceIds": [
       "16daba2d-f77e-4992-ab4a-f4793abacb52"
+    ],
+    "description": "IFS Food is a private certification standard developed by International Featured Standards (IFS), assessing food safety and process/product quality across several processing scopes. Like BRCGS, it is recognized by the Global Food Safety Initiative (GFSI), so a passing IFS audit is accepted by participating retailers as proof of an adequate food safety and quality system. It is not a government regulation; certification is voluntary, though many European and increasingly North American retail customers require it as a condition of doing business.\n\nVersion 8 became mandatory for all certified companies on January 1, 2024, and achieved GFSI recognition against the 2020 GFSI Benchmarking Requirements in September 2024.\n\nA facility pursuing IFS Food certification in the US still operates under FDA's or FSIS's regulatory framework independent of the certification; IFS does not substitute for or exempt a site from PCHF, HACCP, or other applicable federal food safety law.",
+    "relatedIds": [
+      "3b121647-ec9f-444c-9084-8a6637d357da",
+      "4db45158-1d5c-4b87-86ad-c022454a603e",
+      "a36806f7-5f25-486d-b4f0-dc3a8e6c4210"
     ],
     "path": "ifs-food-standard"
   }

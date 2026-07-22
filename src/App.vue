@@ -110,6 +110,16 @@ function onHomeClick(e) {
         @click="mobileMenuOpen = !mobileMenuOpen"
       >☰</button>
 
+      <div class="app-header__search">
+        <input
+          v-model="searchInput"
+          type="search"
+          placeholder="Search artifacts, regulations, systems…"
+          autocomplete="off"
+          @input="onSearchInput"
+        />
+      </div>
+
       <div class="app-header__collapsible" :class="{ 'app-header__collapsible--open': mobileMenuOpen }">
         <nav class="app-header__nav" aria-label="Primary">
           <router-link
@@ -130,15 +140,6 @@ function onHomeClick(e) {
             :class="{ 'app-header__nav-link--active': activeCollection === c.name }"
           >{{ c.label }}</router-link>
         </nav>
-        <div class="app-header__search">
-          <input
-            v-model="searchInput"
-            type="search"
-            placeholder="Search artifacts, regulations, systems…"
-            autocomplete="off"
-            @input="onSearchInput"
-          />
-        </div>
       </div>
     </header>
 

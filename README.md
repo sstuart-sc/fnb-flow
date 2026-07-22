@@ -37,3 +37,16 @@ npm run preview  # serve the production build locally
 
 `dist/` is a static bundle — point any static host at it.
 
+## Routing
+
+The app uses hash-based routing (`createWebHashHistory`) rather than clean
+URLs. This is deliberate for GitHub Pages: it's a static host with no
+server-side rewrite rules, so a hard refresh or direct link to a
+non-hash deep route (e.g. `/flow/primary-flow`) would 404 — GitHub Pages has
+no way to know to serve `index.html` and let Vue Router resolve the path
+client-side. Keeping the path after `#` means it's never sent to the server,
+so any URL resolves to `index.html` and the router takes it from there. If
+this ever moves to a host where rewrites are configurable (Netlify, Vercel,
+nginx, etc.), switching to `createWebHistory` for clean URLs is
+straightforward.
+
