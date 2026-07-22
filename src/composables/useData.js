@@ -1,4 +1,4 @@
-const DATA_BASE = "/data";
+const DATA_BASE = `${import.meta.env.BASE_URL}data`.replace(/\/+/g, "/");
 
 async function loadJSON(path) {
   const res = await fetch(path);
